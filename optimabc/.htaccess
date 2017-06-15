@@ -17,7 +17,7 @@ rewritecond %{REQUEST_FILENAME} !robots.txt [nc]
 rewritecond %{HTTP_USER_AGENT} !Yandex.* [nc] 
 rewriterule ^(.*)$ http://www.optimabc.ru/$1 [r=301,nc]
 DirectoryIndex index.php
-#CharsetDefault utf-8
-addDefaultCharset utf-8
+#CharsetDefault windows-1251
+addDefaultCharset windows-1251
 ErrorDocument 404 /?issue_id=16
 ErrorDocument 403 /index.php

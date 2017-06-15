@@ -5,9 +5,9 @@
 background: white;
 position: fixed;
 width: 100%;
--webkit-box-shadow: 1px -8px 28px 0px rgba(54,54,54,1);
--moz-box-shadow: 1px -8px 28px 0px rgba(54,54,54,1);
-box-shadow: 1px -8px 28px 0px rgba(54,54,54,1);
+-webkit-box-shadow: 0 4px 14px -2px gray;
+-moz-box-shadow: 0 4px 14px -2px gray;
+box-shadow: 0 4px 14px -2px gray;
 		display: none;
 	}
 @media only screen and (max-width : 1200px){
@@ -25,9 +25,13 @@ box-shadow: 1px -8px 28px 0px rgba(54,54,54,1);
 		min-width: 320px;
 	}
 }
-
+.owl-adaptive-slider{
+	display: none;
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
+
+/*************************index.html 992 ******************************/
 	#topinfo .rg {
 		color: white;
 	}
@@ -166,10 +170,11 @@ margin-left: 15%;
     text-align: center;
 }
 #terms {
-    height: 1334px;
+    height: 1395px;
 }
 #terms ul {
 left: 0;
+top: 162px;
 }
 #terms li {
 	margin-bottom: 12px;
@@ -351,12 +356,166 @@ text-align: center;
 .slidlist .right {
     right: 60px;
 }
+#slid1 {display: none;}
+.owl-adaptive-slider {
+	display: block;	
+}
+.owl-adaptive-slider_wrap {
 
+	width: 320px;
+	margin: 0 auto;
+	padding-bottom: 40px;
 
 }
+.owl-adaptive-slider {
+	background: #f0d9af;
+	padding: 75px 0;
+}
+.owl-adaptive_img {
+	border-radius: 1000px;	
+	width: 98%;
+	border: solid 3px #c3915e;
+}
+.owl-controls .owl-buttons .owl-prev,.owl-next {
+	position: absolute;
+	width: 34px;
+	height: 35px;
+	background: url("../images/arr-bl4-pg2.png") no-repeat;
+	left: -48px;
+	margin-top: -308px;
+
+}
+.owl-next {
+	background: url("../images/arr-bl4-pg2-rigth.png") no-repeat;
+	left: 336px;
+
+}
+.title{width:auto;margin:0 auto;padding:10px 50px;background:url(../img/dott_2.png)repeat-x bottom,url(../img/dott_2.png)repeat-x top;display: inline-block;}
+.center {
+    font-size: 24px;
+    color: #922116;
+    line-height: 34px;
+    text-align: center;
+}
+.owl-adaptive_img_wrap {
+	background: url(../img/slid_shadow.png)no-repeat center bottom;
+	padding-bottom: 37px;
+}
+#slid2 {
+	display: none;
+}
+#owl-adaptive-slider2 div img{
+	border-radius: 12px;
+	width: 93%;
+	padding: 9px 12px;
+}
+
+#owl-adaptive-slider2 div.owl-item{
+	border-radius: 10px;
+	background: url(../img/slid2_bg.png)no-repeat;
+	
+
+}
+#owl-adaptive-slider2 .owl-controls .owl-buttons .owl-prev {
+	    left: -47px;
+}
+#owl-adaptive-slider2 .owl-controls .owl-buttons .owl-prev,#owl-adaptive-slider2 .owl-controls .owl-buttons .owl-next {
+
+    margin-top: -134px;
+}
+.owl-adaptive-slider.slider2 {
+	background: url(../img/bg_slid2.png)repeat-x bottom;
+}
+/*************************index.html 992 END******************************/
+
+
+/*************************arenda.html 992 ******************************/
+
+.wrapin #head {
+	min-width: 320px;
+}
+#head {
+    height: 75px;
+}
+.wrapin #head > .main {
+    height: 75px;
+    padding: 0 13px;
+}
+#Usloviya .main .lf, #Usloviya .main .rg {
+	float: none;	
+	margin: 0 auto;	
+	text-align: center;
+}
+h1, h2 {
+	text-align:center;
+	padding-top: 20px;
+	padding-bottom: 20px !important;
+}
+#Usloviya .ln1 ul {
+    text-align:left;
+}
+.wrapin #mmenu {
+    background: transparent;
+    box-shadow: none;
+}
+.bread-wrapper {
+	width: auto;
+    min-width: 320px;
+}
+.wrapin {
+    padding-top: 161px;
+}
+
+.breadcrumbs {
+	text-align: center;
+}
+#Usloviya .dwnld {background: url(../img/uslov_ico.png)no-repeat 28% center,url(../img/dott_1.png)repeat-x left bottom,url(../img/dott_1.png)repeat-x left top;
+padding-top: 53px;
+padding-left: 41%;
+width: auto;
+}
+
+/*************************arenda.html 992 END******************************/
+
+}
+@media only screen and (max-width :768px){
+	/*************************arenda.html 768 ******************************/
+.wrapin #head {
+	height: auto;
+	background: none;
+}
+.wrapin #head > .main {
+    height: auto;
+   -webkit-box-shadow: 0 -2px 13px -2px grey inset;
+-moz-box-shadow: 0 -2px 13px -2px grey inset;
+box-shadow: 0 -2px 13px -2px grey inset;
+padding-bottom: 11px;
+background-color: #ECECEC;
+}
+#head .phon {
+    margin-right: 0;
+}
+
+#Usloviya .dwnld {
+	background: url(../img/uslov_ico.png)no-repeat 15% center,url(../img/dott_1.png)repeat-x left bottom,url(../img/dott_1.png)repeat-x left top;
+	padding-left: 38%;
+	padding-right: 10px;
+	margin: 26px 0;
+}
+.bread-wrapper{
+    padding-top: 52px;
+}
+h1, h2 {
+    padding-bottom: 0px !important;
+}
+
+/*************************arenda.html 768 END******************************/
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
 
+/*************************index.html 480 ******************************/
 #shag {
 	height: auto;
 }
@@ -422,7 +581,10 @@ padding: 2px;
 }
 #maininfo .rg table {width: 320px;}
 #maininfo .rg th {padding:2px; }
-#map {background: url(../img/map.jpg)no-repeat -995px 5px;}
+#map {
+	background: url(../img/map.jpg)no-repeat -995px 5px;
+	margin-top: 0px;
+}
 #map .bg {
     background: url(../img/map_shadow.png)repeat-x left top;
 }
@@ -450,12 +612,51 @@ clear: both;
     margin: 39px 26px 0px 20px;
     clear: both;
 }
+#slid1 .center {
+    font-size: 17px;
+line-height: 26px;
+}
+.owl-adaptive-slider_wrap {
+    width: 203px;
+}
+.owl-adaptive_img_wrap {
+	background-size: 289px 51px;
+	padding-bottom: 27px;
+}
+.owl-next {
+    left: 216px;
+}
+.title {
+padding: 0;
+}
+.owl-controls .owl-buttons .owl-prev, .owl-next {
+    margin-top: -222px;
+}
 
+#owl-adaptive-slider2 .owl-controls .owl-buttons .owl-prev, #owl-adaptive-slider2 .owl-controls .owl-buttons .owl-next{
+    margin-top: -92px;
+}
+#owl-adaptive-slider2 div img {width: 89%;}
+/*************************index.html 480 END******************************/
+/*************************arenda.html 480 ******************************/
+#Usloviya0 {
+	height: 429px;
+	background: url(../img/uslov_bg.png)no-repeat center bottom,url(../img/bg_sub.png)repeat-x left bottom;
+    background-size: 419px 193px,21px 410px;
+}
+#Usloviya0 .main p {
+font-size: 20px;
+line-height: 27px;
+padding: 0 11px;
+}
+/*************************arenda.html 480 END******************************/
 }
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){
+
+/*************************index.html 320 ******************************/
 #rmenu {
 	display: none;
 }
@@ -554,12 +755,50 @@ a.button {
     font-size: 9px;
    letter-spacing: 0.2px;
 }
-#slid1 .center {
-    font-size: 17px;
-line-height: 26px;}
+
+
+/*************************index.html 320 END******************************/
+
+
+/*************************arenda.html 320 ******************************/
+#Usloviya .main .lf1,#Usloviya .main .rg1 {
+    width: auto;
+}
+#head .addr {
+background: url(../img/head_ico_1.png)no-repeat left center;
+text-align: left;
+    clear: both;
+    float: none;
+    padding-top: 14px;
+}
+#head .phon {
+    float: none;
+    background: url(../img/head_ico_2.png)no-repeat 7px top;
+padding-left: 50px;
 
 }
+.bread-wrapper {
+    padding-top: 113px;
+}
 
+#Usloviya .dwnld {
+font-size: 14px;
+background-size: 80px 65px,30px 4px,30px 4px;
+}
+#Usloviya .bg,#Usloviya .main .lf, #Usloviya .main .rg {
+	width: auto;
+}
+#Usloviya .p p {
+    line-height: 26px;
+}
+#Usloviya .Pplace p {
+	font-size: 16px;
+	padding-bottom: 10px !important;
+    line-height: 17px;
+
+}
+}
+/*************************arenda.html 320 END******************************/
 
 /*==========  Mobile First  ==========*/
 
