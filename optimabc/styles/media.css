@@ -516,26 +516,65 @@ h1, h2 {
 @media only screen and (max-width : 480px){
 
 /*************************index.html 480 ******************************/
-#shag {
-	height: auto;
+a.button {
+    font-size: 9px;
+   letter-spacing: 0.2px;
 }
-#shag .lf {
-    margin:0;
-}
-#shag .lf li {
-margin-right: 54px;
-font-size: 24px !important;
-}
-#shag .lf li::after {
-    font-size: 16px !important;
-}
-#shag .lf ul {
-    width: 328px;
-}
-#shag .shag_2 a{
-	margin-left: 102px;
+#shag .shag_2 a {
+    margin-left: 105px;
 }
 
+#shag {
+    height: auto;
+}
+#shag .lf {
+    margin: 0px;
+}
+#shag .lf ul {
+width: 304px;
+}
+#shag .lf li {
+margin-right: 46px;
+font-size: 22px !important;
+}
+#shag .lf li::after {
+    font-size: 14px !important;
+}
+#shag .shag_1 {
+    padding: 27px 60px 69px 44px;
+    background-size: 320px 218px;
+}
+#shag .shag_1 p {
+    font-size: 10px;
+    margin: 9px 0 3px 0;
+}
+#shag .shag_1 p.s {
+    font-size: 26px;
+}
+#shag .shag_2, #shag .shag_3 {
+		background-size: 288px 234px;
+	width: 292px;
+padding: 12px 0px 57px 0px;
+}
+#shag .shag_3 {
+    background-size: 310px 243px;
+width: 320px;
+height: 205px;
+}
+#shag .shag_3 p {
+    margin: 34px 0px 3px 118px;
+    font-size: 10px;
+}
+#shag .shag_3 .s {
+	line-height: 25px;
+    margin-left: 123px;
+    font-size: 19px;
+}
+
+#shag .shag_2 p {
+    font-size: 12px;
+margin: 50px 0px 0px 106px;
+}
 	#topinfo .rg {
     color: white;
 }
@@ -583,7 +622,7 @@ padding: 2px;
 #maininfo .rg th {padding:2px; }
 #map {
 	background: url(../img/map.jpg)no-repeat -995px 5px;
-	margin-top: 0px;
+	margin-top: 50px;
 }
 #map .bg {
     background: url(../img/map_shadow.png)repeat-x left top;
@@ -700,7 +739,7 @@ top: 13px;
 #terms .rg {
     line-height: 22px;
 }
-#shag {
+/*#shag {
     height: auto;
 }
 #shag .lf {
@@ -754,7 +793,7 @@ margin: 50px 0px 0px 106px;
 a.button {
     font-size: 9px;
    letter-spacing: 0.2px;
-}
+}*/
 
 
 /*************************index.html 320 END******************************/
