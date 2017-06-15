@@ -1,0 +1,23 @@
+php_flag zlib.output_compression on
+php_value zlib.output_compression_level 5
+
+SetInputFilter DEFLATE
+
+php_flag display_errors 0
+
+RewriteEngine on
+rewritecond %{http_host} ^optimabc.spb.ru [nc]
+rewritecond %{REQUEST_FILENAME} !robots.txt [nc]
+rewriterule ^(.*)$ http://www.optimabc.ru/$1 [r=301,nc]
+rewritecond %{http_host} ^www.optimabc.spb.ru [nc]
+rewritecond %{REQUEST_FILENAME} !robots.txt [nc]
+rewriterule ^(.*)$ http://www.optimabc.ru/$1 [r=301,nc]
+rewritecond %{http_host} ^optimabc.ru [nc] 
+rewritecond %{REQUEST_FILENAME} !robots.txt [nc]
+rewritecond %{HTTP_USER_AGENT} !Yandex.* [nc] 
+rewriterule ^(.*)$ http://www.optimabc.ru/$1 [r=301,nc]
+DirectoryIndex index.php
+#CharsetDefault windows-1251
+addDefaultCharset windows-1251
+ErrorDocument 404 /?issue_id=16
+ErrorDocument 403 /index.php
