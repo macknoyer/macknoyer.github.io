@@ -266,6 +266,7 @@ h2.left_header_bottom {
     -moz-box-shadow: 0px 1px 3px 0px rgba(84,84,84,0.67);
     box-shadow: 0px 1px 3px 0px rgba(84,84,84,0.67);   
     margin-top: 10px; 
+    margin-bottom: 10px;
 }
 }
 @media only screen and (max-width : 450px){
