@@ -250,6 +250,7 @@ h2.left_header_bottom {
 	display: none;	
     position: absolute;
     width: 100%;
+    left: 0;
     z-index: 20;	
     top: 71px;
 }
