@@ -111,7 +111,7 @@ h2.left_header_bottom {
 	padding-bottom: 20px; 
 }
 .right_header_bottom_block {
-    width: 70%;
+    width: auto;
     margin: 0 auto;	
 }
 .numbers_img,.numbers_img.img2 {
