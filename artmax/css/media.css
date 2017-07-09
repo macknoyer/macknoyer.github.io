@@ -1,3 +1,17 @@
+@media only screen and (max-width : 1340px){
+.next_button.next2,.prev_button.prev2,.next_button.next3,.prev_button.prev3  {
+     top: -165px;    
+}
+.next_button,.next_button.next3 {
+    margin: 0px;
+    right: 20px;
+  
+}
+.prev_button,.prev_button.prev3 {
+    left: 20px;
+    margin:0; 
+}
+}
 @media only screen and (max-width : 992px){
 .mail_header_bottom {
     display: block;
@@ -274,6 +288,14 @@ h2.left_header_bottom {
     margin-top: 10px; 
     margin-bottom: 10px;
 }
+}
+
+@media only screen and (max-width : 510px){
+h3 {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 }
 @media only screen and (max-width : 450px){
 .partner_link {
