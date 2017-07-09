@@ -273,7 +273,9 @@ h2.left_header_bottom {
     margin: 31px auto !important;
     float: none;	
 }		
-
+h2.left_header_bottom {
+    text-align: center;
+}
 }
 
 @media only screen and (max-width : 382px){
