@@ -200,6 +200,9 @@ footer a.logo_footer {
 .uslugi_left p {
     text-align: left;
    }
+.row {
+    margin: 0;
+}
 }
 @media only screen and (max-width : 770px){
 
