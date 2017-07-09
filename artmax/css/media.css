@@ -1,5 +1,7 @@
 @media only screen and (max-width : 992px){
-
+.mail_header_bottom {
+    display: block;
+}
 .input_form_tablet {
 	width: 	31px !important;
 	min-width: 	31px !important;
