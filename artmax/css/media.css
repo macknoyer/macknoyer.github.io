@@ -25,6 +25,7 @@
 .order_form .ui-datepicker-trigger {
 	float: right;	
     margin-right: 37px;	
+    margin-top: 10px;
 }
 .navigation ul.nav_ul{
 	text-align:center;
