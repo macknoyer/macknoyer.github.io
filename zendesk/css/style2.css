@@ -3010,8 +3010,8 @@ img.light_logo {
   .scroll-to-top.is-active {
     bottom: 30px; }
   .scroll-to-top:hover {
-    color: #1f568d;
-    border-color: #1f568d; }
+    color: #3EAE5F;
+    border-color: #3EAE5F; }
   @media (max-width: 767px) {
     .scroll-to-top {
       display: none; } }
