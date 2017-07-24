@@ -1,0 +1,287 @@
+
+@font-face {
+	font-family: 'Core Sans E 15';
+	src: url('CoreSansE-15ThinIt.eot');
+	src: url('CoreSansE-15ThinIt.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansE-15ThinIt.woff2') format('woff2'),
+		url('CoreSansE-15ThinIt.woff') format('woff'),
+		url('CoreSansE-15ThinIt.ttf') format('truetype'),
+		url('CoreSansE-15ThinIt.svg#CoreSansE-15ThinIt') format('svg');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI  Text MediumItalic';
+	src: url('SFUIText-MediumItalic.eot');
+	src: url('SFUIText-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-MediumItalic.woff2') format('woff2'),
+		url('SFUIText-MediumItalic.woff') format('woff'),
+		url('SFUIText-MediumItalic.ttf') format('truetype'),
+		url('SFUIText-MediumItalic.svg#SFUIText-MediumItalic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI  Text LightItalic';
+	src: url('SFUIText-LightItalic.eot');
+	src: url('SFUIText-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-LightItalic.woff2') format('woff2'),
+		url('SFUIText-LightItalic.woff') format('woff'),
+		url('SFUIText-LightItalic.ttf') format('truetype'),
+		url('SFUIText-LightItalic.svg#SFUIText-LightItalic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Core Sans A 15';
+	src: url('CoreSansA15Thin.eot');
+	src: url('CoreSansA15Thin.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansA15Thin.woff2') format('woff2'),
+		url('CoreSansA15Thin.woff') format('woff'),
+		url('CoreSansA15Thin.ttf') format('truetype'),
+		url('CoreSansA15Thin.svg#CoreSansA15Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text Semibold';
+	src: url('SFUIText-Semibold.eot');
+	src: url('SFUIText-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Semibold.woff2') format('woff2'),
+		url('SFUIText-Semibold.woff') format('woff'),
+		url('SFUIText-Semibold.ttf') format('truetype'),
+		url('SFUIText-Semibold.svg#SFUIText-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Core Sans A 15';
+	src: url('CoreSansA15Thin-Italic.eot');
+	src: url('CoreSansA15Thin-Italic.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansA15Thin-Italic.woff2') format('woff2'),
+		url('CoreSansA15Thin-Italic.woff') format('woff'),
+		url('CoreSansA15Thin-Italic.ttf') format('truetype'),
+		url('CoreSansA15Thin-Italic.svg#CoreSansA15Thin-Italic') format('svg');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Core Sans E 55';
+	src: url('CoreSansE-55MediumIt.eot');
+	src: url('CoreSansE-55MediumIt.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansE-55MediumIt.woff2') format('woff2'),
+		url('CoreSansE-55MediumIt.woff') format('woff'),
+		url('CoreSansE-55MediumIt.ttf') format('truetype'),
+		url('CoreSansE-55MediumIt.svg#CoreSansE-55MediumIt') format('svg');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI  Text Regular';
+	src: url('SFUIText-Regular.eot');
+	src: url('SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Regular.woff2') format('woff2'),
+		url('SFUIText-Regular.woff') format('woff'),
+		url('SFUIText-Regular.ttf') format('truetype'),
+		url('SFUIText-Regular.svg#SFUIText-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text RegularG3';
+	src: url('SFUIText-RegularG3.eot');
+	src: url('SFUIText-RegularG3.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-RegularG3.woff2') format('woff2'),
+		url('SFUIText-RegularG3.woff') format('woff'),
+		url('SFUIText-RegularG3.ttf') format('truetype'),
+		url('SFUIText-RegularG3.svg#SFUIText-RegularG3') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Core Sans A 55';
+	src: url('CoreSansA55Medium-Italic.eot');
+	src: url('CoreSansA55Medium-Italic.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansA55Medium-Italic.woff2') format('woff2'),
+		url('CoreSansA55Medium-Italic.woff') format('woff'),
+		url('CoreSansA55Medium-Italic.ttf') format('truetype'),
+		url('CoreSansA55Medium-Italic.svg#CoreSansA55Medium-Italic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI  Text Light';
+	src: url('SFUIText-Light.eot');
+	src: url('SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Light.woff2') format('woff2'),
+		url('SFUIText-Light.woff') format('woff'),
+		url('SFUIText-Light.ttf') format('truetype'),
+		url('SFUIText-Light.svg#SFUIText-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text bold';
+	src: url('SFUIText-Bold.eot');
+	src: url('SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Bold.woff2') format('woff2'),
+		url('SFUIText-Bold.woff') format('woff'),
+		url('SFUIText-Bold.ttf') format('truetype'),
+		url('SFUIText-Bold.svg#SFUIText-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text HeavyItalic';
+	src: url('SFUIText-HeavyItalic.eot');
+	src: url('SFUIText-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-HeavyItalic.woff2') format('woff2'),
+		url('SFUIText-HeavyItalic.woff') format('woff'),
+		url('SFUIText-HeavyItalic.ttf') format('truetype'),
+		url('SFUIText-HeavyItalic.svg#SFUIText-HeavyItalic') format('svg');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI  Text BoldItalicG3';
+	src: url('SFUIText-BoldItalicG3.eot');
+	src: url('SFUIText-BoldItalicG3.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-BoldItalicG3.woff2') format('woff2'),
+		url('SFUIText-BoldItalicG3.woff') format('woff'),
+		url('SFUIText-BoldItalicG3.ttf') format('truetype'),
+		url('SFUIText-BoldItalicG3.svg#SFUIText-BoldItalicG3') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI  Text SemiboldItalic';
+	src: url('SFUIText-SemiboldItalic.eot');
+	src: url('SFUIText-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-SemiboldItalic.woff2') format('woff2'),
+		url('SFUIText-SemiboldItalic.woff') format('woff'),
+		url('SFUIText-SemiboldItalic.ttf') format('truetype'),
+		url('SFUIText-SemiboldItalic.svg#SFUIText-SemiboldItalic') format('svg');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Core Sans E 15';
+	src: url('CoreSansE-15Thin.eot');
+	src: url('CoreSansE-15Thin.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansE-15Thin.woff2') format('woff2'),
+		url('CoreSansE-15Thin.woff') format('woff'),
+		url('CoreSansE-15Thin.ttf') format('truetype'),
+		url('CoreSansE-15Thin.svg#CoreSansE-15Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Core Sans E 55';
+	src: url('CoreSansE-55Medium.eot');
+	src: url('CoreSansE-55Medium.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansE-55Medium.woff2') format('woff2'),
+		url('CoreSansE-55Medium.woff') format('woff'),
+		url('CoreSansE-55Medium.ttf') format('truetype'),
+		url('CoreSansE-55Medium.svg#CoreSansE-55Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text Medium';
+	src: url('SFUIText-Medium.eot');
+	src: url('SFUIText-Medium.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Medium.woff2') format('woff2'),
+		url('SFUIText-Medium.woff') format('woff'),
+		url('SFUIText-Medium.ttf') format('truetype'),
+		url('SFUIText-Medium.svg#SFUIText-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Core Sans A 55';
+	src: url('CoreSansA55Medium.eot');
+	src: url('CoreSansA55Medium.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansA55Medium.woff2') format('woff2'),
+		url('CoreSansA55Medium.woff') format('woff'),
+		url('CoreSansA55Medium.ttf') format('truetype'),
+		url('CoreSansA55Medium.svg#CoreSansA55Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text BoldG3';
+	src: url('SFUIText-BoldG3.eot');
+	src: url('SFUIText-BoldG3.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-BoldG3.woff2') format('woff2'),
+		url('SFUIText-BoldG3.woff') format('woff'),
+		url('SFUIText-BoldG3.ttf') format('truetype'),
+		url('SFUIText-BoldG3.svg#SFUIText-BoldG3') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Core Sans A 65';
+	src: url('CoreSansA65Bold.eot');
+	src: url('CoreSansA65Bold.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansA65Bold.woff2') format('woff2'),
+		url('CoreSansA65Bold.woff') format('woff'),
+		url('CoreSansA65Bold.ttf') format('truetype'),
+		url('CoreSansA65Bold.svg#CoreSansA65Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Core Sans A 35';
+	src: url('CoreSansA35Light.eot');
+	src: url('CoreSansA35Light.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansA35Light.woff2') format('woff2'),
+		url('CoreSansA35Light.woff') format('woff'),
+		url('CoreSansA35Light.ttf') format('truetype'),
+		url('CoreSansA35Light.svg#CoreSansA35Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Core Sans A 55';
+	src: url('CoreSansA55Medium.eot');
+	src: url('CoreSansA55Medium.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansA55Medium.woff2') format('woff2'),
+		url('CoreSansA55Medium.woff') format('woff'),
+		url('CoreSansA55Medium.ttf') format('truetype'),
+		url('CoreSansA55Medium.svg#CoreSansA55Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Core Sans A 45';
+	src: url('CoreSansA45Regular.eot');
+	src: url('CoreSansA45Regular.eot?#iefix') format('embedded-opentype'),
+		url('CoreSansA45Regular.woff2') format('woff2'),
+		url('CoreSansA45Regular.woff') format('woff'),
+		url('CoreSansA45Regular.ttf') format('truetype'),
+		url('CoreSansA45Regular.svg#CoreSansA45Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
