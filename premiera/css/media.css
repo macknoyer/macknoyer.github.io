@@ -4,6 +4,10 @@
 @media only screen and (max-width : 1200px) {
 .nav_ul {
     text-align: right;
+    margin-top: 20px;
+}
+.s_comp_ul {
+    text-align: center;
 }
 .navigation ul.nav_ul li {
     padding: 6px;
@@ -78,14 +82,18 @@ a.doctor_appoint {
 .contact_txt_icon {
     font-size: 16px;
 }
+
+.footer_addr_block .footer_addr_block_txt {
+    font-size: 16px;
+}
+#slider3 .owl-dots {
+    display: block;
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 770px) {
 
-.footer_addr_block .footer_addr_block_txt {
-    font-size: 16px;
-}
 }
 
 /* Extra Small Devices, Phones */

@@ -22,6 +22,9 @@ dot.each(function() {
   $(this).text(index + 1);
   });
 
+$('.humb_but').click(function () {
+    $('.navigation').slideToggle();
+}); 
 
   var owl2 = $("#slider2");
   owl2.owlCarousel({ 
@@ -44,17 +47,20 @@ $('.prev_button').click(function() {
     owl2.trigger('prev.owl.carousel');
 });
 
-
   var owl3 = $("#slider3");
   owl3.owlCarousel({ 
-    nav:true, 
+    margin:10,
+    nav:false,
+    pagination:true,
     items:1,
-     singleItem: true,
       slideSpeed : 300,
-      rtl:true
+      singleItem: false,
+      pagination: false,
+      rewindSpeed: 500,
+      autoplay:true,
+      loop:false,
+    autoplayTimeout:5000
   });
-$('.humb_but').click(function () {
-    $('.navigation').slideToggle();
-}); 
+
 	});
 })(jQuery);

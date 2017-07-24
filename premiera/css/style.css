@@ -170,7 +170,7 @@ a.link_h:hover {
 	padding-top: 27px;
 	color: #5c5c5c;	
 }
-.owl-dots {
+#slider1 .owl-dots {
 	position: absolute;
 	bottom: 30px;
 	width: 930px;
@@ -178,7 +178,7 @@ a.link_h:hover {
 	margin-left: -465px;
 	padding: 0 30px;	
 }
-.owl-carousel .owl-dot {
+#slider1 .owl-dot {
 	width: 30px;
 	height: 30px;
 	font-family: 'Core Sans A 65';
@@ -193,10 +193,10 @@ a.link_h:hover {
 
 	margin-right: 248px;
 }
-.owl-carousel .owl-dot:last-child {
+#slider1 .owl-dot:last-child {
 	margin-right: 0;
 }
-.owl-carousel .owl-dot.active {
+#slider1 .owl-dot.active {
 	background-color: #2468b7;
 	color:#fff;
 	border:none;
@@ -521,4 +521,44 @@ section.underline {
 }
 .footer_map_block_wrap {
 	padding-top: 33px;
+}
+.feedb_date,.feedb_txt {
+	font-family: 'SF UI  Text Regular';	
+	font-size: 14px;
+	color: #747474;
+	line-height: 34px;
+}
+.feedb_txt {
+	line-height: 1.6;
+	overflow: hidden;
+	-o-text-overflow: ellipsis; 
+	text-overflow: ellipsis; 
+	height: 117px;
+	margin: 15px 0;
+	position: relative;
+
+}
+.feedb_txt:after {
+	content: "...";
+	position: absolute;
+	top: 100px;
+	left: 0;
+
+}
+#slider3 .owl-dots{
+	margin-top: 10px;
+}
+#slider3 .owl-dots .owl-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 99px;
+	display: inline-block;
+	margin:5px;
+	background-color: #b0cced;
+}
+#slider3 .owl-dots .owl-dot:first-child {
+	margin-left: 0;
+}
+#slider3 .owl-dots .owl-dot.active {
+	background-color: #e9943a;
 }
