@@ -10,7 +10,7 @@
       pagination: true,
       paginationNumbers: true,
       rewindSpeed: 500,
-      autoplay:true,
+      autoplay:false,
       loop:true,
     autoplayTimeout:5000
   });  
@@ -52,6 +52,9 @@ $('.prev_button').click(function() {
      singleItem: true,
       slideSpeed : 300,
       rtl:true
-  }); 
+  });
+$('.humb_but').click(function () {
+    $('.navigation').slideToggle();
+}); 
 	});
 })(jQuery);

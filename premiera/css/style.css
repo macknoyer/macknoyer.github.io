@@ -64,6 +64,9 @@ h3 {
 	margin-top: 25px;
 	border:none;
 }
+.logo:hover {
+	border:none;
+}
 .navigation {
 }
 .navigation ul.nav_ul li{
@@ -123,6 +126,20 @@ h3 {
 .contacts_header a.price_link_head {
 	color: #e9943a;
 }
+
+.humb_but {
+	border:none;
+	cursor: pointer;
+	float: right;
+	margin: 20px 0;
+}
+.humb_but:hover {
+	border:none;
+}
+.humb_but .fa{
+	color: #2468b7;
+	font-size: 41px;
+}
 .slider1_block {
 	width: 100%;
 	height:100%;
@@ -168,7 +185,7 @@ a.link_h:hover {
 	font-size: 14px;
 	border-radius: 999px;
 	float: left;
-	line-height: 28px;
+	line-height: 30px;
 	text-align: center;
 	border:1px solid #e6e6e6;
 	background-color: #fff;
@@ -202,6 +219,10 @@ a.link_h:hover {
 }
 .news_head_txt {
 padding-top: 30px;
+
+}
+.news_head_txt.contact_head_txt {
+	text-align: left;
 
 }
 .social_butns_header.contacts {
@@ -259,6 +280,7 @@ padding-top: 30px;
 }
 ul.uslugi_ul{
 	text-align: center;
+	padding-bottom: 25px;
 }
 ul.uslugi_ul li{
 	display: inline-block;
@@ -272,6 +294,62 @@ ul.uslugi_ul li{
 	text-align: center;
 
 }
+ul.uslugi_ul li:hover{
+	background:url(../img/_0006_broken-tooth.png) no-repeat center 19px !important;
+}
+ul.uslugi_ul li.li1:hover{
+	background:url(../img/_0004_molar.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li2:hover{
+	background:url(../img/_0002_X_RAY-256.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li3:hover{
+	background:url(../img/_0005_tooth-with-braces.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li4:hover{
+	background:url(../img/uslugi_ul6.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li5:hover{
+	background:url(../img/_0000_tooth.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li6:hover{
+	background:url(../img/_0001_fake-tooth.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li7:hover{
+	background:url(../img/_0003_syringe.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li8:hover{
+	background:url(../img/_0011_crowned-tooth.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li9:hover{
+	background:url(../img/_0010_tooth-with-diamond.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li10:hover{
+	background:url(../img/_0009_scalpel-1.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li11:hover{
+	background:url(../img/_0008_girl.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li12:hover{
+	background:url(../img/_0007_boy-with-sleeping-face.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+ul.uslugi_ul li.li13:hover{
+	background:url(../img/_0012_list.png) no-repeat center 19px !important;
+	background-color: rgba(36,104,183, 0.7) !important;
+}
+
 ul.uslugi_ul li a{
 	line-height: 39px;
 }
@@ -290,9 +368,8 @@ ul.uslugi_ul li:hover a{
 	border-bottom: 1px solid transparent;
 }
 a.link_h.link_uslugi {
-	width: 105px;
 	margin: 25px auto;
-	display: block;
+	display: inline-block;
 
 }
 a.doctor_appoint {

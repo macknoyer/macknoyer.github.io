@@ -2,26 +2,133 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+.nav_ul {
+    text-align: right;
+}
+.navigation ul.nav_ul li {
+    padding: 6px;
+    font-size: 16px;
+}
+a.doctor_appoint {
+    display: block;
+    border: none;
+    margin:15px 0;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.contact_links_block {
+    font-size: 12px;
+}
+.contact_txt_icon {
+    font-size: 14px;
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+.navigation {
+    display: none;
+    position: absolute;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    z-index: 10;
+    width: 100%;
+    right: 0px;
+    top: 70px;
+    padding: 15px 0;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(84,84,84,0.67);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(84,84,84,0.67);
+    box-shadow: 0px 1px 3px 0px rgba(84,84,84,0.67);      
+}
+.navigation ul.nav_ul {
+    background: #fff;
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
 
+.navigation ul.nav_ul li{
+    display: block; 
+    text-align: center;
+}
+.navigation ul.nav_ul li a{
+    border:none;
+}
+.navigation ul.nav_ul li a:hover{
+    border:none;
+}
+.social_butns_header {
+    clear:both;
+}
+.contacts_header {
+    padding: 0;
+}
+.owl-dots {
+    display: none;
+}
+.uslugi_wrap {
+    margin-top: 50px;
+}
+.s_comp_ul {
+    text-align: center;
+}
+.social_butns_header.footer_social {
+    display: block;
+}
+.contact_links_block {
+    font-size: 16px;
+}
+.contact_txt_icon {
+    font-size: 16px;
+}
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 770px) {
 
+.footer_addr_block .footer_addr_block_txt {
+    font-size: 16px;
+}
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 482px) {
+.slider1_inside {width: 350px;
+padding: 20px 20px 20px 20px;
+}
+a.link_h {font-size: 24px;}
 
+.social_butns_header.footer_social span {
+    display: block;
+    clear: both;
+    padding: 15px 0;
+}
+.news_wrap {
+    text-align: center;
+}
+.news_head_txt {
+    text-align: center;
+}
+.news_head_txt.contact_head_txt {
+    text-align: center;
+}
+#slider2 .link_h.link_news {
+    font-size: 14px;
+    border:none;
+}
+.social_butns_header {
+    display: none;
+}
+.contacts_header {
+    clear: both;
+}
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 362px) {
+
+
+
+.slider1_inside {
+    width: 270px;
+}
 
 }
 
