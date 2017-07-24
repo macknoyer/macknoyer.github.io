@@ -65,6 +65,7 @@ h3 {
 	background:url(../img/logo.png) no-repeat;
 	margin-top: 25px;
 	border:none;
+	margin-bottom: 25px;	
 }
 .logo:hover {
 	border:none;
@@ -468,8 +469,48 @@ a.doctor_appoint:hover {
 	width: 175px;
 	height: 110px;
 	border:none;
+	cursor: pointer;
+}
+.link_s_comp{
+	background: url(../img/link_s_comp_full.png) no-repeat 0px 0px;
 
+}
+.link_s_comp:hover{
+	background-image: url(../img/link_s_comp_full_hover.png);
 
+}
+.link_s_comp.link_s_comp2{
+	background-position: -195px 0px;
+}
+.link_s_comp.link_s_comp3{
+	background-position: -380px 0px;
+}
+.link_s_comp.link_s_comp4{
+	background-position: -566px 0px;
+}
+.link_s_comp.link_s_comp5{
+	background-position: -765px 13px;
+}
+.link_s_comp.link_s_comp6{
+	background-position: -951px 0px;
+}
+.link_s_comp.link_s_comp7{
+	background-position: 0px -108px;
+}
+.link_s_comp.link_s_comp8{
+	background-position:-195px -108px;
+}
+.link_s_comp.link_s_comp9{
+	background-position: -386px -108px;
+}
+.link_s_comp.link_s_comp10{
+	background-position: -566px -108px;
+}
+.link_s_comp.link_s_comp11{
+	background-position: -765px -96px;
+}
+.link_s_comp.link_s_comp12{
+	background-position: -951px -108px;
 }
 section.underline {
 	border-bottom: 1px solid #c3d8f1;
