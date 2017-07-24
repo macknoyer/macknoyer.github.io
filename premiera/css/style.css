@@ -24,7 +24,9 @@ a{
 color: #2468b7;	
 border-bottom: 1px solid #c3d8f1;
 }
-
+.row {
+	margin: 0;
+}
 ul, ol{
 	list-style:none;
 }
