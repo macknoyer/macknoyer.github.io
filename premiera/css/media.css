@@ -93,7 +93,12 @@ a.doctor_appoint {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 770px) {
-
+.cd-horizontal-timeline {
+    display: none;
+}   
+.mobile_slider {
+    display: block;
+}
 }
 
 /* Extra Small Devices, Phones */
