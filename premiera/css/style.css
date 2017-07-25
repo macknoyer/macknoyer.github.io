@@ -618,6 +618,9 @@ section.underline {
 .cd-horizontal-timeline .events-wrapper::before,.cd-horizontal-timeline .events-wrapper::after {
 	display: none;
 }
+.cd-horizontal-timeline .events-wrapper {
+	margin: 0;
+}
 .cd-horizontal-timeline .events {
 	height: 8px;
 }
@@ -666,11 +669,14 @@ section.underline {
 	padding: 0;
 }
 .cd-horizontal-timeline .timeline {
-bottom: -79px;
+bottom: 0px;
 z-index: 10;
 position: absolute;
 width: 930px;
 max-width: 100%;
 left: 50%;
 margin-left: -465px;
+}
+.cd-horizontal-timeline.loaded {
+	position: relative;
 }

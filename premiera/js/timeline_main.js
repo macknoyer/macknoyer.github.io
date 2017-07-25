@@ -90,11 +90,11 @@ jQuery(document).ready(function($){
 			newEvent.addClass('selected');
 			selectedDate.removeClass('selected');
 			updateOlderEvents(newEvent);
-			updateTimelinePosition(string, newEvent, timelineComponents);
+			updateTimelinePosition(string, newEvent, timelineComponents, timelineTotWidth);
 		}
 	}
 
-	function updateTimelinePosition(string, event, timelineComponents) {
+	function updateTimelinePosition(string, event, timelineComponents, timelineTotWidth) {
 		//translate timeline to the left/right according to the position of the selected event
 		var eventStyle = window.getComputedStyle(event.get(0), null),
 			eventLeft = Number(eventStyle.getPropertyValue("left").replace('px', '')),
@@ -141,8 +141,7 @@ jQuery(document).ready(function($){
 			timeSpanNorm = Math.round(timeSpanNorm) + 4,
 			totalWidth = timeSpanNorm*width;
 		timelineComponents['eventsWrapper'].css('width', totalWidth+'px');
-		updateFilling(timelineComponents['eventsWrapper'].find('a.selected'), timelineComponents['fillingLine'], totalWidth);
-		updateTimelinePosition('next', timelineComponents['eventsWrapper'].find('a.selected'), timelineComponents);
+		updateFilling(timelineComponents['timelineEvents'].eq(0), timelineComponents['fillingLine'], totalWidth);
 	
 		return totalWidth;
 	}
@@ -203,6 +202,16 @@ jQuery(document).ready(function($){
 
 	//based on http://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
 	function parseDate(events) {
+		var dateArrays = [];
+		events.each(function(){
+			var dateComp = $(this).data('date').split('/'),
+				newDate = new Date(dateComp[2], dateComp[1]-1, dateComp[0]);
+			dateArrays.push(newDate);
+		});
+	    return dateArrays;
+	}
+
+	function parseDate2(events) {
 		var dateArrays = [];
 		events.each(function(){
 			var singleDate = $(this),
