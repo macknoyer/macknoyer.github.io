@@ -22,7 +22,7 @@ a:hover, a:focus {
 
 a{
 color: #2468b7;	
-border-bottom: 1px solid #c3d8f1;
+border-bottom: 1px solid rgba(36,104,183,0.3);
 }
 .row {
 	margin: 0;
@@ -81,8 +81,7 @@ h3 {
 .navigation ul.nav_ul li a{
 	color:#2468b7;
 	cursor:pointer;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #c3d8f1;
+	padding-bottom: 8px;
 }
 .navigation ul.nav_ul li a:hover{
 	border-bottom: 1px solid transparent;
@@ -116,18 +115,22 @@ h3 {
 	font-family: 'Core Sans A 65';
 	line-height: 38px;
 	padding-top: 25px;
+	max-width: 265px;
 }
 .contacts_phone {
 	font-family: 'SF UI  Text bold';
 	color: #656565;
 }
 .contacts_header a{
-	display: block;
-	border:none;
+	display: inline-block;
 
 }
 .contacts_header a.price_link_head {
 	color: #e9943a;
+	border-bottom: 1px solid rgba(233,148,58,0.3);
+}
+.contacts_header a.price_link_head:hover {
+	border-bottom: 1px solid transparent;
 }
 
 .humb_but {
@@ -164,7 +167,6 @@ a.link_h {
 	color: #2468b7;	
 	display: inline;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #c3d8f1;
 }
 a.link_h:hover {
 	border-bottom: 1px solid transparent;
@@ -219,7 +221,7 @@ a.link_h:hover {
 	font-size: 18px;
 }
 .news_txt{
-	padding: 20px 0px 50px 0px;
+	padding: 20px 50px 50px 0px;
 	font-size: 16px;
 }
 .news_head_txt {
@@ -253,7 +255,6 @@ padding-top: 30px;
 .contact_link1 {
 	padding-bottom: 5px;
 	margin-right: 57px;
-	border-bottom: 1px solid #c3d8f1;
 }
 .contact_link1:hover {
 	border-bottom: 1px solid transparent;
@@ -261,7 +262,7 @@ padding-top: 30px;
 .contact_link1.link2 {
 	border-bottom-style: dotted;
 	color: #e9943a;
-	border-bottom-color: #e9943a; 
+	border-bottom-color: rgba(233,148,58,0.3); 
 }
 .contact_link1:last-child {
 	margin-right: 0;
@@ -297,6 +298,8 @@ ul.uslugi_ul li{
 	padding-top: 83px;
 	cursor: pointer;
 	text-align: center;
+	font-family: 'SF UI  Text Regular';
+	font-size: 16px;
 
 }
 ul.uslugi_ul li:hover{
