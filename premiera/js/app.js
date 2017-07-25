@@ -61,6 +61,8 @@ $('.prev_button').click(function() {
       loop:false,
     autoplayTimeout:5000
   });
-
+$(".employee_filter li").click(function(){
+  $(this).toggleClass('active');
+});
 	});
 })(jQuery);

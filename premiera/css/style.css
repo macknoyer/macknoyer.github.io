@@ -29,24 +29,26 @@ border-bottom: 1px solid rgba(36,104,183,0.3);
 ul, ol{
 	list-style:none;
 }
-h1,h2,h3,h4,h5 {
+h1,h2,h4,h5 {
 	font-family: 'Core Sans A 65';
 	font-size: 30px;
 	color: #2468b7;
-	text-align:center;
 	font-weight:normal;
 }
 h1 {
     margin: 0.17em 0;
 	margin-top: 0;
+
 }
 
-h2,h3,h5 {
+h2 {
+	display: inline-block;
 }
 h3 {
-	font-size: 60px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	font-size: 18px;
+	color: #2468b7;
+	padding-top: 10px;
+	padding-bottom: 17px;
 }
 .container-fluid {
 	padding: 0;
@@ -74,7 +76,8 @@ h3 {
 .logo:hover {
 	border:none;
 }
-.navigation {
+.navigation ul{
+	text-align: right;
 }
 .navigation ul.nav_ul li{
 	display:inline-block;
@@ -82,6 +85,9 @@ h3 {
 	font-family: 'Core Sans A 45';
 	font-size:18px;
 	padding-top: 25px;
+}
+.navigation ul.nav_ul li:last-child{
+	padding-right: 0;
 }
 .navigation ul.nav_ul li a{
 	color:#2468b7;
@@ -96,7 +102,7 @@ h3 {
 }
 .social_butns_header {
 	margin-top: 33px;
-	margin-left: 12px;
+	margin-left: 40px;
 	float: left;
 }
 .social_link {
@@ -116,7 +122,7 @@ line-height: 26px;
 .contacts_header {
 	float: right;
 	text-align: right;
-	padding-right: 20px;
+	padding-right: 0;
 	font-size: 18px;
 	font-family: 'Core Sans A 65';
 	line-height: 38px;
@@ -570,7 +576,7 @@ section.underline {
 .footer_map_block .map_link{
 	font-family: 'SF UI  Text Regular';
 	font-size: 15px;
-	color: #4a4a4a;
+	color: #878787;
 	display: block;
 	border:none;	
 }
@@ -692,6 +698,7 @@ overflow: hidden;
 .contacts_header.header2{
 	width: auto;
 	max-width: 100%;
+	margin-top: 15px;
 }
 .contacts_header.header2 a.contacts_phone {
 	display: inline-block;
@@ -710,6 +717,100 @@ overflow: hidden;
 	transition: none;
 }
 .social_butns_header.soc_header2 {
-	margin-top: 0px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+.doctor_appoint.employee_appoint {
+	float: right;
+	position: relative;
+	top: 0;
+	border-bottom: 1px solid rgba(233,148,58,0.3);
+	right: 0;
+}
+ul.employee_filter {
+	font-family: 'SF UI  Text Regular';	
+	font-size: 14px;
+	padding: 30px 0;
+}
+ul.employee_filter li {
+	padding: 10px;
+	padding-right: 40px;
+
+	border:1px solid transparent;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 10px;
+}
+ul.employee_filter li.active {
+	border:1px solid rgba(36,104,183,0.3);
+	background: url(../img/employee_filter.png) no-repeat right center;
+}
+ul.employee_filter li a{
+	border-bottom: 1px dotted rgba(36,104,183,0.3);
+}
+ul.employee_filter li a:hover{
+	border-bottom: 1px dotted transparent;
+}
+ul.employee_filter li.active a{
+	border-bottom: none;
+}
+ul.employee_filter li.drop_filter.active{
+	border:1px solid transparent;
+	background: none;	
+}
+ul.employee_filter li.drop_filter.active a {
+	border-bottom: 1px dotted rgba(36,104,183,0.3);
+
+}
+.employee_block {
+	min-height: 300px;
+	position: relative;
+	padding: 15px;
+	border: 1px solid transparent;
+	margin-bottom: 30px;
+
+}
+.employee_block:hover {
+	border: 1px solid rgba(36,104,183,0.3);
+	border-radius: 10px;
+	-webkit-transition: border ease 0.3s;
+	-moz-transition: border ease 0.3s;
+	transition: border ease 0.3s;
+
+
+}
+.employee_photo {
+	width: 174px;
+	height: 271px;
+	float:left;
+}
+.employee_info {
+	float: left;
+	max-width: 60%;
+	padding-left: 20px;
+}
+.employee_txt {
+	font-family: 'SF UI  Text Regular';
+	font-size: 14px;
+	color: #8c8c8c;
+	padding-bottom: 15px;
+}
+.employee_txt.txt2 {
+	font-family: 'SF UI  Text bold';
+	font-size: 16px;
+	color: #464646;
+}
+.employee_txt.txt3 {
+	max-height: 82px;
+	color: #464646;
+	overflow: hidden;
+
+}
+.doctor_appoint.employee_appoint.employee_block_link {
+	float: none;
+	display: inline-block;
+	margin-top: 15px;
+	font-family: 'Core Sans A 65';
+	
 }
 /********************EMPLOYEE END***********************/
