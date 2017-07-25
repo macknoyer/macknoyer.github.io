@@ -7,6 +7,8 @@
     <script type="text/javascript" src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/timeline_main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/timeline_style.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="js/vendor/jquery-ui/jquery-ui.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
@@ -56,12 +58,31 @@
 			</div>
 		</div>
 	</header>	
-	<section class="content_wrap">
-		<div class="container-fluid">
-			<div class="row">
-					<div class="col-md-12">
-					<div id="slider1" class="owl-carousel">
-						<div>
+<section class="cd-horizontal-timeline">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="16/01/2014" class="selected">1</a></li>
+					<li><a href="#0" data-date="21/01/2014">2</a></li>
+					<li><a href="#0" data-date="26/01/2014">3</a></li>
+					<li><a href="#0" data-date="01/02/2014">4</a></li>
+					<!-- other dates here -->
+				</ol>
+ 
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+ 
+	<div class="events-content">
+		<ol>
+			<li class="selected" data-date="16/01/2014">
 							<div class="slider1_block" style="background:url(img/slider1_img.png);">
 							<div class="container">
 								<div class="row">
@@ -75,8 +96,9 @@
 								</div>
 
 							</div>
-						</div>
-						<div>
+			</li>
+ 
+			<li data-date="21/01/2014">
 							<div class="slider1_block" style="background:url(img/slider1_img2.png);">
 							<div class="container">
 								<div class="row">
@@ -90,8 +112,9 @@
 								</div>
 
 							</div>
-						</div>
-						<div>
+			</li>
+ 
+			<li data-date="26/01/2014">
 							<div class="slider1_block" style="background:url(img/slider1_img3.png);">
 							<div class="container">
 								<div class="row">
@@ -105,8 +128,9 @@
 								</div>
 
 							</div>
-						</div>
-						<div>
+			</li>
+ 
+			<li data-date="01/02/2014">
 							<div class="slider1_block" style="background:url(img/slider1_img4.png) center;">
 							<div class="container">
 								<div class="row">
@@ -120,12 +144,12 @@
 								</div>
 
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+			</li>
+ 
+			<!-- other descriptions here -->
+		</ol>
+	</div> <!-- .events-content -->
+</section>	
 	<section class="news_contacts_wrap">
 		<div class="container">
 			<div class="row">
