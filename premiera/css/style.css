@@ -542,6 +542,7 @@ section.underline {
 	text-align: left;
 	float: none;
 	padding-bottom: 25px;
+	padding-top: 25px;
 }
 .footer_addr_block {
 	font-family: 'SF UI  Text Regular';
@@ -707,5 +708,8 @@ overflow: hidden;
 .navigation ul.nav_ul li a.active:hover{
 	border-bottom: 2px solid #2468b7;
 	transition: none;
+}
+.social_butns_header.soc_header2 {
+	margin-top: 0px;
 }
 /********************EMPLOYEE END***********************/
