@@ -6,7 +6,6 @@
 body {
 	overflow-x: hidden;
 	line-height: 1.5;
-
 }
 a, hover{
 	padding-bottom: 5px;
@@ -85,7 +84,7 @@ h3 {
 .navigation ul.nav_ul li a{
 	color:#2468b7;
 	cursor:pointer;
-	padding-bottom: 8px;
+	padding-bottom: 5px;
 }
 .navigation ul.nav_ul li a:hover{
 	border-bottom: 1px solid transparent;
@@ -685,3 +684,25 @@ overflow: hidden;
 .mobile_slider {
 	display: none;
 }
+/********************EMPLOYEE***********************/
+.contacts_header.header2{
+	width: auto;
+	max-width: 100%;
+}
+.contacts_header.header2 a.contacts_phone {
+	display: inline-block;
+	margin-right: 25px;	
+	border-bottom: 1px dotted rgba(101,101,101,0.3);
+}
+.contacts_header.header2 a.contacts_phone:hover {
+	border-bottom: 1px dotted transparent;
+}
+.nav_ul a.active{
+	font-family: 'Core Sans A 65';
+	border-bottom: 2px solid #2468b7;
+}
+.navigation ul.nav_ul li a.active:hover{
+	border-bottom: 2px solid #2468b7;
+	transition: none;
+}
+/********************EMPLOYEE END***********************/
