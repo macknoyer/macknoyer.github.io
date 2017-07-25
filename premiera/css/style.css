@@ -814,3 +814,58 @@ ul.employee_filter li.drop_filter.active a {
 	
 }
 /********************EMPLOYEE END***********************/
+
+
+
+/********************USLUGI***********************/
+
+.uslugi_block {
+	padding: 20px;
+}
+.uslugi_block:hover{
+	background-color: #5086c5;
+	-webkit-transition: all ease 0.3s;
+-moz-transition: all ease 0.3s;
+transition: all ease 0.3s;
+border-radius: 10px;
+
+}
+.uslugi_block:hover a{
+	font-family: 'SF UI  Text Semibold';
+	color: #fff;
+	border-bottom: none;
+	font-size: 20px;
+
+}
+.uslugi_block:hover .standart_text{
+	color: #fff;
+
+}
+.standart_text {
+	font-family: 'SF UI  Text Regular';
+	font-size: 16px;
+	padding-top: 30px;
+}
+.standart_text.txt2 {
+	padding-top: 20px;	
+}
+.uslugi_img {
+	float: left;
+	width: 54px;
+	margin-top: 20px;
+	height: 54px;
+	background-position: center !important;
+}
+.uslugi_txt{
+	max-width: 76%;
+	float: left;
+	padding-left: 20px;
+
+}
+.uslugi_link {
+	font-size: 16px;
+	font-family: 'SF UI  Text Regular';
+}
+/********************EMPLOYEE END***********************/
+
+
