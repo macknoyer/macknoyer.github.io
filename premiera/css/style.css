@@ -835,7 +835,8 @@ border-radius: 10px;
 	color: #fff;
 	border-bottom: none;
 	font-size: 20px;
-
+	margin-bottom: -11px;
+	display: block;
 }
 .uslugi_block:hover .standart_text{
 	color: #fff;
