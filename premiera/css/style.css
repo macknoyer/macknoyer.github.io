@@ -93,22 +93,23 @@ h3 {
 	color:white;
 }
 .social_butns_header {
-	margin-top: 60px;
+	margin-top: 33px;
 	margin-left: 12px;
 	float: left;
 }
 .social_link {
-	float: left;
-	margin: 5px;
-	width: 32px;
-	height: 32px;
-	border-radius: 999px;
-	background-color: #9cbfe8;
-	vertical-align: unset;
-	display: block;
-	font-size: 16px;
-	text-align: center;
-	line-height: 33px;
+float: left;
+margin: 5px;
+width: 24px;
+height: 25px;
+border-radius: 999px;
+background-color: #9cbfe8;
+vertical-align: unset;
+display: block;
+font-size: 15px;
+text-align: center;
+line-height: 26px;
+
 }
 .contacts_header {
 	float: right;
@@ -117,7 +118,6 @@ h3 {
 	font-size: 18px;
 	font-family: 'Core Sans A 65';
 	line-height: 38px;
-	padding-top: 25px;
 	max-width: 265px;
 }
 .contacts_phone {
@@ -577,7 +577,7 @@ section.underline {
 .feedb_date,.feedb_txt {
 	font-family: 'SF UI  Text Regular';	
 	font-size: 14px;
-	color: #464646;
+	color: #747474;
 	line-height: 34px;
 }
 .feedb_txt {
@@ -587,6 +587,7 @@ section.underline {
 	text-overflow: ellipsis; 
 	height: 116px;
 	margin: 15px 0;
+	color: #464646;
 	position: relative;
 
 }
