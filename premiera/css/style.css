@@ -61,11 +61,15 @@ h3 {
 	cursor:pointer;
 	display:block;
 	width:193px;
-	height:181px;
-	background:url(../img/logo.png) no-repeat;
+	height: 185px;
+	padding-top: 160px;
+	background:url(../img/logo.png) no-repeat top center;
 	margin-top: 25px;
 	border:none;
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
+	font-family: 'Core Sans A 45';
+	font-size: 14px;	
+	text-align: center;
 }
 .logo:hover {
 	border:none;
@@ -359,7 +363,7 @@ ul.uslugi_ul li.li13:hover{
 }
 
 ul.uslugi_ul li a{
-	line-height: 39px;
+	line-height: 32px;
 }
 ul.uslugi_ul li:hover {
 	color: #fff;
