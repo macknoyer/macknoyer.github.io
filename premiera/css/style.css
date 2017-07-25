@@ -127,6 +127,7 @@ h3 {
 }
 .contacts_header a{
 	display: inline-block;
+	padding-bottom: 0;
 
 }
 .contacts_header a.price_link_head {
