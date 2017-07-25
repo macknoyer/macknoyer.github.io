@@ -620,6 +620,7 @@ section.underline {
 }
 .cd-horizontal-timeline .events-wrapper {
 	margin: 0;
+	margin-left: -131px;
 }
 .cd-horizontal-timeline .events {
 	height: 8px;
@@ -672,10 +673,11 @@ section.underline {
 bottom: 0px;
 z-index: 10;
 position: absolute;
-width: 930px;
+width: 499px;
 max-width: 100%;
 left: 50%;
-margin-left: -465px;
+margin-left: -571px;
+overflow: hidden;
 }
 .cd-horizontal-timeline.loaded {
 	position: relative;
