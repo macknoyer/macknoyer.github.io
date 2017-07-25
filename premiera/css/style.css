@@ -818,16 +818,19 @@ ul.employee_filter li.drop_filter.active a {
 
 
 /********************USLUGI***********************/
-
+.standart_text.last_child {
+	padding-bottom: 40px;
+}
 .uslugi_block {
 	padding: 20px;
+	margin-bottom: 30px;
 }
 .uslugi_block:hover{
 	background-color: #5086c5;
 	-webkit-transition: all ease 0.3s;
 -moz-transition: all ease 0.3s;
 transition: all ease 0.3s;
-border-radius: 10px;
+border-radius: 5px;
 
 }
 .uslugi_block:hover a{
@@ -853,8 +856,8 @@ border-radius: 10px;
 .uslugi_img {
 	float: left;
 	width: 54px;
-	margin-top: 20px;
-	height: 54px;
+	margin-top: 10px;
+	height: 64px;
 	background-position: center !important;
 }
 .uslugi_txt{
@@ -866,6 +869,45 @@ border-radius: 10px;
 .uslugi_link {
 	font-size: 16px;
 	font-family: 'SF UI  Text Regular';
+}
+.uslugi_block:hover .uslugi_img {
+	background-image: url(../img/broken-tooth.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img2 {
+	background-image: url(../img/molar.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img3 {
+	background-image: url(../img/X_RAY.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img4 {
+	background-image: url(../img/tooth-with-braces.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img5 {
+	background-image: url(../img/uslugi_ul6.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img6 {
+	background-image: url(../img/tooth.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img7 {
+	background-image: url(../img/fake-tooth.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img8 {
+	background-image: url(../img/syringe.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img9 {
+	background-image: url(../img/crowned-tooth.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img10 {
+	background-image: url(../img/tooth-with-diamond.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img11 {
+	background-image: url(../img/scalpel-1.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img12 {
+	background-image: url(../img/girl.png) !important;
+}
+.uslugi_block:hover .uslugi_img.img13 {
+	background-image: url(../img/boy-with-sleeping-face.png) !important;
 }
 /********************EMPLOYEE END***********************/
 
