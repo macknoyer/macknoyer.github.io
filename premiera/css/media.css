@@ -172,6 +172,9 @@ ul.employee_filter li a.drop_filter {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 482px) {
+.news_txt {
+    padding-right: 0;
+}
 .slider1_inside {width: 350px;
 padding: 20px 20px 20px 20px;
 }
