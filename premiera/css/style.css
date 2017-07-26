@@ -1,7 +1,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	outline:none;
+	outline:none !important;
 }
 body {
 	overflow-x: hidden;
