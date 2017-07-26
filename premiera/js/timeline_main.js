@@ -6,11 +6,9 @@ current ++;
 $($('.events a')[current]).trigger('click');
 //if((current +1)%4 == 0)
 //$('.next').trigger('click');
-/*if(current > $('.events a').length) {
-current = 0;
-$('.prev').trigger('click');
-$('.prev').trigger('click');
-}*/
+if(current > $('.events a').length) {
+alert(current);
+}
 }, 4000);
 }
 
