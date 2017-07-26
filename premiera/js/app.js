@@ -23,7 +23,7 @@ dot.each(function() {
   });
 
 $('.humb_but').click(function () {
-    $('.navigation').slideToggle();
+    $(this).parent().children('.navigation').slideToggle();
 }); 
 
   var owl2 = $("#slider2");
@@ -45,6 +45,48 @@ $('.next_button').click(function() {
 // Go to the previous item
 $('.prev_button').click(function() {
     owl2.trigger('prev.owl.carousel');
+});
+
+
+  var owl4 = $("#slider4");
+  owl4.owlCarousel({ 
+    margin:0,
+    nav:true,
+    navText:false, 
+    items:4,
+      slideSpeed : 300,
+      singleItem: false,
+      pagination: false,
+      rewindSpeed: 500,
+      autoplay:true,
+      loop:true,
+    autoplayTimeout:5000,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },  
+        768:{
+            items:2,
+            nav:true
+        },
+        992:{
+            items:3,
+            nav:true
+        },
+        1100:{
+            items:4,
+            nav:true
+        }
+      }    
+  });  
+$('.next_button').click(function() {
+    owl4.trigger('next.owl.carousel');
+});
+// Go to the previous item
+$('.prev_button').click(function() {
+    owl4.trigger('prev.owl.carousel');
 });
 
   var owl3 = $("#slider3");

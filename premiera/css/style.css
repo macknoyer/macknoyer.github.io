@@ -50,6 +50,12 @@ h3 {
 	padding-top: 10px;
 	padding-bottom: 17px;
 }
+h4 {
+	font-family: 'SF UI  Text Semibold';
+	font-size: 18px;
+	color: black;
+	padding-top: 30px;
+}
 .container-fluid {
 	padding: 0;
 }
@@ -432,10 +438,10 @@ a.doctor_appoint:hover {
 #slider2 .owl-dots,#slider2 .owl-nav {
 	display: none;
 }
-#slider2 .link_h.link_news {
+#slider2 .link_h.link_news,#slider4 .link_h.link_news{
 	text-align: center;
 }
-#slider2 .doctor_apoint_txt {
+#slider2 .doctor_apoint_txt,#slider4 .doctor_apoint_txt {
 	font-family: 'SF UI  Text Regular';
 	color:#464646;
 	font-size: 14px;
@@ -909,6 +915,71 @@ border-radius: 5px;
 .uslugi_block:hover .uslugi_img.img13 {
 	background-image: url(../img/boy-with-sleeping-face.png) !important;
 }
-/********************EMPLOYEE END***********************/
+/********************USLUGI END***********************/
+
+
+
+/********************USLUGI_single***********************/
+
+.navigation.vertical ul.nav_ul {
+	text-align: left;
+
+}
+.navigation.vertical ul.nav_ul li{
+	display: block;
+	font-size: 16px;
+	padding: 12px;
+	padding-right: 0;
+}
+.navigation.vertical ul.nav_ul li a{
+	line-height: 29px;
+}
+.usluga_single_img {
+	width: 100%;
+	min-height: 564px;
+	background-size: cover;
+	margin-top: 30px;
+}
+.usluga_single_ul {
+	padding-top: 30px;
+	font-size: 16px;
+	font-family: 'SF UI  Text Regular';	
+}
+.usluga_single_ul li{
+	padding: 12px 100px 12px 15px;
+	margin-left: 65px;
+	list-style-image: url(../img/usluga_single_list.png);
+}
+.usluga_single_table {
+	width: 100%;
+	margin-top: 15px;
+	font-size: 16px;
+	font-family: 'SF UI  Text Regular';
+}
+.white_row.blue_row{
+	background-color: #dee8f4;
+}
+.white_row span{
+	display: inline-block;
+	padding: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+}
+.white_row span.left_cell{
+	float: left;
+}
+.white_row span.right_cell{
+	float: right;
+}
+#slider4 {
+	text-align: center;
+
+}
+.doctor_appoint_wrap.uslugi_slider {
+	margin:30px 0;
+}
+
+/********************USLUGI_single END***********************/
 
 

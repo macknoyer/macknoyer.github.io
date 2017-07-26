@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-	function timeLineAutoPlay(){
+	/*function timeLineAutoPlay(){
 var current = 0;
 setInterval(function(){
 current ++;
@@ -14,7 +14,7 @@ $('.prev').trigger('click');
 }, 4000);
 }
 
-timeLineAutoPlay();
+timeLineAutoPlay();*/
 	var timelines = $('.cd-horizontal-timeline'),
 		eventsMinDistance = 120;
 

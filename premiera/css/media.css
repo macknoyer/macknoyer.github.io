@@ -63,6 +63,23 @@ h2 {
 .navigation ul.nav_ul li a:hover{
     border:none;
 }
+.navigation.vertical ul.nav_ul li a{
+    border-bottom: 1px solid rgba(36,104,183,0.3);
+}
+.navigation.vertical ul.nav_ul li a:hover{
+    border-bottom: 1px solid rgba(36,104,183,0.3);
+}
+.navigation.vertical {
+    display: block;
+    position: relative;
+    top: 0px;   
+    box-shadow: none; 
+    z-index: 1;  
+}
+.navigation.vertical ul.nav_ul li{
+    display: inline-block; 
+    text-align: center;
+}
 .social_butns_header {
     clear:both;
 }
@@ -139,6 +156,17 @@ ul.employee_filter li a.drop_filter {
 }
 /******EMPLOYEE 768 END*********/
 
+
+/******USLUGA_SINGLE 768*********/
+
+.usluga_single_ul li {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+
+/******EMPLOYEE 768 END*********/
+
 }
 
 
@@ -180,6 +208,24 @@ a.link_h {font-size: 24px;}
 }
 .employee_info {max-width: 50%;}
 /******EMPLOYEE 480 END*********/
+
+/******USLUGI_SINGLE 480*********/
+
+.doctor_appoint_wrap.uslugi_slider .next_button, .doctor_appoint_wrap.uslugi_slider .prev_button {
+    top: 76px;
+    left: 0;
+}
+.doctor_appoint_wrap.uslugi_slider .next_button{
+    margin-left: 45px;
+    margin-right: 0;
+}
+.doctor_appoint_wrap.uslugi_slider .prev_button{
+}
+a.doctor_appoint:hover {
+    border:none;
+}
+
+/******USLUGI_SINGLE 480 END*********/
 }
 
 /* Custom, iPhone Retina */
