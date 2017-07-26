@@ -1,11 +1,16 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	outline:none !important;
+	outline:none;
 }
 body {
 	overflow-x: hidden;
 	line-height: 1.5;
+}
+ a:hover,
+ a:focus,
+ a:active {
+    outline: none!important;
 }
 a, hover{
 	padding-bottom: 5px;
