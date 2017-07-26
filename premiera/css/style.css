@@ -988,3 +988,67 @@ border-radius: 5px;
 /********************USLUGI_single END***********************/
 
 
+
+/********************EMPLOYEE_single END***********************/
+
+.standart_text.grey_txt {
+	color: #8c8c8c;
+}
+.no_padding {
+	padding-top: 10px;
+}
+.more_padding {
+	padding-top:60px; 
+}
+.usluga_single_ul.ul_no_margin li{
+	margin-left: 17px;
+}
+.doctor_img_big {
+	width: 100%;
+	height: 370px;
+	margin: 12px 0;
+}
+.sertif_gal_link:first-child {
+	display: inline-block;
+}
+.sertif_gal_link {
+	display: none;
+	font-family: 'SF UI  Text bold';
+	font-size: 18px;
+	color: #656565;
+	border-bottom: 1px dotted rgba(101,101,101,0.3);
+}
+.lb-data .lb-caption {
+	display: none !important;
+}
+#lbCenter, #lbBottomContainer {
+	overflow: visible;
+}
+.lb-data .lb-number {
+	position: absolute;
+	margin-left: -4px;
+	top: -25px;
+	color: white;
+	font-family: 'Core Sans A 65';
+	font-size: 19px;
+}
+.lb-nav a.lb-prev,.lb-nav a.lb-next {
+	width: 57px;
+	height: 57px !important;
+	top: 50%;
+	position: absolute;
+	opacity: 1;
+}
+.lb-nav a.lb-prev,.lb-nav a.lb-prev:hover {
+	background: url(../img/prev_doctor.png) no-repeat;
+	border: none;
+	margin-left: -90px;
+}
+.lb-nav a.lb-next,.lb-nav a.lb-next:hover {
+	background: url(../img/next_doctor.png) no-repeat;
+	border: none;
+	margin-right: -90px;
+}
+/********************EMPLOYEE_single END***********************/
+
+

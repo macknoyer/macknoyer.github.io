@@ -28,6 +28,15 @@ a.doctor_appoint {
     font-size: 14px;
 }
 .social_butns_header {margin-left: 77px;}
+
+
+/******EMPLOYEE_single 1200 *********/
+.doctor_img_big {
+    width: 90%;
+}
+
+/******EMPLOYEE_single END 1200 *********/
+
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
@@ -120,6 +129,20 @@ ul.employee_filter {
 }
 
 /******EMPLOYEE 992 END*********/
+
+
+/******EMPLOYEE_single 992 END*********/
+.doctor_appoint.employee_appoint {
+    margin:15px 0;
+    float: none;
+    border-bottom: none;
+}
+.doctor_appoint.employee_appoint:hover {
+    border-bottom: none;
+}
+/******EMPLOYEE_single 992 END*********/
+
+
 }
 
 /* Small Devices, Tablets */
@@ -130,7 +153,6 @@ ul.employee_filter {
 .mobile_slider {
     display: block;
 }
-
 
 /******EMPLOYEE 768*********/
 ul.employee_filter {
@@ -165,7 +187,24 @@ ul.employee_filter li a.drop_filter {
 }
 
 
-/******EMPLOYEE 768 END*********/
+/******USLUGA_SINGLE 768 END*********/
+
+
+/******EMPLOYEE_single 768*********/
+
+.lb-nav a.lb-prev,.lb-nav a.lb-prev:hover {
+    left: 10px;
+    margin:0;    
+}
+.lb-nav a.lb-next,.lb-nav a.lb-next:hover {
+    right: 10px;
+    margin:0;    
+}
+.lb-nav a.lb-prev,.lb-nav a.lb-next {
+    bottom: 0;
+    top: 364px;
+}
+/******EMPLOYEE_single 768 END*********/
 
 }
 
