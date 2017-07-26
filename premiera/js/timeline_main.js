@@ -7,8 +7,8 @@ $($('.events a')[current]).trigger('click');
 //if((current +1)%4 == 0)
 //$('.next').trigger('click');
 if(current > $('.events a').length) {
-current = 0;
-$('.prev').trigger('click');
+current = -1;
+$('timeline.prev').trigger('click');
 }
 }, 4000);
 }
