@@ -143,6 +143,35 @@ ul.employee_filter {
 /******EMPLOYEE_single 992 END*********/
 
 
+/******PACIENT 992*********/
+
+.pacient_link_block {
+    text-align: center;
+    margin-bottom: 25px;
+margin-top: 25px;
+    background-position:top center !important;
+
+}
+.pacient_menu {
+    text-align: left;
+}
+.pacient_menu li {
+    padding-left: 0;
+}
+.white_row span {
+    padding-left: 0;
+    padding-right: 0;
+}
+.white_row span.left_cell{
+    max-width: 70%;
+}
+.border_top {
+    padding-right: 20px;
+}
+
+/******PACIENT 992 END*********/
+
+
 }
 
 /* Small Devices, Tablets */
@@ -206,6 +235,19 @@ ul.employee_filter li a.drop_filter {
 }
 /******EMPLOYEE_single 768 END*********/
 
+
+/******PACIENT 768 *********/
+
+h4.border_top {
+    font-size: 16px;
+    padding-right: 10px;
+}
+.pacient_desc {
+    padding-right:10px;
+}
+/******PACIENT 768 *********/
+
+
 }
 
 
@@ -268,6 +310,27 @@ a.doctor_appoint:hover {
 }
 
 /******USLUGI_SINGLE 480 END*********/
+
+/******PACIENT 480 *********/
+
+.white_row span.left_cell {
+    max-width: 50%;
+}
+.usluga_single_table.no_margin {
+    font-size: 14px;
+}
+h4.border_top {
+    font-size: 14px;
+    word-break: break-all;
+}
+.pacient_desc {
+    font-size: 14px;
+}
+.border_top {
+    padding-right: 0px;
+}
+
+/******PACIENT 480 END*********/
 }
 
 /* Custom, iPhone Retina */
@@ -286,6 +349,22 @@ h2 {
     margin-right: 0;
 }
 /******EMPLOYEE 320 END*  ********/
+
+
+.usluga_single_table.no_margin {
+    font-size: 12px;
+}
+/******PACIENT 320 *  ********/
+
+h4.border_top {
+    font-size: 12px;
+}
+.pacient_desc {
+    font-size: 12px;
+}
+
+
+/******PACIENT 320 END*  ********/
 }
 
 

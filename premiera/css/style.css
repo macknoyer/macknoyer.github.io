@@ -49,6 +49,10 @@ h1 {
 h2 {
 	display: inline-block;
 }
+h2.center {
+	text-align: center;
+	display: block;
+}
 h3 {
 	font-size: 18px;
 	color: #2468b7;
@@ -1050,5 +1054,101 @@ border-radius: 5px;
 	margin-right: -90px;
 }
 /********************EMPLOYEE_single END***********************/
+
+/********************PACIENT***********************/
+.pacient_link_block {
+	text-align: center;
+	margin-bottom: 340px;
+margin-top: 130px;
+	background-position:top center !important;
+
+}
+.pacient_link {
+	display: inline-block;
+	padding-top: 60px;
+	margin:0 auto;
+}
+.pacient_menu {
+	text-align: right;
+
+}
+.pacient_menu li{
+	display: inline-block;
+	padding: 14px;
+	font-family: 'Core Sans A 45';
+	font-size: 16px;
+
+}
+.pacient_menu li:last-child{
+	padding-right:0; 
+
+}
+.dotted_link {
+	border-bottom:1px dotted rgba(36,104,183,0.3);
+}
+.dotted_link:hover {
+	border-bottom:1px dotted transparent;
+}
+.border_top.first{
+	margin-top: 30px;
+}
+.border_top {
+	border-top: 1px solid #d0d0d0;
+	padding-top: 10px;
+}
+.pacient_desc {
+	font-family: 'SF UI  Text LightItalic';
+	font-size: 15px;
+	padding-top: 13px;
+	padding-bottom: 9px;
+	color: #787878;
+}
+.white_row.border.first{
+	margin-top: 30px;
+}
+.white_row.border {
+	border-top: 1px solid #d0d0d0; 
+}
+.white_row.border.border_last {
+	border-bottom: 1px solid #d0d0d0; 
+	margin-bottom: 90px;
+}
+.usluga_single_table.no_margin {
+	margin-top: 0;
+}
+.white_row.border span.right_cell {
+	padding-right: 0;
+}
+.recomend_block {
+	position: relative;
+	width: 97%;
+	height: 421px;
+	margin-top: 25px;
+}
+.recomend_block a.recomend_block_link{
+	position: absolute;
+	max-height: 100px;
+	height: 100%;
+	display: block;
+	font-family: 'Core Sans A 35';
+	color: #fff;
+	font-size: 22px;
+	bottom: 0;
+	border: none;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 20px;
+	background-color: rgba(36,104,183,0.8);
+}
+.recomend_block:hover a.recomend_block_link{
+	border: none;
+	max-height: 421px;
+	-webkit-transition:max-height 0.7s,padding-top 0.7s;
+	transition:max-height 0.7s,padding-top 0.7s;
+	padding-top: 31%;
+	font-family: 'SF UI  Text BoldG3';
+	font-size: 20px;
+}
+/********************PACIENT END***********************/
 
 
