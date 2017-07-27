@@ -245,6 +245,13 @@ h4.border_top {
 .pacient_desc {
     padding-right:10px;
 }
+
+.recomend_block a.recomend_block_link {
+    font-size: 18px;
+}
+.recomend_block:hover a.recomend_block_link {
+    font-size: 16px;
+}
 /******PACIENT 768 *********/
 
 
@@ -329,7 +336,6 @@ h4.border_top {
 .border_top {
     padding-right: 0px;
 }
-
 /******PACIENT 480 END*********/
 }
 
@@ -363,6 +369,12 @@ h4.border_top {
     font-size: 12px;
 }
 
+.recomend_block a.recomend_block_link {
+    font-size: 14px;
+}
+.recomend_block:hover a.recomend_block_link {
+    font-size: 12px;
+}
 
 /******PACIENT 320 END*  ********/
 }
