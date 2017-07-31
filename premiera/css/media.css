@@ -252,9 +252,45 @@ h4.border_top {
 .recomend_block:hover a.recomend_block_link {
     font-size: 16px;
 }
-/******PACIENT 768 *********/
+/******PACIENT 768 END*********/
+
+/******REVIEW & CONTACTS 768 *********/
 
 
+.news_wrap.contacts_wrap {
+    padding:5px;
+    text-align: left;
+}
+.news_wrap.contacts_wrap .contact_txt_icon{
+    font-size: 10px;
+}
+.news_wrap.contacts_wrap .contact_txt_icon::before {
+    display: none;
+}
+.news_wrap.contacts_wrap .contact_links_block{
+    font-size: 12px;
+    padding:5px;
+}
+.tabs_caption li,.tabs_caption li.active {
+    min-height: 0;
+    display: inline-block;
+    width: auto;
+}
+
+h2.padding_left {
+    padding: 0;
+}
+.social_butns_header.contacts_social {
+    margin: 0;
+}
+.tabs_caption {
+    text-align: center;
+}
+.tabs_caption li:first-child,.tabs_caption li:last-child {
+    margin-top: 25px;
+    margin-bottom:0;
+}
+/******REVIEW & CONTACTS 768 END*********/
 }
 
 
@@ -334,9 +370,18 @@ h4.border_top {
     font-size: 14px;
 }
 .border_top {
-    padding-right: 0px;
+    padding: 0px;
 }
 /******PACIENT 480 END*********/
+
+
+/******REVIEW & CONTACTS 480 *********/
+
+
+/******REVIEW & CONTACTS 480 END*********/
+
+
+
 }
 
 /* Custom, iPhone Retina */

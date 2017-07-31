@@ -106,5 +106,10 @@ $('.prev_button').click(function() {
 $(".employee_filter li").click(function(){
   $(this).toggleClass('active');
 });
+    $('ul.tabs_caption').on('click', 'li:not(.active)', function() {
+      $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('.row').children('.col-md-8').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    }); 
 	});
 })(jQuery);
