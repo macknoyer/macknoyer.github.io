@@ -1301,7 +1301,7 @@ margin-top: 130px;
     bottom: 0px;
     left: 0px;
     z-index: 280;
-	min-width: 1200px;
+	min-width: 320px;
 }
 
 #background_popup {
@@ -1321,7 +1321,7 @@ margin-top: 130px;
     /*box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.2);*/
 	position:absolute;
 	left: 50%;
-	margin-left:-390px !important;
+	margin-left:-390px;
 	border-radius: 5px;
 	margin-top: 5%;
 	font-family: 'SF UI  Text Regular';

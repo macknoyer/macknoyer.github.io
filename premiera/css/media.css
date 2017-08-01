@@ -172,6 +172,20 @@ margin-top: 25px;
 /******PACIENT 992 END*********/
 
 
+/******POPUP 992*********/
+
+
+.popup {
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    margin: 0;
+    width: 100%;
+}
+
+/******POPUP 992 END*********/
+
+
 }
 
 /* Small Devices, Tablets */
@@ -375,10 +389,29 @@ h4.border_top {
 /******PACIENT 480 END*********/
 
 
-/******REVIEW & CONTACTS 480 *********/
+/******POPUP 480 *********/
 
+.popup_block_h3,input.css-checkbox[type="checkbox"]:checked + label.css-label, input.css-checkbox[type="checkbox"] + label.css-label {
+    float: none;
 
-/******REVIEW & CONTACTS 480 END*********/
+    max-width:100%;
+}
+input.css-checkbox[type="checkbox"] + label.css-label {
+}
+#wrapper_popup {
+    overflow-y: auto;
+}
+.popup_form,.popup_form_right,.button_popup,.captcha_block {
+    float: none;
+}
+.button_popup {
+    margin-top: 10px;   
+    margin-bottom: 10px;   
+}
+.popup_input_txt {
+    width: 100%;
+}
+/******POPUP 480 END*********/
 
 
 

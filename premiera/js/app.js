@@ -140,7 +140,7 @@ function popup_open(name_popup){
  jQuery("#wrapper_popup").fadeIn(0);
  jQuery("#background_popup").fadeIn(0);
  jQuery("#background_popup").css({"height": "auto"});
- jQuery("#"+name_popup).css({"display": "block", "top": "0px", "margin-left":"auto"});
+ jQuery("#"+name_popup).css({"display": "block", "top": "0px"});
  jQuery('body').addClass('modal-open');
 }
 
