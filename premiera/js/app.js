@@ -105,11 +105,48 @@ $('.prev_button').click(function() {
   });
 $(".employee_filter li").click(function(){
   $(this).toggleClass('active');
+ }); 
+
+$(".popup_input_txt").focus(function() {
+  $(this).prev('label').fadeIn();
 });
-    $('ul.tabs_caption').on('click', 'li:not(.active)', function() {
+$(".popup_input_txt").focusout(function() {
+  $(this).prev('label').fadeOut();
+});
+$(".popup_form_textarea").focus(function() {
+  $(this).prev('label').fadeIn();
+});
+$(".popup_form_textarea").focusout(function() {
+  $(this).prev('label').fadeOut();
+});
+
+    /*$('ul.tabs_caption').on('click', 'li:not(.active)', function() {
       $(this)
           .addClass('active').siblings().removeClass('active')
           .closest('.row').children('.col-md-8').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     }); 
+    $( "#ask_quist" ).dialog({
+      autoOpen: false,
+      modal: true,
+      draggable: false,
+      minWidth: 200
+    });
+    $( "#ask_quist_link" ).on( "click", function() {
+      $( "#ask_quist" ).dialog( "open" );
+    });*/
 	});
 })(jQuery);
+function popup_open(name_popup){
+ jQuery("#wrapper_popup").fadeIn(0);
+ jQuery("#background_popup").fadeIn(0);
+ jQuery("#background_popup").css({"height": "auto"});
+ jQuery("#"+name_popup).css({"display": "block", "top": "0px", "margin-left":"auto"});
+ jQuery('body').addClass('modal-open');
+}
+
+function popup_close(){
+ jQuery("#wrapper_popup").fadeOut(0);
+ jQuery("#background_popup").fadeOut(0);
+ jQuery(".popup").fadeOut(0);
+ jQuery('body').removeClass('modal-open');
+}

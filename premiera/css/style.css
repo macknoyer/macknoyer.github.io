@@ -333,9 +333,24 @@ ul.uslugi_ul li{
 	vertical-align: top;
 	padding-top: 83px;
 	cursor: pointer;
+	position: relative;
 	text-align: center;
 	font-family: 'SF UI  Text Regular';
 	font-size: 16px;
+
+}
+ul.uslugi_ul li a.uslugi_li_link_absolute{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding:0;
+	border: none;
+
+}
+ul.uslugi_ul li a.uslugi_li_link_absolute:hover{
+	border: none;
 
 }
 ul.uslugi_ul li:hover{
@@ -1272,5 +1287,148 @@ margin-top: 130px;
 	height: 730px;
 }
 /********************REVIEW END***********************/
+
+
+/********************MODAL ***********************/
+
+#wrapper_popup{
+	display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 280;
+	min-width: 1200px;
+}
+
+#background_popup {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 280;
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+}
+.popup {
+    display: none;
+    width: 780px;
+    z-index: 299;
+    background: #FFF none repeat scroll 0% 0%;
+    /*box-shadow: 0px 0px 8rem rgba(0, 0, 0, 0.2);*/
+	position:absolute;
+	left: 50%;
+	margin-left:-390px !important;
+	border-radius: 5px;
+	margin-top: 5%;
+	font-family: 'SF UI  Text Regular';
+}
+.popup_close {
+    position: absolute;
+	top: 20px;
+	width: 22px;
+	height: 22px;
+	right: 20px;
+
+    cursor: pointer;
+    z-index: 110;
+	background: url(../img/disk_pappers_popup_close.png) no-repeat;
+	border:none;
+}
+.popup_close:hover {
+	border:none;
+}
+.popup_block {
+	padding: 30px;
+	padding-top: 45px;
+}
+.popup_block:last-child {
+	padding: 30px;
+	padding-top: 0;
+}
+.popup_block.padding_bottom {
+	padding-bottom: 0px;
+}
+.popup_block_h3 {
+	float: left;
+}
+input.css-checkbox[type="checkbox"]:checked + label.css-label,input.css-checkbox[type="checkbox"] + label.css-label {
+	float: right;
+	max-width: 50%;
+	margin-top: 17px;
+	font-size: 12px;
+}
+.politica_link {
+	font-size: 12px;
+	padding-bottom: 0;
+}
+.popup_border_bottom {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	height: 1px;
+	border-top: 1px solid rgba(36,104,183,0.3);
+}
+.popup_input_txt {
+	font-size: 14px;
+	color: #2468b7;
+	width: 330px;
+	border:1px solid rgba(36,104,183,0.3);
+	padding: 12px;
+	margin-bottom: 23px;	
+	position: relative;	
+}
+.popup_input_txt:focus {
+	border:1px solid #2468b7;
+}
+.popup_form {
+	float: left;
+	width: 49%;
+}
+.popup_form_right {
+	float: left;
+	width: 49%;
+	position: relative;
+}
+.popup_form_textarea {
+	border:1px solid rgba(36,104,183,0.3);
+	padding: 12px;
+	color: #2468b7;
+	text-align: left;
+	resize: none;
+	width: 100%;
+	max-height: 187px;
+
+}
+.popup_input_label,.popup_textarea_label {
+	font-size: 12px;
+	color: #2468b7;
+	position: absolute;
+	left: 30px;
+	margin-top: -20px;
+}
+.popup_textarea_label {
+	left: 0;
+
+}
+.captcha_block {
+	float: right;
+	width:176px;
+	height: 53px;
+}
+.button_popup {
+	float: right;
+	width: 153px;
+	height: 43px;
+	margin-right: 13px;
+	border:1px solid #e9943a;
+	color:#e9943a;
+	background: none;
+	border-radius: 5px;
+}
+/********************MODAL END***********************/
+
 
 
