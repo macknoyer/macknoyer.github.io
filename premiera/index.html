@@ -14,12 +14,53 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/checkbox_style.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
 	<link rel="stylesheet" type="text/css" href="css/media.css" />
 
 </head>
 <body>
+<div id="wrapper_popup">
+<div id="background_popup" onclick="popup_close()"></div>
+<div class="popup" id="popup1">
+<a class="popup_close" onclick="popup_close()"></a>
+	<div class="popup_block clearfix">
+			<h3 class="popup_block_h3">Задать вопрос</h3>
+
+			<input id="checkbox2" class="css-checkbox" checked="checked" type="checkbox">
+			<label for="checkbox2" name="checkbox2_lbl" class="css-label lite-orange-check">Согласен с <a href="#" class="politica_link">политикой конфеденциальностии правилами обработки персональных данных</a></label>
+	</div>
+		<div class="popup_border_bottom clearfix"></div>
+	<div class="popup_block padding_bottom clearfix">
+		<div class="popup_form">
+		<div class="popup_form_block">
+		<label class="popup_input_label" for="" style="display: none;">Ваше имя*</label>
+			<input class="popup_input_txt" type="text" placeholder="Ваше имя*" />
+		</div>	
+		<div class="popup_form_block">
+		<label class="popup_input_label" for="" style="display: none;">Номер телефона*</label>
+			<input class="popup_input_txt" type="text" placeholder="Номер телефона*"/>
+		</div>
+		<div class="popup_form_block">
+		<label class="popup_input_label" for="" style="display: none;">Email</label>
+			<input class="popup_input_txt" type="text" placeholder="Email"/>
+		</div>	
+		</div>	
+		<div class="popup_form_right">
+		<label class="popup_textarea_label" for="" style="display: none;">Ваш Вопрос*</label>
+			<textarea class="popup_form_textarea" name="Ваш Вопрос" id="" cols="1" rows="10" placeholder="Ваш Вопрос*">
+				
+			</textarea>
+		</div>
+	</div>
+	<div class="popup_block clearfix">	
+		<input type="submit" class="button_popup" value="Задать вопрос" />
+
+		<div class="captcha_block">CAPTCHA</div>
+	</div>
+</div>
+</div>	
 	<header>
 		<div class="container">
 			<div class="row">
@@ -49,7 +90,7 @@
 							</div>
 							<div class="contacts_header">
 								<p class="contacts_phone">+7 (347) 286-93-93</p>
-								<a href="#" class="order_call">Заказать обратный звонок</a>
+								<a href="javascript:;" onclick="popup_open('popup1')" class="order_call">Заказать обратный звонок</a>
 								<a href="#" class="price_link_head">Прайс-лист</a>
 							</div>
 						</div>
