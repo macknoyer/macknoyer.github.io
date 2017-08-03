@@ -347,6 +347,16 @@ ul.uslugi_ul li a.uslugi_li_link_absolute{
 	left: 0;
 	padding:0;
 	border: none;
+	padding-top: 82px;
+
+}
+ul.uslugi_ul li a.uslugi_li_link_absolute p {
+	padding-bottom: 5px;
+	display: inline;
+	border-bottom:1px solid rgba(36,104,183,0.3);
+}
+ul.uslugi_ul li a.uslugi_li_link_absolute:hover p{
+	border-bottom:none;
 
 }
 ul.uslugi_ul li a.uslugi_li_link_absolute:hover{
