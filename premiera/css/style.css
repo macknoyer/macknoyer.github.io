@@ -73,6 +73,30 @@ h4 {
 	color: black;
 	padding-top: 30px;
 }
+ul.breadcrumb {
+    padding-left:35px;
+    padding-top: 20px;
+	clear: both;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    color: #b7b7b7;
+    line-height: 24px;
+}
+ul.breadcrumb li+li:before {
+    padding: 0px;
+    color: #b7b7b7;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #b7b7b7;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(183,183,183,0.5);
+}
+ul.breadcrumb li a:hover {
+     border-bottom:1px solid transparent;
+}
 .container-fluid {
 	padding: 0;
 }
@@ -247,6 +271,9 @@ a.link_h:hover {
 	padding: 21px 0px 20px 0px;
 	display: block;
 	color: #464646;
+}
+.date_mark.date_mark_head {
+	padding: 21px 0px 0px 0px;
 }
 .link_h.link_news,.news_txt,.contact_txt_icon,.contact_link1 {
 	font-family: 'SF UI  Text Regular';
@@ -997,12 +1024,17 @@ border-radius: 5px;
 .navigation.vertical ul.nav_ul li a{
 	line-height: 29px;
 }
-.usluga_single_img {
+.single_img {
 	width: 100%;
 	min-height: 564px;
 	background-size: cover;
 	margin-top: 30px;
 }
+.single_img img{
+	width: 100%;
+	height: 100%;
+}
+
 .usluga_single_ul {
 	padding-top: 30px;
 	font-size: 16px;
@@ -1438,6 +1470,11 @@ input.css-checkbox[type="checkbox"]:checked + label.css-label,input.css-checkbox
 	color:#e9943a;
 	background: none;
 	border-radius: 5px;
+}
+/********************MODAL END***********************/
+/********************MODAL END***********************/
+.usluga_single_img.news_single_img {
+	margin-bottom: 30px;
 }
 /********************MODAL END***********************/
 

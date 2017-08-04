@@ -8,61 +8,18 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/timeline_main.js"></script>
-    <script type="text/javascript" src="js/lightbox.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/timeline_style.css" />
-	<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="js/vendor/jquery-ui/jquery-ui.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/checkbox_style.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
 	<link rel="stylesheet" type="text/css" href="css/media.css" />
 
 </head>
 <body>
-<div id="wrapper_popup">
-<div id="background_popup" onclick="popup_close()"></div>
-<div class="popup" id="popup1">
-<a class="popup_close" onclick="popup_close()"></a>
-	<div class="popup_block clearfix">
-			<h3 class="popup_block_h3">Задать вопрос</h3>
-
-			<input id="checkbox2" class="css-checkbox" checked="checked" type="checkbox">
-			<label for="checkbox2" name="checkbox2_lbl" class="css-label lite-orange-check">Согласен с <a href="#" class="politica_link">политикой конфеденциальностии правилами обработки персональных данных</a></label>
-	</div>
-		<div class="popup_border_bottom clearfix"></div>
-	<div class="popup_block padding_bottom clearfix">
-		<div class="popup_form">
-		<div class="popup_form_block">
-		<label class="popup_input_label" for="" style="display: none;">Ваше имя*</label>
-			<input class="popup_input_txt" type="text" placeholder="Ваше имя*" />
-		</div>	
-		<div class="popup_form_block">
-		<label class="popup_input_label" for="" style="display: none;">Номер телефона*</label>
-			<input class="popup_input_txt" type="text" placeholder="Номер телефона*"/>
-		</div>
-		<div class="popup_form_block">
-		<label class="popup_input_label" for="" style="display: none;">Email</label>
-			<input class="popup_input_txt" type="text" placeholder="Email"/>
-		</div>	
-		</div>	
-		<div class="popup_form_right">
-		<label class="popup_textarea_label" for="" style="display: none;">Ваш Вопрос*</label>
-			<textarea class="popup_form_textarea" name="Ваш Вопрос" id="" cols="1" rows="10" placeholder="Ваш Вопрос*">
-				
-			</textarea>
-		</div>
-	</div>
-	<div class="popup_block clearfix">	
-		<input type="submit" class="button_popup" value="Задать вопрос" />
-
-		<div class="captcha_block">CAPTCHA</div>
-	</div>
-</div>
-</div>	
 	<header>
 		<div class="container">
 			<div class="row">
@@ -76,10 +33,10 @@
 					<nav class="navigation">
 						<ul class="nav_ul">
 							<li><a href="#">Главная</a></li>
-							<li><a href="#">О клинике</a></li>
+							<li><a class="active" href="#">О клинике</a></li>
 							<li><a href="#">Сотрудники</a></li>
 							<li><a href="#">Услуги</a></li>
-							<li><a class="active" href="#">Для пациента</a></li>
+							<li><a href="#">Для пациента</a></li>
 							<li><a href="#">Отзывы</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
@@ -109,45 +66,33 @@
 			</div>
 		</div>
 	</header>	
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="center">Для пациента</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-offset-1 col-md-2">
-				<div class="pacient_link_block" style="background: url(img/pacient_link.png) no-repeat;">
-						<a href="#" class="pacient_link">Прайс-лист</a>
-				</div>
-				</div>
-				<div class="col-md-2">
-				<div class="pacient_link_block" style="background: url(img/pacient_link2.png) no-repeat;">
-						<a href="#" class="pacient_link link2">Запись на прием</a>
-				</div>
-				</div>
-				<div class="col-md-2">
-				<div class="pacient_link_block" style="background: url(img/pacient_link3.png) no-repeat;">
-						<a href="javascript:;" onclick="popup_open('popup1')"  class="pacient_link link3">Задать вопрос</a>
-				</div>
-				</div>
-				<div class="col-md-2">
-				<div class="pacient_link_block" style="background: url(img/pacient_link4.png) no-repeat;">
-						<a href="#" class="pacient_link link4">Рекомендации</a>
-				</div>
-				</div>
-				<div class="col-md-2">
-				<div class="pacient_link_block" style="background: url(img/pacient_link5.png) no-repeat;">
-						<a href="#" class="pacient_link link5">Видео</a>
-				</div>
-				</div>
-				<div class="col-md-1">
-				</div>
-			</div>
-		</div>
-	</section>
+<section>	
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">
 
+			<nav class="navigation vertical">
+				<ul class="nav_ul">
+					<li><a href="#">История развития</a></li>
+					<li><a href="#">Лицензии и свидетельства</a></li>
+					<li><a href="#">Организационная структура</a></li>
+					<li><a href="#">График приема граждан</a></li>
+					<li><a href="#">Правила внутреннего распорядка</a></li>
+					<li><a class="active" href="#">Новости клиники</a></li>
+					<li><a href="#">Вакансии</a></li>
+				</ul>
+			</nav>			
+		</div>
+		<div class="col-md-offset-1 col-md-9">
+			<h1>День медика!</h1>
+			<span class="date_mark date_mark_head">3 мая</span>
+			<p class="standart_text">Лечение зубов — это комплекс мероприятий по устранению заболеваний полости рта, который проводится стоматологами с использование медицинского оборудования. Вовремя начатое лечение позволит избежать потерю зуба.</p>
+			<p class="standart_text">Красивая улыбка — часть здоровой жизни человека. Зубная система, состоящая из 32 постоянных зубов, участвует в звукообразовании и обработке пищи. Зуб, состоящий из дентина, удерживает в челюсти пародонт – это комплекс тканей, который выполняет функцию амортизаторов, проводит в себе нервы и питательные каналы.</p>
+			<div class="single_img news_single_img"><img src="img/about.png" alt="about"/></div>
+		</div>
+	</div>
+</div>		
+</section>
 	<footer>
 		<div class="container">
 			<div class="row">

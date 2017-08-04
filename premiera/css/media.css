@@ -124,6 +124,9 @@ h2 {
 .social_butns_header.soc_header2 {
 margin-left: 0px;    
 }
+ul.breadcrumb {
+    padding-left: 10px;        
+}
 ul.employee_filter {
     text-align: center;
 }
