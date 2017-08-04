@@ -850,6 +850,8 @@ ul.employee_filter li.drop_filter.active a {
 .employee_photo {
 	width: 174px;
 	height: 271px;
+	-webkit-background-size: cover !important;
+	background-size: cover !important;
 	float:left;
 }
 .employee_info {

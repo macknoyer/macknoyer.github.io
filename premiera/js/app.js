@@ -134,6 +134,15 @@ $(".popup_form_textarea").focusout(function() {
     $( "#ask_quist_link" ).on( "click", function() {
       $( "#ask_quist" ).dialog( "open" );
     });*/
+    var maxHeight = -1;
+
+    $('.employee_block').each(function() {
+      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+    });
+
+    $('.employee_block').each(function() {
+      $(this).height(maxHeight);
+    });    
 	});
 })(jQuery);
 function popup_open(name_popup){
