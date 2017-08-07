@@ -106,7 +106,7 @@ h2 {
     padding: 0;
 }
 .owl-dots {
-    display: none;
+    display: block;
 }
 .uslugi_wrap {
     margin-top: 50px;

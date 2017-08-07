@@ -207,6 +207,7 @@ line-height: 26px;
 	color: #2468b7;
 	font-size: 41px;
 }
+
 .slider1_block {
 	width: 100%;
 	height:100%;
@@ -241,9 +242,7 @@ a.link_h:hover {
 #slider1 .owl-dots {
 	position: absolute;
 	bottom: 30px;
-	width: 930px;
-	left: 50%;
-	margin-left: -465px;
+	width: auto;
 	padding: 0 30px;	
 }
 #slider1 .owl-dot {
@@ -259,7 +258,7 @@ a.link_h:hover {
 	background-color: #fff;
 	color: #a3a3a3;
 
-	margin-right: 248px;
+	margin-right: 10px;
 }
 #slider1 .owl-dot:last-child {
 	margin-right: 0;
@@ -609,6 +608,20 @@ section.underline {
 }
 footer {
 	border-top: 1px solid rgba(36,104,183,0.3);
+}
+.logo_artmax {
+	width: 71px;
+	height: 36px;
+	color: #9d9d9d;
+	border-bottom: 0;
+}
+.logo_artmax img{
+	padding-right: 5px;
+	padding-top: 5px;
+
+}
+.logo_artmax:hover {
+	border-bottom: 0;
 }
 .social_butns_header.footer_social {
 	margin:0;
