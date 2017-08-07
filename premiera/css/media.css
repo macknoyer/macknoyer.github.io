@@ -444,6 +444,10 @@ input.css-checkbox[type="checkbox"] + label.css-label {
 .popup_input_txt {
     width: 100%;
 }
+.popup_block {
+    padding-bottom: 50px;
+}
+
 /******POPUP 480 END*********/
 
 
