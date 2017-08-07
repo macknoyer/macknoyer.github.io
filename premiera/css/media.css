@@ -40,7 +40,17 @@ a.doctor_appoint {
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
-
+.logo {
+    position: absolute;
+        width: 100px;
+       height: 90px;
+    font-size: 12px;
+   
+}
+.social_butns_header {
+    margin-left: 15px;
+    margin-top: 75px;
+}
 h2 {
     margin-top: 30px;
 }
@@ -120,6 +130,9 @@ h2 {
 #slider3 .owl-dots {
     display: block;
 }
+#slider1 {
+    margin-top: 25px;
+}
 /******EMPLOYEE 992*********/
 .social_butns_header.soc_header2 {
 margin-left: 0px;    
@@ -193,13 +206,20 @@ margin-top: 25px;
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 770px) {
+
 .cd-horizontal-timeline {
     display: none;
 }   
 .mobile_slider {
     display: block;
 }
-
+.slider1_block {
+min-height: 400px;
+background-size: 100% 100% !important;
+}
+.slider1_inside {
+    top: 87px;
+}
 /******EMPLOYEE 768*********/
 ul.employee_filter {
     max-height: 200px;
@@ -313,11 +333,20 @@ h2.padding_left {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 482px) {
+.logo {
+width: 70px;
+height: 60px;
+}
+
 .news_txt {
     padding-right: 0;
 }
-.slider1_inside {width: 350px;
-padding: 20px 20px 20px 20px;
+.slider1_inside {
+    width: 350px;
+    padding: 20px 20px 20px 20px;
+}
+.slider1_block {
+background-size: 120% 100% !important;
 }
 a.link_h {font-size: 24px;}
 
@@ -345,6 +374,7 @@ a.link_h {font-size: 24px;}
 .contacts_header {
     clear: both;
 }
+
 /******EMPLOYEE 480*********/
 .doctor_appoint.employee_appoint {
     float:none;
@@ -422,6 +452,9 @@ input.css-checkbox[type="checkbox"] + label.css-label {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 362px) {
+.slider1_block {
+    background-size: 140% 100% !important;
+}
 
 h2 {
     font-size: 20px;

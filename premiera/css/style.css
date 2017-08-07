@@ -108,10 +108,8 @@ ul.breadcrumb li a:hover {
 .logo {
 	cursor:pointer;
 	display:block;
-	width:193px;
-	height: 185px;
-	padding-top: 160px;
-	background:url(../img/logo.png) no-repeat top center;
+	width:192px;
+	height: 157px;
 	margin-top: 25px;
 	border:none;
 	margin-bottom: 25px;
@@ -119,6 +117,10 @@ ul.breadcrumb li a:hover {
 	font-size: 14px;	
 	text-align: center;
 	color: #397fd1;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
 }
 .logo:hover {
 	border:none;
