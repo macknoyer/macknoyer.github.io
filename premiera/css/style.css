@@ -73,8 +73,18 @@ h4 {
 	color: black;
 	padding-top: 30px;
 }
+a.absolute{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding:0;
+	display: block;
+	border: none;
+
+}
 ul.breadcrumb {
-    padding-left:35px;
     padding-top: 20px;
 	clear: both;
     list-style: none;
@@ -126,17 +136,19 @@ ul.breadcrumb li a:hover {
 	border:none;
 }
 .navigation ul{
-	text-align: right;
+	text-align: center;
 }
 .navigation ul.nav_ul li{
 	display:inline-block;
-	padding:17px;
+	padding: 25px 20px 20px 20px;
 	font-family: 'Core Sans A 45';
 	font-size:18px;
-	padding-top: 25px;
 }
 .navigation ul.nav_ul li:last-child{
 	padding-right: 0;
+}
+.navigation ul.nav_ul li:first-child{
+	padding-left: 0;
 }
 .navigation ul.nav_ul li a{
 	color:#2468b7;
@@ -151,7 +163,6 @@ ul.breadcrumb li a:hover {
 }
 .social_butns_header {
 	margin-top: 33px;
-	margin-left: 40px;
 	float: left;
 }
 .social_link {
@@ -811,7 +822,10 @@ overflow: hidden;
 }
 .social_butns_header.soc_header2 {
 	margin-top: 15px;
-	margin-left: 30px;
+	margin-left: 0;
+}
+.social_butns_header.soc_header2 .social_link:first-child{
+	margin-left: 0;
 }
 .social_butns_header.contacts_social {
 	margin: 0;
@@ -944,12 +958,12 @@ transition: all ease 0.3s;
 border-radius: 5px;
 
 }
-.uslugi_block:hover a{
+.uslugi_block:hover .uslugi_link{
 	font-family: 'SF UI  Text Semibold';
 	color: #fff;
-	border-bottom: none;
+	border-bottom:none;
 	font-size: 20px;
-	margin-bottom: -11px;
+	margin-bottom: -5px;
 	display: block;
 }
 .uslugi_block:hover .standart_text{
@@ -980,6 +994,9 @@ border-radius: 5px;
 .uslugi_link {
 	font-size: 16px;
 	font-family: 'SF UI  Text Regular';
+	color: #2468b7;
+	border-bottom: 1px solid rgba(36,104,183,0.3);
+	display: inline-block;
 }
 .uslugi_block:hover .uslugi_img {
 	background-image: url(../img/broken-tooth.png) !important;
