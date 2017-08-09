@@ -200,7 +200,9 @@ margin-top: 25px;
 }
 
 /******POPUP 992 END*********/
-
+.navigation.vertical.about_menu {
+    padding-top: 0;
+}
 
 }
 
@@ -327,6 +329,9 @@ h2.padding_left {
     margin-bottom:0;
 }
 /******REVIEW & CONTACTS 768 END*********/
+.single_img {
+    min-height: 240px;
+}
 }
 
 

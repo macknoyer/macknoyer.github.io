@@ -1503,6 +1503,9 @@ input.css-checkbox[type="checkbox"]:checked + label.css-label,input.css-checkbox
 	background: none;
 	border-radius: 5px;
 }
+.navigation.vertical.about_menu {
+	padding-top: 62px;
+}
 /********************MODAL END***********************/
 /********************MODAL END***********************/
 .single_img.news_single_img {
