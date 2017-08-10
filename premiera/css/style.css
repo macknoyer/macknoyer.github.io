@@ -1296,7 +1296,7 @@ margin-top: 130px;
 	font-family: 'SF UI  Text Regular';
 	color: #333;
 }
-}
+
 .numbers_list li:last-child{
 	margin-bottom:0px;
 }
@@ -1305,14 +1305,12 @@ margin-top: 130px;
 
 
 /********************REVIEW END***********************/
-.review_block:first-child {
-	margin-top:40px;
-}
+
 .review_block {
 	padding: 40px;
 	border:1px solid #e8e8e8;
 	border-radius: 5px;
-	margin:20px 0;
+	margin-top:40px;
 }
 .review_block .semibold {
 	padding: 0;
