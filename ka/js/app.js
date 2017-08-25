@@ -11,6 +11,31 @@
 		});
 		$('.plan_img').mouseleave(function(){
 			$(this).next('.plan_block_link').children('a').removeClass('active');
+		});		
+		$('.popup_form_check_link').click(function(){
+			$(this).toggleClass('active');
+		});
+		$('.popup_select').select2({
+			placeholder: 'Выберите из предлагаемого списка',
+			 minimumResultsForSearch: Infinity,
+			 allowClear: true
 		});
 	});
 })(jQuery);
+
+/***modal***/
+function popup_open(name_popup){
+ jQuery("#wrapper_popup").fadeIn(0);
+ jQuery("#background_popup").fadeIn(0);
+ jQuery("#background_popup").css({"height": "auto"});
+ jQuery("#"+name_popup).css({"display": "block", "top": "0px"});
+ jQuery('body').addClass('modal-open');
+}
+
+function popup_close(){
+ jQuery("#wrapper_popup").fadeOut(0);
+ jQuery("#background_popup").fadeOut(0);
+ jQuery(".popup").fadeOut(0);
+ jQuery('body').removeClass('modal-open');
+}
+/***modal***/
