@@ -1,0 +1,17 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	outline:none;
+}
+a, hover{
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+body, html{
+	/*background:url(../img/news_cki_bg.png) no-repeat left;
+	height:1445px;*/
+	min-width: 1200px;
+
+}

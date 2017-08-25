@@ -48,6 +48,9 @@ h1 {
 h2,h1 {
 	display: inline-block;
 }
+h2 {
+	padding-top: 30px;
+}
 h1.center {
 	text-align: center;
 	display: block;
@@ -661,6 +664,7 @@ footer {
 .footer_addr_block .footer_addr_block_txt {
 	color: black;
 	font-size: 18px;
+    padding-right: 15px;
 }
 .footer_addr_block .footer_addr_block_txt.txt2 {
 	color: #777777;
