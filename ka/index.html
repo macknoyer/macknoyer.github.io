@@ -29,37 +29,37 @@
 		</select></div>
 		<div class="popup_form_block clearfix"><label for="">Дата открытия компании</label>
 			<div class="date_open">
-				<input class="form_input" type="number" max="2" placeholder="ДД">
-				<input class="form_input" type="number" max="2" placeholder="ММ">
-				<input class="form_input" type="number" max="4" placeholder="ГГГГ">
+				<input class="form_input" type="text" maxlength="2" placeholder="ДД" name="day"/>
+				<input class="form_input" type="text" maxlength="2" placeholder="ММ" name="mounth"/>
+				<input class="form_input" type="text" maxlength="4" placeholder="ГГГГ" name="year"/>
 			</div>
 		</div>
 		<div class="popup_form_block clearfix"><label for="">Количество вакансий в месяц (приблизительно)</label>
-			<input class="form_input form_input2" type="text" placeholder="18?"/>
+			<input class="form_input form_input2" type="text" placeholder="18?" name="vacancy"/>
 		</div>
 
 		<p class="standart_txt popup_txt_head">Заполните персональные контактные данные.</p>
 		<div class="popup_form_block clearfix">
-			<input class="form_input form_input3" type="text" placeholder="18?"/>	
-			<input class="form_input form_input3" type="text" placeholder="18?"/>
+			<input class="form_input form_input3" type="text" placeholder="имя" name="name"/>	
+			<input class="form_input form_input3" type="text" placeholder="фамилия" name="lastname"/>
 		</div>	
 		<div class="popup_form_block clearfix">				
-			<input class="form_input form_input3" type="text" placeholder="18?"/>	
-			<input class="form_input form_input3" type="text" placeholder="18?"/>	
+			<input class="form_input form_input3" type="text" placeholder="отчество" name="surname"/>	
+			<input class="form_input form_input3" type="email" placeholder="email" name="email"/>	
 		</div>
 		<div class="popup_form_block clearfix">
-			<input class="form_input" type="text" placeholder="Ваш контактный телефон (ы)"/>
+			<input class="form_input" type="tel" pattern="2[0-9]{3}-[0-9]{3}" name="phone"/>
 		</div>
 		<p class="standart_txt popup_txt_head">Создайте логин и пароль.</p>
 		<div class="popup_form_block clearfix">				
-			<input class="form_input form_input3" type="text" placeholder="Логин"/>	
-			<input class="form_input form_input3" type="text" placeholder="Пароль"/>	
+			<input class="form_input form_input3" type="text" placeholder="Логин" name="login"/>	
+			<input class="form_input form_input3" type="password" placeholder="Пароль" name="password"/>	
 		</div>
 		<div class="popup_form_block center clearfix">				
 			<a class="popup_form_check_link"><input class="popup_form_check" type="checkbox"/></a>	
 			<label class="popup_form_check_label" for="popup_form_check">Я согласен(а) с условиями <a href="#" class="popup_form_check_label_link">Оферты</a>.</label>
 		</div>
-		<input class="form_input submit" value="Войти" type="submit">
+		<input class="form_input submit" value="Войти" type="submit"/>
 		<p class="standart_txt popup_txt_head last">Вы забыли пароль? Мы поможем его <a onclick="popup_close()" class="popup_form_check_label_link">восстановить</a>.</p>
 	</form>
 </div>
@@ -67,10 +67,10 @@
 	<form action="">
 		<a href="#" class="form_avatar"></a>
 		<p class="standart_txt popup_txt_head">Для восстановления пароля введите название компании и логин.</p>
-		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Название компании, которую Вы представляете"/></div>
-		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Введите Ваш логин"/></div>
+		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Название компании, которую Вы представляете" name="company"/></div>
+		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Введите Ваш логин" name="login"/></div>
 		<p class="standart_txt popup_txt_head padding">Пароль будет выслан на почтовый адрес, зарегистрированный для Вашей компании.</p>
-		<input class="form_input submit" value="Запросить пароль" type="submit">
+		<input class="form_input submit" value="Запросить пароль" type="submit"/>
 	</form>	
 </div>
 </div>	
@@ -90,8 +90,8 @@
 		<div class="head_right">
 				<form action="">
 					<a href="#" class="form_avatar"></a>
-					<input class="form_input" type="text" placeholder="логин" />
-					<input class="form_input margin" type="text" placeholder="пароль"/>
+					<input class="form_input" type="text" placeholder="логин" name="login"/>
+					<input class="form_input margin" type="password" placeholder="пароль" name="password"/>
 					<input class="form_input submit" type="submit" value="Войти" />
 					<a onclick="popup_open('popup_passw')" class="form_link">Забыли логин или пароль?</a>
 					<a onclick="popup_open('popup_registration')" class="form_link link2">Регистрация</a>
@@ -105,19 +105,19 @@
 		<div class="plan_block_wrap">
 			<div class="plan_block">
 			<a href="" class="plan_block_link_absolute"></a>
-				<a href="#" class="plan_img" style="background: url(img/pictsmain01.png)"></a>
+				<a href="#" class="plan_img" style="background: url(img/pictsmain01.png) no-repeat"></a>
 				<div class="plan_block_link"><a href="#">Попробовать</a></div>
 				<p class="standart_txt">Здесь небольшой текст<br> про необходимость попробовать сервис.
 	Текст такой небольшой – три, максимум 
 	четыре строки.</p>
 			</div>
 			<div class="plan_block">
-				<a href="#" class="plan_img" style="background: url(img/pictsmain02.png)"></a>
+				<a href="#" class="plan_img" style="background: url(img/pictsmain02.png) no-repeat"></a>
 				<div class="plan_block_link"><a href="#">Для HR</a></div>
-				<p class="standart_txt">Здесь небольшой текст<br> почему надо пользоваться сервисом при поиске персонала. Текст такой небольшой – три, максимум четыре строки.</p>
+				<p class="standart_txt">Здесь небольшой текст<br> почему надо пользоваться сервисом при поиске персонала. Текст такой небольшой – три, максимум четыре строки.</p>
 			</div>
 			<div class="plan_block">
-				<a href="#" class="plan_img" style="background: url(img/pictsmain03.png)"></a>
+				<a href="#" class="plan_img" style="background: url(img/pictsmain03.png) no-repeat"></a>
 				<div class="plan_block_link"><a href="#">Для рекрутингового агентства</a></div>
 				<p class="standart_txt">Здесь небольшой текст<br> про выгоды использования сервисом KA.
 Текст такой небольшой – три, максимум 

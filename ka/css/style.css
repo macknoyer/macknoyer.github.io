@@ -44,26 +44,21 @@ input::-webkit-input-placeholder {color:#ffffff;opacity: 1}
 input::-moz-placeholder          {color:#ffffff;opacity: 1}
 input:-moz-placeholder           {color:#ffffff;opacity: 1}
 input:-ms-input-placeholder      {color:#ffffff;opacity: 1}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
+
 .wrap {
 	background: url(../img/bg.jpg) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	min-height: 708px;
-	-webkit-box-shadow: inset 0px -11px 19px -3px #1c121b;
-	-moz-box-shadow: inset 0px -11px 19px -3px #1c121b;
-	box-shadow: inset 0px -11px 19px -3px #1c121b;	
+	-webkit-box-shadow: inset 0px -30px 19px -3px #1c121b;
+	-moz-box-shadow: inset 0px -30px 19px -3px #1c121b;
+	box-shadow: inset 0px -30px 19px -3px #1c121b;	
 }
 .wrap.wrap2 {
 	background: #1e1723;
-	-webkit-box-shadow: inset 0px 6px 21px -4px #1c121b;
-	-moz-box-shadow: inset 0px 6px 21px -4px #1c121b;
-	box-shadow: inset 0px 6px 21px -4px #1c121b;
+	-webkit-box-shadow: inset 0px 12px 19px -4px #1c121b;
+	-moz-box-shadow: inset 0px 12px 19px -4px #1c121b;
+	box-shadow: inset 0px 12px 19px -4px #1c121b;
 	min-height: 330px;
 }
 .content_block {
@@ -175,7 +170,7 @@ form a.form_link.link2 {
 }
 .plan_block a.plan_img {
 	width: 201px;
-	height: 201px;
+	height: 197px;
 	margin:0 auto;
 	display: block;
 	border-radius: 9999px;
@@ -425,6 +420,7 @@ label.popup_form_check_label {
 	color: #dd2614;
 	font-weight: 400;
 	cursor: pointer;
+	vertical-align: top;
 	transition: border-bottom ease 0.5s;
 	border-bottom: 1px solid transparent;
 }
