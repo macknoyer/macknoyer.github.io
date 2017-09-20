@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/vendor/jquery-ui/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts-size.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+<div id="wrapper_popup">
+<div id="background_popup" onclick="popup_close()"></div>
+<div class="popup" id="popup_registration">
+	<form action="">
+		<a href="#" class="form_avatar"></a>
+		<p class="standart_txt popup_txt_head">Внимание! Все поля при регистрации необходимы к заполнению.</p>
+		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Название компании, которую Вы представляете"/></div>
+		<div class="popup_form_block clearfix"><label for="popup_select">Вид деятельности </label><select name="popup_select" id="" class="popup_select">
+			<option value="1">Вид деятельности1</option>
+			<option value="2">Вид деятельности2</option>
+			<option value="3">Вид деятельности3</option>
+		</select></div>
+		<div class="popup_form_block clearfix"><label for="">Дата открытия компании</label>
+			<div class="date_open">
+				<input class="form_input" type="text" maxlength="2" placeholder="ДД" name="day"/>
+				<input class="form_input" type="text" maxlength="2" placeholder="ММ" name="mounth"/>
+				<input class="form_input" type="text" maxlength="4" placeholder="ГГГГ" name="year"/>
+			</div>
+		</div>
+		<div class="popup_form_block clearfix"><label for="">Количество вакансий в месяц (приблизительно)</label>
+			<input class="form_input form_input2" type="text" placeholder="18?" name="vacancy"/>
+		</div>
+
+		<p class="standart_txt popup_txt_head">Заполните персональные контактные данные.</p>
+		<div class="popup_form_block clearfix">
+			<input class="form_input form_input3" type="text" placeholder="имя" name="name"/>	
+			<input class="form_input form_input3" type="text" placeholder="фамилия" name="lastname"/>
+		</div>	
+		<div class="popup_form_block clearfix">				
+			<input class="form_input form_input3" type="text" placeholder="отчество" name="surname"/>	
+			<input class="form_input form_input3" type="email" placeholder="email" name="email"/>	
+		</div>
+		<div class="popup_form_block clearfix">
+			<input class="form_input" type="tel" pattern="2[0-9]{3}-[0-9]{3}" name="phone" placeholder="Ваш контактный телефон (ы)" />
+		</div>
+		<p class="standart_txt popup_txt_head">Создайте логин и пароль.</p>
+		<div class="popup_form_block clearfix">				
+			<input class="form_input form_input3" type="text" placeholder="Логин" name="login"/>	
+			<input class="form_input form_input3" type="password" placeholder="Пароль" name="password"/>	
+		</div>
+		<div class="popup_form_block center clearfix">				
+			<a class="popup_form_check_link"><input class="popup_form_check" type="checkbox"/></a>	
+			<label class="popup_form_check_label" for="popup_form_check">Я согласен(а) с условиями <a href="#" class="popup_form_check_label_link">Оферты</a>.</label>
+		</div>
+		<input class="form_input submit" value="Войти" type="submit"/>
+		<p class="standart_txt popup_txt_head last">Вы забыли пароль? Мы поможем его <a onclick="popup_close()" class="popup_form_check_label_link">восстановить</a>.</p>
+	</form>
+</div>
+<div class="popup" id="popup_passw">
+	<form action="">
+		<a href="#" class="form_avatar"></a>
+		<p class="standart_txt popup_txt_head">Для восстановления пароля введите название компании и логин.</p>
+		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Название компании, которую Вы представляете" name="company"/></div>
+		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Введите Ваш логин" name="login"/></div>
+		<p class="standart_txt popup_txt_head padding">Пароль будет выслан на почтовый адрес, зарегистрированный для Вашей компании.</p>
+		<input class="form_input submit" value="Запросить пароль" type="submit"/>
+	</form>	
+</div>
+</div>	
+<header>
+<div class="content_block clearfix">
+	<div class="header_block">
+		<a href="#" class="logo"><span>ka</span>агрегатор</a>
+	</div>
+	<div class="header_block fsz18">
+		<span class="mOffer"></span><a href="#" class="link_redline">Оформить заявку</a>
+	</div>
+	<div class="header_block fsz21">
+		<a href="tel:+74955005550">+7 495 500-555-0</a>
+	</div>
+	<div class="header_block float">
+		<a href="#" class="form_avatar"></a>
+	</div>
+</div>
+<div class="header_white_menu_block">
+		<ul class="header_white_menu fsz14">
+			<li><a class="active" href="#">Открытые заявки</a></li>
+			<li><a href="#">Открытые агентства</a></li>
+			<li><a href="#">Открытые кандидаты</a></li>
+			<li><a href="#">Архив заявок</a></li>
+			<li><a href="#">Черный список агентств</a></li>
+		</ul>
+</div>
+</header>
+<div class="wrapper">
+	<div class="content_block white">
+		<form class="client_form fsz14">
+			<p class="standart_txt center fsz16">У Вас нет активных запросов.</p>
+			<p class="standart_txt center padding fsz16">Вы ищите персонал? Вам необходимо создать заявку.</p>		
+			<div class="popup_form_block clearfix">
+				<label for="popup_select">Должность</label>
+				<select name="popup_select" id="" class="popup_select">
+					<option value="1">Вид деятельности1</option>
+					<option value="2">Вид деятельности2</option>
+					<option value="3">Вид деятельности3</option>
+				</select>
+			</div>
+			<div class="popup_form_block clearfix">
+				<label for="">Предполагаемое количество людей</label>
+				<input class="form_input form_input2 form_input4" placeholder="18?" name="vacancy" type="text">
+			</div>	
+			<div class="popup_form_block clearfix">
+				<label for="">Критерии подбора кандидатов</label>
+				<textarea class="client_form_textarea fsz14"  placeholder="Перечислите списком" name="vacancy"></textarea>
+			</div>
+			<div class="popup_form_block clearfix">
+				<label for="">Количество внутренних этапов собеседований персонала</label>
+				<input class="form_input form_input2 form_input5" placeholder="18?" name="vacancy" type="text">
+			</div>	
+			<div class="popup_form_block clearfix">
+				<label class="max_width" for="">Планируемый срок выхода сотрудников на работу<br/>(дата к которой необходимо найти персонал)</label>
+				<div class="date_open">
+					<input class="form_input" type="text" maxlength="2" placeholder="ДД" name="day"/>
+					<input class="form_input" type="text" maxlength="2" placeholder="ММ" name="mounth"/>
+					<input class="form_input" type="text" maxlength="4" placeholder="ГГГГ" name="year"/>
+				</div>
+			</div>	
+			<div class="popup_form_block clearfix">
+				<label for="">Сроки подбора персонала (рабочих дней)</label>
+				<input class="form_input form_input2 form_input4" placeholder="18?" name="vacancy" type="text">
+			</div>	
+			<div class="popup_form_block clearfix">
+				<label class="max_width" for="">Гарантийный срок, в течение которого должна быть предоставлена замена (в течение какого количества дней производится бесплатная замена сотрудника если он не подошел)</label>
+				<input class="form_input form_input2 form_input4" placeholder="18?" name="vacancy" type="text">
+			</div>	
+			<div class="popup_form_block clearfix">
+				<label for="">Срок обратной связи по согласованию заявки (рабочих дней)</label>
+				<input class="form_input form_input2 form_input5" placeholder="18?" name="vacancy" type="text">
+			</div>	
+			<div class="popup_form_block clearfix">
+				<label for="">Срок получения ответа на заявку (рабочих дней)</label>
+				<input class="form_input form_input2 form_input4" placeholder="18?" name="vacancy" type="text">
+			</div>	
+			<div class="popup_form_block clearfix">
+				<label class="max_width" for="">Дата начала работы по заявке</label>
+				<div class="date_open">
+					<input class="form_input" type="text" maxlength="2" placeholder="ДД" name="day"/>
+					<input class="form_input" type="text" maxlength="2" placeholder="ММ" name="mounth"/>
+					<input class="form_input" type="text" maxlength="4" placeholder="ГГГГ" name="year"/>
+				</div>
+			</div>	
+			<div class="popup_form_block clearfix">
+				<label for="">Комментарии</label>
+				<textarea class="client_form_textarea fsz14"  placeholder="Перечислите списком" name="vacancy"></textarea>
+			</div>	
+			<p class="standart_txt center red fsz12">Все поля обязательны к заполнению.</p>	
+			<input class="form_input submit" value="Создать заявку и разместить в системе" type="submit">		
+		</form>
+	</div>
+</div>
+<footer>
+	<div class="content_block clearfix">
+		<a href="#" class="logo_footer"><span>ka</span> агрегатор</a>
+		<div class="footer_block">
+			<a href="#" class="footer_link">О компании</a>
+			<a href="#" class="footer_link">Пресс-служба</a>
+			<a href="#" class="footer_link">Реквизиты</a>
+			<a href="#" class="footer_link">Обратная связь</a>
+			<a href="#" class="footer_link">Работайте у нас</a>
+		</div>
+		<div class="footer_block footer_block2">
+			<a href="#" class="social_link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+		</div>		
+		<div class="footer_block footer_block3">
+			<p class="standart_txt">© 2017 ka агрегатор<br> Россия, Москва, 117997, ул. Вавилова 19. Генеральная лицензия на осуществление операций от 11 августа 2017 года. Регистрационный номер — 1481</p>	
+		</div>
+	</div>
+</footer>
+</body>
+</html>

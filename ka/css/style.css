@@ -11,8 +11,8 @@ ul{
 	list-style:none;
 }
 body, html{
-	background:url(../img/bg_all.png) no-repeat center top;
-	height:1200px;
+	background:url(../img/bg_client.png) no-repeat center top;
+	height:1316px;
 	min-width: 1200px;
 	font-family: 'Roboto';
 	font-weight: 300;
@@ -40,10 +40,15 @@ h2 {
   display: table;
   clear: both;
 }
+
 input::-webkit-input-placeholder {color:#ffffff;opacity: 1}
 input::-moz-placeholder          {color:#ffffff;opacity: 1}
 input:-moz-placeholder           {color:#ffffff;opacity: 1}
 input:-ms-input-placeholder      {color:#ffffff;opacity: 1}
+textarea::-webkit-input-placeholder {color:#ffffff;opacity: 1}
+textarea::-moz-placeholder          {color:#ffffff;opacity: 1}
+textarea:-moz-placeholder           {color:#ffffff;opacity: 1}
+textarea:-ms-input-placeholder      {color:#ffffff;opacity: 1}
 
 .wrap {
 	background: url(../img/bg.jpg) no-repeat;
@@ -60,6 +65,11 @@ input:-ms-input-placeholder      {color:#ffffff;opacity: 1}
 	-moz-box-shadow: inset 0px 12px 19px -4px #1c121b;
 	box-shadow: inset 0px 12px 19px -4px #1c121b;
 	min-height: 330px;
+}
+
+.wrapper {
+	/*background-color: #d9d9d9;*/
+	padding: 11px 0;	
 }
 .content_block {
 	width: 1106px;
@@ -135,7 +145,7 @@ form .form_input {
 form .form_input.margin{
 	margin-bottom: 37px;
 }
-form .form_input.submit {
+.form_input.submit {
 	width: 100%;
 	font-size: 	21px;
 	background-color: #f82812;
@@ -264,6 +274,133 @@ footer {
     padding-top: 12px;
     line-height: 14px;
 
+}
+/**********************KA Client***************************/
+header {
+	min-height: 48px;
+	background-color: #1e1723;
+
+}
+.header_block {
+	float: left;
+	margin-right: 231px;
+}
+.header_block a{
+	line-height: 2.8;
+	vertical-align: bottom;
+}
+.header_block:nth-child(3n) {
+	margin: 0;
+}
+.header_block .logo{
+	font-size: 36px;
+	line-height: 1.2;
+}
+.header_block .form_avatar{
+	margin-bottom: 0;
+	margin-top: 8px;
+}
+.header_block.float {
+	margin: 0;
+	float: right;
+}
+.mOffer {
+	display: inline-block;
+	width: 28px;
+	height: 30px;
+	background: url(../img/mOffer.png) no-repeat;
+	margin-right: 11px;
+}
+a.link_redline {
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ea2713;
+	transition: border-bottom ease 0.5s;
+			
+}
+a.link_redline:hover {
+	border-bottom: 1px solid transparent;
+
+}
+.header_white_menu_block {
+	background-color: #ffffff;
+}
+.header_white_menu {
+	width: 862px;
+	height: 30px;
+	margin: 0 auto;
+}
+.header_white_menu li{
+	display: inline-block;
+	margin-right: 53px;
+	line-height: 30px;
+}
+.header_white_menu li:last-child{
+	margin:0;
+}
+.header_white_menu li a{
+	color: #6f6f6e;
+	padding-bottom: 3px;
+	transition: border-bottom ease 0.5s;
+	border-bottom: 3px solid transparent;
+}
+.header_white_menu li a.active{
+	color: #1d1d1b;
+	border-bottom: 3px solid #ea2713;
+}
+.content_block.white {
+	/*background-color: #ffffff;*/
+}
+form.client_form {
+	width: 540px;
+	color: #1d1d1b;
+	margin: 0 auto;
+	padding-top: 24px;
+}
+form.client_form .select2-container--default .select2-selection--single,form.client_form .select2-dropdown{
+	background-color: #d9d9d9;
+}
+form.client_form .form_input[type="text"]{
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 23px;
+	background-color: #d9d9d9;
+}
+form.client_form .select2-results__option{
+	font-size: 14px;
+}
+.standart_txt.center {
+	text-align: center;
+}
+.standart_txt.center.red {
+	color:#f82812;
+	font-weight: 400;
+	padding-bottom: 30px;
+}
+.standart_txt.center.padding {
+	padding-top:15px;
+	padding-bottom: 39px;
+}
+.form_input.form_input2.form_input4 {
+	width: 184px !important;
+}
+.form_input.form_input2.form_input5 {
+	width: 65px !important;
+}
+.client_form_textarea {
+	width: 238px;
+	height: 84px;
+	background: #d9d9d9;
+	color: #ffffff;
+	border: none;
+	float: right;
+	font-family: 'Roboto';
+	font-weight: 300;
+	resize: none;
+	padding: 3px 15px 3px 15px;
+	line-height: 23px;
+}
+.popup_form_block label.max_width {
+	max-width: 265px;
 }
 /********************MODAL ***********************/
 
