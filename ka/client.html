@@ -16,65 +16,6 @@
 
 </head>
 <body>
-<div id="wrapper_popup">
-<div id="background_popup" onclick="popup_close()"></div>
-<div class="popup" id="popup_registration">
-	<form action="">
-		<a href="#" class="form_avatar"></a>
-		<p class="standart_txt popup_txt_head">Внимание! Все поля при регистрации необходимы к заполнению.</p>
-		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Название компании, которую Вы представляете"/></div>
-		<div class="popup_form_block clearfix"><label for="popup_select">Вид деятельности </label><select name="popup_select" id="" class="popup_select">
-			<option value="1">Вид деятельности1</option>
-			<option value="2">Вид деятельности2</option>
-			<option value="3">Вид деятельности3</option>
-		</select></div>
-		<div class="popup_form_block clearfix"><label for="">Дата открытия компании</label>
-			<div class="date_open">
-				<input class="form_input" type="text" maxlength="2" placeholder="ДД" name="day"/>
-				<input class="form_input" type="text" maxlength="2" placeholder="ММ" name="mounth"/>
-				<input class="form_input" type="text" maxlength="4" placeholder="ГГГГ" name="year"/>
-			</div>
-		</div>
-		<div class="popup_form_block clearfix"><label for="">Количество вакансий в месяц (приблизительно)</label>
-			<input class="form_input form_input2" type="text" placeholder="18?" name="vacancy"/>
-		</div>
-
-		<p class="standart_txt popup_txt_head">Заполните персональные контактные данные.</p>
-		<div class="popup_form_block clearfix">
-			<input class="form_input form_input3" type="text" placeholder="имя" name="name"/>	
-			<input class="form_input form_input3" type="text" placeholder="фамилия" name="lastname"/>
-		</div>	
-		<div class="popup_form_block clearfix">				
-			<input class="form_input form_input3" type="text" placeholder="отчество" name="surname"/>	
-			<input class="form_input form_input3" type="email" placeholder="email" name="email"/>	
-		</div>
-		<div class="popup_form_block clearfix">
-			<input class="form_input" type="tel" pattern="2[0-9]{3}-[0-9]{3}" name="phone" placeholder="Ваш контактный телефон (ы)" />
-		</div>
-		<p class="standart_txt popup_txt_head">Создайте логин и пароль.</p>
-		<div class="popup_form_block clearfix">				
-			<input class="form_input form_input3" type="text" placeholder="Логин" name="login"/>	
-			<input class="form_input form_input3" type="password" placeholder="Пароль" name="password"/>	
-		</div>
-		<div class="popup_form_block center clearfix">				
-			<a class="popup_form_check_link"><input class="popup_form_check" type="checkbox"/></a>	
-			<label class="popup_form_check_label" for="popup_form_check">Я согласен(а) с условиями <a href="#" class="popup_form_check_label_link">Оферты</a>.</label>
-		</div>
-		<input class="form_input submit" value="Войти" type="submit"/>
-		<p class="standart_txt popup_txt_head last">Вы забыли пароль? Мы поможем его <a onclick="popup_close()" class="popup_form_check_label_link">восстановить</a>.</p>
-	</form>
-</div>
-<div class="popup" id="popup_passw">
-	<form action="">
-		<a href="#" class="form_avatar"></a>
-		<p class="standart_txt popup_txt_head">Для восстановления пароля введите название компании и логин.</p>
-		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Название компании, которую Вы представляете" name="company"/></div>
-		<div class="popup_form_block"><input class="form_input" type="text" placeholder="Введите Ваш логин" name="login"/></div>
-		<p class="standart_txt popup_txt_head padding">Пароль будет выслан на почтовый адрес, зарегистрированный для Вашей компании.</p>
-		<input class="form_input submit" value="Запросить пароль" type="submit"/>
-	</form>	
-</div>
-</div>	
 <header>
 <div class="content_block clearfix">
 	<div class="header_block">
@@ -162,29 +103,30 @@
 				<textarea class="client_form_textarea fsz14"  placeholder="Перечислите списком" name="vacancy"></textarea>
 			</div>	
 			<p class="standart_txt center red fsz12">Все поля обязательны к заполнению.</p>	
-			<input class="form_input submit" value="Создать заявку и разместить в системе" type="submit">		
+			<input class="form_input submit" value="Создать заявку и разместить в системе" type="submit">
+			<p class="standart_txt center fsz18">или оформить заявку позже и <a href="#" class="popup_form_check_label_link">открыть Архив заявок</a>.</p>			
 		</form>
 	</div>
 </div>
-<footer>
+<footer class="client_footer">
 	<div class="content_block clearfix">
-		<a href="#" class="logo_footer"><span>ka</span> агрегатор</a>
-		<div class="footer_block">
+		<a href="#" class="logo_footer logo_client_footer"><span>ka</span> агрегатор</a>
+		<div class="footer_block footer_client_block">
 			<a href="#" class="footer_link">О компании</a>
 			<a href="#" class="footer_link">Пресс-служба</a>
 			<a href="#" class="footer_link">Реквизиты</a>
 			<a href="#" class="footer_link">Обратная связь</a>
 			<a href="#" class="footer_link">Работайте у нас</a>
 		</div>
-		<div class="footer_block footer_block2">
+		<div class="footer_block footer_block2 footer_client_block2">
 			<a href="#" class="social_link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a href="#" class="social_link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
 			<a href="#" class="social_link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 			<a href="#" class="social_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
 			<a href="#" class="social_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 		</div>		
-		<div class="footer_block footer_block3">
-			<p class="standart_txt">© 2017 ka агрегатор<br> Россия, Москва, 117997, ул. Вавилова 19. Генеральная лицензия на осуществление операций от 11 августа 2017 года. Регистрационный номер — 1481</p>	
+		<div class="footer_block footer_block3 footer_client_block3">
+			<p class="standart_txt">© 2017 ka агрегатор Россия, Москва, 117997, ул. Вавилова 19. Генеральная лицензия на осуществление операций от 11 августа 2017 года. Регистрационный номер — 1481</p>	
 		</div>
 	</div>
 </footer>
