@@ -481,7 +481,6 @@ form.client_form .select2-results__option{
 	padding:0 10px;
 	text-transform: uppercase;
 	overflow: hidden;
-	max-width: 169px;
 	text-overflow: ellipsis;
 }
 .client_table_th {
@@ -785,6 +784,23 @@ padding-bottom: 30px;
 	padding-right: 13px;
 }
 .table_gray_body {
-	display: table;
 	background-color: #ececec;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.table_gray_body_th,.table_gray_body_td {
+	display: table-cell;
+	font-weight: 500;
+	vertical-align: middle;
+	position: relative;
+	overflow: auto;
+	padding-right: 15px;
+
+}
+.table_gray_body_th_txt {
+	display: block;
+	font-size: 8px;
+}
+,.table_gray_body_td {
+	font-weight: 300;
 }
