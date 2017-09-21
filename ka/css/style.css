@@ -11,8 +11,8 @@ ul{
 	list-style:none;
 }
 body, html{
-	/*background:url(../img/bg_client.png) no-repeat center top;*/
-	/*height:1316px;*/
+	background:url(../img/bgappl2.png) no-repeat center top;
+	height:1316px;
 	min-width: 1200px;
 	font-family: 'Roboto';
 	font-weight: 300;
@@ -49,7 +49,10 @@ textarea::-webkit-input-placeholder {color:#ffffff;opacity: 1}
 textarea::-moz-placeholder          {color:#ffffff;opacity: 1}
 textarea:-moz-placeholder           {color:#ffffff;opacity: 1}
 textarea:-ms-input-placeholder      {color:#ffffff;opacity: 1}
-
+.red_txt {
+	color: #f82812;
+	font-weight: 400;
+}
 .wrap {
 	background: url(../img/bg.jpg) no-repeat;
 	-webkit-background-size: cover;
@@ -68,8 +71,9 @@ textarea:-ms-input-placeholder      {color:#ffffff;opacity: 1}
 }
 
 .wrapper {
-	background-color: #d9d9d9;
-	padding: 14px 0;	
+	/*background-color: #d9d9d9;*/
+	padding: 14px 0;
+	min-height: 75.7vh;	
 }
 .content_block {
 	width: 1106px;
@@ -131,6 +135,7 @@ a.logo span{
 form {
 	padding: 40px 0px 0px 0px;
 }
+
 form .form_input {
 	background-color: rgba(148,145,152,0.9);
 	font-size: 	18px;
@@ -356,9 +361,15 @@ a.link_redline:hover {
 	height: 30px;
 	margin: 0 auto;
 }
+.header_white_menu li a.black_list_link {
+	border: 1px solid #1d1d1b;
+	border-radius: 5px; 
+	padding: 0px 14px 2px 14px;
+	border-bottom: 1px solid;	
+}
 .header_white_menu li{
 	display: inline-block;
-	margin-right: 53px;
+	margin-right: 44px;
 	line-height: 30px;
 }
 .header_white_menu li:last-child{
@@ -375,7 +386,8 @@ a.link_redline:hover {
 	border-bottom: 3px solid #ea2713;
 }
 .content_block.white {
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
+	color: #1d1d1b;
 }
 form.client_form {
 	width: 540px;
@@ -411,6 +423,10 @@ form.client_form .select2-results__option{
 	padding-top:15px;
 	padding-bottom: 39px;
 }
+.standart_txt.center.padding2 {
+	padding-top: 12px;
+	padding-bottom: 10px;
+}
 .form_input.form_input2.form_input4 {
 	width: 184px !important;
 }
@@ -433,6 +449,115 @@ form.client_form .select2-results__option{
 .popup_form_block label.max_width {
 	max-width: 265px;
 }
+
+
+/********************Client Application table***********************/
+
+.client_table {
+	display: table;
+	color: #1d1d1b;
+	padding: 10px 0px 10px 10px;
+	width: 99.1%;
+}
+.client_table_tr_head {
+	display: table-header-group;
+}
+.client_table_tr {
+	display: table-row;
+}
+.client_table_tr:hover .client_table_td{
+	border-right: 10px solid #ececec;
+	background-color: #ececec; 
+}
+.client_table_tr:hover .client_table_td:last-child{
+	border-right: 10px solid #fff;
+}
+.client_table_tr:hover .client_table_td:first-child{
+		border-left: 4px solid #f82812;
+}
+.client_table_th,.client_table_td {
+	display: table-cell;
+	border-right: 10px solid white;
+	padding:0 10px;
+	text-transform: uppercase;
+	overflow: hidden;
+	max-width: 169px;
+	text-overflow: ellipsis;
+}
+.client_table_th {
+	background-color: #d9d9d9;
+	font-weight: 500;
+	vertical-align: middle;
+	font-size: 14px;
+	position: relative;
+	overflow: auto;
+	max-height: 35px !important;
+}
+.client_table_th_txt {
+	display: inline-block;
+	float: left;
+	padding-right: 15px;
+}
+.client_table_th_txt2 {
+	display: block;
+	font-size: 9px;
+}
+.client_table_th_option {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	position: relative;
+	float: right;
+	background: url(../img/gearonlight.png) no-repeat;
+	cursor: pointer;
+}
+.client_table_th_option.middle {
+	margin-top: 8px;
+}
+.client_table_td {
+	padding:15px 10px;
+}
+.client_table_td_txt {
+	font-size: 12px;
+
+}
+.client_table_tr .client_table_td:first-child{
+		border-left: 4px solid transparent;
+		padding-left: 6px;
+}
+.client_table_th_option_block {
+	width: 110px;
+	height: 58px;
+	background-color: #fff;
+	padding: 9px;
+	display: none;
+	position: absolute;
+	-webkit-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
+	box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);	
+	padding-bottom: 0;
+	border-radius: 3px;
+	top: 10px;
+}
+.client_table_th_option_block.active {
+	display: block;
+}
+.option_block_link {
+	color: #1d1d1b;
+	display: block;
+	font-weight: 300;
+	font-size: 10px;
+	text-transform: none;
+	padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
 /********************MODAL ***********************/
 
 #wrapper_popup{
@@ -624,3 +749,42 @@ padding-left: 80px;
 padding-bottom: 30px;
 }
 /********************MODAL END***********************/
+
+
+
+
+
+
+
+/********************Client Application2 ***********************/
+.table_gray {
+	padding:15px;
+}
+.table_gray_head {
+	color: #fff;
+	padding: 0 10px;
+	background-color: #575756;
+	font-size: 10px;
+	font-weight: 500;
+}
+.table_gray_head_link {
+	line-height: 35px;
+	padding-right: 36px;
+}
+.table_gray_head_link:last-child {
+	padding-right: 0;
+}
+.table_gray_head_link.link_close {
+	float: left;
+	display: inline-block;
+	background: url(../img/back.png) no-repeat center left;
+	padding-left: 30px;
+}
+.table_gray_head_right {
+	float: right;
+	padding-right: 13px;
+}
+.table_gray_body {
+	display: table;
+	background-color: #ececec;
+}

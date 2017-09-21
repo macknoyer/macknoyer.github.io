@@ -20,6 +20,12 @@
 			 minimumResultsForSearch: Infinity,
 			 allowClear: true
 		});
+		$('.client_table_th_option').click(function(){
+			$(this).next('.client_table_th_option_block').toggleClass('active');
+		});
+		$('.option_block_link').click(function(){
+			$(this).parent().toggleClass('active');
+		});
 	});
 })(jQuery);
 
