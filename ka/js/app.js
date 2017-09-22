@@ -20,11 +20,20 @@
 			 minimumResultsForSearch: Infinity,
 			 allowClear: true
 		});
+		$('.client_table_td_select').select2({
+			placeholder: 'Выбрать',
+			 minimumResultsForSearch: Infinity,
+			 allowClear: true,
+			 dropdownParent: $('.client_table_td')
+		});
 		$('.client_table_th_option').click(function(){
 			$(this).next('.client_table_th_option_block').toggleClass('active');
 		});
 		$('.option_block_link').click(function(){
 			$(this).parent().toggleClass('active');
+		});
+		$('.client_table_th_option_block').mouseleave(function(){
+			$(this).removeClass('active');
 		});
 	});
 })(jQuery);
