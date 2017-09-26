@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/vendor/jquery-ui/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts-size.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+<div id="wrapper_popup">
+<div id="background_popup" onclick="popup_close()"></div>
+	<div class="popup" id="popup_client_white">
+		<form action="">
+		<p class="standart_txt center padding2">Вы даете оценку работе агентства «Сыск»: <span class="red_txt">Удовлетворительно!</span></p>
+			<input class="form_input submit" value="Сохранить рейтинг" type="submit">
+			<p class="standart_txt center">или <a onclick="popup_close()" class="red_txt">оценить позже.</a></p>
+		</form>
+	</div>
+</div>	
+<header>
+<div class="content_block clearfix">
+	<div class="header_block">
+		<a href="#" class="logo"><span>ka</span>агрегатор</a>
+	</div>
+	<div class="header_block fsz18">
+		<span class="mOffer"></span><a href="#" class="link_redline">Оформить заявку</a>
+	</div>
+	<div class="header_block fsz21">
+		<a href="tel:+74955005550">+7 495 500-555-0</a>
+	</div>
+	<div class="header_block float">
+		<a href="#" class="form_avatar"></a>
+	</div>
+</div>
+<div class="header_white_menu_block">
+		<ul class="header_white_menu fsz14">
+			<li><a href="#">Открытые заявки</a></li>
+			<li><a class="active" href="#">Открытые агентства</a></li>
+			<li><a href="#">Открытые кандидаты</a></li>
+			<li><a href="#">Архив заявок</a></li>
+			<li><a class="black_list_link" href="#">Черный список агентств</a></li>
+		</ul>
+</div>
+</header>
+<div class="wrapper">
+	<div class="content_block white">
+		<p class="standart_txt center padding2">На данный момент Вы работаете с <span>5</span> агентствами.</p>
+		<div class="client_table">
+			<div class="client_table_tr_head">
+				<div class="client_table_th"><span class="client_table_th_txt">Агентство</span><span class="client_table_th_option"></span>
+					<div class="client_table_th_option_block">
+						<a href="#" class="option_block_link">По возрастанию</a>
+						<a href="#" class="option_block_link">По убыванию</a>
+					</div></div>
+				<div class="client_table_th"><span  class="client_table_th_txt">ФИО контактного лица</span><span class="client_table_th_option" class="client_table_th_option"></span>
+					<div class="client_table_th_option_block">
+						<a href="#" class="option_block_link">По возрастанию</a>
+						<a href="#" class="option_block_link">По убыванию</a>
+					</div></div>
+				<div class="client_table_th"><span  class="client_table_th_txt">Телефон</span><span class="client_table_th_option"></span>
+					<div class="client_table_th_option_block">
+						<a href="#" class="option_block_link">По возрастанию</a>
+						<a href="#" class="option_block_link">По убыванию</a>
+					</div></div>
+				<div class="client_table_th"><span  class="client_table_th_txt">email</span><span class="client_table_th_option"></span>
+					<div class="client_table_th_option_block">
+						<a href="#" class="option_block_link">По возрастанию</a>
+						<a href="#" class="option_block_link">По убыванию</a>
+					</div></div>
+				<div class="client_table_th"><span  class="client_table_th_txt">заявка</span></div>
+				<div class="client_table_th"><span  class="client_table_th_txt">Комментарий</span></div>
+			</div>
+			<div class="client_table_tr">
+				<div class="client_table_td">
+					<span class="client_table_td_txt">Кадры ПС</span>
+					<div class="rating">
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+					</div>
+				</div>
+				<div class="client_table_td">
+					<span class="client_table_td_txt">Мария Иванова</span>
+					<div class="rating">
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+						<span onclick="popup_open('popup_client_white')" class="star"></span>
+					</div>
+				</div>
+				<div class="client_table_td"><span class="client_table_td_txt">+7 903 125 1234</span></div>
+				<div class="client_table_td">
+					<div class="client_table_th_txt_block tooltip">
+						<span class="client_table_td_txt">mivanova@pchr.ru</span>
+						<span class="tooltip_text red_bg">mivanova@pchr.ru</span>
+					</div>
+				</div>
+				<div class="client_table_td"><a class="client_table_td_txt red_link">0306060</a></div>
+				<div class="client_table_td center">
+					<span class="client_table_td_txt"><a href="#" class="client_table_td_cv comment"></a>
+						<div class="client_table_th_option_block gray_bg">
+							<p class="standart_txt fsz10">Очень недружелюбный агент. Много пафоса.</p>
+						</div>					
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="client_footer">
+	<div class="content_block clearfix">
+		<a href="#" class="logo_footer logo_client_footer"><span>ka</span> агрегатор</a>
+		<div class="footer_block footer_client_block">
+			<a href="#" class="footer_link">О компании</a>
+			<a href="#" class="footer_link">Пресс-служба</a>
+			<a href="#" class="footer_link">Реквизиты</a>
+			<a href="#" class="footer_link">Обратная связь</a>
+			<a href="#" class="footer_link">Работайте у нас</a>
+		</div>
+		<div class="footer_block footer_block2 footer_client_block2">
+			<a href="#" class="social_link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+		</div>		
+		<div class="footer_block footer_block3 footer_client_block3">
+			<p class="standart_txt">© 2017 ka агрегатор Россия, Москва, 117997, ул. Вавилова 19. Генеральная лицензия на осуществление операций от 11 августа 2017 года. Регистрационный номер — 1481</p>	
+		</div>
+	</div>
+</footer>
+</body>
+</html>
