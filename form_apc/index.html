@@ -18,8 +18,9 @@
 <body>
 	<div class="content_block">
 		<form class="find_car" action="find_car">
-			<label class="fsz31" for="car_name">Найти автомобиль в</label>
-			<span class="car_name_wrap">
+		<div class="wrapper clearfix">
+			<div class="car_name_wrap">
+				<label class="fsz31" for="car_name">Найти автомобиль в</label>
 				<input class="search_box" placeholder="Введите название населенного пукта" name="car_name" type="text">
 				<ul class="search_results">
 					<li>
@@ -30,19 +31,20 @@
 						<span class="txt_light_gray fsz12">Московская область</span>
 					</li>
 				</ul>
-			</span>
+			</div>	
 				<div class="form_select_wrap kms">		
 					<select class="form_select" name="kms" id="">
 						<option value="1">+100км</option>
 						<option value="2">+200км</option>
 						<option value="2">+300км</option>
 					</select>
-				</div>	
-			<div class="wrapper">
+				</div>
+			</div>
+			<div class="wrapper clearfix">
 				<span class="txt_gray">Быстрый поиск</span>
 				<a class="red_dotted_link" href="#">Расширенный поиск</a>
 			</div>
-			<div class="wrapper">
+			<div class="wrapper clearfix">
 				<div class="form_select_wrap car_type">		
 					<select class="form_select" name="car_type" id="">
 						<option value="1">Хэтчбэк</option>
