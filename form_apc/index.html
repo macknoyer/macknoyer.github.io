@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/vendor/jquery-ui/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts-size.css" />
+
+</head>
+<body>
+	<div class="content_block">
+		<form class="find_car" action="find_car">
+			<label class="fsz31" for="car_name">Найти автомобиль в</label>
+			<span class="car_name_wrap">
+				<input class="search_box" placeholder="Введите название населенного пукта" name="car_name" type="text">
+				<ul class="search_results">
+					<li>
+						<span>Москва и Московская область</span>
+					</li>
+					<li>
+						<span>Москва</span>
+						<span class="txt_light_gray fsz12">Московская область</span>
+					</li>
+				</ul>
+			</span>
+				<div class="form_select_wrap kms">		
+					<select class="form_select" name="kms" id="">
+						<option value="1">+100км</option>
+						<option value="2">+200км</option>
+						<option value="2">+300км</option>
+					</select>
+				</div>	
+			<div class="wrapper">
+				<span class="txt_gray">Быстрый поиск</span>
+				<a class="red_dotted_link" href="#">Расширенный поиск</a>
+			</div>
+			<div class="wrapper">
+				<div class="form_select_wrap car_type">		
+					<select class="form_select" name="car_type" id="">
+						<option value="1">Хэтчбэк</option>
+						<option value="2">Седан</option>
+						<option value="2">Жип</option>
+					</select>
+				</div>	
+				<div class="form_select_wrap manufac">	
+					<select class="form_select" name="manufac" id="">
+						<option value="1">Россия</option>
+						<option value="2">Бангладеш</option>
+						<option value="2">Лихтенштейн</option>
+					</select>
+				</div>
+
+				<div class="form_select_wrap brand">	
+					<select class="form_select" name="brand" id="">
+						<option value="1">Лада</option>
+						<option value="1">ВАЗ</option>
+						<option value="1">ТАЗ</option>
+					</select>
+				</div>
+				<div class="form_select_wrap model">	
+					<select class="form_select" name="model" id="">
+						<option value="1">Приора</option>
+						<option value="2">Приора</option>
+						<option value="2">Приора</option>
+					</select>
+				</div>
+				<div class="form_select_wrap year">				
+					<select class="form_select" name="year" id="">
+						<option value="1">2009</option>
+						<option value="2">2008</option>
+						<option value="2">2007</option>
+					</select>
+				</div>
+				<input class="filter_input" type="text" placeholder="Цена от" />	
+				<input class="filter_input right" type="text" placeholder="до"/>
+				<input type="submit" value="Найти" />		
+			</div>
+			<div class="wrapper no_padding">	
+				<input class="form_checkbox" type="checkbox" name="checkbox_1" /><label for="checkbox_1">Кроме битых</label>	
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
