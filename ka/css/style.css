@@ -633,7 +633,7 @@ a.client_table_td_txt {
 	display: none;
     overflow-x: hidden;
     overflow-y: hidden;
-    position: fixed;
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
