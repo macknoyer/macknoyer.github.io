@@ -150,7 +150,7 @@ form {
 form .form_input {
 	background-color: rgba(148,145,152,0.9);
 	font-size: 	18px;
-	border:none;
+	border:1px solid rgba(148,145,152,0.9);
 	color:white;
 	margin:0 auto;
 	width: 222px;	
@@ -641,6 +641,7 @@ a.client_table_td_txt {
     bottom: 0px;
     left: 0px;
     z-index: 280;
+    min-height: 1037px;
 	min-width: 320px;
 }
 
@@ -704,12 +705,41 @@ a.client_table_td_txt {
 .popup form .form_input {
 	margin-bottom: 0;
     width: 94.6%;
+    position: relative;
 }
+
+.popup form .form_input.error {
+	border: 1px solid #dd2614;
+}
+
 .popup_form_block label{
 	float: left;
 	padding-top: 5px;
 
 }
+/*.popup_input_error_wrap {
+	position: relative;
+	display: inline-block;
+}
+.popup_input_error_wrap .form_input.form_input3:last-child {
+	
+	margin-right: 24px;
+}
+.popup_input_error_wrap:last-child .form_input.form_input3 {
+
+	margin-right: 0;
+}
+.popup_input_error_wrap .form_input.form_input3{
+	width: 100% !important;
+	float: none;
+}
+.popup_input_label{
+	font-size: 12px;
+	color: #dd2614;
+	position: absolute;
+	left: 15px;
+	margin-top: -21px;
+}*/
 .select2-container{
 	float: right;
 	min-width: 389px;
@@ -759,7 +789,7 @@ background-color: rgba(68,62,78,0.9);
 }
 .date_open .form_input:last-child{
 	margin-right: 0;
-	width: 73px !important;
+	width: 67px !important;
 
 }
 .form_input.form_input2 {
@@ -768,7 +798,7 @@ background-color: rgba(68,62,78,0.9);
 
 }
 .form_input.form_input3 {
-	width: 42.2% !important;
+	width: 41.84% !important;
 	float: left;
 	margin-right: 24px;
 }
