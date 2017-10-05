@@ -150,7 +150,7 @@ form {
 form .form_input {
 	background-color: rgba(148,145,152,0.9);
 	font-size: 	18px;
-	border:1px solid rgba(148,145,152,0.9);
+	border:1px solid transparent;
 	color:white;
 	margin:0 auto;
 	width: 222px;	
