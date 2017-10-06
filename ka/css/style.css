@@ -644,6 +644,9 @@ a.client_table_td_txt {
     min-height: 1037px;
 	min-width: 320px;
 }
+#wrapper_popup.wrapper_popup2{
+    min-height: 100vh;
+}
 
 #background_popup {
     position: fixed;
