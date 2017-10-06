@@ -16,6 +16,31 @@
 
 </head>
 <body>
+	<header>
+		<div class="header_menu clearfix">
+			<ul>
+				<li>Услуги</li>
+				<li>FAQ</li>
+				<li>Новости</li>
+				<li>Отзывы</li>
+				<li>Помощь</li>
+				<li>Обратная связь</li>
+				<li>Поиск</li>
+			</ul>
+			<ul class="header_menu_right">
+				<li class="search_link2">Мои поиски</li>
+				<li class="star">Избранное</li>
+				<li class="human">Вход</li>
+			</ul>
+		</div>
+	</header>
+	<div class="content_block clean clearfix">
+		<a href="#" class="logo txt_dark_gray">Продажа автомобилей<br> по России и СНГ</a>
+	<ul class="breadcrumb clearfix">
+		<li><a href="#">Главная</a></li>
+		<li>Поиск автомобилей</li>
+	</ul>	
+	</div>	
 	<div class="content_block">
 		<form class="find_car" action="find_car">
 		<div class="wrapper clearfix">
@@ -39,27 +64,20 @@
 						<option value="2">+300км</option>
 					</select>
 				</div>
+				<a href="#" class="red_link search_link">Сохранить поиск</a>
 			</div>
-			<div class="wrapper clearfix">
+			<div class="wrapper clearfix" style="display: none;">
 				<span class="txt_gray">Быстрый поиск</span>
 				<a class="red_dotted_link" href="#">Расширенный поиск</a>
 			</div>
 			<div class="wrapper clearfix">
-				<div class="form_select_wrap car_type">		
-					<select class="form_select" name="car_type" id="">
-						<option value="1">Хэтчбэк</option>
-						<option value="2">Седан</option>
-						<option value="2">Жип</option>
-					</select>
-				</div>	
 				<div class="form_select_wrap manufac">	
 					<select class="form_select" name="manufac" id="">
 						<option value="1">Россия</option>
 						<option value="2">Бангладеш</option>
 						<option value="2">Лихтенштейн</option>
 					</select>
-				</div>
-
+				</div>	
 				<div class="form_select_wrap brand">	
 					<select class="form_select" name="brand" id="">
 						<option value="1">Лада</option>
@@ -67,6 +85,7 @@
 						<option value="1">ТАЗ</option>
 					</select>
 				</div>
+
 				<div class="form_select_wrap model">	
 					<select class="form_select" name="model" id="">
 						<option value="1">Приора</option>
@@ -74,19 +93,104 @@
 						<option value="2">Приора</option>
 					</select>
 				</div>
-				<div class="form_select_wrap year">				
-					<select class="form_select" name="year" id="">
-						<option value="1">2009</option>
-						<option value="2">2008</option>
-						<option value="2">2007</option>
+				<div class="form_select_wrap car_type">	
+					<select class="form_select" name="car_type" id="">
+						<option value="1">Хэтчбэк</option>
+						<option value="2">Седан</option>
+						<option value="2">Жип</option>
+					</select>
+				</div>	
+				<div class="form_select_wrap gear_box">	
+					<select class="form_select" name="car_type" id="">
+						<option value="1">автомат</option>
+						<option value="2">механника</option>
+						<option value="2">робот</option>
 					</select>
 				</div>
-				<input class="filter_input" type="text" placeholder="Цена от" />	
-				<input class="filter_input right" type="text" placeholder="до"/>
-				<input type="submit" value="Найти" />		
+				<div class="form_select_wrap wheel">				
+					<select class="form_select" name="wheel" id="">
+						<option value="1">правый</option>
+						<option value="2">левый</option>
+						<option value="2">средний</option>
+					</select>
+				</div>
+			</div>	
+			<div class="wrapper clearfix">
+				<div class="filter_input_wrap clearfix">
+					<label class="filter_label" for="">Год</label>
+					<input class="filter_input" type="text" placeholder="от" />	
+					<input class="filter_input right" type="text" placeholder="до"/>
+				</div>	
+				<div class="form_select_wrap engine">	
+					<select class="form_select" name="engine_type" id="">
+						<option value="1">тип двигателя</option>
+						<option value="2">дизель</option>
+					</select>
+				</div>	
+				<div class="filter_input_wrap clearfix">
+					<label class="filter_label" for="">Обьем</label>
+					<input class="filter_input" type="text" placeholder="от" />	
+					<input class="filter_input right" type="text" placeholder="до"/>
+				</div>	
+				<div class="form_select_wrap wheel_drive">	
+					<select class="form_select" name="wheel_drive" id="">
+						<option value="1">привод</option>
+						<option value="2">дизель</option>
+					</select>
+				</div>
+				<div class="filter_input_wrap clearfix">
+					<label class="filter_label" for="">Мощность л.с.</label>
+					<input class="filter_input wider" type="text" placeholder="от" />	
+					<input class="filter_input wider right" type="text" placeholder="до"/>
+				</div>		
+			</div>	
+			<div class="wrapper clearfix">
+				<div class="filter_input_wrap clearfix">
+					<label class="filter_label" for="">Пробег тыс. км</label>
+					<input class="filter_input wider2" type="text" placeholder="от" />	
+					<input class="filter_input wider2 right" type="text" placeholder="до"/>
+				</div>	
+				<div class="form_select_wrap seller">	
+					<select class="form_select" name="seller" id="">
+						<option value="1">Продавец</option>
+						<option value="2">дизель</option>
+					</select>
+				</div>	
+				<div class="form_select_wrap used">	
+					<select class="form_select" name="used" id="">
+						<option value="1">С пробегом</option>
+						<option value="2">дизель</option>
+					</select>
+				</div>
+				<div class="form_select_wrap used">	
+					<select class="form_select" name="used" id="">
+						<option value="1">Кроме битых</option>
+						<option value="2">дизель</option>
+					</select>
+				</div>
+				<input class="form_checkbox checkbox2" type="checkbox" name="checkbox_2" /><label class="txt_gray" for="checkbox_2">Только с фото</label>
 			</div>
-			<div class="wrapper no_padding">	
-				<input class="form_checkbox" type="checkbox" name="checkbox_1" /><label class="txt_gray" for="checkbox_1">Кроме битых</label>	
+			<div class="wrapper padding2 clearfix">
+				<span class="txt_gray">Цвет</span>
+				<ul class="colors">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+				<input type="submit" value="Найти" />	
+			<div class="wrapper no_padding">		
 			</div>
 		</form>
 	</div>
