@@ -18,5 +18,8 @@
 				$(this).children('.fa').removeClass('fa-star');
 			}
 		});
+		$('ul.colors li a').click (function (){
+			$(this).toggleClass('active');
+		});
 	});
 })(jQuery);
