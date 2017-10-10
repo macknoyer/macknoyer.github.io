@@ -43,6 +43,9 @@ a.logo.adaptiv_logo {
 .adaptiv_display_b,.adaptiv_display_ib {
 	display: none;
 }
+.car_info.car_info2 .link_border{
+	display: none;
+}
 @media only screen and (max-width : 992px) {
 	body, html {
 		min-width: 320px;
@@ -244,6 +247,10 @@ margin-top: 18px;
 }
 .car_info.padding_top {
 	padding-top: 0;
+	width: 100%;
+}
+.car_block.gray_bg {
+    background-color: #fff;
 }
 .wrapper.padding_left_right {
 	padding-bottom: 18px;
@@ -267,7 +274,6 @@ footer a.artmax_logo {
 .logo.gray {
 	margin-left: 18px;
     margin-right: 0px;
-    height: 48px;
 }
 .car_brands_list {
 	margin-right: 55px;
@@ -278,6 +284,10 @@ footer a.artmax_logo {
 .pagination.adaptiv_pagination a.float_r{
 	float: right;
 	margin-right: 18px;
+}
+.car_info.car_info2 .link_border{
+	display: block;
+	margin-right: 10px;
 }
 }
 @media only screen and (max-width : 482px) {
