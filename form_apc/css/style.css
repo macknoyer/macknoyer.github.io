@@ -13,7 +13,6 @@ ul{
 	list-style:none;
 }
 body, html{
-	height:1200px;
 	min-width: 1100px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -71,6 +70,7 @@ input.no_margin_sub[type="submit"] {
 }
 .header_menu ul li a{
 	color: white;
+	cursor: pointer;
 
 }
 .header_menu ul li{
@@ -565,6 +565,9 @@ input.no_bg_sub[type="submit"] {
 .car_brands_list li {
 	padding-bottom: 15px;
 }
+.car_brands_list li span{
+	color: #5f5f5f;
+}
 .car_brands_list li a {
 	color: #f83201;
 	text-decoration: underline;
@@ -660,13 +663,19 @@ input.no_bg_sub[type="submit"] {
 }
 .car_info {
 	padding-left: 11px;
+	position: relative;
 }
 .car_info .orange_txt{
 	padding-bottom: 8px;
 }
-.car_info-type {
-	padding-left: 51px;
+.car_info-type {    
+	margin-left: 11px;
 	margin-bottom: 9px;
+}
+.car_info_type-img {
+	display: inline-block;
+	width: 50px;
+	height: 19px;
 	background-repeat: no-repeat;
 	background-position: center left;
 }
@@ -772,6 +781,7 @@ input.no_bg_sub.green[type="submit"] {
 .logo.gray {
 	background-image: url(../img/logo_gray.png);
 	margin-right: 36px;
+    height: 48px;
 }
 footer {
 	background-color: #ccc;
@@ -801,9 +811,56 @@ footer a.artmax_logo{
 	line-height: 39px;
 	margin-right: 	10px;
 }
+.view_link.view_link2 {
+	margin-right: 0px;
+}
 .view_link.active {
 	color: #f83201;
 }
-.view_link:nth-child(2n+1) {
+.review_popup {
+	padding: 13px;
+	border:1px solid #c2c2c2;
+	border-radius: 3px;
+	position: absolute;
+	display: none;
+}
+.review_popup {
+	padding: 11px;
+	border:1px solid #c2c2c2;
+	border-radius: 3px;
+	position: absolute;
+	display: none;
+	background-color: #fff;
+	z-index: 10;
+	top: 0;
+	margin-left: 203px;
+	min-width: 274px;	
+}
+.review_popup .txt_gray{
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+.review_popup .review_popup_close{
+	background: url(../img/review_popup_close.png) no-repeat;
+	width: 11px;
+	cursor: pointer;
+	height: 11px;
+	margin-top: 4px;
+}
+.partner_link {
+	text-decoration: underline;
+	color: #f83201;
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 20px;
+	margin-right: 20px;
+}
+.partner_link:hover {
+	text-decoration: none;
+}
+.partner_link:nth-child(2n+1){
 	margin-right: 0px;
+}
+.submit_margin {
+	margin-right: 13px;
 }

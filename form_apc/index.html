@@ -13,11 +13,15 @@
 	<link rel="stylesheet" type="text/css" href="css/select2.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/fonts-size.css" />
+	<link rel="stylesheet" type="text/css" href="css/media.css" />
 
 </head>
 <body>
-	<header>
-		<div class="header_menu clearfix">
+	<header class="clearfix">
+		<a class="humb_link float_l"></a>
+		<a href="#" class="logo txt_dark_gray adaptiv_logo float_l">Продажа автомобилей<br> по России и СНГ</a>
+				<input class="adaptiv_but_head float_r" type="submit" value="Найти" />	
+		<div class="header_menu clearfix adaptiv_display_n">
 			<ul>
 				<li><a>Услуги</a></li>
 				<li><a>FAQ</a></li>
@@ -34,7 +38,7 @@
 			</ul>
 		</div>
 	</header>
-	<div class="content_block clean clearfix">
+	<div class="content_block clean adaptiv_display_n clearfix">
 		<a href="#" class="logo txt_dark_gray">Продажа автомобилей<br> по России и СНГ</a>
 	<ul class="breadcrumb clearfix">
 		<li><a href="#">Главная</a></li>
@@ -45,7 +49,7 @@
 		<form class="find_car" action="find_car">
 		<div class="wrapper clearfix">
 			<div class="car_name_wrap">
-				<label class="fsz31" for="car_name">Найти автомобиль в</label>
+				<label class="fsz31 fszm16" for="car_name">Найти автомобиль в</label>
 				<input class="search_box" placeholder="Введите название населенного пукта" name="car_name" type="text">
 				<ul class="search_results">
 					<li>
@@ -64,7 +68,7 @@
 						<option value="2">+300км</option>
 					</select>
 				</div>
-				<a href="#" class="red_link search_link">Сохранить поиск</a>
+				<a href="#" class="red_link search_link adaptiv_display_n">Сохранить поиск</a>
 			</div>
 			<div class="wrapper clearfix" style="display: none;">
 				<span class="txt_gray">Быстрый поиск</span>
@@ -85,7 +89,9 @@
 						<option value="1">ТАЗ</option>
 					</select>
 				</div>
-
+			<div class="wrapper clearfix adaptiv_display_b">
+				<a class="red_dotted_link hide" href="#">Скрыть</a>
+			</div>	
 				<div class="form_select_wrap model">	
 					<select class="form_select" name="model" id="">
 						<option value="1">Приора</option>
@@ -168,7 +174,7 @@
 						<option value="2">дизель</option>
 					</select>
 				</div>
-				<input class="form_checkbox checkbox2" type="checkbox" name="checkbox_2" /><label class="txt_gray" for="checkbox_2">Только с фото</label>
+				<input class="form_checkbox checkbox2 adaptiv_display_n" type="checkbox" name="checkbox_2" /><label class="txt_gray adaptiv_display_n" for="checkbox_2">Только с фото</label>
 			</div>
 			<div class="wrapper padding2 clearfix">
 				<div class="wrapper_color clearfix float_l">
@@ -192,6 +198,7 @@
 					</ul>
 				</div>
 				<div class="filter_input_wrap clearfix">
+					<label class="filter_label" for="">Цена</label>
 					<input class="filter_input" type="text" placeholder="от" />	
 					<input class="filter_input right" type="text" placeholder="до"/>
 				</div>					
@@ -204,7 +211,10 @@
 						<option value="2">Выводить все</option>
 					</select>
 				</div>
-				<input class="no_bg_sub" type="submit" value="Сбросить" />	
+				<input class="no_bg_sub adaptiv_display_n" type="submit" value="Сбросить" />
+				<a href="#" class="red_link search_link adaptiv_display_b">Сохранить поиск</a>	
+				<input class="form_checkbox checkbox2 adaptiv_display_b float_l" type="checkbox" name="checkbox_2" /><label class="txt_gray checkbox_txt float_l adaptiv_display_b" for="checkbox_2">Только с фото</label>	
+
 				<input class="no_margin_sub" type="submit" value="Найти" />	
 				</div>
 			</div>
@@ -216,13 +226,16 @@
 	</div>
 	<div class="content_block">
 		<div class="wrapper padding_left_right padding4 clearfix underline">
-			<div class="float_l">
+			<div class="float_l adaptiv_float_n">
 				<p class="counter_text fsz16">По вашему запросу найдено <span class="orange_txt">2 500</span> объявлений</p>
 			</div>
+			<div class="float_l">
+				<input class="submit_margin adaptiv_margin_top" type="submit" value="Смотреть модели" />	
+				<input class="no_bg_sub adaptiv_margin_top" type="submit" value="Анализ списка" />	
+				<input class="no_bg_sub adaptiv_margin_top" type="submit" value="Статистика цен" />
+			</div>	
 			<div class="float_r">
-				<input class="no_bg_sub" type="submit" value="Анализ списка" />	
-				<input class="no_bg_sub" type="submit" value="Статистика цен" />	
-				<a class="view_link txt_light_gray fsz34 float_r" href="#"><i class="fa fa-align-justify" aria-hidden="true"></i></i></a>
+				<a class="view_link view_link2 txt_light_gray fsz34 float_r" href="#"><i class="fa fa-align-justify" aria-hidden="true"></i></i></a>
 				<a class="view_link txt_light_gray active fsz34 float_r" href="#"><i class="fa fa-list" aria-hidden="true"></i></a>
 			</div>
 		</div>
@@ -240,6 +253,7 @@
 					</select>
 				</div>
 		</div>
+
 		<div class="wrapper padding_left_right padding5 clearfix">
 			<h2 class="fsz18 brends_h1">Марки автомобилей</h2>
 			<p class="txt_light_gray">При клике на марку ниже появятся найденные модели</p>
@@ -264,20 +278,23 @@
 				<li><a href="#">Daewoo</a><span>(223)</span></li>
 				<li><a href="#">Ford</a><span>(223)</span></li>
 			</ul>
-			<ul class="car_brands_list float_l">
+			<ul class="car_brands_list float_l adaptiv_display_n">
 				<li><a href="#">Audi</a><span>(223)</span></li>
 				<li><a href="#">BMW</a><span>(223)</span></li>
 				<li><a href="#">Chevrolet</a><span>(223)</span></li>
 				<li><a href="#">Daewoo</a><span>(223)</span></li>
 				<li><a href="#">Ford</a><span>(223)</span></li>
 			</ul>
-			<ul class="car_brands_list float_l">
+			<ul class="car_brands_list float_l adaptiv_display_n">
 				<li><a href="#">Audi</a><span>(223)</span></li>
 				<li><a href="#">BMW</a><span>(223)</span></li>
 				<li><a href="#">Chevrolet</a><span>(223)</span></li>
 				<li><a href="#">Daewoo</a><span>(223)</span></li>
 				<li><a href="#">Ford</a><span>(223)</span></li>
 			</ul>
+		<div class="wrapper clearfix clear adaptiv_display_b">
+			<a href="" class="link_border margin_none">Все марки</a>
+		</div>
 		<div class="control-group clearfix">
     <label class="control control-radio float_l">
        Все объявления
@@ -301,8 +318,15 @@
 				<img src="img/car_img.png" alt="">
 			</a>
 			<div class="car_info float_l">
-				<a href="#" class="orange_txt fsz18">РОЛЬФ Сити BlueFish <a href="#" class="link_border">Отзывы</a></a>
-				<p style="background-image: url(img/car_type_sedan.png);" class="car_info-type">Седан</p>
+				<a href="#" class="orange_txt fsz18">РОЛЬФ Сити BlueFish <a class="link_border">Отзывы</a></a>
+				<div class="review_popup">
+					<span>Отзывы о модели Rolf City BlueFish</span>
+					<div class="review_popup_close float_r"></div>
+					<p class="txt_gray fsz12">Выберите сайт для перехода<br> на страницу отзывов</p>
+					<a href="#" class="partner_link" style="background-image: url(img/auto_ru.png);">Auto.ru</a>			
+					<a href="#" class="partner_link" style="background-image: url(img/drom_ru.png);">Drom.ru</a>			
+				</div>
+				<div class="car_info_type-block clearfix"><span style="background-image: url(img/sedan.png);" class="car_info_type-img float_l"></span><p class="car_info-type float_l">Седан</p></div>
 				<p class="car_info_padding_txt">Красный, 1,6 АТ (123 л.с.)</p>
 				<p class="fw600 car_info_padding_txt">Пробег 120 000 км</p>
 				<p class="car_info_padding_txt">передний, бензин, левый руль</p>
@@ -310,8 +334,8 @@
 			</div>
 			<div class="car_info padding_top float_l">
 				<p class="car_info_padding_txt">Новый, 2016 г.</p>
-				<p class="car_info_padding_txt"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
-				<p class="car_info_padding_txt">ООО “Ромашка”</p>
+				<p class="car_info_padding_txt adaptiv_display_n"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
+				<p class="car_info_padding_txt adaptiv_display_n">ООО “Ромашка”</p>
 			</div>
 			<div class="car_price float_r">
 				<p class="car_info_padding_txt fsz24 orange_txt">200 000 руб. <a class="add_fav_link fsz18"><i class="fa fa-star-o" aria-hidden="true"></i></a></p>
@@ -329,7 +353,7 @@
 			</a>
 			<div class="car_info float_l">
 				<a href="#" class="orange_txt fsz18">РОЛЬФ Сити BlueFish <a href="#" class="link_border">Отзывы</a></a>
-				<p style="background-image: url(img/car_type_sedan.png);" class="car_info-type">Седан</p>
+				<div class="car_info_type-block clearfix"><span style="background-image: url(img/sedan.png);" class="car_info_type-img float_l"></span><p class="car_info-type float_l">Седан</p></div>
 				<p class="car_info_padding_txt">Красный, 1,6 АТ (123 л.с.)</p>
 				<p class="fw600 car_info_padding_txt">Пробег 120 000 км</p>
 				<p class="car_info_padding_txt">передний, бензин, левый руль</p>
@@ -337,8 +361,8 @@
 			</div>
 			<div class="car_info padding_top float_l">
 				<p class="car_info_padding_txt">Новый, 2016 г.</p>
-				<p class="car_info_padding_txt"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
-				<p class="car_info_padding_txt">ООО “Ромашка”</p>
+				<p class="car_info_padding_txt adaptiv_display_n"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
+				<p class="car_info_padding_txt adaptiv_display_n">ООО “Ромашка”</p>
 			</div>
 			<div class="car_price float_r">
 				<p class="car_info_padding_txt fsz24 orange_txt">200 000 руб. <a class="add_fav_link fsz18"><i class="fa fa-star-o" aria-hidden="true"></i></a></p>
@@ -351,7 +375,7 @@
 
 		</div>
 	</div>
-	<div class="content_block banner no_bg clearfix"></div>
+	<div class="content_block banner no_bg clearfix adaptiv_display_n"></div>
 	<div class="content_block">
 		<div class="wrapper padding_left_right car_block clearfix">
 			<a href="#" class="car_img float_l">
@@ -359,16 +383,16 @@
 			</a>
 			<div class="car_info float_l">
 				<a href="#" class="orange_txt fsz18">РОЛЬФ Сити BlueFish <a href="#" class="link_border">Отзывы</a></a>
-				<p style="background-image: url(img/car_type_sedan.png);" class="car_info-type">Седан</p>
+				<div class="car_info_type-block clearfix"><span style="background-image: url(img/sedan.png);" class="car_info_type-img float_l"></span><p class="car_info-type float_l">Седан</p></div>
 				<p class="car_info_padding_txt">Красный, 1,6 АТ (123 л.с.)</p>
 				<p class="fw600 car_info_padding_txt">Пробег 120 000 км</p>
-				<p class="car_info_padding_txt">передний, бензин, левый руль</p>
-				<p class="txt_light_gray car_info_padding_txt">г. Новосибирск</p>
+				<p class="car_info_padding_txt adaptiv_display_n">передний, бензин, левый руль</p>
+				<p class="txt_light_gray car_info_padding_txt adaptiv_display_n">г. Новосибирск</p>
 			</div>
 			<div class="car_info padding_top float_l">
-				<p class="car_info_padding_txt">Новый, 2016 г.</p>
-				<p class="car_info_padding_txt"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
-				<p class="car_info_padding_txt">ООО “Ромашка”</p>
+				<p class="car_info_padding_txt ">Новый, 2016 г.</p>
+				<p class="car_info_padding_txt adaptiv_display_n"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
+				<p class="car_info_padding_txt adaptiv_display_n">ООО “Ромашка”</p>
 			</div>
 			<div class="car_price float_r">
 				<p class="car_info_padding_txt fsz24 orange_txt">200 000 руб. <a class="add_fav_link fsz18"><i class="fa fa-star-o" aria-hidden="true"></i></a></p>
@@ -386,7 +410,7 @@
 			</a>
 			<div class="car_info float_l">
 				<a href="#" class="orange_txt fsz18">РОЛЬФ Сити BlueFish <a href="#" class="link_border">Отзывы</a></a>
-				<p style="background-image: url(img/car_type_sedan.png);" class="car_info-type">Седан</p>
+				<div class="car_info_type-block clearfix"><span style="background-image: url(img/sedan.png);" class="car_info_type-img float_l"></span><p class="car_info-type float_l">Седан</p></div>
 				<p class="car_info_padding_txt">Красный, 1,6 АТ (123 л.с.)</p>
 				<p class="fw600 car_info_padding_txt">Пробег 120 000 км</p>
 				<p class="car_info_padding_txt">передний, бензин, левый руль</p>
@@ -394,8 +418,8 @@
 			</div>
 			<div class="car_info padding_top float_l">
 				<p class="car_info_padding_txt">Новый, 2016 г.</p>
-				<p class="car_info_padding_txt"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
-				<p class="car_info_padding_txt">ООО “Ромашка”</p>
+				<p class="car_info_padding_txt adaptiv_display_n"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
+				<p class="car_info_padding_txt adaptiv_display_n">ООО “Ромашка”</p>
 			</div>
 			<div class="car_price float_r">
 				<p class="car_info_padding_txt fsz24 orange_txt">200 000 руб. <a class="add_fav_link fsz18"><i class="fa fa-star-o fa-star" aria-hidden="true"></i></a></p>
@@ -413,7 +437,7 @@
 			</a>
 			<div class="car_info float_l">
 				<a href="#" class="orange_txt fsz18">РОЛЬФ Сити BlueFish <a href="#" class="link_border">Отзывы</a></a>
-				<p style="background-image: url(img/car_type_sedan.png);" class="car_info-type">Седан</p>
+				<div class="car_info_type-block clearfix"><span style="background-image: url(img/sedan.png);" class="car_info_type-img float_l"></span><p class="car_info-type float_l">Седан</p></div>
 				<p class="car_info_padding_txt">Красный, 1,6 АТ (123 л.с.)</p>
 				<p class="fw600 car_info_padding_txt">Пробег 120 000 км</p>
 				<p class="car_info_padding_txt">передний, бензин, левый руль</p>
@@ -421,8 +445,8 @@
 			</div>
 			<div class="car_info padding_top float_l">
 				<p class="car_info_padding_txt">Новый, 2016 г.</p>
-				<p class="car_info_padding_txt"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
-				<p class="car_info_padding_txt">ООО “Ромашка”</p>
+				<p class="car_info_padding_txt adaptiv_display_n"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
+				<p class="car_info_padding_txt adaptiv_display_n">ООО “Ромашка”</p>
 			</div>
 			<div class="car_price float_r">
 				<p class="car_info_padding_txt fsz24 orange_txt">200 000 руб. <a class="add_fav_link fsz18"><i class="fa fa-star-o fa-star" aria-hidden="true"></i></a></p>
@@ -440,7 +464,7 @@
 			</a>
 			<div class="car_info float_l">
 				<a href="#" class="orange_txt fsz18">РОЛЬФ Сити BlueFish <a href="#" class="link_border">Отзывы</a></a>
-				<p style="background-image: url(img/car_type_sedan.png);" class="car_info-type">Седан</p>
+				<div class="car_info_type-block clearfix"><span style="background-image: url(img/sedan.png);" class="car_info_type-img float_l"></span><p class="car_info-type float_l">Седан</p></div>
 				<p class="car_info_padding_txt">Красный, 1,6 АТ (123 л.с.)</p>
 				<p class="fw600 car_info_padding_txt">Пробег 120 000 км</p>
 				<p class="car_info_padding_txt">передний, бензин, левый руль</p>
@@ -448,8 +472,8 @@
 			</div>
 			<div class="car_info padding_top float_l">
 				<p class="car_info_padding_txt">Новый, 2016 г.</p>
-				<p class="car_info_padding_txt"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
-				<p class="car_info_padding_txt">ООО “Ромашка”</p>
+				<p class="car_info_padding_txt adaptiv_display_n"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
+				<p class="car_info_padding_txt adaptiv_display_n">ООО “Ромашка”</p>
 			</div>
 			<div class="car_price float_r">
 				<p class="car_info_padding_txt fsz24 orange_txt">200 000 руб. <a class="add_fav_link fsz18"><i class="fa fa-star-o fa-star" aria-hidden="true"></i></a></p>
@@ -467,7 +491,7 @@
 			</a>
 			<div class="car_info float_l">
 				<a href="#" class="orange_txt fsz18">РОЛЬФ Сити BlueFish <a href="#" class="link_border">Отзывы</a></a>
-				<p style="background-image: url(img/car_type_sedan.png);" class="car_info-type">Седан</p>
+				<div class="car_info_type-block clearfix"><span style="background-image: url(img/limousine.png);" class="car_info_type-img float_l"></span><p class="car_info-type float_l">Седан</p></div>
 				<p class="car_info_padding_txt">Красный, 1,6 АТ (123 л.с.)</p>
 				<p class="fw600 car_info_padding_txt">Пробег 120 000 км</p>
 				<p class="car_info_padding_txt">передний, бензин, левый руль</p>
@@ -475,8 +499,8 @@
 			</div>
 			<div class="car_info padding_top float_l">
 				<p class="car_info_padding_txt">Новый, 2016 г.</p>
-				<p class="car_info_padding_txt"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
-				<p class="car_info_padding_txt">ООО “Ромашка”</p>
+				<p class="car_info_padding_txt adaptiv_display_n"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
+				<p class="car_info_padding_txt adaptiv_display_n">ООО “Ромашка”</p>
 			</div>
 			<div class="car_price float_r">
 				<p class="car_info_padding_txt fsz24 orange_txt">200 000 руб. <a class="add_fav_link fsz18"><i class="fa fa-star-o fa-star" aria-hidden="true"></i></a></p>
@@ -492,7 +516,11 @@
 	</div>
 
 	<div class="content_block clean">
-		<div class="pagination">
+		<div class="pagination adaptiv_pagination clearfix adaptiv_display_b">
+			  <a class="link_border" href="#">Предыдущая</a>
+			  <a class="link_border float_r" href="#">Следующая</a>
+		</div>
+		<div class="pagination adaptiv_display_n">
 			  <a class="link_border" href="#">В начало</a>
 			  <a class="link_border pagination_numb active" href="#">1</a>
 			  <a class="link_border pagination_numb" href="#">2</a>
@@ -501,9 +529,38 @@
 			  <a class="link_border pagination_numb" href="#">5</a>
 			  <a class="link_border" href="#">В конец</a>
 		</div>
-	<p class="padding_top_txt_review">Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира. Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира.Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира. Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира. Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира.Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира.</p>
+		<div class="wrapper padding_left_right clearfix adaptiv_display_b">
+		<h1 class="fszm30 padding_txt padding_top">IndexAuto - купи уже завтра!</h1>
+			<p class="padding_txt">Наш портал — это система, которая объединяет все известные площадки рекламных объявлений по продаже автомобилей. Пока в базу добавлены только легковые авто, но она постоянно пополняется, и совсем скоро в ней появятся и другие виды транспорта.
+			</p>
+
+			<p class="padding_txt">Пользоваться системой очень удобно:
+			</p>
+			<ul class="list_style_green">
+				<li>вы сами настраиваете параметры поиска, поэтому результаты не содержат ничего лишнего;</li>
+				<li>мониторить сайт не нужно — вам регулярно будет приходить рассылка. Её периодичность зависит от выбранного тарифа.</li>
+			</ul>
+			<p class="padding_txt">Не беспокойтесь: работа с системой абсолютно безопасна, поскольку мы регулярно проводим проверку объявлений и помечаем те, которые её прошли. Также мы анализируем цены на рынке, поэтому вы всегда можете узнать, выгодную ли покупку хотите совершить.
+
+			</p>
+			<a href="" class="red_link underline">Остались вопросы?</a>
+		<h1 class="fszm30 padding_txt padding_top">Как избежать мошенничества на сайтах</h1>
+		<p  class="padding_txt">Мы работаем над тем, чтобы уровень безопасности сайта был стабильно высоким, и регулярно проверяем все объявления. Однако если у вас возникают подозрения, что продавец — мошенник, советуем перестраховаться.</p>
+		<p  class="padding_txt">Как не столкнуться с нечестным продавцом:</p>
+			<ul class="list_style_green_circle padding_txt">
+				<li>требуйте личной встречи и не вносите предоплату;</li>
+				<li>проверяйте документы на авто, особенно ПТС и свидетельство о регистрации ТС;</li>
+				<li>убедитесь, что машина не угнанная и не находится в розыске, иначе проблем с полицией не избежать;</li>
+				<li>внимательно осмотрите номерные знаки;</li>
+				<li>обратите внимание на состояние салона и на запах внутри автомобиля;</li>
+				<li>не покупайте авто, если оно стоит неправдоподобно дёшево.</li>
+			</ul>
+			<a href="" class="red_link underline">Остались вопросы?</a>
+
+		</div>
+	<p class="padding_top_txt_review adaptiv_padding_left_right adaptiv_display_n">Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира. Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира.Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира. Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира. Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира.Знаете, я долго думал, что мне не нужен автомобиль. Однакко, на этом сайте внезапно осознал что автомобиль мне очень нужен. Прямо-таки необходим... купить. Погуглил всякое, задал поиск и все. Теперь у меня есть машинка. И даже больше. У меня есть семейная гордость. Это лучше чем все золото мира.</p>
 	</div>
-	<footer>
+	<footer class="clearfix">
 			<div class="header_menu clearfix">
 			<a href="#" class="logo gray"></a>
 				<ul>

@@ -29,3 +29,38 @@
 .fsz34 {
 	font-size: 34px;	
 }
+@media only screen and (max-width : 992px) {
+.fszm8 {
+	font-size: 8px;	
+}
+.fszm10 {
+	font-size: 10px;	
+}
+.fszm12 {
+	font-size: 12px;	
+}
+.fszm14 {
+	font-size: 14px;	
+}
+.fszm16 {
+	font-size: 16px;	
+}
+.fszm18 {
+	font-size: 18px;	
+}
+.fszm21 {
+	font-size: 21px;	
+}
+.fszm24 {
+	font-size: 24px;	
+}	
+.fszm30 {
+	font-size: 30px;	
+}	
+.fszm31 {
+	font-size: 31px;	
+	letter-spacing: -1.1px;
+}
+.fszm34 {
+	font-size: 34px;	
+}

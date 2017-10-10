@@ -1,0 +1,292 @@
+.humb_link {
+	display: none;
+}
+.padding_txt {
+	padding-bottom: 20px;
+}
+.padding_top {
+	padding-top: 50px;
+}
+a.underline {
+	text-decoration: underline;
+}
+a.underline:hover {
+	text-decoration: none;
+}
+.margin_txt {
+	margin-bottom: 20px;
+}
+.margin_none{
+	margin: 0px;
+}
+.list_style_green {
+	list-style-image: url('../img/green_disc.png');
+	margin-left: 17px;
+}
+.list_style_green li {
+	padding-bottom: 20px;
+	padding-left: 9px;
+}
+a.logo.adaptiv_logo {
+	display: none;
+	margin-top: 11px;
+	margin-left: 20px;
+}
+.adaptiv_but_head {
+	display: none;
+}
+.list_style_green_circle {
+	list-style-image: url('../img/list_style_green_circle.png');
+	margin-left: 17px;
+
+}
+.adaptiv_display_b,.adaptiv_display_ib {
+	display: none;
+}
+@media only screen and (max-width : 992px) {
+	body, html {
+		min-width: 320px;
+		background-color: #fff;
+	}
+.humb_link {
+	display: block;
+	background: url(../img/humb.png) no-repeat;
+	width: 27px;
+	height: 18px;
+	margin-top: 24px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+a.logo.adaptiv_logo {
+	display: block;
+}
+header {
+	background-color: #fff;
+	border-bottom: 1px solid #d7d7d7;
+	height: auto;
+	padding-bottom: 18px;
+}
+header .header_menu {
+	width: 100%;
+	background-color: #f84f04;
+	position: absolute;
+	z-index: 11;
+	top: 59px;
+}
+header .header_menu ul,header .header_menu ul.header_menu_right {
+	float: none;
+}
+header .header_menu ul li{
+	display: block;
+	margin-bottom: 10px;
+}
+.adaptiv_display_n {
+	display: none;
+}
+.adaptiv_display_b {
+	display: block;
+}
+.adaptiv_display_ib {
+	display: inline-block;
+}
+.adaptiv_float_n {
+	float: none;
+}
+.adaptiv_float_r {
+	float: right;
+}
+.adaptiv_float_l {
+	float: left;
+}
+.adaptiv_but_head {
+	display: block;
+	margin-top: 11px;
+margin-right: 15px;
+}
+.content_block {
+	width: auto;
+	border: none;
+	border-bottom: 1px solid #d7d7d7;
+}
+.content_block form {
+    padding: 20px 15px;
+}
+input.search_box[type="text"] {
+text-overflow: ellipsis;
+}
+.form_select_wrap {
+    margin-bottom: 18px;
+	margin-right: 0px;
+	float: none;
+}
+.form_select_wrap.manufac .select2-container,.form_select_wrap.brand .select2-container,.form_select_wrap.model .select2-container,.form_select_wrap.car_type .select2-container,.form_select_wrap.car_type .select2-container,.form_select_wrap.gear_box .select2-container,.form_select_wrap.wheel .select2-container,.form_select_wrap.engine .select2-container,.form_select_wrap.wheel_drive .select2-container,.form_select_wrap.seller .select2-container,.form_select_wrap.used .select2-container,.form_select_wrap.used .select2-container,.form_select_wrap.kms .select2-container,.form_select_wrap.chipper .select2-container {
+    width: 100% !important;
+}
+input.filter_input[type="text"],input.filter_input.wider[type="text"],input.filter_input.wider2[type="text"] {
+    width: calc(50vw - 39px);
+    margin-top: 20px;
+}
+.wrapper {
+	padding: 0;
+}
+.clear {
+	clear: both;
+}
+.filter_input_wrap {
+	float: none;
+	margin-right: 0;
+	margin-bottom: 18px;
+	position: relative;
+}
+.filter_label {
+    position: absolute;
+    top: -15px;
+left: 0;	
+}
+.red_link.search_link {
+	float: left;
+}
+.checkbox_txt {    
+	margin-top: 8px;
+}
+.form_checkbox.checkbox2 {
+    margin-top: 12px;
+}
+.red_dotted_link.hide {
+clear: both;
+margin-bottom: 18px;
+display: inline-block;
+}
+ul.colors li {
+width: 39px;
+height: 39px;
+}
+ul.colors {
+	width: calc(100vw - 89px);
+}
+.car_name_wrap label,.car_name_wrap {
+	float: none;
+}
+input.search_box[type="text"] {
+width: calc(100vw - 66px);
+margin-bottom: 18px;
+}
+.form_select_wrap.kms .select2-container {
+	margin-left: 0;
+}
+.search_results {width: 100%;}
+.wrapper_color {
+	float:none;
+	padding-right: 0;
+	margin-bottom: 18px;
+}
+ul.colors li.reset a {
+    font-size: 27px;
+}
+.wrapper.padding2,.wrapper.padding3 {
+	padding: 0;
+}
+.content_block form {
+	background: none;
+}
+.wrapper_buttons {
+	padding: 20px 0;
+	float: none;
+}
+.content_block.banner {
+	margin: 15px;
+}
+.form_select_wrap.chipper {
+	margin-right: 0;
+	margin-top: 18px;
+}
+input.submit_margin[type="submit"] {
+	margin-top: 18px;
+	margin-left: 0;	
+}
+.view_link {
+margin-top: 18px;
+}
+.adaptiv_margin_top {
+	margin-top: 18px !important;	
+}
+.content_block.head_txt {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.car_info .orange_txt {
+    padding-bottom: 22px;
+    position: absolute;
+    top: -97px;
+    color: #373737;
+    background: rgba(255,255,255,0.8);
+    width: calc(100vw - 38px);
+    left: 0;
+    padding-top: 22px;
+    padding-left: 15px;
+}
+.car_img {
+    width: 100%;
+    height: auto;
+    height: 100%;
+    margin-bottom: 27px;
+}
+.car_info_type-block {
+	width: calc(100vw - 55px);
+}
+.car_info_type-img {
+    position: absolute;
+    top: -69px;
+    right: 0;
+}
+.car_info-type,.car_info .link_border,.car_price,input.no_bg_sub.green[type="submit"] {
+	display: none;
+}
+.car_info.padding_top {
+	padding-top: 0;
+}
+.wrapper.padding_left_right {
+	padding-bottom: 18px;
+}
+.adaptiv_padding_left_right {
+	padding: 0 18px;
+}
+footer .header_menu {
+	width: auto;
+	padding-bottom: 0;
+}
+footer .header_menu ul {
+	width: calc(100% - 150px);
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+footer a.artmax_logo {
+	float: none;
+	margin-left: 18px;
+}
+.logo.gray {
+	margin-left: 18px;
+    margin-right: 0px;
+    height: 48px;
+}
+.car_brands_list {
+	margin-right: 55px;
+}
+.pagination.adaptiv_pagination {
+	margin-left: 18px;
+}
+.pagination.adaptiv_pagination a.float_r{
+	float: right;
+	margin-right: 18px;
+}
+}
+@media only screen and (max-width : 482px) {
+
+}
+@media only screen and (max-width : 362px) {
+input.no_margin_sub[type="submit"] {
+    float: left;
+    margin-top: 18px;
+    clear: both;
+}
+}

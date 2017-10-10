@@ -21,5 +21,14 @@
 		$('ul.colors li a').click (function (){
 			$(this).toggleClass('active');
 		});
+		$('.link_border').click(function(){
+			$(this).next('.review_popup').show();
+		});
+		$('.review_popup_close').click(function(){
+			$(this).parent().hide();
+		});
+		$('.humb_link').click(function () {
+    		$(this).parent().find('.header_menu').slideToggle();
+}); 
 	});
 })(jQuery);
