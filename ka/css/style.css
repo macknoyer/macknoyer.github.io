@@ -596,6 +596,7 @@ a.client_table_td_txt {
 .client_table_th_option_block {
 	min-width: 110px;
 	background-color: #fff;
+	color: #1d1d1b;
 	padding: 9px;
 	display: none;
 	text-align:left; 
@@ -674,6 +675,19 @@ a.client_table_td_txt {
 	border-radius: 5px;
 	top: 40% !important;
 	color: #1d1d1b;
+}
+
+.popup.popup_client_white.gray {
+	padding: 40px 10px;
+	margin-left: -548px;
+	background: #e9e9e9;
+	width: 1075px;
+}
+.popup.popup_client_white.gray .client_table .client_table_tr .client_table_td:first-child{
+	border-left: none;
+}
+.popup.popup_client_white.gray .client_table .client_table_tr .client_table_td{
+	border-right: none;
 }
 .popup form{
 	padding:0px;
@@ -1180,3 +1194,32 @@ background: url(../img/yeslittleblack.png) no-repeat center;
 .table_gray_body_tr_form {
 	display: table-row;
 }
+.header_white_menu.header_white_menu2 li{
+	margin-right: 156px;
+}
+.header_white_menu.header_white_menu2 li:last-child{
+	margin-right: 0;
+}
+/***********************************administrator*/
+.red_marker {
+	background-color:#f82812;
+	color: #fff;
+}
+.client_table_tr:hover .client_table_td.red_marker {
+	background-color:#f82812;
+	color: #fff;
+}
+.wrap_inside {
+	padding: 10px;
+}
+.red_button {
+	background-color:#f82812;
+	color: #fff;
+	line-height: 40px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 400;
+}
+/***********************************administrator*/
