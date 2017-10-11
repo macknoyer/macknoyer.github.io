@@ -514,6 +514,16 @@ form.client_form .select2-results__option{
 }
 .client_table_tr {
 	display: table-row;
+	position: relative;
+}
+.client_table_tr_link,.tooltip.absolute {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+}
+.tooltip.absolute .tooltip_text{
+	left: 50%;
 }
 .client_table_tr:hover .client_table_td{
 	border-right: 10px solid #ececec;
@@ -1256,7 +1266,6 @@ padding-bottom: 20px;
 	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 12px;
-	float: left;
 }
 .wrap_inside.padding_add {
 padding: 15px;
@@ -1267,23 +1276,62 @@ padding-top: 21px;
 	background-position:center;
 	width: 200px;
 	height: 200px;
-	margin-bottom: 62px;
+	margin-bottom: 68px;
 }
 .agency_head_txt {
 	    margin-left: 11px;
-	    margin-bottom: 17px;
+	    margin-bottom: 19px;
 	font-size: 12px;
 }
 .agency_info_wrap {
 	float: left;
+	font-size: 12px;
 	width: 19%;
 }
+.agency_info_wrap.right {
+	width: 74.34%;
+margin-left: 52px;
+}
 .head_txt_input_wrap {
-	float: left;
+	float: right;
+	margin-right: 22px;
+
+
+}
+.head_txt_input_wrap.phone{
+	width: 50%;
 
 }
 .head_txt_input_wrap span {
 	float: left;
 
 }
+.company_name_txt {
+	font-weight: 500;
+
+
+}
+.agency_txt_right {
+	margin-top: 39px;
+	margin-bottom: 24px;
+}
+.agency_txt_block {
+	width: 27%;
+margin-right: 23px;
+}
+.agency_txt_block.right {
+	width: 70%;
+margin-right: 0;
+}
+.agency_txt_block.right p{    
+	padding-bottom: 8px;
+    line-height: 1.37;
+}
+.agency_txt_padding {
+	    padding-bottom: 24px;
+}
 /***********************************administrator*/
+.client_table_td_select.select2 {
+	text-transform: none;
+	font-size: 12px;
+}
