@@ -16,6 +16,7 @@ body, html{
 	font-weight: 300;
 	color:#fff;
 	line-height: 1.5;
+	letter-spacing: -0.1px;
 	font-size: 16px;
 }
 h1 {
@@ -43,6 +44,12 @@ input::-webkit-input-placeholder {color:#ffffff;opacity: 1}
 input::-moz-placeholder          {color:#ffffff;opacity: 1}
 input:-moz-placeholder           {color:#ffffff;opacity: 1}
 input:-ms-input-placeholder      {color:#ffffff;opacity: 1}
+
+input.white_input::-webkit-input-placeholder {color:#1d1d1b;opacity: 1}
+input.white_input::-moz-placeholder          {color:#1d1d1b;opacity: 1}
+input.white_input:-moz-placeholder           {color:#1d1d1b;opacity: 1}
+input.white_input:-ms-input-placeholder      {color:#1d1d1b;opacity: 1}
+
 textarea::-webkit-input-placeholder {color:#ffffff;opacity: 1}
 textarea::-moz-placeholder          {color:#ffffff;opacity: 1}
 textarea:-moz-placeholder           {color:#ffffff;opacity: 1}
@@ -625,7 +632,9 @@ a.client_table_td_txt {
 
 
 
-
+.popup form .form_input.submit.width50 {
+	width: 50%;
+}
 
 
 
@@ -1102,6 +1111,7 @@ border-bottom: 1px solid #1d1d1b;
     border: none;
     padding: 10px 5px 10px 5px;
     text-transform: uppercase;
+    text-overflow: ellipsis;
 }
 .client_table.candidats .client_table_tr_head .client_table_th .client_table_th_txt{
 	max-width: 84px;
@@ -1168,6 +1178,9 @@ background: url(../img/yeslittleblack.png) no-repeat center;
   text-align: left;
   font-size: 10px;
 }
+.rating.direction_ltr {
+  direction: ltr;
+}
 .rating span.star {
 	font-family: FontAwesome;
 	font-weight: normal;
@@ -1186,6 +1199,10 @@ background: url(../img/yeslittleblack.png) no-repeat center;
     content: "\f005";
     color: #f82812;
 	transition: color ease 0.3s;
+}
+.rating span.star.active:hover ~ span.star::before {
+    content: "\f005";
+    color: #d9d9d9;
 }
 .rating span.star.active::before {
     content: "\f005";	
@@ -1221,5 +1238,56 @@ background: url(../img/yeslittleblack.png) no-repeat center;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 400;
+}
+.popup.popup_client_white.gray .client_table{
+	font-size: 10px;
+
+	padding: 0;
+padding-bottom: 20px;
+}
+.popup.popup_client_white.gray .client_table .client_table_tr .client_table_td .white_input {
+	width: 100%;
+	font-size: 10px;
+	text-transform: none;
+}
+.float_l {
+	float: left;
+}
+.float_r {
+	float: right;
+}
+.head_txt_bold {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 12px;
+	float: left;
+}
+.wrap_inside.padding_add {
+padding: 15px;
+padding-top: 21px;
+}
+.agency_logo {
+	background-repeat: no-repeat;
+	background-position:center;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 62px;
+}
+.agency_head_txt {
+	    margin-left: 11px;
+	    margin-bottom: 17px;
+	font-size: 12px;
+}
+.agency_info_wrap {
+	float: left;
+	width: 19%;
+}
+.head_txt_input_wrap {
+	float: left;
+
+}
+.head_txt_input_wrap span {
+	float: left;
+
 }
 /***********************************administrator*/
