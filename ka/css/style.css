@@ -1200,13 +1200,9 @@ background: url(../img/yeslittleblack.png) no-repeat center;
     color: #f82812;
 	transition: color ease 0.3s;
 }
-.rating span.star.active:hover ~ span.star::before {
+.rating.direction_ltr span.star.active:hover ~ span.star::before {
     content: "\f005";
     color: #d9d9d9;
-}
-.rating span.star.active::before {
-    content: "\f005";	
-    color: #f82812;
 }
 .table_gray_body_tr_form {
 	display: table-row;
