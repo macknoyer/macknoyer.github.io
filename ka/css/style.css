@@ -568,7 +568,7 @@ form.client_form .select2-results__option{
 .client_table_th_txt2 {
 	display: block;
 	line-height: 9px;
-	font-size: 9px;
+	font-size: 8px;
 	padding-bottom: 4px;
 }
 .client_table_th_option {
@@ -1223,6 +1223,12 @@ background: url(../img/yeslittleblack.png) no-repeat center;
 .header_white_menu.header_white_menu2 li:last-child{
 	margin-right: 0;
 }
+.header_white_menu.header_white_menu3 li{
+	margin-right: 73px;
+}
+.header_white_menu.header_white_menu3 li:last-child{
+	margin-right: 0;
+}
 /***********************************administrator*/
 .red_marker {
 	background-color:#f82812;
@@ -1363,3 +1369,8 @@ margin-right: 0;
 	text-transform: none;
 	font-size: 12px;
 }
+/********************************manager*/
+.bold {
+	font-weight: 500;
+}
+/********************************manager*/
