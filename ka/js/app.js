@@ -47,6 +47,10 @@
                 $(this).find('input[type="checkbox"]').prop('checked', false);
             }
         });
+        $('.form_avatar').click(function () {
+            $(this).toggleClass('active');
+            $(this).parent().find('.header_block_login').slideToggle();
+        });
     });
 })(jQuery);
 

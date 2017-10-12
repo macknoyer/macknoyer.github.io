@@ -155,6 +155,9 @@ a.logo span{
 	margin: 0 auto;
 	margin-bottom: 30px;
 }
+.form_avatar.active {
+	background:url(../img/mrNlogin.png) no-repeat;
+}
 form {
 	padding: 40px 0px 0px 0px;
 }
@@ -339,6 +342,7 @@ header {
 .header_block {
 	float: left;
 	margin-right: 231px;
+	position: relative;
 }
 .header_block a{
 	line-height: 2.8;
@@ -358,6 +362,30 @@ header {
 .header_block.float {
 	margin: 0;
 	float: right;
+}
+.header_block_login {
+	position: absolute;
+	background-color: rgba(30,23,35,0.8);
+	padding: 20px 30px; 
+	color: #fff;
+	display: none;
+	margin-left: -374px;
+	z-index: 10;
+	text-align: right;
+}
+.header_block_login a{
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 2px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+.header_block_login a:last-child{
+	margin-bottom: 0;
+}
+.header_block_login a:hover{
+	display: inline-block;
+	border-bottom: 1px solid #fff;
 }
 .mOffer {
 	display: inline-block;
@@ -1537,3 +1565,26 @@ width: 96%;
 }
 
 /********************************rekrut*/
+
+
+/********************************lk*/
+
+.header_white_menu.header_white_menu5 {
+	text-align: center;
+}
+.company_name_txt.name_txt {
+	font-weight: 400;
+}
+.name_txt_light {
+	font-weight: 300;
+}
+.agency_head_txt_right.margin_1 {
+	margin-bottom: 25px;
+}
+.agency_head_txt_right.margin_2 {
+	margin-top: 65px;
+}
+.agency_head_txt_right.margin_3 {
+	margin-bottom: 45px;
+}
+/********************************lk*/
