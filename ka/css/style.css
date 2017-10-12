@@ -93,6 +93,11 @@ textarea.client_form_textarea.width:-ms-input-placeholder      {color:#1d1d1b;op
 	padding: 14px 0;
 	min-height: 75.7vh;	
 }
+.wrapper.light_gray {
+	background-color: #ececec;
+	min-height: auto;	
+	position: relative;
+}
 .content_block {
 	width: 1106px;
 	margin:0 auto;
@@ -984,6 +989,10 @@ padding-bottom: 30px;
 .table_gray_body_tr {
 	display: table-row;
 }
+.table_gray_body_tr.white_row {
+	background-color: #fff;
+	height: 30px;
+}
 .table_gray_body_th,.table_gray_body_td {
 	display: table-cell;
 	font-weight: 500;
@@ -1400,6 +1409,10 @@ margin-right: 0;
 	margin-top: 0;
 	height: 330px;
 }
+.text_align_center{
+	text-align: center; 
+	text-transform: none;
+} 
 .agency_head_textarea {
 	width: 100%;
 	height: 50px;
@@ -1420,5 +1433,57 @@ margin-right: 0;
 /********************************manager*/
 .bold {
 	font-weight: 500;
+}
+.white_input.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+.table_gray_body_td.red_txt {
+	padding-right: 0;
+	font-weight: 400;
+}
+.client_form_textarea.table_textarea {
+	width: 86%;
+	height: 94px;
+	background-color: #fff;
+	color: #1d1d1b;
+	font-size: 12px;
+	font-weight: 300;
+	float: none;
+}
+.table_gray_body_tr.vertical_align_top .table_gray_body_td{
+	vertical-align: top;
+}
+.client_table.w50 {
+	width: 44%;
+	margin: 0 auto;
+}
+.client_table.manager_table{
+	padding-left: 64px;
+}
+.client_table.manager_table .table_gray_body_tr .table_gray_body_td {
+	text-transform: none;
+	font-size: 12px;
+	background-color: transparent !important;
+}
+.client_table.manager_table .table_gray_body_tr .table_gray_body_td.table_select .select2-container .selection .select2-selection--single{
+	background-color: transparent;
+	font-size: 12px;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+	display: none;
+}
+.form_input.submit.manager_submit {
+	font-size: 16px;
+}
+.manager_note {
+	position: absolute;
+	font-style:italic; 
+	font-weight: 400;
+	width: 150px;
+	text-transform: none;
+	right: 141px;
+	margin-top: 77px;
+
 }
 /********************************manager*/
