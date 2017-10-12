@@ -29,6 +29,12 @@
 		});
 		$('.humb_link').click(function () {
     		$(this).parent().find('.header_menu').slideToggle();
-}); 
+		}); 
+		if ($('ul.colors li a').hasClass('active')) {
+			$(this).parent().find('ul.colors li input[type="checkbox"]').attr('checked', true);
+		}
+		else {
+			$(this).parent().find('ul.colors li input[type="checkbox"]').attr('checked', false);
+		}
 	});
 })(jQuery);
