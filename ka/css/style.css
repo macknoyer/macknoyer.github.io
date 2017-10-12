@@ -515,7 +515,7 @@ form.client_form .select2-results__option{
 	display: table-header-group;
 }
 .head_gray .client_table_th{
-	padding:10px;
+	padding:2px 10px;
 }
 .client_table_tr {
 	display: table-row;
@@ -934,7 +934,7 @@ label.popup_form_check_label {
 	border:none;
 	background: url(../img/yes.png) no-repeat;
 }
-.popup form .form_input.submit {
+.form_input.submit {
 	background-color: #f82812;
 	width: 100%;
 	margin-bottom: 38px;
@@ -1101,6 +1101,7 @@ padding-bottom: 30px;
 	float: left;
 	max-width: 152px;
 	min-width: 100px;
+	z-index: 10;
 
 }
 .table_select .select2-container .select2-selection--single {
@@ -1454,7 +1455,7 @@ margin-right: 0;
 	font-weight: 300;
 	float: none;
 }
-.table_gray_body_tr.vertical_align_top .table_gray_body_td{
+.table_gray_body_tr.vertical_align_top .table_gray_body_td,.client_table_tr.vertical_align_top .client_table_td{
 	vertical-align: top;
 }
 .client_table.w50 {
@@ -1489,4 +1490,50 @@ margin-right: 0;
 	margin-top: 77px;
 
 }
+.padding_bot_zero {
+	padding-bottom: 0;
+}
+.padding_top_zero {
+	padding-top: 0;
+}
+.padding_left_zero {
+	padding-left: 0;
+}
+.delete_some {
+	display: none;
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+	background: url(../img/del.png) no-repeat;
+}
+.client_table_tr:hover .client_table_td a.delete_some {
+	display: block;
+}
+.client_table.popup_table .client_table_tr .client_table_td.w200{
+width: 200px;
+max-width: 200px;
+}
+.client_table.popup_table .client_table_tr .client_table_td.w110{
+width: 110px;
+max-width: 110px;
+}
+.client_table.popup_table .client_table_tr .client_table_td.padding_top{
+padding-top: 25px;
+}
+.client_table.popup_table .client_table_tr .client_table_td.w540{
+width: 556px;
+max-width: 556px;
+}
+.client_table.popup_table .client_table_tr .client_table_td.w540 textarea.client_form_textarea{
+width: 96%;
+}
 /********************************manager*/
+
+/********************************rekrut*/
+.header_white_menu.header_white_menu4 li{
+	margin-right: 232px;
+}.header_white_menu.header_white_menu4 li:last-child{
+	margin-right: 0;
+}
+
+/********************************rekrut*/

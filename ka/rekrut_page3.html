@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/vendor/jquery-ui/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts-size.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body class="for_dropdown">
+<div id="wrapper_popup" class="wrapper_popup2">
+<div id="background_popup" onclick="popup_close()"></div>
+
+<div class="popup popup_client_white gray" id="popup_client_white2">
+	<form action="">
+		<input class="form_input submit width50" value="Вы действительно хотите удалить данные кандидата" type="submit">
+		<p class="standart_txt center">или <a onclick="popup_close()" class="red_txt">отменить и оставить кандидата в списке</a>.</p>
+	</form>
+</div>
+<div class="popup popup_client_white gray" id="popup_client_white">
+	<p class="standart_txt fsz12">Внести изменения в Критерии отбора:</p>
+	<form action="">
+		<div class="client_table popup_table">
+			<div class="client_table_tr vertical_align_top">
+				<div class="client_table_td">
+					0008
+				</div>
+				<div class="client_table_td w200">
+					<input class="white_input" type="text" placeholder="Иванов Федор Иванович" />
+				</div>
+				<div class="client_table_td padding_top">Прикрепить CV
+				</div>
+				<div class="client_table_td w110">
+					<input class="white_input" type="text" placeholder="+7 _ _ _ _ _ _ _" />
+				</div>
+				<div class="client_table_td w540">
+					<textarea class="client_form_textarea table_textarea" name="" id="" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+		</div>
+		<input class="form_input submit width50" value="Сохранить данные кандидата" type="submit">
+		<p class="standart_txt center">или <a onclick="popup_close()" class="red_txt">внести кандидата позже</a>.</p>
+		</form>
+</div>
+</div>
+<header>
+<div class="content_block clearfix">
+	<div class="header_block">
+		<a href="#" class="logo"><span>ka</span>агрегатор</a>
+	</div>
+	<div class="header_block fsz18">
+		<span class="mOffer"></span><a href="#" class="link_redline">Оформить заявку</a>
+	</div>
+	<div class="header_block fsz21">
+		<a href="tel:+74955005550">+7 495 500-555-0</a>
+	</div>
+	<div class="header_block float">
+		<a href="#" class="form_avatar"></a>
+	</div>
+</div>
+<div class="header_white_menu_block">
+		<ul class="header_white_menu header_white_menu4 fsz14">
+			<li><a href="#">Входящие заявки в работе</a></li>
+			<li><a class="active" href="#">Открытые заявки</a></li>
+			<li><a href="#">Кандидаты</a></li>
+		</ul>
+</div>
+</header>
+<div class="wrapper">
+	<div class="content_block white">
+		<p class="standart_txt center padding2">На данный момент у Вас открыто <span class="red_txt">20 заявок</span>. Вы работаете с <span class="red_txt">5 агентствами</span>. В процессе выбора агентства <span class="red_txt">4 заявки</span>.</p>		
+	<div class="table_gray padding_bot_zero">
+		<div class="table_gray_head clearfix">
+			<a href="#" class="table_gray_head_link link_close link_save"">СОХРАНИТЬ И ВЕРНУТЬСЯ К ЗАЯВКЕ</a>
+		</div>
+		<div class="table_gray_body">
+			<div class="client_table client_table_gray">
+				<div class="table_gray_body_tr">
+					<div  class="table_gray_body_th"><span>ЗАЯВКА</span></div>
+					<div  class="table_gray_body_th"><span>ПОЗИЦИЯ</span></div>
+					<div  class="table_gray_body_th"><span>КОЛИЧЕСТВО  <span class="table_gray_body_th_txt">позиций поиска</span></span></div>
+					<div  class="table_gray_body_th"><span>Планируемый срок <span class="table_gray_body_th_txt">выхода сотрудников на работу</span></span></div>
+					<div  class="table_gray_body_th"><span>ВРЕМЯ  <span class="table_gray_body_th_txt">ОТКЛИКА (ЧАСЫ)</span></span></div>
+					<div  class="table_gray_body_th"><span>сроки <span class="table_gray_body_th_txt">подбора (часы)</span></span></div>
+					<div  class="table_gray_body_th"><span>РУБ / <span class="table_gray_body_th_txt">ПОЗИЦИЯ</span></span></div>
+					<div  class="table_gray_body_th"><span>ПОДАНО <span class="table_gray_body_th_txt">КАНДИДАТОВ</span></span></div>
+					<div  class="table_gray_body_th"><span>комментарии</span></div>
+				</div>
+				<div class="table_gray_body_tr">
+					<div  class="table_gray_body_td"><span class="table_gray_body_txt_appl">0306060</span></div>
+					<div  class="table_gray_body_td"><span>СЛЕСАРЬ-РАСТОЧНИК</span></div>
+					<div  class="table_gray_body_td"><span>3</span></div>
+					<div  class="table_gray_body_td"><span>28.09.2017</span></div>
+					<div  class="table_gray_body_td"><span>48</span></div>
+					<div  class="table_gray_body_td"><span>96</span></div>
+					<div  class="table_gray_body_td bold"><span>2570</span></div>
+					<div  class="table_gray_body_td"><span>5</span></div>
+					<div  class="table_gray_body_td"><a class="table_gray_body_txt_krit_link"></a><a class="table_gray_body_txt_krit">критерии отбора</a></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrap_inside padding_left_zero">
+		<a onclick="popup_open('popup_client_white')" class="red_button">Добавить кандидата</a></div>
+	</div>
+		<div class="client_table smaller_font padding_top_zero">
+			<div class="client_table_tr_head head_gray">
+				<div class="client_table_th">
+					<span class="client_table_th_txt">Кандидат</span>
+					<span class="client_table_th_option"></span>
+					<div class="client_table_th_option_block">
+						<a href="#" class="option_block_link">По возрастанию</a>
+						<a href="#" class="option_block_link">По убыванию</a>
+					</div>
+				</div>
+				<div class="client_table_th">
+					<span  class="client_table_th_txt">ФИО</span>
+					<span class="client_table_th_option"></span>
+					<div class="client_table_th_option_block">
+						<a href="#" class="option_block_link">По возрастанию</a>
+						<a href="#" class="option_block_link">По убыванию</a>
+					</div>
+				</div>
+				<div class="client_table_th">
+					<span  class="client_table_th_txt">CV</span>
+				</div>
+				<div class="client_table_th">
+					<span  class="client_table_th_txt">Телефон</span>
+				</div>
+				<div class="client_table_th">
+					<span  class="client_table_th_txt">Дата и время встречи</span>
+					<span class="client_table_th_option"></span>
+					<div class="client_table_th_option_block">
+						<a href="#" class="option_block_link">По возрастанию</a>
+						<a href="#" class="option_block_link">По убыванию</a>
+					</div>
+				</div>
+				<div class="client_table_th">
+					<span  class="client_table_th_txt">Результат</span>
+					<span class="client_table_th_option"></span>
+					<div class="client_table_th_option_block">
+						<a href="#" class="option_block_link">По возрастанию</a>
+						<a href="#" class="option_block_link">По убыванию</a>
+					</div>
+				</div>
+				<div class="client_table_th">
+					<span  class="client_table_th_txt">Комментарий</span>
+				</div>
+				<div class="client_table_th">
+					<span  class="client_table_th_txt">УДАЛИТЬ КАНДИДАТА</span>
+				</div>
+			</div>
+			<div class="client_table_tr">
+				<div class="client_table_td"><span class="client_table_td_txt">0001</span></div>
+				<div class="client_table_td"><span class="client_table_td_txt"><a class="table_gray_body_link" href="#">Сергеев И.А</a></span></div>
+				<div class="client_table_td center"><a class="client_table_td_cv"></a></div>
+				<div class="client_table_td"><span class="client_table_td_txt">+7 903 125 1234</span></div>
+				<div class="client_table_td"><span class="client_table_td_txt">27.07.2017 13:00</span></div>
+				<div class="client_table_td table_select">
+					<select class="client_table_td_select" name="meeting" id="">
+						<option value="1">Сделано предложение</option>
+						<option value="2">Новая встреча</option>
+						<option value="3">Отказано</option>
+					</select>
+				</div>
+				<div class="client_table_td center"><span class="client_table_td_txt"><a href="#" class="client_table_td_cv comment"></a></span></div>
+				<div class="client_table_td center"><span class="client_table_td_txt"><a onclick="popup_open('popup_client_white2')" class="delete_some"></a></span></div>
+		</div>
+	</div>
+</div>
+</div>
+<footer class="client_footer">
+	<div class="content_block clearfix">
+		<a href="#" class="logo_footer logo_client_footer"><span>ka</span> агрегатор</a>
+		<div class="footer_block footer_client_block">
+			<a href="#" class="footer_link">О компании</a>
+			<a href="#" class="footer_link">Пресс-служба</a>
+			<a href="#" class="footer_link">Реквизиты</a>
+			<a href="#" class="footer_link">Обратная связь</a>
+			<a href="#" class="footer_link">Работайте у нас</a>
+		</div>
+		<div class="footer_block footer_block2 footer_client_block2">
+			<a href="#" class="social_link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			<a href="#" class="social_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+		</div>		
+		<div class="footer_block footer_block3 footer_client_block3">
+			<p class="standart_txt">© 2017 ka агрегатор Россия, Москва, 117997, ул. Вавилова 19. Генеральная лицензия на осуществление операций от 11 августа 2017 года. Регистрационный номер — 1481</p>	
+		</div>
+	</div>
+</footer>
+</body>
+</html>
