@@ -639,8 +639,50 @@ a.client_table_td_txt {
 	text-transform: none;
 	padding-bottom: 15px;
 }
+.option_block_link:hover{
+	text-decoration: underline;
+}
 
+.client_table_th_option_block_checkbox{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+.client_table_th_option_block_checkbox span{
+	padding-bottom:10px;
+	display: inline-block;
+}
+.client_table_th_option_block_checkbox a{
+	display: block;
+	cursor: pointer;
+	color: #1d1d1b;
+	margin-bottom: 10px;
+	text-transform: none;
+	font-weight: 300;
+	font-size: 10px;
+	padding-left: 20px;
+	background:url(../img/filternone.png) no-repeat center left;
+	position: relative;
+}
+.client_table_th_option_block_checkbox a input[type="checkbox"]{
+	position: absolute;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	opacity: 0;
+	visibility:hidden;
+	z-index: 10;
+}
 
+.client_table_th_option_block_checkbox a.active{
+	background:url(../img/filteron.png) no-repeat center left;
+}
+
+.client_table_th_option_block_checkbox .form_input.submit{
+	font-size: 14px;
+	line-height: 28px;
+	text-transform: none;
+	margin-bottom: 5px;
+}
 
 .form_input.submit.width50 {
 	width: 50%;
@@ -926,6 +968,9 @@ padding-bottom: 30px;
 	display: inline-block;
 	background: url(../img/back.png) no-repeat center left;
 	padding-left: 30px;
+}
+.table_gray_head_link.link_close.link_save {
+	background: url(../img/save.png) no-repeat center left;	
 }
 .table_gray_head_right {
 	float: right;

@@ -38,6 +38,15 @@
 		$('.client_table_th_option_block').mouseleave(function(){
 			$(this).removeClass('active');
 		});
+		$('.client_table_th_option_block_checkbox a').click(function () {
+			$(this).toggleClass('active');
+		if ($(this).hasClass('active')) {
+			$(this).find('input[type="checkbox"]').attr('checked', true);
+			}
+		else {
+			$(this).find('input[type="checkbox"]').attr('checked', false);
+		}
+		});
 	});
 })(jQuery);
 
