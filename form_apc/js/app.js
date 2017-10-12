@@ -19,7 +19,13 @@
 			}
 		});
 		$('ul.colors li a').click (function (){
-			$(this).toggleClass('active');
+			$(this).toggleClass('active'); 
+		if ($(this).hasClass('active')) {
+			$(this).parent().find('ul.colors li input[type="checkbox"]').attr('checked', true);
+		}
+		else {
+			$(this).parent().find('ul.colors li input[type="checkbox"]').attr('checked', false);
+		}
 		});
 		$('.link_border').click(function(){
 			$(this).next('.review_popup').show();
@@ -29,12 +35,6 @@
 		});
 		$('.humb_link').click(function () {
     		$(this).parent().find('.header_menu').slideToggle();
-		}); 
-		if ($('ul.colors li a').hasClass('active')) {
-			$(this).parent().find('ul.colors li input[type="checkbox"]').attr('checked', true);
-		}
-		else {
-			$(this).parent().find('ul.colors li input[type="checkbox"]').attr('checked', false);
-		}
+		});
 	});
 })(jQuery);
