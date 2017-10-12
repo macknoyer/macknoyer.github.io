@@ -538,6 +538,9 @@ form.client_form .select2-results__option{
 .client_table_tr:hover .client_table_td:last-child{
 	border-right: 10px solid #fff;
 }
+.with_tooltip .client_table_tr:hover .client_table_td:nth-last-child(2){
+	border-right: 10px solid #fff;
+}
 .client_table_tr:hover .client_table_td:first-child{
 		border-left: 4px solid #f82812;
 }
