@@ -14,6 +14,12 @@
         });
         $('.popup_form_check_link').click(function () {
             $(this).toggleClass('active');
+            if ($(this).hasClass('active')) {
+                $(this).find('input[type="checkbox"]').attr('checked', true);
+            }
+            else {
+                $(this).find('input[type="checkbox"]').attr('checked', false);
+            }
         });
         $('.popup_select').select2({
             placeholder: 'Выберите из предлагаемого списка',
