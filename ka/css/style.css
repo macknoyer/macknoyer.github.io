@@ -62,6 +62,9 @@ textarea.client_form_textarea.width:-ms-input-placeholder      {color:#1d1d1b;op
 	color: #f82812;
 	font-weight: 400;
 }
+.red_txt_italic {
+	font-style: italic;
+}
 .error {
 	border: 1px solid #f82812;
 	display: inline-block;
