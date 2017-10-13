@@ -62,6 +62,11 @@ textarea.client_form_textarea.width:-ms-input-placeholder      {color:#1d1d1b;op
 	color: #f82812;
 	font-weight: 400;
 }
+.error {
+	border: 1px solid #f82812;
+	display: inline-block;
+	float: left;
+}
 .red_link {
 	border-bottom: 1px solid transparent;
 	padding-bottom: 2px;
@@ -143,7 +148,6 @@ a.logo span{
 .head_right {
 	float: right;
 	width: 286px;
-	height: 391px;
 	background-color: rgba(37,30,40,0.87);
 	margin-right: 50px;
 }
@@ -870,7 +874,7 @@ a.client_table_td_txt {
 }
 .select2-container--default .select2-selection--single {
 background-color: rgba(148,145,152,0.9);
-border: 1px solid #dd2614;
+border: 1px solid #fff;
 border-radius: 0;
 }
 .select2-dropdown {
