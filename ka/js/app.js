@@ -51,6 +51,14 @@
             $(this).toggleClass('active');
             $(this).parent().find('.header_block_login').slideToggle();
         });
+        $('.edit_data').click(function(){
+            $('.editable').addClass('active');
+            $('.editable_hide').addClass('active');
+        });
+        $('.edit_data_save').click(function(){
+            $('.editable').removeClass('active');
+            $('.editable_hide').removeClass('active');
+        });
     });
 })(jQuery);
 

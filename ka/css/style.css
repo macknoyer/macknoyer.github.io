@@ -1587,4 +1587,56 @@ width: 96%;
 .agency_head_txt_right.margin_3 {
 	margin-bottom: 45px;
 }
+.white_input.gray_input.w200{
+width: 200px;
+}
+.txt_transf {
+	text-transform: uppercase;
+}
+.editable,.editable_hide.active {
+	display: none;
+}
+.editable.active {
+	display: inline-block;
+}
+.password_change_block.editable.active {
+	display: block;
+}
+.password_change_block {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+.password_change_block .form_input.submit{
+	margin: 20px 0;
+}
+.password_change_block.w50 {
+	width: 70%;
+	margin:0;
+	margin-top: 10px;
+	text-align:right; 
+}
+.password_change_block .manager_note {
+	text-align:left;
+	margin-top: 46px;
+	z-index: 10;
+	right: 0;
+}
+.password_change_block.w50 label{
+	text-transform: uppercase;
+	font-weight: 500;
+	padding-right: 20px;
+	font-size: 14px;
+}
+.password_change_input {
+	background-color: #ececec;
+	padding: 5px 15px;
+	text-transform: none;
+	border: none;
+	text-overflow: ellipsis;
+	font-size: 14px;
+}
+.padding_bottom {
+	padding-bottom: 15px;
+}
 /********************************lk*/
