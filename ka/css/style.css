@@ -1618,7 +1618,7 @@ width: 200px;
 }
 .password_change_block .manager_note {
 	text-align:left;
-	margin-top: 46px;
+	margin-top: 68px;
 	z-index: 10;
 	right: 0;
 }
@@ -1637,6 +1637,7 @@ width: 200px;
 	font-size: 14px;
 }
 .padding_bottom {
+	padding-top: 20px;
 	padding-bottom: 15px;
 }
 /********************************lk*/
