@@ -179,6 +179,8 @@ form {
 	padding: 3px 15px 3px 15px;
 	margin-bottom: 31px;
 	display: block;
+	font-family: 'Roboto';
+	font-weight: 300;
 }
 .form_input.margin{
 	margin-bottom: 37px;
