@@ -834,6 +834,7 @@ a.client_table_td_txt {
 }
 .popup form .form_input[type="submit"]{
     width: 100%;
+    margin-bottom: 38px;
 }
 
 .popup form .form_input.error {
