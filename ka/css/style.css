@@ -731,7 +731,7 @@ a.client_table_td_txt {
 	margin-bottom: 5px;
 }
 
-.form_input.submit.width50 {
+.form_input.submit.width50[type="submit"] {
 	width: 50%;
 }
 
@@ -831,6 +831,9 @@ a.client_table_td_txt {
 	margin-bottom: 0;
     width: 94.6%;
     position: relative;
+}
+.popup form .form_input[type="submit"]{
+    width: 100%;
 }
 
 .popup form .form_input.error {
