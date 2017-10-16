@@ -562,6 +562,9 @@ form.client_form .select2-results__option{
 	height: 100%;
 	left: 0;
 }
+.client_table_tr_link2,.tooltip.absolute.absolute2 {
+	width: 86%;
+}
 .tooltip.absolute .tooltip_text{
 	left: 50%;
 }
