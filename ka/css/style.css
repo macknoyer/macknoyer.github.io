@@ -236,7 +236,8 @@ form a.form_link.link2 {
 }
 .plan_block_link {	
 	margin-top: 16px;
-	margin-bottom: 35px;
+	    max-height: 36px;
+	margin-bottom: 47px;
 }
 /*.plan_block a.plan_block_link_absolute {
 	display: block;
