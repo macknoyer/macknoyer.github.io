@@ -60,10 +60,12 @@
         $('.edit_data').click(function(){
             $('.editable').addClass('active');
             $('.editable_hide').addClass('active');
+            $('.agency_txt_block .select2-container').addClass('active');
         });
         $('.edit_data_save').click(function(){
             $('.editable').removeClass('active');
             $('.editable_hide').removeClass('active');
+            $('.agency_txt_block .select2-container').removeClass('active');
         });
     });
 })(jQuery);
