@@ -563,6 +563,7 @@ form.client_form .select2-results__option{
 .client_table_tr {
 	display: table-row;
 	position: relative;
+	cursor: pointer;
 }
 .client_table_tr_link,.tooltip.absolute {
 	position: absolute;
