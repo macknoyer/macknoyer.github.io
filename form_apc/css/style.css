@@ -185,6 +185,12 @@ input[type="text"] {
 	padding: 23px 2px;
 	padding-bottom: 9px;
 }
+.wrapper.simple_search .form_select_wrap{ 
+    margin-right: 9px;
+}
+.wrapper.simple_search input[type="submit"] {
+	margin-left: 9px;
+}
 .wrapper.underline { 
 	border-bottom: 1px solid #d7d7d7;
 }
