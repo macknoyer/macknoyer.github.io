@@ -1,3 +1,4 @@
+
 .humb_link {
 	display: none;
 }
@@ -50,7 +51,9 @@ a.logo.adaptiv_logo {
 	body, html {
 		min-width: 320px;
 		background-color: #fff;
+		overflow-x: hidden;
 	}
+
 .humb_link {
 	display: block;
 	background: url(../img/humb.png) no-repeat;
@@ -217,37 +220,48 @@ margin-top: 18px;
 	padding-top: 0;
 	padding-bottom: 0;
 }
-.car_info .orange_txt {
+.car_info_wrap .car_name_orange_txt_wrap {
     padding-bottom: 22px;
     position: absolute;
     top: -97px;
     color: #373737;
     background: rgba(255,255,255,0.8);
-    width: calc(100vw - 38px);
+    width: calc(100vw - 53px);
     left: 0;
     padding-top: 22px;
     padding-left: 15px;
 }
+.car_info_wrap .car_name_orange_txt_wrap .orange_txt{
+    color: #373737;
+}
+.car_info.car_info_wrap2 {
+	max-width: 100%;
+}
 .car_img {
     width: 100%;
-    height: auto;
-    height: 100%;
     margin-bottom: 27px;
 }
 .car_info_type-block {
 	width: calc(100vw - 55px);
+}	
+.car_info_wrap {
+    max-width: 100%;
+}
+p.car_info-type {
+	display: none;
 }
 .car_info_type-img {
     position: absolute;
     top: -69px;
     right: 0;
 }
-.car_info-type,.car_info .link_border,.car_price,input.no_bg_sub.green[type="submit"] {
+.car_info_wrap .car_name_orange_txt_wrap .link_border,.car_price,input.no_bg_sub.green[type="submit"] {
 	display: none;
 }
 .car_info.padding_top {
 	padding-top: 0;
 	width: 100%;
+	padding-left: 0;
 }
 .car_block.gray_bg {
     background-color: #fff;
