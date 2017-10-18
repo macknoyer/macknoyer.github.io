@@ -428,9 +428,10 @@ a.link_redline.active {
 .header_white_menu li a.black_list_link {
 	border: 1px solid #1d1d1b;
 	border-radius: 5px; 
-	padding: 0px 14px 2px 14px;
+	padding: 2px 14px 2px 14px;
 	border-bottom: 1px solid;	
 	transition: background-color,color 0.3s;
+
 }
 .header_white_menu li a.black_list_link:hover,.header_white_menu li a.black_list_link.active {
 	background-color: #1d1d1b;
