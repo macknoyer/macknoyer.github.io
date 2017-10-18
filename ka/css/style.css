@@ -6,6 +6,7 @@
 a, hover{
 	text-decoration:none;
 	color:#fff;
+	cursor: pointer;
 }
 ul{
 	list-style:none;
