@@ -921,7 +921,7 @@ footer a.artmax_logo{
 	margin-right: 13px;
 }
 /***********************************registration*/
-h1.padding_bot_registration {
+.padding_bot_registration {
 	    padding-bottom: 28px;
 }
 form.regist_form {
@@ -945,6 +945,7 @@ form.regist_form .regist_form_block input{
 form.regist_form .regist_form_block label.absolute{
 	position: absolute;
 	top:0;
+	color: #606060;
 	left: 0;
 }
 .regist_form_block {
@@ -989,5 +990,32 @@ label.confirm_checkbox_label {
 .wrapper.wrapper_txt p{
     padding-right: 91px;
     padding-bottom: 33px;
+}
+.reg_soc_icon{
+    width: 29px;
+    height: 29px;
+	display: inline-block;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+.reg_soc_icon.facebook{
+	background-color: #425c95;
+}
+.reg_soc_icon.google{
+	background-color: #ba242b;
+}
+.reg_soc_icon.at{
+	background-color:#356599;
+}
+.reg_soc_icon.odnoklassniki{
+	background-color: #f08b2f;
+}
+.reg_soc_icon.twitter{
+	background-color: #009dd7;
+}
+.reg_soc_icon.vk{
+	background-color:#4b698f;
 }
 /***********************************registration*/
