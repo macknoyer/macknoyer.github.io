@@ -71,6 +71,11 @@ textarea.client_form_textarea.width:-ms-input-placeholder      {color:#1d1d1b;op
 	display: inline-block;
 	float: left;
 }
+.error_txt {
+	padding-left: 17px;
+	padding-top: 10px;
+padding-bottom: 10px;
+}
 .red_link {
 	border-bottom: 1px solid transparent;
 	padding-bottom: 2px;
