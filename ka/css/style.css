@@ -189,7 +189,7 @@ form {
 .form_input.margin{
 	margin-bottom: 37px;
 }
-.form_input.submit {
+.form_input.submit,.popup form .form_input.submit {
 	width: 100%;
 	font-size: 	21px;
 	background-color: #f82812;
@@ -985,8 +985,6 @@ label.popup_form_check_label {
 	background: url(../img/yes.png) no-repeat;
 }
 .form_input.submit {
-	background-color: #f82812;
-	width: 100%;
 	margin-bottom: 38px;
 }
 
