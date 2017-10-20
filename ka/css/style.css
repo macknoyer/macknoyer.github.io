@@ -1331,7 +1331,7 @@ background: url(../img/yeslittleblack.png) no-repeat center;
 .rating span.star:hover {
     cursor: pointer;
 }
-.rating span.star:hover::before, .rating span.star:hover ~ span.star::before, .rating span.star.active ~ span.star::before {
+.rating span.star:hover::before, .rating span.star:hover ~ span.star::before, .rating span.star.active ~ span.star.active::before, .rating span.star.active ~ span.star::before {
     content: "\f005";
     color: #f82812;
 	transition: color ease 0.3s;
