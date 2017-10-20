@@ -153,7 +153,8 @@ a.logo span{
 }
 
 .head_right {
-	float: right;
+	position: absolute;
+	right: 0;
 	width: 286px;
 	background-color: rgba(37,30,40,0.87);
 	margin-right: 50px;
