@@ -648,7 +648,13 @@ form.client_form .select2-results__option{
 a.client_table_td_txt {
 	color: #1d1d1b;
 	cursor: pointer;
+
 }
+a.client_table_td_txt.red_link {
+	word-break: break-all;
+
+}
+
 .client_table_td_txt {
 	font-size: 11px;
 	overflow: hidden;
