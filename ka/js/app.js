@@ -70,8 +70,7 @@
         $(window).on("load",function(){
             $(".mCustomScrollbar").mCustomScrollbar({
                 axis:"y",
-                theme:"minimal",
-                mouseWheel:{ scrollAmount: 100px }
+                theme:"minimal"
             });
         });
     });

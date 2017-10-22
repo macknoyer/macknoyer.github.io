@@ -1690,8 +1690,6 @@ width: 200px;
 	padding-bottom: 15px;
 }
 /********************************lk*/
-<<<<<<< HEAD
-
 .mCSB_inside > .mCSB_container {
     margin-right: 5px;
 }
@@ -1702,7 +1700,6 @@ width: 200px;
 .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger, .mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
     right: -3px;
 }
-=======
 .control {
     display: block;
     position: relative;
