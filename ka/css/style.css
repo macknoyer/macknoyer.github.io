@@ -1701,6 +1701,7 @@ width: 200px;
 }
 .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger, .mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
     right: -3px;
+}
 =======
 .control {
     display: block;
@@ -1770,5 +1771,4 @@ width: 200px;
 .client_table_td.white_td .control-group{
 	background-color: #fff;
 	padding: 10px 5px 10px 5px;
->>>>>>> c75806ef78adff7b3be33d0a3ae23fa7acce547f
 }
