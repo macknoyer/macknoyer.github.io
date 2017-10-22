@@ -49,9 +49,10 @@
 
 		<div class="wrapper wrapper2 clearfix">
 			<h1 class="fsz31 padding_bot_registration">Регистрация нового пользователя</h1>
-		<div class="float_l">
+
+			<form class="clearfix float_l" action="">
+		<div class="regist_form float_l">
 			<p class="gray_txt">Заполните все поля</p>
-			<form class="regist_form" action="">
 				<div class="regist_form_block clearfix">
 					<label for="email" class="absolute">Email</label>
 					<input type="email" name="email">
@@ -68,7 +69,6 @@
 					<label for="password_confirm" class="absolute">Повторите пароль</label>
 					<input type="password" name="password_confirm">
 				</div>
-			</form>
 		</div>
 
 		<div class="float_l">
@@ -76,14 +76,15 @@
 				<input class="confirm_checkbox float_l" type="checkbox" name="confirm"><label class="confirm_checkbox_label fsz12 float_l" for="confirm">Я принимаю Условия Пользовательского соглашения и даю согласие на обработку персональных данных в соответствии с законодательством России и пользовательским соглашением</label>
 			</div>
 			
-			<div class="confirm_checkbox_wrap confirm_checkbox_wrap2">
+			<div class="confirm_checkbox_wrap confirm_checkbox_wrap2 clearfix">
 				recapcha
 			</div>	
-			<div class="confirm_checkbox_wrap confirm_checkbox_wrap2">
+			<div class="confirm_checkbox_wrap confirm_checkbox_wrap2 clearfix">
 				<input class="float_r" value="Зарегистрироваться" type="submit">
 			</div>	
 		</div>
 
+			</form>
 			<div class="registration_social_net_block float_l">
 				<p>Или зарегистрируйтесь через <br>одну из соцсетей</p>
 				<div class="registration_social fsz34">

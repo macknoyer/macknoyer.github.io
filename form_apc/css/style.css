@@ -924,25 +924,24 @@ footer a.artmax_logo{
 .padding_bot_registration {
 	    padding-bottom: 28px;
 }
-form.regist_form {
+.regist_form {
 	width: 270px;
 	padding: 0;
-	padding-top: 31px;
 	padding-bottom: 22px;
 	background: none;
 }
-form.regist_form label.login_checkbox{    
+.regist_form label.login_checkbox{    
 	margin-left: 10px;
     margin-top: 8px;
     display: inline-block;
 	
 }
-form.regist_form .regist_form_block input{
+.regist_form .regist_form_block input{
 	width: 86.2%;
 	margin-top: 24px;
 	margin-bottom: 13px;
 }
-form.regist_form .regist_form_block label.absolute{
+.regist_form .regist_form_block label.absolute{
 	position: absolute;
 	top:0;
 	color: #606060;
@@ -960,10 +959,10 @@ form.regist_form .regist_form_block label.absolute{
 .confirm_checkbox_wrap {
 	    width: 300px;
     padding-left: 42px;
-    padding-top: 70px;
+    padding-top: 43px;
 }
 .confirm_checkbox_wrap.confirm_checkbox_wrap2 {
-    padding-top: 35px;
+    padding-top: 60px
 }
 .confirm_checkbox {
 	    margin-top: 6px;
