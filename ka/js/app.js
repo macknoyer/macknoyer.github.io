@@ -68,9 +68,9 @@
             $('.agency_txt_block .select2-container').removeClass('active');
         });
         $(window).on("load",function(){
-            $(".mCustomScrollbar").mCustomScrollbar({
-                axis:"y",
-                theme:"minimal"
+            $(".scrollbar").mCustomScrollbar({
+                theme:"minimal-dark",
+                scrollInertia:150
             });
         });
     });
