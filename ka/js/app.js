@@ -67,7 +67,15 @@
             $('.editable_hide').removeClass('active');
             $('.agency_txt_block .select2-container').removeClass('active');
         });
+        $(window).on("load",function(){
+            $(".mCustomScrollbar").mCustomScrollbar({
+                axis:"y",
+                theme:"minimal",
+                mouseWheel:{ scrollAmount: 100px }
+            });
+        });
     });
+
 })(jQuery);
 
 /***modal***/
