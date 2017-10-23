@@ -1256,9 +1256,10 @@ overflow: hidden;
 text-overflow: ellipsis;
 line-height: 16px;
 font-size: 10px;
-}.client_table.candidats .client_table_tr .client_table_td .client_table_td_txt{
+}
+.client_table.candidats .client_table_tr .client_table_td .client_table_td_txt{
 	max-width: 84px;
-	display: inline-block;
+	display: inline;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	line-height: 16px;
