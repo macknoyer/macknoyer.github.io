@@ -83,11 +83,15 @@ function set_popup_text(name_popup, related_field, text) {
     if (related_field == "") {
         jQuery("#" + name_popup).find("textarea").text(text).val(text);
         jQuery("#" + name_popup).find("textarea").attr("disabled", true);
+        jQuery("#" + name_popup).find("input[type=submit]").hide();
+        jQuery("#" + name_popup).find("p.standart_txt.center").hide();
     } else {
         var val = $("#" + related_field).val();
         jQuery("#" + name_popup).find("textarea").attr("disabled", false);
         jQuery("#" + name_popup).find("textarea").data("related", related_field);
         jQuery("#" + name_popup).find("textarea").text(val).val(val);
+        jQuery("#" + name_popup).find("input[type=submit]").show();
+        jQuery("#" + name_popup).find("p.standart_txt.center").show();
     }
 
     popup_open(name_popup);
