@@ -813,6 +813,7 @@ a.client_table_td_txt.red_link {
 }
 .popup.popup_client_white.gray .client_table .client_table_tr .client_table_td{
 	border-right: none;
+	max-width: 100%;
 }
 .popup form{
 	padding:0px;
