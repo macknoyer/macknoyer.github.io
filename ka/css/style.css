@@ -571,7 +571,7 @@ form.client_form .select2-results__option{
 .client_table_tr_link,.tooltip.absolute {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+    height: 80px;
 	left: 0;
 }
 .client_table_tr_link2,.tooltip.absolute.absolute2 {
