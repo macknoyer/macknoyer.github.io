@@ -1652,6 +1652,9 @@ width: 200px;
 .editable.active {
 	display: inline-block;
 }
+.edit_data_save {
+	display: none;
+}
 .password_change_block.editable.active {
 	display: block;
 }
