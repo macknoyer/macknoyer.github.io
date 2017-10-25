@@ -1077,6 +1077,14 @@ padding-bottom: 30px;
 }
 .table_gray_body_td {
 	font-weight: 300;
+	
+}
+.table_gray_body_td span{
+	text-overflow: ellipsis;
+	max-width: 127px;
+	display: inline-block;
+	overflow: hidden;
+
 }
 .table_gray_body_txt_appl {
 	font-weight: 400;
