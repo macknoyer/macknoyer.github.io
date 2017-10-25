@@ -128,8 +128,16 @@ a.logo {
 	border: none;
 	padding: 17px 0px;
 }
-.content_block.min_h {
-	min-height: 76vh;
+.content_block.no_padding {
+	padding: 0;
+}
+.content_block_wrap {
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+}
+.min_h {
+	min-height: 87vh;
 }
 .content_block.head_txt {
 	padding: 21px 0px 21px 36px;
@@ -171,6 +179,9 @@ input[type="text"],input[type="password"],input[type="email"] {
 }
 .txt_align_center {
 	text-align: center;
+}
+.txt_align_right {
+	text-align: right;
 }
 .red_link {
 	color: #f83201; 
@@ -842,6 +853,7 @@ input.no_bg_sub.green[type="submit"] {
 footer {
 	background-color: #ccc;
 	font-weight: 300;
+	width: 100%;
 }
 footer .header_menu {
 	padding:27px 0; 
@@ -924,7 +936,7 @@ footer a.artmax_logo{
 .padding_bot_registration {
 	    padding-bottom: 28px;
 }
-.regist_form {
+form.regist_form,.regist_form {
 	width: 270px;
 	padding: 0;
 	padding-bottom: 22px;
@@ -1018,3 +1030,141 @@ label.confirm_checkbox_label {
 	background-color:#4b698f;
 }
 /***********************************registration*/
+/***********************************account*/
+.wrapper_menu {
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #d7d7d7;
+	padding: 27px 30px;
+	padding-bottom: 16px;
+	margin-right: 22px;
+}
+.wrapper_menu ul li{
+	margin-bottom: 20px;
+}
+.wrapper_menu ul li a{
+	padding-right: 12px;
+	color: #f75b02;
+}
+.wrapper_menu ul li a.active,.wrapper_menu ul li span{
+	color: #8e8e8e;
+}
+.wrapper_menu ul li span.account_menu_orange{
+	color: #fff;
+	border-radius: 50%;
+	background-color: #f75b02;
+	padding: 5px;
+	text-align: center;
+}
+.wrapper_menu ul li span.account_menu_orange span{
+	color: #fff;
+
+}
+.wrapper_menu.wrapper_menu2{
+	margin-right: 0;
+	width: 718px;
+}
+form.account_menu_form {
+	padding: 0;
+	background: none;
+	width: 57.1%;
+	padding-top: 22px;
+}
+.account_menu_form label{
+	float: left;
+	padding-top: 9px;
+}
+.account_menu_form input{
+	float: right;
+	width: 231px;
+	margin-bottom: 8px;
+}
+.account_menu_form input[type="submit"]{
+	margin-top: 17px;
+width: auto;
+margin-right: 168px;
+margin-bottom: 63px;
+}
+.account_menu_form input.no_bg_sub[type="submit"]{
+	padding: 0px 17px;
+}
+.account_menu_txt_block {
+	line-height: 37px;
+	text-align: left;
+	width: 266px;
+}
+.account_menu_txt_block span{
+	font-weight: 600;
+}
+.h1_border_bottom {
+	border-bottom: 1px solid #d7d7d7;
+	padding: 27px 30px;
+}
+.wrapper_menu_block {
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #d7d7d7;
+	padding-bottom: 30px;
+}
+.wrapper_menu_block .wrapper_menu{
+	border:none;
+}
+.margin_top15 {
+	margin-top: 15px;
+}
+input.no_bg_sub.no_bg_sub2[type="submit"] {
+	margin-left: 22px;
+}
+.edit_link {
+	display: inline-block;
+	width: 16px;
+	height: 21px;
+	background: url(../img/edit_link.png) no-repeat;
+}
+.edit_link.del_link {
+	background: url(../img/del_link.png) no-repeat;
+	margin-left: 19px;
+}
+.account_table {
+	display: table;
+	width: 100%;
+}
+.account_table_tr,.account_table_tr_head {
+	display: table-row;
+}
+.account_table_tr .account_table_td:first-child,.account_table_tr_head .account_table_th:first-child{
+	padding-left:30px;
+}
+.account_table_tr .account_table_td:last-child,.account_table_tr_head .account_table_th:last-child{
+	padding-right: 15px;
+}
+.account_table_tr {
+	background-color: #f2f2f2;
+}
+.account_table_tr:nth-child(2n+1) {
+	background-color: #fff;
+}
+.account_table_th,.account_table_td {
+	display: table-cell;
+}
+.account_table_th{
+	padding-bottom: 6px;
+}
+.account_table_td {
+	padding:7px 0;
+}
+.form_select_small .select2-container .select2-selection--single{
+	height: 31px;
+}
+.form_select_small .select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 31px;
+}
+.form_select_small .select2-container--default .select2-selection--single .select2-selection__arrow{
+	top: 3px;
+}
+.wrapper_menu.wrapper_menu2.wrapper_menu3 {
+	padding-bottom: 0;
+}
+.regist_form.padding_top {
+	padding-top: 30px;
+}
