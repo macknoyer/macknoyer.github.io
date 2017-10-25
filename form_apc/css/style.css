@@ -55,6 +55,7 @@ input.no_margin_sub[type="submit"] {
 .fw600 {
 	font-weight: 600;
 }
+
 .header_menu {
 	width: 1050px;
 	margin: 0 auto;
@@ -131,6 +132,9 @@ a.logo {
 .content_block.no_padding {
 	padding: 0;
 }
+.content_block.padding_bottom0 {
+	padding-bottom: 0;
+}
 .content_block_wrap {
 	height:auto !important;
 	height:100%;
@@ -171,6 +175,9 @@ input[type="text"],input[type="password"],input[type="email"] {
 }
 .txt_dark_gray {
 	color: #a1a1a1;
+}
+.txt_green {
+	color: #92b207;
 }
 .red_dotted_link {
 	color: #f83201;
@@ -214,6 +221,7 @@ input[type="text"],input[type="password"],input[type="email"] {
 }
 .wrapper.wrapper2 {     
 	padding: 23px 19px;
+	position: relative;
 }
 .wrapper.simple_search .form_select_wrap{ 
     margin-right: 9px;
@@ -1119,10 +1127,10 @@ input.no_bg_sub.no_bg_sub2[type="submit"] {
 	display: inline-block;
 	width: 16px;
 	height: 21px;
-	background: url(../img/edit_link.png) no-repeat;
+	background: url(../img/edit_link.png) no-repeat  center bottom;
 }
 .edit_link.del_link {
-	background: url(../img/del_link.png) no-repeat;
+	background: url(../img/del_link.png) no-repeat  center bottom;
 	margin-left: 19px;
 }
 .account_table {
@@ -1168,3 +1176,69 @@ input.no_bg_sub.no_bg_sub2[type="submit"] {
 .regist_form.padding_top {
 	padding-top: 30px;
 }
+.tabs_menu li{ 
+	display: inline-block;
+	line-height: 60px;
+	margin-right: -1px;
+}
+.tabs_menu li a{ 
+	border: 1px solid transparent;
+	border-radius: 5px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom: 2px solid transparent;
+	margin: 20px;
+	border-bottom: 1px dotted;
+}
+.tabs_menu li a:hover{ 
+	border-bottom: none;
+}
+.tabs_menu li.active a{
+	padding: 20px;
+	margin: 0px;
+	border: 1px solid #d7d7d7;
+	background: #fff;
+	border-bottom: 3px solid #fff;
+	font-weight: 600;
+	padding-bottom: 20px;
+	color: #f83201;
+}
+.btn.next {
+	color: #d6d5d5;
+	position: absolute;
+	right: 16px;
+	top: 18px;
+}
+
+.car_image_carousel {
+	
+	height: 138px;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-bottom: 10px;
+}
+.avito_link {
+	display: inline-block;
+	width: 46px;
+	height: 15px;
+	background: url(../img/avito_link.png) no-repeat;
+	margin-bottom: -3px;
+	margin-left: 5px;
+}
+.item {
+	/*margin-right: 63px;*/
+}
+.hot {
+	width: 16px;
+	height: 18px;
+	background: url(../img/hot.png) no-repeat;
+	margin-right: 18px;
+}
+.owl-carousel .owl-item {
+    padding-right: 4px;
+}
+.wrapper.wrapper2.width938 { 
+	width: 938px;
+} 
