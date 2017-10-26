@@ -96,20 +96,20 @@
 	 $('.btn.next').click(function() {
 	   owl.trigger('next.owl.carousel');
 	});
-	 $('.btn.next2').click(function() {
+	 $('.btn_slider2.next2').click(function() {
 	   owl2.trigger('next.owl.carousel');
 	});
-	 $('.btn.prev2').click(function() {
+	 $('.btn_slider2.prev2').click(function() {
 	   owl2.trigger('prev.owl.carousel');
 	});
     var maxHeight = -1;
 
-    $('.wrap50').each(function() {
-      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-    });
+    // $('.wrap50').each(function() {
+    //   maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+    // });
 
-    $('.wrap50').each(function() {
-      $(this).height(maxHeight);
-    }); 	 
+    // $('.wrap50').each(function() {
+    //   $(this).height(maxHeight);
+    // }); 	 
 });
 })(jQuery);
