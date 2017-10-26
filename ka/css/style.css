@@ -1184,7 +1184,7 @@ padding-bottom: 30px;
 }
 .table_select .select2-container{
 	float: left;
-	max-width: 152px;
+	max-width: 100px;
 	min-width: 100px;
 	z-index: 10;
 
