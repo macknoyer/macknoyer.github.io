@@ -59,6 +59,11 @@ textarea.client_form_textarea.width::-webkit-input-placeholder {color:#1d1d1b;op
 textarea.client_form_textarea.width::-moz-placeholder          {color:#1d1d1b;opacity: 1}
 textarea.client_form_textarea.width:-moz-placeholder           {color:#1d1d1b;opacity: 1}
 textarea.client_form_textarea.width:-ms-input-placeholder      {color:#1d1d1b;opacity: 1}
+
+textarea.client_form_textarea::-webkit-input-placeholder {color:#1d1d1b;opacity: 1}
+textarea.client_form_textarea::-moz-placeholder          {color:#1d1d1b;opacity: 1}
+textarea.client_form_textarea:-moz-placeholder           {color:#1d1d1b;opacity: 1}
+textarea.client_form_textarea:-ms-input-placeholder      {color:#1d1d1b;opacity: 1}
 .red_txt {
 	color: #f82812;
 	font-weight: 400;

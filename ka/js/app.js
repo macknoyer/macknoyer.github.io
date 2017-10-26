@@ -75,6 +75,7 @@
                 scrollInertia: 150
             });
         });
+        $('#datetimepicker').datetimepicker();
     });
 
 })(jQuery);
