@@ -566,6 +566,17 @@ form.client_form .select2-results__option{
 	display: table-row;
 	position: relative;
 }
+.client_table_tr.disabled:hover .client_table_td:first-child {
+	border-left: 4px solid #1d1d1b;
+}
+.client_table_tr.disabled .client_table_td {
+	color: #a4a4a4;
+}
+
+.client_table_tr.disabled .tooltip.absolute {
+	display: none;
+}
+
 .curs_point_tr {
 	cursor: pointer;
 }
