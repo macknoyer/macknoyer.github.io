@@ -428,6 +428,7 @@ a.link_redline.active {
 	width: 862px;
 	height: 30px;
 	margin: 0 auto;
+	text-align: center;
 }
 .header_white_menu li a.black_list_link {
 	border: 1px solid #1d1d1b;
@@ -1368,9 +1369,13 @@ background: url(../img/yeslittleblack.png) no-repeat center;
 .header_white_menu.header_white_menu3 li{
 	margin-right: 73px;
 }
-.header_white_menu.header_white_menu3 li:last-child{
-	margin-right: 0;
+.header_white_menu li:last-child{
+	margin-right: 0 !important;
 }
+.header_white_menu.header_white_menu_6el li {
+	margin-right: 34px;
+}
+
 /***********************************administrator*/
 .red_marker {
 	background-color:#f82812;

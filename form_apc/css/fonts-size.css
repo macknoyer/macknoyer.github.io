@@ -25,6 +25,9 @@
 .fsz24 {
 	font-size: 24px;	
 }
+.fsz26 {
+	font-size: 26px;	
+}
 .fsz30 {
 	font-size: 30px;	
 	letter-spacing: -1.1px;
@@ -35,6 +38,9 @@
 }
 .fsz34 {
 	font-size: 34px;	
+}
+.fsz46 {
+	font-size: 46px;	
 }
 @media only screen and (max-width : 992px) {
 .fszm8 {

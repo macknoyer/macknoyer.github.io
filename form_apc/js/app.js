@@ -36,20 +36,80 @@
 		$('.humb_link').click(function () {
     		$(this).parent().find('.header_menu').slideToggle();
 		});
-  var owl = $(".owl-carousel");
+  var owl = $("#slider1");
+  var owl2 = $("#slider2");
  
   owl.owlCarousel({
-      items : 6, //10 items above 1000px browser width
-      itemsDesktop : [1000,3], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,2], // betweem 900px and 601px
-      itemsTablet: [600,1], //2 items between 600 and 0
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
- 
+    loop:false,
+    margin:10,
+    items:5,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        },
+        1920:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+
+    }
+  }); 
+  owl2.owlCarousel({
+    loop:false,
+    margin:20,
+    items:3,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        },
+        1920:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+
+    }
   });
- 
-  // Custom Navigation Events
-  $(".next").click(function(){
-    owl.trigger('owl.next');
-  })	
+	 $('.btn.next').click(function() {
+	   owl.trigger('next.owl.carousel');
 	});
+	 $('.btn.next2').click(function() {
+	   owl2.trigger('next.owl.carousel');
+	});
+	 $('.btn.prev2').click(function() {
+	   owl2.trigger('prev.owl.carousel');
+	});
+    var maxHeight = -1;
+
+    $('.wrap50').each(function() {
+      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+    });
+
+    $('.wrap50').each(function() {
+      $(this).height(maxHeight);
+    }); 	 
+});
 })(jQuery);

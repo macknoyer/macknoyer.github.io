@@ -56,6 +56,8 @@ input.no_margin_sub[type="submit"] {
 	font-weight: 600;
 }
 
+
+
 .header_menu {
 	width: 1050px;
 	margin: 0 auto;
@@ -122,6 +124,16 @@ a.logo {
 }
 .content_block.margin_bot {
 	margin-bottom: 40px;
+}
+.content_block.margin_bot19 {
+	margin-bottom: 19px;
+}
+.content_block.margin_top19 {
+	margin-top: 19px;
+}
+.content_block.margin_top_bot19 {
+	margin-top: 19px;
+	margin-bottom: 19px;
 }
 
 .content_block.clean {
@@ -203,6 +215,11 @@ input[type="text"],input[type="password"],input[type="email"] {
 .red_link.underline.margin_left{
 	margin-left: 7px;
 }
+.red_link.underline.pos_absolute{
+	position: absolute;
+	top: 22px;
+	right: 19px;
+}
 .red_link.search_link {
 	padding-left: 29px;
 	padding-right: 0;
@@ -246,6 +263,9 @@ input[type="text"],input[type="password"],input[type="email"] {
 }
 .wrapper.padding5 {  
 	padding-top: 14px;
+}
+.wrapper.padding6 {  
+	padding: 10px 0;
 }
 .wrapper.padding_left_right {  
 	padding-left: 19px;
@@ -611,6 +631,9 @@ input.no_bg_sub[type="submit"] {
 .orange_txt {
 	color: #f75b02;
 	font-weight: 600;
+}
+.fw700 {
+	font-weight: 700;
 }
 .counter_text {
 	padding-top: 8px;
@@ -1206,12 +1229,15 @@ input.no_bg_sub.no_bg_sub2[type="submit"] {
 .btn.next {
 	color: #d6d5d5;
 	position: absolute;
-	right: 16px;
-	top: 18px;
+right: -44px;
+top: 106px;
+cursor: pointer;
 }
-
+.owl-nav {
+	display: none;
+}
 .car_image_carousel {
-	
+	width: 170px;
 	height: 138px;
 	border-radius: 5px;
 	background-repeat: no-repeat;
@@ -1227,18 +1253,49 @@ input.no_bg_sub.no_bg_sub2[type="submit"] {
 	margin-bottom: -3px;
 	margin-left: 5px;
 }
-.item {
-	/*margin-right: 63px;*/
-}
+
 .hot {
 	width: 16px;
 	height: 18px;
 	background: url(../img/hot.png) no-repeat;
 	margin-right: 18px;
 }
-.owl-carousel .owl-item {
-    padding-right: 4px;
-}
-.wrapper.wrapper2.width938 { 
-	width: 938px;
+
+.wrapper.wrapper2.w938 { 
+	max-width: 938px;
 } 
+.wrap50 {
+	width: 41.477%;
+	padding: 40px;
+	margin-right: 15px;
+	border: 1px solid #d7d7d7;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.wrap50 p{
+	padding-right: 130px;
+}
+.wrap50 p.orange_txt{
+	padding-right: 0;
+}
+.wrap50:last-child {
+	margin-right: 0px;
+}
+strong {
+	font-weight: 600;
+}
+.fw300 {
+	font-weight: 300;
+} 
+.wrapper.wrapper_txt.car_sun_wrap {
+	width: 606px;
+	padding-left: 22px;
+}
+.wrapper.wrapper_txt.car_sun_wrap ul li{
+	padding-right: 135px;
+}
+.welcome_img.car_sun {
+	width: 311px;
+    height: 310px;
+    margin-top: 72px;
+}
