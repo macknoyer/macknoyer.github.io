@@ -17,6 +17,19 @@
 
 </head>
 <body>
+
+<div id="wrapper_popup">
+<div id="background_popup" onclick="popup_close()"></div>
+<div class="popup" id="popup_save_search">
+	<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+	<p class="orange_txt padding_txt">Сохранение поискового запроса</p>
+	<form action="">
+		<input class="margin_bot" type="text" placeholder="Введите название">
+		<input class="no_bg_sub float_l" value="Отмена" type="submit">
+		<input class="float_r" value="Сохранить" type="submit">
+	</form>
+</div>
+</div>
 	<header class="clearfix">
 		<a class="humb_link float_l"></a>
 		<a href="#" class="logo txt_dark_gray adaptiv_logo float_l">Продажа автомобилей<br> по России и СНГ</a>
@@ -68,7 +81,7 @@
 						<option value="2">+300км</option>
 					</select>
 				</div>
-				<input class="red_link search_link adaptiv_display_n" value="Сохранить поиск" type="submit">
+				 <a class="red_link search_link adaptiv_display_n" onclick="popup_open('popup_save_search')">Сохранить поиск</a>
 			</div>
 			<div class="wrapper clearfix" style="display: none;">
 				<span class="txt_gray">Быстрый поиск</span>

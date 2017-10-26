@@ -228,6 +228,7 @@ input[type="text"],input[type="password"],input[type="email"] {
 	background: url(../img/search_link.png) no-repeat center left;
 	line-height: 1.5;
 	color: #f83201; 
+	cursor: pointer;
 }
 .red_dotted_link:hover {
 	border-bottom: 1px dashed transparent;
@@ -270,6 +271,10 @@ input[type="text"],input[type="password"],input[type="email"] {
 .wrapper.padding_left_right {  
 	padding-left: 19px;
 	padding-right: 19px;
+}
+.wrapper.wrapper2.padding40 {  
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 
@@ -1233,7 +1238,7 @@ right: -44px;
 top: 106px;
 cursor: pointer;
 }
-#slider1 .owl-nav {
+.owl-nav {
 	display: none;
 }
 .car_image_carousel {
@@ -1259,7 +1264,7 @@ cursor: pointer;
 	width: 16px;
 	height: 18px;
 	background: url(../img/hot.png) no-repeat;
-	margin-right: 18px;
+	margin-right: 10px;
 }
 
 .wrapper.wrapper2.w938 { 
@@ -1319,6 +1324,7 @@ strong {
 .car_image_carousel.image_carousel2 {
 	width: 270px;
 	height: 216px;
+	border-radius: 0;
 }
 .owl-carousel.margin_top {
 	margin-top: 20px;
@@ -1338,6 +1344,7 @@ strong {
 	padding: 0px 10px 0px 10px;
 	vertical-align: bottom;
 	display: inline-block;
+	cursor: pointer;
 	    line-height: 38px;
 }
 .btn_slider2 .fa{
@@ -1375,3 +1382,61 @@ strong {
 .news_block p {
 	padding-right: 20px;
 }
+/********************************modal*/
+#wrapper_popup{
+	display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 280;
+    min-height: 1037px;
+	min-width: 320px;
+}
+#wrapper_popup.wrapper_popup2{
+    min-height: 100vh;
+}
+
+#background_popup {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 280;
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+}
+.popup {
+    display: none;
+    width: 295px;
+    z-index: 299;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -148px;
+   padding: 30px 43px;
+    margin-top: 5%;
+    border: 1px solid #d7d7d7;
+
+}
+input[type="text"].margin_bot {
+	margin-bottom: 20px;
+	width: 88%;
+}
+.popup input.no_bg_sub[type="submit"]{
+    padding: 0px 42px;
+
+}
+.popup input[type="submit"] {
+	padding: 0px 34px;
+}
+.popup_close {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	cursor: pointer;
+}
+/********************************modal*/

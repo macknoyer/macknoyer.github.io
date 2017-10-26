@@ -359,8 +359,42 @@ footer a.artmax_logo {
     padding: 15px 30px;
 }
 /*********************account**/
-
-
+/*********************account**/
+.car_image_carousel {
+    width: 100%;
+}
+.red_link.underline.pos_absolute {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.wrapper.padding6 {
+    text-align: center;
+}
+.wrap50 {
+    width: 92%;
+border: none;
+padding: 15px;
+}
+.wrapper.wrapper_txt.car_sun_wrap,.wrapper.wrapper_txt {
+	width: auto;
+}
+.wrapper.wrapper_txt.car_sun_wrap ul li {
+    padding-right: 0;
+}
+.wrapper.wrapper_txt p,.wrap50 p {
+    padding-right: 0px;
+}
+.wrap50.wrap30,.wrap50_inner,.wrap50.wrap70 {
+    width: auto;
+}
+.wrap50.wrap30 input.no_margin_sub[type="submit"]{
+   margin-top: 6px;
+}
+input[type="submit"].margin_r_button {
+    margin-right: 13px;
+    margin-left: 0;
+}
 }
 @media only screen and (max-width : 482px) {
 
