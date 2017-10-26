@@ -573,9 +573,6 @@ form.client_form .select2-results__option{
 	color: #a4a4a4;
 }
 
-.client_table_tr.disabled .tooltip.absolute {
-	display: none;
-}
 
 .curs_point_tr {
 	cursor: pointer;
