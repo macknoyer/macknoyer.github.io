@@ -334,7 +334,8 @@ footer a.artmax_logo {
 .wrapper_menu ul li a{
 	color: #8e8e8e;
 	padding-bottom: 11px;
-	padding-right: 0;
+	padding-right: 4px;
+	padding-bottom: 5px;
 	border-bottom: 3px solid transparent;
 	
 }
@@ -394,6 +395,19 @@ padding: 15px;
 input[type="submit"].margin_r_button {
     margin-right: 13px;
     margin-left: 0;
+}
+.account_menu_form label {
+    float: none;
+    display: block;
+}
+form.account_menu_form {
+width: auto;
+}
+.account_menu_form input {
+    float: none;
+}
+.wrapper_menu ul li {
+    padding-bottom: 6px;
 }
 }
 @media only screen and (max-width : 482px) {

@@ -279,6 +279,7 @@ input[type="text"],input[type="password"],input[type="email"] {
 
 
 
+
 .wrapper.no_padding { 
 	padding:0px 2px;
 }
@@ -1075,6 +1076,9 @@ label.confirm_checkbox_label {
 	padding-bottom: 16px;
 	margin-right: 22px;
 }
+.wrapper_menu.padding_bottom200 {
+	padding-bottom: 200px;
+}
 .wrapper_menu ul li{
 	margin-bottom: 20px;
 }
@@ -1440,3 +1444,7 @@ input[type="text"].margin_bot {
 	cursor: pointer;
 }
 /********************************modal*/
+.social_account span{
+	padding-left: 10px;
+	padding-right: 10px;
+}
