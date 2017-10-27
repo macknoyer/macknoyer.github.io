@@ -75,7 +75,6 @@ textarea.client_form_textarea:-ms-input-placeholder      {color:#1d1d1b;opacity:
 	border: 1px solid #f82812 !important;
 	display: inline-block;
 	float: left;
-	transition: border ease 0.3s;
 }
 .error_txt {
 	padding-left: 17px;
@@ -838,6 +837,9 @@ a.client_table_td_txt.red_link {
 .popup.popup_client_white.gray .client_table .client_table_tr .client_table_td{
 	border-right: none;
 	max-width: 100%;
+}
+.popup.popup_client_white.gray .client_table .client_table_tr:hover .client_table_td{
+	background-color: inherit;
 }
 .popup form{
 	padding:0px;
