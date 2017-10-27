@@ -1825,3 +1825,133 @@ width: 200px;
 	background-color: #fff;
 	padding: 10px 5px 10px 5px;
 }
+/*****************************************datepicker*/
+
+.ui-widget,.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: #1d1d1b;
+}
+.ui-datepicker {
+	background-color: #f5f5f5;
+	padding:5px;
+	border-radius: 5px !important;
+	border: none !important;
+
+	-webkit-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
+	box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);	 	
+}
+.ui-widget-header {
+	border:none;
+	background:#f82812;
+	font-weight: 400;	
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0px;
+}
+.ui-datepicker th {
+	font-weight: 400;
+	font-size: 10px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	color: #1d1d1b;
+	border: none;
+	font-weight: 400;	
+	text-align:center;
+	font-size: 10px;
+	background: #f5f5f5;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	background-color: #f82812;
+	background-image: none;
+	color: #fff;
+}
+
+.ui-timepicker-div dl dt {
+	font-size: 10px;
+	font-weight: 400;	
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea {
+	font-size: 10px;
+	font-weight: 400;
+}
+.ui-widget select {
+	min-width: 60px;
+	text-align: left !important;
+	border:1px solid #ccc !important;
+}
+.ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input {
+	    padding-left: 4px;
+}
+.ui-state-hover {
+	background-image: none !important;
+	background: #f5f5f5 !important;
+}
+.ui-state-hover.ui-datepicker-prev-hover,.ui-state-hover.ui-datepicker-next-hover {
+border:none;
+background-image: none;
+background-color: #f82812;
+color: #fff;
+padding: 0;	
+margin: 0;	
+top: 2px;
+}
+.ui-state-hover.ui-datepicker-prev-hover {
+left: 2px;
+}
+.ui-state-hover.ui-datepicker-next-hover {
+right: 2px; 
+}
+.ui-datepicker-prev {
+	background: url(../img/leftw.png) no-repeat center !important;
+}
+.ui-datepicker-next {
+	background: url(../img/rightw.png) no-repeat center !important;
+}
+.ui-widget-header .ui-icon {
+	background-image: none;
+}
+.ui-datepicker td {
+text-align: center;
+}
+.ui-widget-content {border:none;}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	display: none;	
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	font-size: 16px;
+	padding: 5px 8px;	
+	background: #f82812 !important;
+	color: #fff;
+	font-weight: 400;	
+	
+}/*
+.ui-datepicker .ui-datepicker-buttonpane button:after {
+	font-size: 16px;
+	padding: 5px 8px;	
+	background: #f82812 !important;
+	color: #fff;
+	font-weight: 400;	
+	content: 'Установить';
+
+}*/
+.table_datatimepicker {
+	border: none;
+	font-size: 11px;
+	display: inline-block;
+	background-color: transparent;
+	padding-bottom: 5px;	
+}
+/**/
+/*****************************************datepicker*/
