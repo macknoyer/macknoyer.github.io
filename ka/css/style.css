@@ -68,15 +68,10 @@ textarea.client_form_textarea:-ms-input-placeholder      {color:#1d1d1b;opacity:
 	color: #f82812;
 	font-weight: 400;
 }
-.table_gray_body_td span.red_txt {
+.table_gray_body_td span.red_txt,.table_gray_body_td span.red_txt>span,.table_gray_body_td span.red_txt>span>span {
 	display: block;
 }
-.table_gray_body_td span.red_txt>span {
-	display: block;
-}
-.table_gray_body_td span.red_txt>span>span {
-	display: block;
-}
+
 .red_txt.red_txt_italic {
 	font-style: italic;
 }
