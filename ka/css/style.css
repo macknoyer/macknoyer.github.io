@@ -75,6 +75,7 @@ textarea.client_form_textarea:-ms-input-placeholder      {color:#1d1d1b;opacity:
 	border: 1px solid #f82812 !important;
 	display: inline-block;
 	float: left;
+	transition: border ease 0.3s;
 }
 .error_txt {
 	padding-left: 17px;
@@ -1519,6 +1520,7 @@ margin-right: 0;
 	width: 100%;
 	padding: 5px 15px;
 	text-transform: none;
+	float: none;
 	border: 1px solid transparent;
 }
 .white_input.gray_input.gray_input2,.agency_head_textarea.textarea2 {
