@@ -72,7 +72,7 @@ textarea.client_form_textarea:-ms-input-placeholder      {color:#1d1d1b;opacity:
 	font-style: italic;
 }
 .error {
-	border: 1px solid #f82812;
+	border: 1px solid #f82812 !important;
 	display: inline-block;
 	float: left;
 }
@@ -1519,6 +1519,7 @@ margin-right: 0;
 	width: 100%;
 	padding: 5px 15px;
 	text-transform: none;
+	border: 1px solid transparent;
 }
 .white_input.gray_input.gray_input2,.agency_head_textarea.textarea2 {
 	width: 86%;
