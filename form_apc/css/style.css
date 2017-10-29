@@ -792,6 +792,11 @@ input.no_bg_sub[type="submit"] {
 	margin-left: 12px;
 	display: inline-block;
 }
+.link_border.disabled,.link_border.disabled:hover {
+	border-color: #e0e0e0;
+	color: #9f9f9f;
+	background-color: #fff;
+}
 .car_info.padding_top {
 	    padding-top: 30px;
     padding-left: 20px;
@@ -1283,12 +1288,29 @@ cursor: pointer;
 	border-radius: 5px;
 	min-height: 181px;
 }
+.wrap50.news {
+	width: 49%;
+	padding: 19px;
+	border:none;
+	padding-left: 0;
+	padding-right: 0;
+}
 .wrap50_inner {
 	width: 48.677%;
 	padding:0px;
 	border: none;
 	border-radius: 0;
 }
+.wrap50_inner.news_txt p{
+	padding: 0;
+	max-height: 85px;
+	overflow: hidden;
+}
+.wrap50_inner.news_txt a{
+	line-height: 1.2;
+	display: inline-block;
+}
+
 .wrap50_img {
 	width: 90px;
 	height: 120px;
@@ -1447,4 +1469,26 @@ input[type="text"].margin_bot {
 .social_account span{
 	padding-left: 10px;
 	padding-right: 10px;
+}
+/***********************************news*/
+.car_news_img {
+	width: 219px;
+	height: 165px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-right: 19px;
+	position: relative;
+}
+.car_news_date {
+	background-color: #92b207;
+	padding: 0px 8px;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	display: inline-block;
+	border-radius: 4px;
+	line-height: 23px;
+	bottom: 10px;
+	margin-left: -5px;
 }

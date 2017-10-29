@@ -714,7 +714,7 @@ a.client_table_td_txt.red_link {
 	box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);	
 	border-radius: 3px;
 	top: 10px;
-	z-index: 10;
+	z-index: 11;
 }
 .client_table_th_option_block.gray_bg {
 	background-color: #f5f5f5;
