@@ -60,10 +60,10 @@ textarea.client_form_textarea.width::-moz-placeholder          {color:#1d1d1b;op
 textarea.client_form_textarea.width:-moz-placeholder           {color:#1d1d1b;opacity: 1}
 textarea.client_form_textarea.width:-ms-input-placeholder      {color:#1d1d1b;opacity: 1}
 
-textarea.client_form_textarea::-webkit-input-placeholder {color:#1d1d1b;opacity: 1}
-textarea.client_form_textarea::-moz-placeholder          {color:#1d1d1b;opacity: 1}
-textarea.client_form_textarea:-moz-placeholder           {color:#1d1d1b;opacity: 1}
-textarea.client_form_textarea:-ms-input-placeholder      {color:#1d1d1b;opacity: 1}
+textarea.client_form_textarea::-webkit-input-placeholder {color:#fff;opacity: 1}
+textarea.client_form_textarea::-moz-placeholder          {color:#fff;opacity: 1}
+textarea.client_form_textarea:-moz-placeholder           {color:#fff;opacity: 1}
+textarea.client_form_textarea:-ms-input-placeholder      {color:#fff;opacity: 1}
 .red_txt {
 	color: #f82812;
 	font-weight: 400;
@@ -1202,7 +1202,7 @@ padding-bottom: 30px;
 
 }
 .table_select .select2-container .select2-selection--single {
-	height: 37px;
+	height: 35px;
 }
 .table_select .select2-container--default .select2-selection--single .select2-selection__placeholder {
 	color: #1d1d1b;
