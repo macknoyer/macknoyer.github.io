@@ -108,13 +108,6 @@ $('.table_datatimepicker').timepicker({
     currentText: 'Сейчас',
     closeText: 'Установить'
 });
-
-    $(document).click( function(event){
-      if( $(event.target).closest(".plan_img").length ) 
-        return;
-      $(".plan_img").fadeOut("slow");
-      event.stopPropagation();
-    });
 });
 
 })(jQuery);
