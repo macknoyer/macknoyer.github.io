@@ -80,7 +80,6 @@
             timeFormat: 'hh:mm tt'
         });
         $.datepicker.regional['ru'] = {
-    closeText: 'Закрыть',
     prevText: '<Пред',
     nextText: 'След>',
     currentText: 'Сегодня',
@@ -100,25 +99,22 @@
 };
 $.datepicker.setDefaults($.datepicker.regional['ru']);
 
-
-$.timepicker.regional['ru'] = {
+$('.table_datatimepicker').timepicker({
     timeOnlyTitle: 'Выберите время',
     timeText: 'Время',
     hourText: 'Часы',
     minuteText: 'Минуты',
     secondText: 'Секунды',
-    millisecText: 'Миллисекунды',
-    timezoneText: 'Часовой пояс',
     currentText: 'Сейчас',
-    closeText: 'Закрыть',
-    timeFormat: 'HH:mm',
-    amNames: ['AM', 'A'],
-    pmNames: ['PM', 'P'],
-    isRTL: false
-};
-$.timepicker.setDefaults($.timepicker.regional['ru']);
+    closeText: 'Закрыть'
+});
 
-    $('.ui-datepicker .ui-datepicker-buttonpane').text('Установить');
+    $(document).click( function(event){
+      if( $(event.target).closest(".plan_img").length ) 
+        return;
+      $(".plan_img").fadeOut("slow");
+      event.stopPropagation();
+    });
 });
 
 })(jQuery);
