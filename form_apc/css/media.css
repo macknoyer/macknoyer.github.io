@@ -372,10 +372,37 @@ footer a.artmax_logo {
 .wrapper.padding6 {
     text-align: center;
 }
-.wrap50,.wrap50.news {
+.wrap50,.wrap50.news,.wrap50.news.contact_us_left {
     width: 92%;
 border: none;
 padding: 15px;
+}
+form.regist_form.contact_us_form {
+	padding: 0;
+}
+form.regist_form.contact_us_form .regist_form_block label {
+    position: absolute;
+    top: 0;
+    color: #606060;
+    left: 0;
+    margin-top: 0;
+}
+form.regist_form.contact_us_form .regist_form_block input,form.regist_form.contact_us_form .regist_form_block textarea {
+    width: 86.2%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.contact_us_block {
+    width: 100%;
+}
+.wrap50.news.contact_us_left .contact_us_block input {
+	width: 86.2%;
+}
+form.regist_form.contact_us_form .regist_form_block textarea {
+	float:none;
+}
+.wrap50.news.contact_us_left {
+	padding: 0;
 }
 .wrapper.wrapper_txt.car_sun_wrap,.wrapper.wrapper_txt {
 	width: auto;

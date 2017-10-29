@@ -998,7 +998,7 @@ form.regist_form,.regist_form {
 .regist_form .regist_form_block input{
 	width: 86.2%;
 	margin-top: 24px;
-	margin-bottom: 13px;
+	margin-bottom: 24px;
 }
 .regist_form .regist_form_block label.absolute{
 	position: absolute;
@@ -1504,4 +1504,58 @@ input[type="text"].margin_bot {
 	-webkit-background-size: cover;
 	background-size: cover;
 	margin-bottom: 20px;
+}
+.contact_us_img {
+	background: url(../img/contact_us_img.png) no-repeat;
+	width: 295px;
+	height: 316px;
+	margin: 0 auto;
+}
+form.regist_form.contact_us_form {
+	width: 100%;
+}
+form.regist_form.contact_us_form .regist_form_block label {
+    float: left;
+    margin-top: 13px;
+    max-width: 70px;
+	word-wrap: break-word;
+}
+form.regist_form.contact_us_form .regist_form_block input,form.regist_form.contact_us_form .regist_form_block textarea {
+	float: right;
+	width: 79.2%;
+	margin:5px 0px; 
+}
+form.regist_form.contact_us_form .regist_form_block textarea {
+	margin-bottom: 25px;
+	height: 116px;
+}
+.wrap50.news.contact_us_left {
+	width: 55%;
+	padding-top: 0;
+}
+.wrap50.news.contact_us_right {
+	width: 43%;
+}
+.contact_us_block {
+	width: 47.74%;
+	margin-right: 25px;
+	position: relative;
+}
+.contact_us_block:last-child {
+	margin-right: 0;
+}
+.wrap50.news.contact_us_left .contact_us_block input{
+	width: 56.2%;
+}
+textarea {
+	resize: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: -0.6px;
+	color: #373737;
+	border: 1px solid #c2c2c2;
+	border-radius: 3px;
+	padding: 0px 17px;
+	line-height: 37px;	
 }
