@@ -409,6 +409,10 @@ width: auto;
 .wrapper_menu ul li {
     padding-bottom: 6px;
 }
+.news_single_img {
+height: 44vh;
+background-size: contain;
+}
 }
 @media only screen and (max-width : 482px) {
 
