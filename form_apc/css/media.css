@@ -372,7 +372,7 @@ footer a.artmax_logo {
 .wrapper.padding6 {
     text-align: center;
 }
-.wrap50 {
+.wrap50,.wrap50.news {
     width: 92%;
 border: none;
 padding: 15px;
