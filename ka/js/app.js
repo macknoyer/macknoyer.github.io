@@ -106,7 +106,7 @@ $('.table_datatimepicker').timepicker({
     minuteText: 'Минуты',
     secondText: 'Секунды',
     currentText: 'Сейчас',
-    closeText: 'Закрыть'
+    closeText: 'Установить'
 });
 
     $(document).click( function(event){
