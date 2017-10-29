@@ -1374,14 +1374,10 @@ background: url(../img/yeslittleblack.png) no-repeat center;
 .rating span.star:hover {
     cursor: pointer;
 }
-.rating span.star:hover::before, .rating span.star:hover ~ span.star::before, .rating span.star.active ~ span.star.active::before, .rating span.star.active ~ span.star::before {
+.rating span.star:hover::before, .rating span.star:hover ~ span.star::before, .rating span.star.active:before{
     content: "\f005";
     color: #f82812;
 	transition: color ease 0.3s;
-}
-.rating.direction_ltr span.star.active:hover ~ span.star::before {
-    content: "\f005";
-    color: #d9d9d9;
 }
 .table_gray_body_tr_form {
 	display: table-row;
