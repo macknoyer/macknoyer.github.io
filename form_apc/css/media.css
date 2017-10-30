@@ -219,6 +219,9 @@ margin-top: 18px;
 .adaptiv_margin_top {
 	margin-top: 18px !important;	
 }
+.adaptiv_margin0 {
+	margin-left:0 !important;	
+}
 .content_block.head_txt {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -372,7 +375,7 @@ footer a.artmax_logo {
 .wrapper.padding6 {
     text-align: center;
 }
-.wrap50,.wrap50.news,.wrap50.news.contact_us_left {
+.wrap50,.wrap50.news,.wrap50.news.contact_us_left,.wrap50.news.review {
     width: 92%;
 border: none;
 padding: 15px;
@@ -437,9 +440,15 @@ width: auto;
     padding-bottom: 6px;
 }
 .news_single_img {
-height: 44vh;
-background-size: contain;
+	height: 44vh;
+	background-size: contain;
 }
+/********************************************************review***/
+.form_select_wrap.review_select {
+	float: left;
+	margin-right: 18px;
+}
+/********************************************************review***/
 }
 @media only screen and (max-width : 482px) {
 
