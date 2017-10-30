@@ -1129,6 +1129,7 @@ padding-bottom: 30px;
 .table_gray_body_txt_appl {
 	font-weight: 400;
 	font-size: 21px;
+	vertical-align: middle;
 }
 .table_gray_body_txt_krit {
 	font-weight: 500;

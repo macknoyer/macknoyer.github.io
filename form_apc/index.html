@@ -29,6 +29,138 @@
 		<input class="float_r" value="Сохранить" type="submit">
 	</form>
 </div>
+<div class="popup brand_search" id="brand_search">
+	<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+
+		<div class="wrapper wrapper2 clearfix">
+			<div class="brand_search_left float_l">
+				<a href="#" class="car_img w100" style="background-image: url(img/car_img.png);">
+				<a class="link_border orange margin0 txt_align_center" href="#">Добавить в избранное</a>
+			</div>
+			<div class="brand_search_middle float_l">
+				<span class="orange_txt fsz18 padding_txt display_b">РОЛЬФ Сити BlueFish</span>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Тип кузова</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">Седан</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Цвет</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">Красный</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Объем двигателя</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">1.6</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Коробка передач</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">AT</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Мощность</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">(123 л.с.)</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Пробег</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">147300 км</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Привод</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">передний</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Тип двигателя</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">бензин</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Положение руля</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">левый руль</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Город</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">г. Нижневартовск</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Год выпуска</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">Новый, 2016г.</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Компания</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l">ООО "Ромашка"</span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Источник обьявления</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l"><a href="#" class="red_link">Avito.ru</a> <span class="txt_light_gray">2 часа назад</span></span>						
+					</div>
+				</div>
+				<div class="clearfix padding_txt10">
+					<div class="float_l w50">
+						<span class="float_l txt_light_gray">Цена</span>
+					</div>
+					<div class="float_r w50">
+						<span class="float_l orange_txt fw300 fsz24">200 000 руб.</span>						
+					</div>
+				</div>
+			</div>
+			<div class="brand_search_right float_l">
+					<span class="fw400 fsz18 padding_txt display_b">Дополнительно</span>
+				<div class="car_options_block">
+					<p class="txt_light_gray padding_txt10"></p>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
 </div>
 	<header class="clearfix">
 		<a class="humb_link float_l"></a>
@@ -330,7 +462,7 @@
 			<a href="#" class="car_img float_l" style="background-image: url(img/car_img.png);">
 			</a>
 			<div class="car_info_wrap float_l">
-				<div class="car_name_orange_txt_wrap"><a href="#" class="orange_txt car_name_text fsz18">РОЛЬФ Сити BlueFish <a class="link_border">Отзывы</a></a></div>
+				<div class="car_name_orange_txt_wrap"><a onclick="popup_open('brand_search')" class="orange_txt car_name_text fsz18">РОЛЬФ Сити BlueFish <a class="link_border">Отзывы</a></a></div>
 				<div class="car_info car_info_wrap2 float_l">
 					<div class="review_popup">
 						<span>Отзывы о модели Rolf City BlueFish</span>

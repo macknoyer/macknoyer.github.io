@@ -55,11 +55,15 @@ input.no_margin_sub[type="submit"] {
 .fw600 {
 	font-weight: 600;
 }
-
+.w50 {
+width: 50%;
+}
 .line_height1 {
 	line-height: 1;
 }
-
+.display_b {
+	display: block;
+}
 .header_menu {
 	width: 1050px;
 	margin: 0 auto;
@@ -184,9 +188,9 @@ input[type="text"],input[type="password"],input[type="email"] {
 	color: #747474;
 	padding-right: 23px;
 }
-.txt_light_gray {
+.txt_light_gray,.regist_form .regist_form_block label.absolute.txt_light_gray {
 	color: #9e9e9e;
-}
+}	
 .txt_dark_gray {
 	color: #a1a1a1;
 }
@@ -751,11 +755,12 @@ input.no_bg_sub[type="submit"] {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-}/*
-.car_img img{ 
+	display: block;
+}
+
+.car_img.w100 {
 	width: 100%;
-	height: 100%
-}*/
+}
 .car_info {
 	position: relative;
 }
@@ -792,10 +797,17 @@ input.no_bg_sub[type="submit"] {
 	margin-left: 12px;
 	display: inline-block;
 }
+.link_border.orange {
+	width: 87.7%;
+	color: #f75b02;
+	border-color:#f75b02;
+	margin-top: 15px;
+}
 .link_border.margin0 {
 	margin-left: 0px;
 
 }
+
 .link_border.disabled,.link_border.disabled:hover {
 	border-color: #e0e0e0;
 	color: #9f9f9f;
@@ -988,6 +1000,7 @@ form.regist_form,.regist_form {
 	padding: 0;
 	padding-bottom: 22px;
 	background: none;
+	min-height: auto;
 }
 .regist_form label.login_checkbox{    
 	margin-left: 10px;
@@ -1343,6 +1356,9 @@ strong {
 .fw300 {
 	font-weight: 300;
 } 
+.fw400 {
+	font-weight:400;
+} 
 .wrapper.wrapper_txt.car_sun_wrap {
 	width: 606px;
 	padding-left: 22px;
@@ -1419,8 +1435,6 @@ strong {
 /********************************modal*/
 #wrapper_popup{
 	display: none;
-    overflow-x: hidden;
-    overflow-y: hidden;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -1466,6 +1480,14 @@ strong {
 	background-color: #fff;
 
 }
+.popup.brand_search {
+	width: 1050px;
+   padding: 0px;
+	margin-left: -525px;
+	border-radius: 5px;
+	top: 50% !important;
+
+}
 .popup.contact_us_popup a.red_link{
 	margin-right: 25px;
 
@@ -1487,6 +1509,8 @@ input[type="text"].margin_bot {
 	right: 15px;
 	top: 10px;
 	cursor: pointer;
+	z-index: 300;
+
 }
 /********************************modal*/
 .social_account span{
@@ -1603,4 +1627,17 @@ padding-bottom: 30px;
  margin-right: 15px;
  bottom: 0;
 
+}
+/*****************************************************brand_search****/
+
+.brand_search_left {
+	width: 220px;
+	margin-right: 25px;
+}
+.brand_search_middle {
+	width: 330px;
+	margin-right: 25px;
+}
+.brand_search_right {
+	width: 410px;
 }
