@@ -142,7 +142,7 @@
 						<span class="float_l txt_light_gray">Источник обьявления</span>
 					</div>
 					<div class="float_r w50">
-						<span class="float_l"><a href="#" class="red_link">Avito.ru</a> <span class="txt_light_gray">2 часа назад</span></span>						
+						<span class="float_l"><a class="red_link">Avito.ru</a> <span class="txt_light_gray">2 часа назад</span></span>						
 					</div>
 				</div>
 				<div class="clearfix padding_txt10">
@@ -203,6 +203,31 @@
 		</div>
 	</form>
 </div>
+</div>
+
+<div class="popup brand_search" id="warning_popup">
+	<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+
+	<div class="wrapper wrapper2 clearfix">
+			<div class="wrapper wrapper_txt car_sun_wrap float_l">
+		<h1 class="fszm30 padding_txt">Как избежать мошенничества на сайтах</h1>
+		<p class="padding_txt">Мы работаем над тем, чтобы уровень безопасности сайта был стабильно высоким, и регулярно проверяем все объявления. Однако если у вас возникают подозрения, что продавец — мошенник, советуем перестраховаться.</p>
+		<p class="padding_txt">Как не столкнуться с нечестным продавцом:</p>
+			<ul class="list_style_green_circle padding_txt">
+				<li>требуйте личной встречи и не вносите предоплату;</li>
+				<li>проверяйте документы на авто, особенно ПТС и свидетельство о регистрации ТС;</li>
+				<li>убедитесь, что машина не угнанная и не находится в розыске, иначе проблем с полицией не избежать;</li>
+				<li>внимательно осмотрите номерные знаки;</li>
+				<li>обратите внимание на состояние салона и на запах внутри автомобиля;</li>
+				<li>не покупайте авто, если оно стоит неправдоподобно дёшево.</li>
+			</ul>
+			<div class="clearfix">
+				<input class="submit_margin float_l" value="Перейти на avito.ru" type="submit">
+				<input class="no_bg_sub" value="Отмена" type="submit">
+			</div>
+			</div>
+			<div class="welcome_img car_sun float_l adaptiv_display_n" style="background: url(img/thief.png) no-repeat;"></div>
+	</div>
 </div>
 	<header class="clearfix">
 		<a class="humb_link float_l"></a>
@@ -521,7 +546,7 @@
 				</div>
 				<div class="car_info car_info2 padding_top float_l">
 					<p class="car_info_padding_txt">Новый, 2016 г.<a href="#" class="link_border float_r">Cмотреть</a></p>
-					<p class="car_info_padding_txt adaptiv_display_n"><a href="#" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
+					<p class="car_info_padding_txt adaptiv_display_n"><a onclick="popup_open('warning_popup')" class="red_link">Avito.ru</a><span class="txt_light_gray">2 часа назад</span></p>
 					<p class="car_info_padding_txt adaptiv_display_n">ООО “Ромашка”</p>
 				</div>
 			</div>
