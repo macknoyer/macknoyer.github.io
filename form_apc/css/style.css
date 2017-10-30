@@ -1300,6 +1300,9 @@ cursor: pointer;
 	padding-left: 0;
 	padding-right: 0;
 }
+.wrap50.news p{
+	padding-right: 0;
+}
 .wrap50_inner {
 	width: 48.677%;
 	padding:0px;

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/vendor/jquery-ui/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts-size.css" />
+	<link rel="stylesheet" type="text/css" href="css/media.css" />
+
+</head>
+<body> 
+<div class="adaptiv_display_n" id="wrapper_popup">
+	<div id="background_popup" onclick="popup_close()"></div>
+	<div class="popup contact_us_popup" id="contact_us_popup">
+		<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+		<p class="padding_txt fsz24">Спасибо за ваше обращение!<br> Мы постараемся ответить как можно скорее</p>
+		<a href="#" class="red_link underline fsz18">На главную</a>
+		<a href="#" class="red_link underline fsz18">Задать еще вопрос</a>
+	</div>
+</div>
+	<header class="clearfix">
+		<a class="humb_link float_l"></a>
+		<a href="#" class="logo txt_dark_gray adaptiv_logo float_l">Продажа автомобилей<br> по России и СНГ</a>
+				<input class="adaptiv_but_head float_r" type="submit" value="Найти" />	
+		<div class="header_menu clearfix adaptiv_display_n">
+			<ul>
+				<li><a>Услуги</a></li>
+				<li><a>FAQ</a></li>
+				<li><a>Новости</a></li>
+				<li><a>Отзывы</a></li>
+				<li><a>Помощь</a></li>
+				<li><a>Обратная связь</a></li>
+				<li><a>Поиск</a></li>
+			</ul>
+			<ul class="header_menu_right">
+				<li class="search_link2"><a>Мои поиски</a></li>
+				<li class="star"><a>Избранное</a></li>
+				<li class="human"><a>Вход</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="content_block_wrap min_h">
+		<div class="content_block clean adaptiv_display_n clearfix">
+			<a href="#" class="logo txt_dark_gray">Продажа автомобилей<br> по России и СНГ</a>
+		<ul class="breadcrumb clearfix">
+			<li><a href="#">Главная</a></li>
+			<li>Обратная связь</li>
+		</ul>	
+		</div>	
+		<div class="content_block margin_bot clearfix">
+
+			<div class="wrapper wrapper2 clearfix">
+				<h1 class="fsz31 padding_txt">Ваш отзыв</h1>
+				<div class="wrap50 news contact_us_left float_l adaptiv_float_n">
+				<p class="padding_txt">Опишите свое общее впечатление о сервисе, о его работе. Если вы уже приобрели автомобиль  - можете этим поделиться.</p>
+					<form class="regist_form contact_us_form" action="">
+				<div class="regist_form_block clearfix">
+					<label class="adaptiv_float_n" for="email">Название*</label>
+					<input class="adaptiv_float_n" name="email" type="email">
+				</div>
+				<div class="regist_form_block clearfix">
+					<label class="adaptiv_float_n" for="question">Текст отзыва*</label>
+					<textarea class="adaptiv_float_n" name="question" id="question" cols="30" rows="10"></textarea>
+				</div>
+				<input class="float_r" value="Отменить" type="submit">
+				<input class="no_bg_sub float_r" value="Добавить отзыв" type="submit">
+			</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<footer class="clearfix">
+			<div class="header_menu clearfix">
+			<a href="#" class="logo gray"></a>
+				<ul>
+					<li><a>Поиск</a></li>
+					<li><a>Услуги</a></li>
+					<li><a>Новости</a></li>
+					<li><a>Полезное</a></li>
+					<li><a>Форум</a></li>
+					<li><a>Обратная связь</a></li>
+					<li><a>Отзывы</a></li>
+				</ul>
+				<a class="artmax_logo float_r">Разработка айтов ArtMax</a>
+			</div>		
+	</footer>
+</body>
+</html>
