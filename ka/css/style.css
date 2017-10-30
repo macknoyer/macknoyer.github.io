@@ -897,6 +897,16 @@ a.client_table_td_txt.red_link {
 	padding-top: 5px;
 
 }
+
+.popup_close {
+	display: block;
+	top:19px;
+	right: 19px;
+	background: url(../img/del.png) no-repeat;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+}
 /*.popup_input_error_wrap {
 	position: relative;
 	display: inline-block;
