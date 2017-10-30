@@ -77,38 +77,52 @@
         });
         $('.table_datatimepicker').datetimepicker({
             controlType: 'select',
-            timeFormat: 'HH:mm'
+            timeFormat: 'HH:mm',
+            beforeShow: function () {
+                $(this).data("old", $(this).val());
+            },
+            onClose: function () {
+                function isDonePressed() {
+                    return ($('#ui-datepicker-div').html().indexOf('ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all ui-state-hover') > -1);
+                }
+
+                if (isDonePressed()) {
+                    setMeetingdate($(this).val(), $(this).data("id"));
+                } else {
+                    $(this).val($(this).data("old"));
+                }
+            }
         });
         $.datepicker.regional['ru'] = {
-    prevText: '<Пред',
-    nextText: 'След>',
-    currentText: 'Сегодня',
-    monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
-    'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-    monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
-    'Июл','Авг','Сен','Окт','Ноя','Дек'],
-    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-    weekHeader: 'Не',
-    dateFormat: 'dd.mm.yy',
-    firstDay: 1,
-    isRTL: false,
-    showMonthAfterYear: false,
-    yearSuffix: ''
-};
-$.datepicker.setDefaults($.datepicker.regional['ru']);
+            prevText: '<Пред',
+            nextText: 'След>',
+            currentText: 'Сегодня',
+            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
+                'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+            dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+            dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            weekHeader: 'Не',
+            dateFormat: 'dd.mm.yy',
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ''
+        };
+        $.datepicker.setDefaults($.datepicker.regional['ru']);
 
-$('.table_datatimepicker').timepicker({
-    timeOnlyTitle: 'Выберите время',
-    timeText: 'Время',
-    hourText: 'Часы',
-    minuteText: 'Минуты',
-    secondText: 'Секунды',
-    currentText: 'Сейчас',
-    closeText: 'Установить'
-});
-});
+        $('.table_datatimepicker').timepicker({
+            timeOnlyTitle: 'Выберите время',
+            timeText: 'Время',
+            hourText: 'Часы',
+            minuteText: 'Минуты',
+            secondText: 'Секунды',
+            currentText: 'Сейчас',
+            closeText: 'Установить'
+        });
+    });
 
 })(jQuery);
 
