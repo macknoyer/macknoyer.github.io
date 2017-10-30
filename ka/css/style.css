@@ -1929,7 +1929,10 @@ right: 2px;
 .ui-datepicker td {
 text-align: center;
 }
-.ui-widget-content {border:none;}
+.ui-widget-content {
+	border:none;
+	z-index: 11 !important;
+}
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
 	display: none;	
 }
