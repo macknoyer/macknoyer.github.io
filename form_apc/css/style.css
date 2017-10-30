@@ -56,7 +56,9 @@ input.no_margin_sub[type="submit"] {
 	font-weight: 600;
 }
 
-
+.line_height1 {
+	line-height: 1;
+}
 
 .header_menu {
 	width: 1050px;
@@ -1576,4 +1578,17 @@ textarea {
 	border-radius: 3px;
 	padding: 0px 17px;
 	line-height: 37px;	
+}
+/****************************************reviews***/
+.padding_txt30 {
+padding-bottom: 30px;
+}
+.form_select_wrap.margin_add {
+	margin-left: 18px;
+}
+.review_head_span {
+	padding-top: 10px;
+}
+.form_select_wrap.review_select .select2-container {
+	min-width: 50px !important;
 }

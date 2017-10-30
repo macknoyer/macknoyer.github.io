@@ -1133,16 +1133,16 @@ padding-bottom: 30px;
 .table_gray_body_txt_krit {
 	font-weight: 500;
 	font-size: 10px;
-	padding-left: 30px;
 	cursor: pointer;
 	transition: color 0.5s;
 	color: #1d1d1b;
-	background: url(../img/table_gray_body_txt_krit.png) no-repeat left center;
-	display: block;
+	display: inline-block;
+	width: 51px;
+	float: right;
 }
 .table_gray_body_txt_krit:hover {
 	color: #f82812;
-	background: url(../img/table_gray_body_txt_krit2.png) no-repeat left center;
+
 }
 
 .table_gray_body.dark_gray {
@@ -1178,6 +1178,13 @@ padding-bottom: 30px;
 }
 .client_table_td_cv.comment {
 	background: url(../img/comment.png) no-repeat;
+}
+.client_table_td_cv.comment2.kriteria {
+	float: left;
+	margin-top: 8px;
+}
+.client_table_td_cv.comment2.kriteria:hover {
+	background: url(../img/table_gray_body_txt_krit2.png) no-repeat;
 }
 .client_table_td_cv.comment_white {
 	background: url(../img/comment_white.png) no-repeat;
