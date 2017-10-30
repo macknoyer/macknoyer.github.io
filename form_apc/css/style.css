@@ -1491,7 +1491,7 @@ margin-top: -1px;
     width: 295px;
     z-index: 299;
     background: #fff;
-    position: absolute;
+    position: fixed;
     left: 50%;
     margin-left: -148px;
    padding: 30px 43px;
@@ -1514,7 +1514,6 @@ margin-top: -1px;
    padding: 0px;
 	margin-left: -525px;
 	border-radius: 5px;
-	top: 50% !important;
 
 }
 .popup.contact_us_popup a.red_link{
