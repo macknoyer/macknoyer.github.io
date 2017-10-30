@@ -184,6 +184,9 @@ input[type="text"],input[type="password"],input[type="email"] {
 .padding_top_txt_review {
 	padding-top: 67px;
 }
+.padding_txt_top {
+padding-top: 20px;
+}
 .txt_gray {
 	color: #747474;
 	padding-right: 23px;
@@ -1359,6 +1362,32 @@ strong {
 .fw400 {
 	font-weight:400;
 } 
+/********************************************scrollbar*****/
+.scrollbar {
+	max-height: 370px;
+	padding:0px;
+	border: 1px solid #d7d7d7;
+	padding-left:15px;
+	background: url(../img/bg_scrollbar.png) repeat-x top;
+	margin-bottom: 19px;
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+    background-color: rgba(0,0,0,0.75);
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width: 8px;
+	margin: 0 auto;    
+	background-color: #d0d0d0;
+}
+.mCSB_scrollTools {
+width: 8px;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+height: 102%;
+border-radius: 0;
+margin-top: -1px;
+}
+/********************************************scrollbar*****/
 .wrapper.wrapper_txt.car_sun_wrap {
 	width: 606px;
 	padding-left: 22px;

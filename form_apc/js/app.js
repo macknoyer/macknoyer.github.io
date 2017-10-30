@@ -108,15 +108,20 @@
 	   owl2.trigger('prev.owl.carousel');
 	});
 
-    var maxHeight = -1;
+        $(".scrollbar").mCustomScrollbar({
+            theme: "inset-2-dark",
+            scrollInertia: 150
+        });
 
-    // $('.wrap50').each(function() {
-    //   maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-    // });
+    // var maxHeight = -1;
 
-    // $('.wrap50').each(function() {
-    //   $(this).height(maxHeight);
-    // }); 	 
+    // // $('.wrap50').each(function() {
+    // //   maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+    // // });
+
+    // // $('.wrap50').each(function() {
+    // //   $(this).height(maxHeight);
+    // // }); 	 
 });
 })(jQuery);
 function popup_open(name_popup){
