@@ -17,6 +17,15 @@
 
 </head>
 <body> 
+<div class="adaptiv_display_n" id="wrapper_popup">
+	<div id="background_popup" onclick="popup_close()"></div>
+	<div class="popup contact_us_popup" id="contact_us_popup">
+		<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+		<p class="padding_txt fsz24">Спасибо за ваше обращение!<br> Мы постараемся ответить как можно скорее</p>
+		<a href="#" class="red_link underline fsz18">На главную</a>
+		<a href="#" class="red_link underline fsz18">Задать еще вопрос</a>
+	</div>
+</div>
 	<header class="clearfix">
 		<a class="humb_link float_l"></a>
 		<a href="#" class="logo txt_dark_gray adaptiv_logo float_l">Продажа автомобилей<br> по России и СНГ</a>
@@ -77,11 +86,9 @@
 				</div>
 				<div class="regist_form_block clearfix">
 					<label class="adaptiv_float_n" for="question">Вопрос*</label>
-					<textarea class="adaptiv_float_n" name="question" id="question" cols="30" rows="10">
-						
-					</textarea>
+					<textarea class="adaptiv_float_n" name="question" id="question" cols="30" rows="10"></textarea>
 				</div>
-				<input class="float_r" value="Отправить" type="submit">
+				<input  onclick="popup_open('contact_us_popup')" class="float_r" value="Отправить" type="submit">
 			</form>
 				</div>
 				<div class="wrap50 news contact_us_right float_l adaptiv_display_n">

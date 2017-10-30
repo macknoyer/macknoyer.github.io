@@ -1453,6 +1453,21 @@ strong {
     border: 1px solid #d7d7d7;
 
 }
+.popup.contact_us_popup {
+	display: none;
+	width: 470px;
+	margin-left: -343px;
+	background: url(../img/help_bg.png) no-repeat 24px 38px;
+	background-color: rgba(0, 0, 0, 0);
+	padding-left: 170px;
+	background-color: #fff;
+
+}
+.popup.contact_us_popup a.red_link{
+	margin-right: 25px;
+
+}
+
 input[type="text"].margin_bot {
 	margin-bottom: 20px;
 	width: 88%;

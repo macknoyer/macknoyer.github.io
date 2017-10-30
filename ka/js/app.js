@@ -77,7 +77,7 @@
         });
         $('.table_datatimepicker').datetimepicker({
             controlType: 'select',
-            timeFormat: 'hh:mm tt'
+            timeFormat: 'HH:mm'
         });
         $.datepicker.regional['ru'] = {
     prevText: '<Пред',
