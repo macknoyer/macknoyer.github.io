@@ -1089,7 +1089,7 @@ padding-bottom: 30px;
 .table_gray_body {
 	background-color: #ececec;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 10px;
 }
 .table_gray_body_tr {
 	display: table-row;
@@ -1128,7 +1128,7 @@ padding-bottom: 30px;
 }
 .table_gray_body_txt_appl {
 	font-weight: 400;
-	font-size: 21px;
+	font-size: 16px;
 	vertical-align: middle;
 }
 .table_gray_body_txt_krit {
@@ -1311,6 +1311,7 @@ border-bottom: 1px solid #1d1d1b;
     padding: 10px 5px 10px 5px;
     text-transform: uppercase;
     text-overflow: ellipsis;
+    font-size: 10px;
 }
 .client_table.candidats .client_table_tr_head .client_table_th .client_table_th_txt{
 	max-width: 84px;

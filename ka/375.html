@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://agregator/requests/update/375# -->
+<html lang="ru-RU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="mhUjRCgm_ZYnOp2mfdqTEmxNP5_s9fnkjJ3QQm2kRU4wZ0zwZEYNRbnjaKQDw33Ge5qsScsxCzH7kFlTrQBavA==">
+    <title></title>
+    <link href="./375_files/jquery-ui.min.css" rel="stylesheet">
+<link href="./375_files/jquery.mCustomScrollbar.css" rel="stylesheet">
+<link href="./375_files/fonts-size.css" rel="stylesheet">
+<link href="./375_files/fonts.css" rel="stylesheet">
+<link href="./375_files/font-awesome.min.css" rel="stylesheet">
+<link href="./375_files/select2.min.css" rel="stylesheet">
+<link href="./375_files/style.css" rel="stylesheet">
+<script src="./375_files/yii.js.Без названия"></script>
+<script src="./375_files/jquery-1.11.2.min.js.Без названия"></script>
+<script src="./375_files/jquery-ui.min.js.Без названия"></script>
+<script src="./375_files/select2.min.js.Без названия"></script>
+<script src="./375_files/jquery.mCustomScrollbar.min.js.Без названия"></script><script src="./375_files/jquery.mousewheel.min.js.Без названия"></script>
+<script src="./375_files/jquery-ui-timepicker-addon.min.js.Без названия"></script>
+<script src="./375_files/app.js.Без названия"></script>
+<script src="./375_files/script.js.Без названия"></script><style type="text/css">/* This is not a zero-length file! */</style><style type="text/css">/* This is not a zero-length file! */</style></head>
+<body class="for_dropdown">
+<header>
+    <div class="content_block clearfix">
+        <div class="header_block">
+            <a href="http://agregator/" class="logo"><span>ka</span>агрегатор</a>
+        </div>
+        <div class="header_block fsz18">
+            <span class="mOffer"></span><a href="http://agregator/requests/create" class="link_redline ">Оформить
+                заявку</a>
+        </div>
+        <div class="header_block fsz21">
+            <a href="tel:+74955005550">+7 495 500-555-0</a>
+        </div>
+        <div class="header_block float">
+            <a href="http://agregator/requests/update/375#" class="form_avatar"></a>
+            <div class="header_block_login">
+                <a href="http://agregator/user/logout">Выйти из профиля</a>
+                <a href="http://agregator/user/profile">Изменить контактную информацию</a>
+            </div>
+        </div>
+    </div>
+    <div class="header_white_menu_block">
+        <ul class="header_white_menu fsz14">
+            <li>
+                <a class="active" href="http://agregator/requests">Открытые заявки</a></li>
+            <li><a class="" href="http://agregator/agencies">Открытые агентства</a></li>
+            <li><a class="" href="http://agregator/applicants">Открытые кандидаты</a></li>
+            <li><a class="" href="http://agregator/archive">Архив заявок</a></li>
+            <li><a class="black_list_link " href="http://agregator/blacklist">Черный список агентств</a></li>
+        </ul>
+    </div>
+</header>
+<div id="wrapper_popup" class="wrapper_popup2">
+    <div id="background_popup" onclick="popup_close()"></div>
+    <div class="popup" id="alert_popup">
+        <a class="popup_close" onclick="popup_close()"></a>
+        <p class="standart_txt fsz12"></p>
+    </div>
+    <div class="popup popup_client_white" id="black_list_popup">
+        <form id="w1" action="http://agregator/blacklist/create" method="POST" role="form">
+<input type="hidden" name="_csrf" value="mhUjRCgm_ZYnOp2mfdqTEmxNP5_s9fnkjJ3QQm2kRU4wZ0zwZEYNRbnjaKQDw33Ge5qsScsxCzH7kFlTrQBavA==">        <p class="standart_txt fsz12">Вы действительно хотите внести агенство <span class="ka_name"></span> в Черный
+            список?</p>
+        <p class="standart_txt fsz12">Вам необходимо указать причину данного решения:</p>
+        
+<input type="hidden" id="blacklist-ka" class="form-control" name="BlackList[KA]">
+
+        
+<textarea id="blacklist-rejectreason" class="client_form_textarea width fsz12" name="BlackList[RejectReason]" placeholder="Данное агенство халатно отнеслось к поставленной задаче." aria-required="true"></textarea>
+        <input class="form_input submit smaller_font" value="Сохранить комментарий и добавить агентство в Черный список" type="submit">
+        <p class="standart_txt center">или <a onclick="popup_close();$(&#39;.popup_form_check_link.active&#39;).removeClass(&#39;active&#39;)" class="red_txt">решить
+                позже.</a></p>
+        </form>    </div>
+    <div class="popup popup_client_white" id="popup_client_white">
+        <form>
+            <p class="standart_txt fsz12">Комментарий:</p>
+            <textarea data-related="" class="client_form_textarea width fsz12" name="" id="" cols="30" rows="10" placeholder="Данное агенство ответственно относится к поставленной задаче. Стоит их иметь в виду!"></textarea>
+            <input class="form_input submit textarea_save_button" value="Сохранить комментарий " type="submit">
+            <p class="standart_txt center">или <a onclick="popup_close()" class="red_txt">оставить комментарий
+                    позже.</a></p>
+        </form>
+    </div>
+    <div class="popup popup_client_white" id="popup_client_white2">
+        <form>
+            <p class="standart_txt fsz12">Критерии отбора:</p>
+            <textarea data-related="" class="client_form_textarea width fsz12" name="" id="" cols="30" rows="10" placeholder="Мужчины от 5 - 75"></textarea>
+            <input class="form_input submit textarea_save_button" value="Сохранить" type="submit">
+            <p class="standart_txt center">или <a onclick="popup_close()" class="red_txt">не сохранять новые
+                    критерии.</a></p>
+        </form>
+    </div>
+    <div class="popup popup_client_white" id="popup_client_rating">
+        <form id="w2" action="http://agregator/agency/updaterating" method="POST" role="form">
+<input type="hidden" name="_csrf" value="mhUjRCgm_ZYnOp2mfdqTEmxNP5_s9fnkjJ3QQm2kRU4wZ0zwZEYNRbnjaKQDw33Ge5qsScsxCzH7kFlTrQBavA==">        <input type="hidden" name="rating" id="rating_input">
+        <input type="hidden" name="type" id="type_input">
+        <input type="hidden" name="offer_id" id="offer_input">
+        <p class="standart_txt center padding2">Вы даете оценку работе <span class="agency_type"></span>: <span class="red_txt rating_text"></span></p>
+        <input class="form_input submit" value="Сохранить рейтинг" type="submit">
+        <p class="standart_txt center">или <a onclick="popup_close()" class="red_txt">оценить позже.</a></p>
+        </form>    </div>
+</div>
+<!--<div class="wrap">-->
+<div class="wrapper">
+    <div class="content_block white">
+        
+<p class="standart_txt center padding2">На данный момент у Вас открыто <span>16</span> заявок. Вы работаете с <span>6</span> <span class="red_txt">агентствами</span>. В процессе выбора агентства <span>6</span> заявок.</p>
+    <div class="table_gray">
+    <div class="table_gray_head clearfix">
+        <a id="close_offer_link" href="http://agregator/requests" class="table_gray_head_link link_close">ЗАКРЫТЬ И ВЕРНУТЬСЯ К СПИСКУ
+            ЗАЯВОК</a>
+        <a id="save_offer_link" href="http://agregator/requests/update/375#" class="table_gray_head_link link_close link_save" style="display: none;">СОХРАНИТЬ
+            И ВЕРНУТЬСЯ К ЗАЯВКЕ</a>
+        <div class="table_gray_head_right">
+            <a id="edit_offer_link" href="http://agregator/requests/update/375#" class="table_gray_head_link red_txt">РЕДАКТИРОВАТЬ ЗАЯВКУ</a>
+            <a id="cancel_offer_link" href="http://agregator/requests/update/375#" class="table_gray_head_link red_txt" style="display: none;">ЗАКРЫТЬ БЕЗ
+                ИЗМЕНЕНИЙ</a>
+            <a href="http://agregator/requests/delete/375" onclick="return confirm(&#39;Вы уверены？&#39;)" class="table_gray_head_link">УДАЛИТЬ ЗАЯВКУ</a>
+        </div>
+    </div>
+    <div class="table_gray_body">
+    <div class="client_table client_table_gray vertical_align_top">
+    <div class="table_gray_body_tr">
+        <div class="table_gray_body_th"><span>ЗАЯВКА</span></div>
+        <div class="table_gray_body_th"><span>статус</span></div>
+        <div class="table_gray_body_th"><span>позиция</span></div>
+        <div class="table_gray_body_th"><span>КОЛ-ВО  <span class="table_gray_body_th_txt">позиций <span class="table_gray_body_th_txt">поиска</span></span></span></div>
+        <div class="table_gray_body_th tooltip">
+            <span>время <span class="table_gray_body_th_txt">отклика (часы)</span></span>
+            <span class="tooltip_text">Время, необходимое агенству, чтобы предоставить кандидатов по вакансии или обновить список кандидатов (в рабочих часах (8 часов в сутках)).</span>
+        </div>
+        <div class="table_gray_body_th"><span>сроки <span class="table_gray_body_th_txt">подбора (часы)</span></span></div>
+        <div class="table_gray_body_th"><span>Планируемый <span class="table_gray_body_th_txt">срок выхода сотрудников на работу</span></span></div>
+        <div class="table_gray_body_th"><span>СРОК <span class="table_gray_body_th_txt">обратной связи (часы)</span></span></div>
+        <div class="table_gray_body_th"><span>кол-во <span class="table_gray_body_th_txt">этапов собеседования</span></span></div>
+        <div class="table_gray_body_th"><span>гарантийный <span class="table_gray_body_th_txt">срок (часы)</span></span>
+        </div>
+        <div class="table_gray_body_th">
+            <span>подано <span class="table_gray_body_th_txt">кандидатов</span></span>
+        </div>
+        <div class="table_gray_body_th"><span>комментарии</span></div>
+        <div class="table_gray_body_th"><span>критерии <span class="table_gray_body_th_txt"> отбора</span></span></div>
+    </div>
+
+
+    <div id="show_offer_table" class="table_gray_body_tr">
+        <div class="table_gray_body_td first_child"><span class="table_gray_body_txt_appl">375</span>
+        </div>
+        <div class="table_gray_body_td">
+            <span class="red_txt">Оценка КА</span>
+        </div>
+        <div class="table_gray_body_td"><span>Уборщик территории 1</span></div>
+        <div class="table_gray_body_td"><span>2</span></div>
+        <div class="table_gray_body_td"><span>0</span></div>
+        <div class="table_gray_body_td"><span>0</span></div>
+        <div class="table_gray_body_td"><span>0</span></div>
+
+        <div class="table_gray_body_td"><span>0</span></div>
+        <div class="table_gray_body_td"><span>0</span></div>
+        <div class="table_gray_body_td"><span>0</span></div>
+
+        <div class="table_gray_body_td"><span>1</span></div>
+
+        <div class="table_gray_body_td center">
+            <a onclick="set_popup_text(&#39;popup_client_white&#39;,&#39;&#39;,&#39;&#39;)" class="client_table_td_cv comment2"></a>
+        </div>
+        <div class="table_gray_body_td center">
+            <a onclick="set_popup_text(&#39;popup_client_white2&#39;,&#39;&#39;,&#39;&#39;)" class="client_table_td_cv comment2"></a>
+        </div>
+    </div>
+
+<form id="request-form" class="table_gray_body_tr_form" action="http://agregator/requests/update/375" method="post" style="display:none">
+<input type="hidden" name="_csrf" value="mhUjRCgm_ZYnOp2mfdqTEmxNP5_s9fnkjJ3QQm2kRU4wZ0zwZEYNRbnjaKQDw33Ge5qsScsxCzH7kFlTrQBavA==">
+    <div class="table_gray_body_td first_child"><span class="table_gray_body_txt_appl">375</span></div>
+
+    <div class="table_gray_body_td table_select"><span class="red_txt">
+				
+<select id="requests-applicationstatus" class="client_table_td_select select2-hidden-accessible" name="Requests[ApplicationStatus]" tabindex="-1" aria-hidden="true">
+<option value="283" selected="">Оценка КА</option>
+<option value="284">Согласование</option>
+</select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-requests-applicationstatus-container"><span class="select2-selection__rendered" id="select2-requests-applicationstatus-container" title="Оценка КА"><span class="select2-selection__clear">×</span>Оценка КА</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </span>
+    </div>
+    <div class="table_gray_body_td"><span>Уборщик территории 1</span></div>
+    <div class="table_gray_body_td"><span>2</span></div>
+    <div class="table_gray_body_td"><span>0</span></div>
+    <div class="table_gray_body_td"><span>0</span></div>
+    <div class="table_gray_body_td"><span>0</span></div>
+    <div class="table_gray_body_td"><span>0</span></div>
+    <div class="table_gray_body_td"><span>0</span></div>
+    <div class="table_gray_body_td"><span>0</span></div>
+
+    <div class="table_gray_body_td"><span>1</span></div>
+
+    <div class="table_gray_body_td center">
+        
+<input type="hidden" id="requests-selectioncriteria" class="form-control" name="Requests[SelectionCriteria]">
+        
+<input type="hidden" id="requests-comments" class="form-control" name="Requests[Comments]">
+        <a onclick="set_popup_text(&#39;popup_client_white&#39;,&#39;requests-comments&#39;,&#39;&#39;)" class="client_table_td_cv comment2"></a>
+    </div>
+    <div class="table_gray_body_td center">
+        <a onclick="set_popup_text(&#39;popup_client_white2&#39;,&#39;&#39;,&#39;&#39;)" class="client_table_td_cv comment2"></a>
+    </div>
+</form>
+
+    <div class="table_gray_body_tr dark_gray" style="
+    /* width: 300px; */
+">
+        <div class="table_gray_body_th"><span>Агентство</span></div>
+        <div class="table_gray_body_th"><span>фио контактного лица</span></div>
+        <div class="table_gray_body_th"><span>телефон</span></div>
+        <div class="table_gray_body_th"><span>mail</span></div>
+        <div class="table_gray_body_th"><span></span></div>
+        <div class="table_gray_body_th"><span></span></div>
+        <div class="table_gray_body_th"><span></span></div>
+        <div class="table_gray_body_th"><span></span></div>
+        <div class="table_gray_body_th"><span></span></div>
+        <div class="table_gray_body_th"><span></span></div>
+        <div class="table_gray_body_th"><span></span></div>
+        <div class="table_gray_body_th"><span></span></div>
+        <div class="table_gray_body_th"><span></span></div>
+    </div>
+    <div class="table_gray_body_tr dark_gray">
+        <div class="table_gray_body_td"><span>Наша компания</span></div>
+        <div class="table_gray_body_td"><span></span>User1</div>
+        <div class="table_gray_body_td"><span>89114328355</span></div>
+        <div class="table_gray_body_td"><span>antonfrolov00000000007@mail.ru</span></div>
+        <div class="table_gray_body_td"><span></span></div>
+        <div class="table_gray_body_td"><span></span></div>
+        <div class="table_gray_body_td"><span></span></div>
+        <div class="table_gray_body_td"><span></span></div>
+        <div class="table_gray_body_td"><span></span></div>
+        <div class="table_gray_body_td"><span></span></div>
+        <div class="table_gray_body_td"><span></span></div>
+        <div class="table_gray_body_td"><span></span></div>
+        <div class="table_gray_body_td"><span></span></div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="client_table smaller_font">
+    <div class="client_table_tr_head head_gray">
+    <div class="client_table_th">
+        <span class="client_table_th_txt">Кандидат</span>
+        <span class="client_table_th_option"></span>
+        <div data-field="Id" class="client_table_th_option_block">
+            <a class="option_block_link">По возрастанию</a>
+            <a class="option_block_link">По убыванию</a>
+        </div>
+    </div>
+    <div class="client_table_th">
+        <span class="client_table_th_txt">ФИО</span>
+        <span class="client_table_th_option"></span>
+        <div data-field="ContactName" class="client_table_th_option_block">
+            <a class="option_block_link">По возрастанию</a>
+            <a class="option_block_link">По убыванию</a>
+        </div>
+    </div>
+    <div class="client_table_th">
+        <span class="client_table_th_txt">CV</span>
+    </div>
+    <div class="client_table_th">
+        <span class="client_table_th_txt">Телефон</span>
+    </div>
+    <div class="client_table_th">
+        <span class="client_table_th_txt">Дата и время встречи</span>
+        <span class="client_table_th_option"></span>
+        <div data-field="InitialInterviewDate" class="client_table_th_option_block">
+            <a class="option_block_link">По возрастанию</a>
+            <a class="option_block_link">По убыванию</a>
+        </div>
+    </div>
+    <div class="client_table_th">
+        <span class="client_table_th_txt">Результат</span>
+        <span class="client_table_th_option"></span>
+        <div class="client_table_th_option_block">
+            <div data-field="InterviewResult.Name" class="client_table_th_option_block_checkbox">
+                <span>Выбрать</span>
+                                    <a>
+                        <input type="checkbox" value="291">Принят</a>
+                                    <a>
+                        <input type="checkbox" value="292">Отказ</a>
+                                <input name="InterviewResult" class="form_input submit submit_filter" value="Применить" type="submit">
+            </div>
+            <a class="option_block_link">По возрастанию</a>
+            <a class="option_block_link">По убыванию</a>
+        </div>
+    </div>
+    <div class="client_table_th">
+        <span class="client_table_th_txt">Комментарий</span>
+    </div>
+</div>    <div class="empty">Кандидатов не найдено</div></div>
+    </div>
+</div>
+
+<footer class="client_footer">
+    <div class="content_block clearfix">
+        <a href="http://agregator/requests/update/375#" class="logo_footer logo_client_footer"><span>ka</span> агрегатор</a>
+        <div class="footer_block footer_client_block">
+            <a href="http://agregator/requests/update/375#" class="footer_link">О компании</a>
+            <a href="http://agregator/requests/update/375#" class="footer_link">Пресс-служба</a>
+            <a href="http://agregator/requests/update/375#" class="footer_link">Реквизиты</a>
+            <a href="http://agregator/requests/update/375#" class="footer_link">Обратная связь</a>
+            <a href="http://agregator/requests/update/375#" class="footer_link">Работайте у нас</a>
+        </div>
+        <div class="footer_block footer_block2 footer_client_block2">
+            <a href="http://agregator/requests/update/375#" class="social_link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="http://agregator/requests/update/375#" class="social_link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+            <a href="http://agregator/requests/update/375#" class="social_link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="http://agregator/requests/update/375#" class="social_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a href="http://agregator/requests/update/375#" class="social_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer_block footer_block3 footer_client_block3">
+            <p class="standart_txt">© 2017 ka агрегатор Россия, Москва, 117997, ул. Вавилова 19. Генеральная лицензия на
+                осуществление операций от 11 августа 2017 года. Регистрационный номер — 1481</p>
+        </div>
+    </div>
+</footer>
+
+<script src="./375_files/yii.validation.js.Без названия"></script>
+<script src="./375_files/yii.activeForm.js.Без названия"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#request-form').yiiActiveForm([{"id":"requests-applicationstatus","name":"ApplicationStatus","container":".field-requests-applicationstatus","input":"#requests-applicationstatus","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Статус» должно быть целым числом.","min":0,"tooSmall":"Значение «Статус» должно быть не меньше 0.","max":10000,"tooBig":"Значение «Статус» не должно превышать 10000.","skipOnEmpty":1});}},{"id":"requests-selectioncriteria","name":"SelectionCriteria","container":".field-requests-selectioncriteria","input":"#requests-selectioncriteria","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Критерий подбора кандидатов» должно быть строкой.","max":4000,"tooLong":"Значение «Критерий подбора кандидатов» должно содержать максимум 4 000 символов.","skipOnEmpty":1});}},{"id":"requests-comments","name":"Comments","container":".field-requests-comments","input":"#requests-comments","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Комментарий» должно быть строкой.","max":4000,"tooLong":"Значение «Комментарий» должно содержать максимум 4 000 символов.","skipOnEmpty":1});}}], {"errorCssClass":"error"});
+jQuery('#w1').yiiActiveForm([{"id":"blacklist-ka","name":"KA","container":".field-blacklist-ka","input":"#blacklist-ka","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Партнер»."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение «Партнер» должно быть целым числом.","skipOnEmpty":1});}},{"id":"blacklist-rejectreason","name":"RejectReason","container":".field-blacklist-rejectreason","input":"#blacklist-rejectreason","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Причина»."});yii.validation.string(value, messages, {"message":"Значение «Причина» должно быть строкой.","skipOnEmpty":1});}}], []);
+jQuery('#w2').yiiActiveForm([], []);
+});</script>
+
+
+</body></html>
