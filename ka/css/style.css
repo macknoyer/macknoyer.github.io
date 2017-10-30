@@ -1138,7 +1138,6 @@ padding-bottom: 30px;
 	color: #1d1d1b;
 	display: inline-block;
 	width: 51px;
-	float: right;
 }
 .table_gray_body_txt_krit:hover {
 	color: #f82812;
@@ -1175,6 +1174,7 @@ padding-bottom: 30px;
 	height: 14px;
 	cursor: pointer;
 	background: url(../img/cv.png) no-repeat;
+	margin-top: 2px;
 }
 .client_table_td_cv.comment {
 	background: url(../img/comment.png) no-repeat;
@@ -1195,7 +1195,7 @@ padding-bottom: 30px;
 .client_table_td_cv.comment2 {
 	background: url(../img/table_gray_body_txt_krit.png) no-repeat;
 }
-.client_table_td.center{
+.client_table_td.center,.table_gray_body_td.center{
 	text-align: center;
 }
 .client_table.smaller_font,.client_table.smaller_font .client_table_th {
@@ -1596,7 +1596,7 @@ margin-right: 0;
 	font-weight: 300;
 	float: none;
 }
-.table_gray_body_tr.vertical_align_top .table_gray_body_td,.client_table_tr.vertical_align_top .client_table_td{
+.table_gray_body_tr.vertical_align_top .table_gray_body_td,.client_table_tr.vertical_align_top .client_table_td,.client_table.vertical_align_top .table_gray_body_tr .table_gray_body_td,.client_table.vertical_align_top .table_gray_body_tr .table_gray_body_th{
 	vertical-align: top;
 }
 .client_table.w50 {
