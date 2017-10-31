@@ -1674,3 +1674,14 @@ padding-bottom: 30px;
 	width: 410px;
 }
 /*****************************************************brand_search****/
+.control-group.payment_popup_checkbox {
+	width: 170px;
+	margin-right: 140px;
+}
+.control-group.payment_popup_checkbox label{
+	margin-right: 0;
+	font-weight: 600;
+}
+.payment_checkbx_txt {
+	width: 390px;
+}
