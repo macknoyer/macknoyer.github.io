@@ -77,8 +77,7 @@ textarea.client_form_textarea:-ms-input-placeholder      {color:#fff;opacity: 1}
 }
 .error {
 	border: 1px solid #f82812 !important;
-	display: inline-block;
-	float: left;
+	
 }
 .error_txt {
 	padding-left: 17px;
