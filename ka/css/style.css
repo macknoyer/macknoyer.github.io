@@ -497,6 +497,7 @@ form.client_form .form_input[type="text"]{
 	font-size: 14px;
 	line-height: 23px;
 	background-color: #d9d9d9;
+	color: #1d1d1b;
 }
 form.client_form .select2-results__option{
 	font-size: 14px;
@@ -545,7 +546,7 @@ form.client_form .select2-results__option{
 	width: 238px;
 	height: 84px;
 	background: #d9d9d9;
-	color: #ffffff;
+	color: #1d1d1b;
 	border: none;
 	float: right;
 	font-family: 'Roboto';
@@ -951,9 +952,6 @@ a.client_table_td_txt.red_link {
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
 	color: #fff;
 }
-.select2-container .select2-selection--single .select2-selection__rendered {
-	color:#fff;
-}
 .select2-container--default .select2-selection--single {
 background-color: rgba(148,145,152,0.9);
 border: 1px solid #fff;
@@ -1242,6 +1240,9 @@ padding-bottom: 30px;
 .table_select .select2-container .select2-selection--single .select2-selection__rendered {
 	color: #1d1d1b;
 	line-height: 37px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #fff;
 }
 .table_select .select2-container--default .select2-selection--single {
 	background-color: white;
