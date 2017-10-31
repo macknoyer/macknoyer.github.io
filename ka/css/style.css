@@ -1609,6 +1609,11 @@ margin-right: 0;
 	font-weight: 300;
 	float: none;
 }
+.client_form_textarea.table_textarea.absolute {
+	width: 344px;
+	height: 95px;
+	position: absolute;
+}
 .table_gray_body_tr.vertical_align_top .table_gray_body_td,.client_table_tr.vertical_align_top .client_table_td,.client_table.vertical_align_top .table_gray_body_tr .table_gray_body_td,.client_table.vertical_align_top .table_gray_body_tr .table_gray_body_th{
 	vertical-align: top;
 }
