@@ -181,6 +181,9 @@ a.logo span{
 form {
 	padding: 40px 0px 0px 0px;
 }
+.no_padding {
+	padding:0px;
+}
 
 .form_input {
 	background-color: rgba(148,145,152,0.9);
