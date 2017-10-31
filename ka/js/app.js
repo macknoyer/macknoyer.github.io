@@ -75,7 +75,7 @@
                 scrollInertia: 150
             });
             $( ".tooltip.absolute" ).each(function() {
-                $(this).css(height,$(this).parent().css('height'));
+                $(this).css('height',$(this).parent().css('height'));
             });
         });
 
