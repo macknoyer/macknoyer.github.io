@@ -74,7 +74,13 @@
                 theme: "minimal-dark",
                 scrollInertia: 150
             });
+            $( ".tooltip.absolute" ).each(function() {
+                $(this).css(height,$(this).parent().css('height'));
+            });
         });
+
+
+
         $('.table_datatimepicker').datetimepicker({
             controlType: 'select',
             timeFormat: 'HH:mm',
