@@ -184,7 +184,9 @@ form {
 .no_padding {
 	padding:0px;
 }
-
+.display_block {
+	display: block !important;
+}
 .form_input {
 	background-color: rgba(148,145,152,0.9);
 	font-size: 	18px;
