@@ -11,6 +11,9 @@
 .padding_top {
 	padding-top: 50px;
 }
+.margin_bot10 {
+	margin-bottom: 10px;	
+}
 a.underline {
 	text-decoration: underline;
 }

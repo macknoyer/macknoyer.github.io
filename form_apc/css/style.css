@@ -1685,3 +1685,11 @@ padding-bottom: 30px;
 .payment_checkbx_txt {
 	width: 390px;
 }
+.wrap50.w50_bg1 {
+	background: url(../img/w50_bg.png) no-repeat left bottom;
+	background-color: #fff;
+}
+.wrap50.w50_bg2 {
+	background: url(../img/w50_bg2.png) no-repeat left bottom;
+	background-color: #fff;
+}
