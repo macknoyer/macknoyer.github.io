@@ -23,7 +23,7 @@
 <div id="wrapper_popup">
 <div id="background_popup" onclick="popup_close()"></div>
 <div class="popup" id="popup_save_search">
-	<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+	<a onclick="popup_close()" class="popup_close txt_light_gray fsz32">x</a>
 	<p class="orange_txt padding_txt">Сохранение поискового запроса</p>
 	<form action="">
 		<input class="margin_bot" type="text" placeholder="Введите название">
@@ -32,7 +32,7 @@
 	</form>
 </div>
 <div class="popup brand_search" id="brand_search">
-	<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+	<a onclick="popup_close()" class="popup_close txt_light_gray fsz32">x</a>
 
 		<div class="wrapper wrapper2 clearfix">
 			<div class="brand_search_left float_l">
@@ -206,7 +206,7 @@
 </div>
 
 <div class="popup brand_search" id="warning_popup">
-	<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+	<a onclick="popup_close()" class="popup_close txt_light_gray fsz32">x</a>
 
 	<div class="wrapper wrapper2 clearfix">
 			<div class="wrapper wrapper_txt car_sun_wrap float_l">
@@ -230,31 +230,35 @@
 	</div>
 </div>
 <div class="popup brand_search" id="payment_popup">
-	<a onclick="popup_close()" class="popup_close txt_light_gray fsz18">X</a>
+	<a onclick="popup_close()" class="popup_close txt_light_gray fsz32">x</a>
 	<div class="wrapper wrapper2 clearfix">
-		<p class="fszm30 padding_txt txt_light_gray">Чтобы пользоваться этой услугой необходимо оплатить</p>
-	<div class="control-group clearfix">
-    <label class="control control-radio">
-       5 монет <span class="txt_light_gray">100 руб</span>
-            <input name="radio" checked="checked" type="radio">
-        <div class="control_indicator"></div>
-    </label>
-    <label class="control control-radio">
-       	10 монет <span class="txt_light_gray">180 руб</span>
-            <input name="radio" type="radio">
-        <div class="control_indicator clearfix"></div>
-    </label>
-    <label class="control control-radio">
-       	30 монет <span class="txt_light_gray">400 руб</span>
-            <input name="radio" type="radio">
-        <div class="control_indicator clearfix"></div>
-    </label>
-    <label class="control control-radio">
-       	50 монет <span class="txt_light_gray">500 руб</span>
-            <input name="radio" type="radio">
-        <div class="control_indicator clearfix"></div>
-    </label>
-	</div>		
+		<p class="fszm30 padding_txt txt_light_gray fsz24">Чтобы пользоваться этой услугой необходимо оплатить</p>
+		<div class="clearfix">
+			<div class="control-group clearfix payment_popup_checkbox float_l">
+
+		    <label class="control control-radio">
+		       5 монет <span class="txt_light_gray float_r fw300">100 руб</span>
+		            <input name="radio" checked="checked" type="radio">
+		        <div class="control_indicator"></div>
+		    </label>
+		    <label class="control control-radio">
+		       	10 монет <span class="txt_light_gray float_r fw300">180 руб</span>
+		            <input name="radio" type="radio">
+		        <div class="control_indicator clearfix"></div>
+		    </label>
+		    <label class="control control-radio">
+		       	30 монет <span class="txt_light_gray float_r fw300">400 руб</span>
+		            <input name="radio" type="radio">
+		        <div class="control_indicator clearfix"></div>
+		    </label>
+		    <label class="control control-radio">
+		       	50 монет <span class="txt_light_gray float_r fw300">500 руб</span>
+		            <input name="radio" type="radio">
+		        <div class="control_indicator clearfix"></div>
+		    </label>
+			</div>
+			<p class="payment_checkbx_txt float_l">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut </p>		
+		</div>
 	</div>
 </div>
 	<header class="clearfix">
@@ -582,7 +586,7 @@
 				<p class="car_info_padding_txt fsz24 orange_txt">200 000 руб. <a class="add_fav_link fsz18"><i class="fa fa-star-o" aria-hidden="true"></i></a></p>
 				<p class="car_info_padding_txt fsz18 txt_gray car_price_range">на 50 000 руб. <span class="car_price_icon"></span></p>
 				<div class="txt_align_center">
-					<input class="no_bg_sub green" type="submit" value="Проверено" />	
+					<input onclick="popup_open('payment_popup')" class="no_bg_sub green" type="submit" value="Проверено" />	
 					<input class="no_bg_sub green" type="submit" value="На гарантии" />	
 				</div>
 			</div>
