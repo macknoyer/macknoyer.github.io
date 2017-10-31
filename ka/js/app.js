@@ -93,6 +93,10 @@
                 }
             }
         });
+
+        $('#user-companyfoundationdate').datepicker({
+            controlType: 'select',
+        });
         $.datepicker.regional['ru'] = {
             prevText: '<Пред',
             nextText: 'След>',
