@@ -103,11 +103,37 @@ width: 50%;
 .header_menu ul.header_menu_right li.search_link2 {
 	background: url(../img/search_link2.png) no-repeat center left;
 }
+.header_menu ul.header_menu_right li.search_link2.header_link_accaunt a{
+	background: url(../img/search_link2.png) no-repeat center;
+	width: 14px;
+}
 .header_menu ul.header_menu_right li.star {
 	background: url(../img/star.png) no-repeat center left;
 }
+.header_menu ul.header_menu_right li.star.header_link_accaunt a{
+	width: 18px;	
+	background: url(../img/star.png) no-repeat center;
+}
 .header_menu ul.header_menu_right li.human {
 	background: url(../img/human.png) no-repeat center left;
+}
+.header_menu ul.header_menu_right li.human.white {
+	background: url(../img/human_white.png) no-repeat;
+}
+.header_menu ul.header_menu_right li.notif.header_link_accaunt a{
+	background: url(../img/notif.png) no-repeat center;
+	display: inline-block;
+	width: 16px;
+}
+.header_menu ul.header_menu_right li.header_link_accaunt {
+	background: none;
+	padding-left: 0;
+	margin-right: 21px;
+	position: relative;
+}
+.header_menu ul.header_menu_right li.header_link_accaunt a{
+	display: inline-block;
+	height: 17px;
 }
 a.logo {
 	display: inline-block;
@@ -1119,12 +1145,19 @@ label.confirm_checkbox_label {
 .wrapper_menu ul li a.active,.wrapper_menu ul li span{
 	color: #8e8e8e;
 }
-.wrapper_menu ul li span.account_menu_orange{
+.wrapper_menu ul li span.account_menu_orange,.notif_header_count{
 	color: #fff;
 	border-radius: 50%;
 	background-color: #f75b02;
 	padding: 5px;
 	text-align: center;
+}
+.notif_header_count {
+	position: absolute;
+	background-color: #92b207;
+	padding: 5px;
+	font-size: 9px;
+	margin: 7px 0px 0px -6px;
 }
 .wrapper_menu ul li span.account_menu_orange span{
 	color: #fff;
