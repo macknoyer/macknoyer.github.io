@@ -213,8 +213,14 @@ form {
 	text-align:center;	
 	cursor: pointer;
 }
+
+.form_input.submit {
+	margin-bottom: 38px;
+	transition: box-shadow ease 0.2s;
+}
 .form_input.submit:hover {
 	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 50);
+	transition: box-shadow ease 0.2s;
 }
 .form_input.submit:active {
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 50);
@@ -1047,9 +1053,6 @@ label.popup_form_check_label {
 	height: 32px;	
 	border:none;
 	background: url(../img/yes.png) no-repeat;
-}
-.form_input.submit {
-	margin-bottom: 38px;
 }
 
 .standart_txt.popup_txt_head.padding {
