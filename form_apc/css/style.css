@@ -851,7 +851,7 @@ input.no_bg_sub[type="submit"] {
 	background-color: #fff;
 }
 .car_info.padding_top {
-	    padding-top: 30px;
+	    padding-top: 4px;
     padding-left: 20px;
 }
 .car_info_padding_txt .txt_light_gray {
@@ -1217,6 +1217,9 @@ margin-bottom: 63px;
 }
 .margin_top15 {
 	margin-top: 15px;
+}
+.margin_top20 {
+	margin-top: 20px;
 }
 input.no_bg_sub.no_bg_sub2[type="submit"] {
 	margin-left: 22px;

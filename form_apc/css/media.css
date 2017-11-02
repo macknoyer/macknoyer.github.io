@@ -50,6 +50,9 @@ a.logo.adaptiv_logo {
 .adaptiv_display_b,.adaptiv_display_ib {
 	display: none;
 }
+.adaptiv_display_block {
+	display: block !important;
+}
 .car_info.car_info2 .link_border{
 	display: none;
 }
