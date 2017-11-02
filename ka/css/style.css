@@ -51,6 +51,21 @@ input.white_input::-moz-placeholder          {color:#1d1d1b;opacity: 1}
 input.white_input:-moz-placeholder           {color:#1d1d1b;opacity: 1}
 input.white_input:-ms-input-placeholder      {color:#1d1d1b;opacity: 1}
 
+input.white_input.white_input_name::-webkit-input-placeholder {color:#fff;opacity: 1}
+input.white_input.white_input_name::-moz-placeholder          {color:#fff;opacity: 1}
+input.white_input.white_input_name:-moz-placeholder           {color:#fff;opacity: 1}
+input.white_input.white_input_name:-ms-input-placeholder      {color:#fff;opacity: 1}
+
+input.white_input.white_input_name:hover::-webkit-input-placeholder {color:#1d1d1b;opacity: 1}
+input.white_input.white_input_name:hover::-moz-placeholder          {color:#1d1d1b;opacity: 1}
+input.white_input.white_input_name:hover:-moz-placeholder           {color:#1d1d1b;opacity: 1}
+input.white_input.white_input_name:hover:-ms-input-placeholder      {color:#1d1d1b;opacity: 1}
+
+input.white_input.white_input_name:focus::-webkit-input-placeholder {color:#1d1d1b;opacity: 1}
+input.white_input.white_input_name:focus::-moz-placeholder          {color:#1d1d1b;opacity: 1}
+input.white_input.white_input_name:focus:-moz-placeholder           {color:#1d1d1b;opacity: 1}
+input.white_input.white_input_name:focus:-ms-input-placeholder      {color:#1d1d1b;opacity: 1}
+
 textarea::-webkit-input-placeholder {color:#ffffff;opacity: 1}
 textarea::-moz-placeholder          {color:#ffffff;opacity: 1}
 textarea:-moz-placeholder           {color:#ffffff;opacity: 1}
