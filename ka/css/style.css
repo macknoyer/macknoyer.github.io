@@ -2005,11 +2005,13 @@ text-align: center;
 
 }*/
 .table_datatimepicker {
-	border: none;
+	border: 1px solid #1d1d1b;
+	padding: 5px 5px 10px 5px;
 	font-size: 11px;
 	display: inline-block;
 	background-color: transparent;
 	padding-bottom: 5px;	
+	cursor: pointer;
 }
 /**/
 /*****************************************datepicker*/
