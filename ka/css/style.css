@@ -1038,6 +1038,7 @@ label.popup_form_check_label.error {
     color: #dd2614;
 	font-weight: 600;
 	border: none !important;
+	display: none;
 }
 .popup_form_block.center {
 	text-align:center; 
