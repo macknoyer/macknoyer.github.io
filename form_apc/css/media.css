@@ -96,7 +96,7 @@ header .header_menu ul li{
 	margin-bottom: 10px;
 }
 .adaptiv_display_n {
-	display: none;
+	display: none !important;
 }
 .adaptiv_display_b {
 	display: block;
