@@ -74,11 +74,10 @@
                 theme: "minimal-dark",
                 scrollInertia: 150
             });
-            $( ".tooltip.absolute" ).each(function() {
-                $(this).css('height',$(this).parent().css('height'));
+            $(".tooltip.absolute").each(function () {
+                $(this).css('height', $(this).parent().css('height'));
             });
         });
-
 
 
         $('.table_datatimepicker').datetimepicker({
@@ -154,6 +153,11 @@ function set_popup_text(name_popup, related_field, text) {
     }
 
     popup_open(name_popup);
+}
+
+function set_alert_text(text) {
+    $('#alert_popup').children('p').text(text);
+    popup_open('alert_popup');
 }
 
 function set_rating_popup(type, rating, offer_id) {
