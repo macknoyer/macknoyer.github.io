@@ -21,16 +21,7 @@
                 $(this).find('input[type="checkbox"]').attr('checked', false);
             }
         });
-        $('.popup_select').select2({
-            placeholder: 'Выберите из предлагаемого списка',
-            minimumResultsForSearch: Infinity,
-            allowClear: true
-        });
-        $('.client_table_td_select').select2({
-            placeholder: 'Выбрать',
-            minimumResultsForSearch: Infinity,
-            allowClear: true
-        });
+
         $('.client_table_th_option').click(function () {
             $(this).next('.client_table_th_option_block').toggleClass('active');
         });
@@ -72,69 +63,93 @@
         $(window).on("load", function () {
             $(".scrollbar").mCustomScrollbar({
                 theme: "minimal-dark",
-                scrollInertia: 150
+                scrollInertia: 150,
+                callbacks: {
+                    onTotalScroll: function () {
+                        totalScroll();
+                    }
+                }
             });
             $(".tooltip.absolute").each(function () {
                 $(this).css('height', $(this).parent().css('height'));
             });
+
+            init_plugins();
         });
 
 
-        $('.table_datatimepicker').datetimepicker({
-            controlType: 'select',
-            timeFormat: 'HH:mm',
-            beforeShow: function () {
-                $(this).data("old", $(this).val());
-            },
-            onClose: function () {
-                function isDonePressed() {
-                    return ($('#ui-datepicker-div').html().indexOf('ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all ui-state-hover') > -1);
-                }
-
-                if (isDonePressed()) {
-                    setMeetingdate($(this).val(), $(this).data("id"));
-                } else {
-                    $(this).val($(this).data("old"));
-                }
-            }
-        });
-
-        $('#user-companyfoundationdate').datepicker({
-            controlType: 'select',
-        });
-        $.datepicker.regional['ru'] = {
-            prevText: '<Пред',
-            nextText: 'След>',
-            currentText: 'Сегодня',
-            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-                'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-            monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
-                'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-            dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
-            dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
-            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-            weekHeader: 'Не',
-            dateFormat: 'dd.mm.yy',
-            firstDay: 1,
-            isRTL: false,
-            showMonthAfterYear: false,
-            yearSuffix: ''
-        };
-        $.datepicker.setDefaults($.datepicker.regional['ru']);
-
-        $('.table_datatimepicker').timepicker({
-            timeOnlyTitle: 'Выберите время',
-            timeText: 'Время',
-            hourText: 'Часы',
-            minuteText: 'Минуты',
-            secondText: 'Секунды',
-            currentText: 'Сейчас',
-            closeText: 'Установить'
-        });
     });
 
 })(jQuery);
 
+
+/**init plugins***/
+function init_plugins() {
+
+    $('.popup_select').select2({
+        placeholder: 'Выберите из предлагаемого списка',
+        minimumResultsForSearch: Infinity,
+        allowClear: true
+    });
+    $('.client_table_td_select').select2({
+        placeholder: 'Выбрать',
+        minimumResultsForSearch: Infinity,
+        allowClear: true
+    });
+
+    $('.table_datatimepicker').datetimepicker({
+        controlType: 'select',
+        timeFormat: 'HH:mm',
+        beforeShow: function () {
+            $(this).data("old", $(this).val());
+        },
+        onClose: function () {
+            function isDonePressed() {
+                return ($('#ui-datepicker-div').html().indexOf('ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all ui-state-hover') > -1);
+            }
+
+            if (isDonePressed()) {
+                setMeetingdate($(this).val(), $(this).data("id"));
+            } else {
+                $(this).val($(this).data("old"));
+            }
+        }
+    });
+
+    $('#user-companyfoundationdate').datepicker({
+        controlType: 'select',
+    });
+    $.datepicker.regional['ru'] = {
+        prevText: '<Пред',
+        nextText: 'След>',
+        currentText: 'Сегодня',
+        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
+            'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+        dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+        dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+        dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+        weekHeader: 'Не',
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    };
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+    $('.table_datatimepicker').timepicker({
+        timeOnlyTitle: 'Выберите время',
+        timeText: 'Время',
+        hourText: 'Часы',
+        minuteText: 'Минуты',
+        secondText: 'Секунды',
+        currentText: 'Сейчас',
+        closeText: 'Установить'
+    });
+
+}
 /***modal***/
 function set_popup_text(name_popup, related_field, text) {
 
