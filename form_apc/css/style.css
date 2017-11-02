@@ -50,6 +50,9 @@ h1 {
 h2 {
 	font-weight: 600;
 }
+time {
+	display: block;
+}
 .float_r {
 	float: right;
 }
@@ -1607,10 +1610,11 @@ input[type="text"].margin_bot {
 .news_single_img {
 	width: 100%;
 	height: 755px;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
 	margin-bottom: 20px;
+}
+.news_single_img img{
+	width: 100%;
+	height: 100%;
 }
 .contact_us_img {
 	background: url(../img/contact_us_img.png) no-repeat;
