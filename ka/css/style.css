@@ -1255,6 +1255,7 @@ padding-bottom: 30px;
 	max-width: 100px;
 	min-width: 100px;
 	z-index: 10;
+	font-size: 12px;
 
 }
 .table_select .select2-container .select2-selection--single {
@@ -1286,7 +1287,7 @@ padding-bottom: 30px;
 	font-size: 12px;
 }
 .for_dropdown2 .select2-dropdown {
-	font-size: 12px;
+	font-size: 10px;
 	background-color: #ececec;
 	color: #1d1d1b;
 	border:none;
