@@ -71,6 +71,9 @@ width: 50%;
 .display_b {
 	display: block;
 }
+.padding_txt_block p{
+	padding-bottom: 20px;
+}
 .header_menu {
 	width: 1050px;
 	margin: 0 auto;
