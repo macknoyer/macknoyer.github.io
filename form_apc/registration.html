@@ -17,6 +17,15 @@
 
 </head>
 <body> 
+	<div id="wrapper_popup">
+	<div id="background_popup" onclick="popup_close()"></div>
+	<div class="popup popup_success" id="popup_success">
+		<a onclick="popup_close()" class="popup_close txt_light_gray fsz32">x</a>
+		<p class="padding_txt fsz24">Вы успешно зарегистрировались!
+Сейчас вы будете перенаправлены в профиль, для дополнения информации.</p>
+		<a href="#" class="red_link underline fsz18">Перейти в профиль</a>
+	</div>
+</div>
 	<header class="clearfix">
 		<a class="humb_link float_l"></a>
 		<a href="#" class="logo txt_dark_gray adaptiv_logo float_l">Продажа автомобилей<br> по России и СНГ</a>
@@ -80,7 +89,7 @@
 				recapcha
 			</div>	
 			<div class="confirm_checkbox_wrap confirm_checkbox_wrap2 clearfix">
-				<input class="float_r" value="Зарегистрироваться" type="submit">
+				<input onclick="popup_open('popup_success')" class="float_r" value="Зарегистрироваться" type="submit">
 			</div>	
 		</div>
 
