@@ -75,6 +75,9 @@ a.logo.adaptiv_logo {
 a.logo.adaptiv_logo {
 	display: block;
 }
+.logo.txt_dark_gray {
+	margin-left: 19px;
+}
 header {
 	background-color: #fff;
 	border-bottom: 1px solid #d7d7d7;
