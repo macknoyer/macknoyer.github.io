@@ -1736,3 +1736,21 @@ padding-bottom: 30px;
 	background: url(../img/w50_bg2.png) no-repeat left bottom;
 	background-color: #fff;
 }
+/******************************************errors***/
+.error_img {
+	width: 490px;	
+	height: 313px;	
+	margin: 0 auto;
+	background:url(../img/in_progress.png) no-repeat;
+}
+.error_img.error_404_img {
+	width: 391px;	
+	height: 221px;	
+	background:url(../img/404.png) no-repeat;
+}
+.error_img.error_500_img {
+	width: 361px;	
+	height: 297px;	
+	background:url(../img/500.png) no-repeat;
+}
+/******************************************errors***/
