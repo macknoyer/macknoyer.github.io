@@ -145,9 +145,27 @@
 			</div>
 		</div>
 
-		<div class="wrap_inside padding_left_zero">
-		<a onclick="popup_open('popup_client_white')" class="red_button">Добавить сотрудника</a></div>
-	</div>
+		<div class="wrap_inside padding_l_r0 clearfix">
+			<div class="clearfix">
+		<a onclick="popup_open('popup_client_white')" class="red_button float_l line_h_auto">Добавить сотрудника</a>
+		<a onclick="popup_open('popup_client_white')" class="red_button float_r line_h_auto">Сменить рекрутера</a>
+</div>
+
+		<div class="clearfix client_white_select_wrap">
+			<p class="float_l">Ответственный рекрутер:</p>
+					<div class="float_l client_white_select_block">
+					<select class="popup_select" name="meeting" id="">
+						<option value="1">Иванов Иван Иванович</option>
+						<option value="2">Иванов Иван Иванович</option>
+						<option value="3">Иванов Иван Иванович</option>
+					</select>
+				</div>
+		</div>
+
+		<div class="clearfix"  style="display: none;">
+			<p class="text_align_center">Ответственный рекрутер: <span class="client_white_select_txt" >Иванов Иван Иванович</span></p>
+		</div>
+	</div></div>
 		<div class="client_table smaller_font padding_top_zero">
 			<div class="client_table_tr_head head_gray">
 				<div class="client_table_th">
@@ -214,7 +232,7 @@
 
 	</div>
 
-			<div class="wrapper light_gray fsz14">
+<!-- 			<div class="wrapper light_gray fsz14">
 				<p class="manager_note fsz10">Чтобы удалить сотрудника из Заявки просто снимите галочку рядом с его именем.</p>
 				<p class="text_align_center">Отметьте сотрудника, ведущего заявку</p>
 					<div class="client_table manager_table w50">
@@ -272,7 +290,7 @@
 		<input class="form_input submit manager_submit width50" value="Сохранить предложение и вернутся к списку заявок " type="submit">
 		<p class="standart_txt center">или <a class="red_txt">внести изменения позже</a>.</p>
 		</div>
-		</div>	
+		</div> -->	
 </div>
 </div>
 <footer class="client_footer">

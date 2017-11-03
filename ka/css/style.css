@@ -1473,6 +1473,9 @@ background: url(../img/yeslittleblack.png) no-repeat center;
 .wrap_inside {
 	padding: 10px;
 }
+.padding_l_r0 {
+	padding:10px 0px ;
+}
 .red_button {
 	background-color:#f82812;
 	color: #fff;
@@ -1482,6 +1485,10 @@ background: url(../img/yeslittleblack.png) no-repeat center;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 400;
+}
+
+.red_button.line_h_auto {
+	line-height: inherit;
 }
 .popup.popup_client_white.gray .client_table{
 	font-size: 10px;
@@ -2026,3 +2033,33 @@ text-align: center;
 }
 /**/
 /*****************************************datepicker*/
+.client_white_select_block .select2-container {
+    float: left;
+    max-width: 100px;
+    min-width: 300px;
+    z-index: 10;
+    font-size: 12px;
+    border: 1px solid #1d1d1b;
+}
+.client_white_select_block .select2-container--default .select2-selection--single {
+font-size: 16px;
+    background-color: #fff;
+    color: #1d1d1b
+}
+.client_white_select_block .select2-container--default .select2-selection--single .select2-selection__rendered {
+
+    color: #1d1d1b
+}
+.client_white_select_wrap {
+	width: 504px;
+	margin:0 auto;
+	margin-bottom: 10px;
+}
+.client_white_select_wrap p{
+line-height: 30px;
+padding-right: 10px;
+}
+.client_white_select_txt {
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+}
