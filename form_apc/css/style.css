@@ -59,6 +59,17 @@ time {
 input.no_margin_sub[type="submit"] {
 	margin: 0;
 }
+.red_button {
+	background: url(../img/gradient.png) repeat-x;
+	border: none;
+	border-radius: 3px;
+	padding: 0px 17px;
+	line-height: 38px;
+	color: #fff;
+	margin-left: 11px;
+	cursor: pointer;
+	display: inline-block;
+}
 .fw600 {
 	font-weight: 600;
 }
@@ -1754,3 +1765,36 @@ padding-bottom: 30px;
 	background:url(../img/500.png) no-repeat;
 }
 /******************************************errors***/
+
+
+/******************************************faq***/
+.wrap50.news.faq_block {
+	width: 30.4%;
+	margin-right: 30px;
+}
+.wrap50.news.faq_block a{
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.wrap50.news.faq_block:last-child {
+	margin-right: 0px;
+}
+.faq_menu li{
+	display: inline-block;
+	margin-right: 45px;
+}
+.faq_menu li a.active{
+	color: #9c9c9c;
+	border-bottom: 1px solid transparent;
+}
+.faq_menu li:last-child{
+	margin-right: 0px;
+}
+.faq_img {
+	width: 100%;
+	height: 196px;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+}
+
+/******************************************faq***/

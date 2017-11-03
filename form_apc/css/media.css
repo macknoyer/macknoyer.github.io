@@ -428,7 +428,7 @@ form.regist_form.contact_us_form .regist_form_block textarea {
 .wrapper.wrapper_txt p,.wrap50 p {
     padding-right: 0px;
 }
-.wrap50.wrap30,.wrap50_inner,.wrap50.wrap70 {
+.wrap50.wrap30,.wrap50_inner,.wrap50.wrap70,.wrap50.news.faq_block {
     width: auto;
 }
 .wrap50.wrap30 input.no_margin_sub[type="submit"]{
@@ -467,6 +467,24 @@ width: auto;
 
 
 /********************************************************errors***/
+
+/********************************************************faq***/
+.wrap50.news.faq_block {
+	margin-right: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.faq_img{
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+.faq_menu li{
+	display:block;
+	margin-right: 0px;
+
+}
+/********************************************************faq***/
 
 
 }
