@@ -168,11 +168,15 @@ function set_popup_text(name_popup, related_field, text) {
     }
 
     popup_open(name_popup);
+
+    return false;
 }
 
 function set_alert_text(text) {
     $('#alert_popup').children('p').text(text);
     popup_open('alert_popup');
+
+    return false;
 }
 
 function set_rating_popup(type, rating, offer_id) {
@@ -210,6 +214,8 @@ function set_rating_popup(type, rating, offer_id) {
     rating_text_span.text(rating_text);
     popup_open("popup_client_rating");
 
+    return false;
+
 }
 
 function set_blacklist_popup(ka_id, ka_name) {
@@ -221,6 +227,8 @@ function set_blacklist_popup(ka_id, ka_name) {
     ka_input.text('"' + ka_name + '"');
 
     popup_open('black_list_popup');
+
+    return false;
 }
 
 function popup_open(name_popup) {
@@ -229,6 +237,8 @@ function popup_open(name_popup) {
     jQuery("#background_popup").css({"height": "auto"});
     jQuery("#" + name_popup).css({"display": "block", "top": "0px"});
     jQuery('body').addClass('modal-open');
+
+    return false;
 }
 
 function popup_close() {
@@ -236,9 +246,12 @@ function popup_close() {
         $(".popup_form_check_link.active").removeClass("active").find('input[type="checkbox"]').attr('checked', true);
     }
 
+
     jQuery("#wrapper_popup").fadeOut(0);
     jQuery("#background_popup").fadeOut(0);
     jQuery(".popup").fadeOut(0);
     jQuery('body').removeClass('modal-open');
+
+    return false;
 }
 /***modal***/
