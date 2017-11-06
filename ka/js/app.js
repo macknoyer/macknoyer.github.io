@@ -245,6 +245,13 @@ function popup_close() {
     if (jQuery(".popup:visible").attr("id") == "black_list_popup") {
         $(".popup_form_check_link.active").removeClass("active").find('input[type="checkbox"]').attr('checked', true);
     }
+    if (jQuery(".popup:visible").attr("id") == "reject_reason_popup") {
+        $("#reject_reason_text").val("");
+        if (window.dataid !== "") {
+            $(".client_table_td_select[data-id=" + window.dataid + "]").val(window.previous).change();
+            window.dataid = "";
+        }
+    }
 
 
     jQuery("#wrapper_popup").fadeOut(0);
