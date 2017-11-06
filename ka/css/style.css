@@ -1817,6 +1817,8 @@ width: 200px;
 }
 .scrollbar {
 	max-height: 480px;
+	min-height: 480px;
+
 	padding: 10px 0;
 }
 .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger, .mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
