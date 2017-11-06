@@ -1828,6 +1828,9 @@ width: 200px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
+.mCustomScrollBox,.mCSB_container {
+    min-height: 480px;
+}
 .control {
     display: block;
     position: relative;
