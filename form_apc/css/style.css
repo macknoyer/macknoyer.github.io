@@ -568,6 +568,43 @@ input.filter_input.wider2[type="text"] {
 	margin-left: 27px;
 	margin-top: 9px;
 }
+
+.checkbox{
+	display: inline-block;
+	cursor: pointer;
+	color: #1d1d1b;
+	margin-bottom: 10px;
+	padding-left: 30px;
+	line-height: 1.6;
+	background:url(../img/checkbox.png) no-repeat top left;
+	min-width: 22px;
+	min-height: 22px;
+}
+.checkbox.margin_top{
+	margin-top: 8px;
+}
+.checkbox.margin_left{
+	margin-left: 8px;
+}
+.checkbox.padding0{
+	padding-left: 0;
+}
+.checkbox.margin_b0{
+	margin-bottom: 0px;
+}
+.checkbox input[type="checkbox"]{
+	position: absolute;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	opacity: 0;
+	visibility:hidden;
+	z-index: 10;
+}
+
+.checkbox.active{
+	background:url(../img/checkbox_active.png) no-repeat top left;
+}
 ul.colors {
 	float: left;
 }
@@ -796,6 +833,33 @@ input.no_bg_sub[type="submit"] {
 }
 .control-radio input:disabled ~ .control_indicator:after {
     background: #7b7b7b;
+}
+.select_ads_menu {
+	
+}
+.select_ads_menu li{
+display: inline-block;
+margin-left: -5px;
+
+}
+.select_ads_menu li:first-child{
+margin-left: 0;
+}
+.select_ads_menu li a.link_border{
+border-radius: 0;
+}
+.select_ads_menu li a.link_border.active{
+background-color: #e8e8e8;
+}
+
+.select_ads_menu li:first-child a.link_border{
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+
+.select_ads_menu li:last-child a.link_border{
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
 }
 /******************radio*/
 
@@ -1275,6 +1339,7 @@ input.no_bg_sub.no_bg_sub2[type="submit"] {
 }
 .account_table_td {
 	padding:7px 0;
+	vertical-align: middle;
 }
 .form_select_small .select2-container .select2-selection--single{
 	height: 31px;
