@@ -488,8 +488,14 @@ width: auto;
 	width: auto;
 }
 /********************************************************faq***/
-
-
+.confirm_checkbox_wrap,.confirm_checkbox_wrap.confirm_checkbox_wrap2 {
+	width: auto;
+	padding: 0;
+	padding-top: 20px;
+}
+.registration_social_net_block {
+	padding: 0;
+}
 }
 @media only screen and (max-width : 770px) {
 .error_img {
