@@ -484,6 +484,9 @@ width: auto;
 	margin-right: 0px;
 
 }
+.article ul,.article ol {
+	width: auto;
+}
 /********************************************************faq***/
 
 
