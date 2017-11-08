@@ -849,6 +849,10 @@ a.client_table_td_txt.red_link {
     left: 0px;
     z-index: 280;
 }
+
+#background_popup.#background_popup_error{
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+}
 .popup {
     display: none;
     width: 540px;
