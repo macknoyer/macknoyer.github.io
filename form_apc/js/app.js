@@ -27,6 +27,9 @@
             $(this).parent().find('ul.colors li input[type="checkbox"]').attr('checked', false);
         }
         });
+        $('.human').click(function(){
+            $(this).find('.slide_menu_account').toggle();
+        });
         $('a.checkbox').click(function () {
             $(this).toggleClass('active');
             if ($(this).hasClass('active')) {

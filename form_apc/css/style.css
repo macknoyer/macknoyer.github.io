@@ -1910,3 +1910,34 @@ padding-bottom: 30px;
     font-weight: 300;
     color: #333;
 }
+/*******************************slide_menu***/
+.slide_menu_account::before {
+content: '';
+width: 0px;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-bottom: 5px solid #fff;
+position: absolute;
+top: -5px;
+clear: both;
+
+}
+.slide_menu_account {
+	border-radius: 3px;
+	background-color: #fff;
+	position: absolute;
+	display: none;
+	padding:10px 19px;
+	margin-top: 7px;
+	max-width: 200px;
+	-webkit-box-shadow: 1px 3px 3px 0px rgba(171,171,171,1);
+-moz-box-shadow: 1px 3px 3px 0px rgba(171,171,171,1);
+box-shadow: 1px 3px 3px 0px rgba(171,171,171,1);	
+}
+.slide_menu_account a.exit_link{
+	color: #f84f04;
+}
+
+
+/*******************************slide_menu***/
