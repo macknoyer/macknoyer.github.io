@@ -743,6 +743,7 @@ a.client_table_td_txt.red_link {
 }
 .client_table_th_option_block {
 	min-width: 110px;
+	max-width: 80%;
 	background-color: #fff;
 	color: #1d1d1b;
 	padding: 9px;
@@ -756,6 +757,8 @@ a.client_table_td_txt.red_link {
 	top: 10px;
 	left: 10px;
 	z-index: 11;
+	word-break: break-all;
+	overflow: hidden;
 }
 .client_table_th_option_block.gray_bg {
 	background-color: #f5f5f5;
