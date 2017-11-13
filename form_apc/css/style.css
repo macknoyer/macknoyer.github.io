@@ -1673,10 +1673,12 @@ input[type="text"].margin_bot {
 }
 .popup_close {
 	position: absolute;
-	right: 15px;
+	right: 12px;
 	top: 10px;
 	cursor: pointer;
 	z-index: 300;
+	top: 0;
+line-height: 32px;
 
 }
 /********************************modal*/
