@@ -977,7 +977,7 @@ border-bottom-right-radius: 3px;
 .car_price_range .car_price_icon{
 	position: absolute;
 }
-input.no_bg_sub.green[type="submit"] {
+.no_bg_sub.green {
 	display: block;
 	margin: 0px 0px 6px 14px;
 	line-height: 35px;
@@ -1384,12 +1384,17 @@ margin-bottom: 63px;
 	padding-bottom: 20px;
 	color: #f83201;
 }
-.btn.next {
+.btn.next,.btn.prev {
 	color: #d6d5d5;
 	position: absolute;
-right: -44px;
-top: 106px;
-cursor: pointer;
+	top: 106px;
+	cursor: pointer;
+}
+.btn.next {
+	right: -23px;
+}
+.btn.prev{
+	left: -22px;
 }
 .owl-nav {
 	display: none;
@@ -1429,7 +1434,8 @@ cursor: pointer;
 }
 
 .wrapper.wrapper2.w938 { 
-	max-width: 938px;
+	max-width: 925px;
+	margin:0 auto;
 } 
 .wrap50 {
 	width: 41.477%;

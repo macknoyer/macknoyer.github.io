@@ -108,7 +108,10 @@
   });
         });
   
-	 $('.btn.next').click(function() {
+     $('.btn.next').click(function() {
+       owl.trigger('next.owl.carousel');
+    });
+	 $('.btn.prev').click(function() {
 	   owl.trigger('next.owl.carousel');
 	});
 
