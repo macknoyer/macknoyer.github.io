@@ -1232,6 +1232,7 @@ label.confirm_checkbox_label {
 	background-color: #f75b02;
 	padding: 5px;
 	text-align: center;
+	min-width: 15px;
 }
 .notif_header_count {
 	position: absolute;
