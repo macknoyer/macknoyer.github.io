@@ -1418,6 +1418,7 @@ cursor: pointer;
 	height: 15px;
 	margin-bottom: -3px;
 	margin-left: 5px;
+	background-repeat: no-repeat;
 }
 
 .hot {
