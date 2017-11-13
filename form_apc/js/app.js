@@ -112,7 +112,7 @@
        owl.trigger('next.owl.carousel');
     });
 	 $('.btn.prev').click(function() {
-	   owl.trigger('next.owl.carousel');
+	   owl.trigger('prev.owl.carousel');
 	});
 
 	 $('.btn_slider2.prev2').click(function() {
