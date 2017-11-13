@@ -750,9 +750,9 @@ a.client_table_td_txt.red_link {
 	display: none;
 	text-align:left; 
 	position: absolute;
-	-webkit-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
-	-moz-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
-	box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);	
+	-webkit-box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);
+	box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);	
 	border-radius: 3px;
 	top: 10px;
 	left: 10px;
@@ -1347,9 +1347,9 @@ border-bottom: 1px solid #1d1d1b;
     font-style: italic;
     text-transform: none;	
     font-size: 10px;
-	-webkit-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
-	-moz-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
-	box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);	    
+	-webkit-box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);
+	box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);	    
 }
 .tooltip .tooltip_text.red_bg {
     background-color: #fed4d0;
@@ -1925,9 +1925,9 @@ width: 200px;
 	border-radius: 5px !important;
 	border: none !important;
 
-	-webkit-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
-	-moz-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
-	box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);	 	
+	-webkit-box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);
+	box-shadow: 7px 10px 10px -9px rgba(0,0,0,0.75);	 	
 }
 .ui-widget-header {
 	border:none;
