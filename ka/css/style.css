@@ -1194,6 +1194,9 @@ padding-bottom: 30px;
 	padding-bottom: 0;
 	width: 100%;
 }
+.client_table.w100 .table_gray_body_tr .table_gray_body_td span{
+	max-width: 300px;
+}
 .client_table.client_table_gray .table_gray_body_tr .table_gray_body_th:first-child,.client_table.client_table_gray .table_gray_body_tr .table_gray_body_td:first-child,.client_table.client_table_gray .table_gray_body_tr_form .table_gray_body_td:first-child,.client_table.client_table_gray .table_gray_body_tr_form .table_gray_body_td.first_child{
 	padding-left: 10px;
 }
