@@ -945,7 +945,7 @@ a.client_table_td_txt.red_link {
 	top: 20px;
 	width: 22px;
 	height: 22px;
-	left: 50%;
+	right: 20px;
     cursor: pointer;
     z-index: 110;
 	background: url(../img/popup_close.png) no-repeat;
@@ -1858,8 +1858,8 @@ width: 200px;
     margin-right: 5px;
 }
 .scrollbar {
-	max-height: 100vh;
-	min-height: 100vh;
+	max-height: 75vh;
+	min-height: 75vh;
 
 	padding: 10px 0;
 }
@@ -1871,7 +1871,7 @@ width: 200px;
     margin-bottom: 10px;
 }
 .mCustomScrollBox,.mCSB_container {
-    min-height: 100vh;
+    min-height: 75vh;
 }
 .control {
     display: block;
