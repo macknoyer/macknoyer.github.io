@@ -913,6 +913,7 @@ a.client_table_td_txt.red_link {
 	background-color: #f82812;
 	text-align: center;
 	padding-top: 60px;
+	top: 50%;
 }
 .popup.popup_client_white {
 	 background: #f5f5f5;
