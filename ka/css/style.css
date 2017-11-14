@@ -603,6 +603,10 @@ form.client_form .select2-results__option{
 .client_table_tr_head {
 	display: table-header-group;
 }
+.client_table_tr_head.fixed_header {
+	visibility: collapse;
+}
+
 .head_gray .client_table_th{
 	padding:2px 10px;
 }
