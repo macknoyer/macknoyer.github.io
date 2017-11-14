@@ -1827,8 +1827,8 @@ width: 200px;
     margin-right: 5px;
 }
 .scrollbar {
-	max-height: 480px;
-	min-height: 480px;
+	max-height: 100vh;
+	min-height: 100vh;
 
 	padding: 10px 0;
 }
@@ -1840,7 +1840,7 @@ width: 200px;
     margin-bottom: 10px;
 }
 .mCustomScrollBox,.mCSB_container {
-    min-height: 480px;
+    min-height: 100vh;
 }
 .control {
     display: block;
