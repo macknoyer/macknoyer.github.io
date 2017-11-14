@@ -903,6 +903,10 @@ a.client_table_td_txt.red_link {
 	margin-left:-350px;
 	padding: 40px 80px;
 }
+.popup.alert_popup {
+	background-color: #f82812;
+	text-align: center;
+}
 .popup.popup_client_white {
 	 background: #f5f5f5;
 	-webkit-box-shadow: 7px 10px 26px -7px rgba(0,0,0,0.75);
@@ -940,11 +944,10 @@ a.client_table_td_txt.red_link {
 	top: 20px;
 	width: 22px;
 	height: 22px;
-	right: 20px;
-
+	left: 50%;
     cursor: pointer;
     z-index: 110;
-	background: url(../img/disk_pappers_popup_close.png) no-repeat;
+	background: url(../img/popup_close.png) no-repeat;
 	border:none;
 }
 .popup_block {
@@ -979,15 +982,6 @@ a.client_table_td_txt.red_link {
 
 }
 
-.popup_close {
-	display: block;
-	top:19px;
-	right: 19px;
-	background: url(../img/del.png) no-repeat;
-	width: 13px;
-	height: 13px;
-	position: absolute;
-}
 /*.popup_input_error_wrap {
 	position: relative;
 	display: inline-block;
@@ -2114,4 +2108,13 @@ padding-right: 10px;
 .client_white_select_txt {
 	white-space: nowrap;
 	text-overflow: ellipsis; 
+}
+@media only screen and (max-width : 1270px) {
+.mCustomScrollBox, .mCSB_container {
+    min-height: 450px;
+}
+.scrollbar {
+    max-height: 450px;
+    min-height: 450px;
+}
 }
