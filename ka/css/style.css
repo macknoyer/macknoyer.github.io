@@ -888,17 +888,10 @@ a.client_table_td_txt.red_link {
     bottom: 0px;
     left: 0px;
     z-index: 280;
-}
-
-#wrapper_popup.wrapper_popup_alert{
-    min-height: 100%;
-    position: fixed;
-}
-
-#wrapper_popup.wrapper_popup_alert #background_popup {
     background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
-
 }
+
+
 .popup {
     display: none;
     width: 540px;
