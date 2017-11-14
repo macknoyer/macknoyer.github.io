@@ -1409,21 +1409,30 @@ margin-bottom: 63px;
 	background-position: center;
 	margin-bottom: 10px;
 }
-.avito_link {
-	display: inline-block;
-	width: 46px;
-	height: 15px;
-	background: url(../img/avito_link.png) no-repeat;
-	margin-bottom: -3px;
-	margin-left: 5px;
-}
-.site1,.site2,.site3 {
+.site_link {
 	display: inline-block;
 	width: 46px;
 	height: 15px;
 	margin-bottom: -3px;
 	margin-left: 5px;
+	background-size: contain;
 	background-repeat: no-repeat;
+}
+.site_link.site2{
+	background-image: url(../img/site2.png);
+	
+}
+.site_link.site3{
+	background-image: url(../img/site3.png);
+
+}
+.site_link.site4{
+	background-image: url(../img/site4.png);
+
+}
+.site_link.site5{
+	background-image: url(../img/site5.png);
+
 }
 
 .hot {
