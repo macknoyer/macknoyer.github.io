@@ -171,6 +171,12 @@ a.logo span{
 }
 .phone_block a.phone_block_email{
 	font-size: 18px;
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom ease 0.3s;
+}
+.phone_block a.phone_block_email:hover{
+	border-bottom: 1px solid #fff;
 }
 .phone_block_in {
 	padding: 6px 0px 7px 27px;
@@ -243,11 +249,19 @@ form {
 .form_input.submit:active {
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 50);
 }
+.form_input.submit.dark:hover {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
 form a.form_link {
-	display: block;	
+	display: inline-block;	
 	margin-bottom: 22px;
 	text-align: center;
 	cursor:pointer;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom ease 0.3s;
+}
+form a.form_link:hover {
+	border-bottom: 1px solid #fff;
 }
 form a.form_link.link2 {
 	font-size: 18px;
@@ -338,8 +352,14 @@ footer {
 }
 .footer_block .footer_link {
 	font-size: 14px;
-	display: block;
+	display: inline-block;
 	padding: 5px 0px 0px 0px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom ease 0.3s;
+
+}
+.footer_block .footer_link:hover {
+	border-bottom: 1px solid #fff;
 
 }
 .footer_block.footer_block2 {
@@ -373,7 +393,19 @@ footer {
 	font-size: 22px;
 	text-align: center;
 	line-height: 40px;
+	transition: background-color ease 0.3s;
 
+}
+.social_link:hover {
+	background-color: #fff;
+	transition: background-color ease 0.3s;
+}
+.social_link:hover .fa {
+	color: #DD2614;
+	transition: color ease 0.3s;
+}
+.social_link .fa {
+	transition: color ease 0.3s;
 }
 .fa {
     color: white;
