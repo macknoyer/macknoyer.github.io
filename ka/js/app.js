@@ -60,6 +60,14 @@
             $('.agency_txt_block .select2-container').removeClass('active');
             $('.edit_data_save').hide();
         });
+
+        $('.fixed_header_visible .client_table_th').each(function(index){
+            var nth_first = index+1;
+            $(this).width($('.fixed_header .client_table_th:nth-child('+nth_first+')').width());
+        });
+
+
+
         $(window).on("load", function () {
             $(".scrollbar").mCustomScrollbar({
                 theme: "minimal-dark",
