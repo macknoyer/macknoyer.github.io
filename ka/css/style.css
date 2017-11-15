@@ -1858,10 +1858,11 @@ width: 200px;
     margin-right: 5px;
 }
 .scrollbar {
-	max-height: 75vh;
-	min-height: 75vh;
-
+	max-height: 60vh;
 	padding: 10px 0;
+}
+.mCustomScrollBox,.mCSB_container {
+	max-height: 60vh;
 }
 .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger, .mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
     right: -3px;
@@ -1869,9 +1870,6 @@ width: 200px;
 .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical, .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
     margin-top: 20px;
     margin-bottom: 10px;
-}
-.mCustomScrollBox,.mCSB_container {
-    min-height: 75vh;
 }
 .control {
     display: block;
@@ -2110,12 +2108,11 @@ padding-right: 10px;
 	white-space: nowrap;
 	text-overflow: ellipsis; 
 }
-@media only screen and (max-width : 1370px) {
+@media only screen and (max-width:1155px) {
 .mCustomScrollBox, .mCSB_container {
-    min-height: 400px;
+	max-height: 50vh;
 }
 .scrollbar {
-    max-height: 400px;
-    min-height: 400px;
+	max-height: 50vh;
 }
 }
