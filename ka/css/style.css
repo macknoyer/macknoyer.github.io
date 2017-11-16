@@ -2110,6 +2110,17 @@ padding-right: 10px;
 	white-space: nowrap;
 	text-overflow: ellipsis; 
 }
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{ 
+    .client_table_tr_head.fixed_header {
+    visibility: hidden;
+}
+.mCSB_container .client_table {
+	
+    margin-top: -35px;
+}
+}
+
 @media only screen and (max-width:1155px) {
 .scrollbar {
 	max-height: 50vh;
