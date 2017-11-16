@@ -1861,9 +1861,6 @@ width: 200px;
 	max-height: 60vh;
 	padding: 10px 0;
 }
-.mCustomScrollBox,.mCSB_container {
-	max-height: 60vh;
-}
 .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger, .mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
     right: -3px;
 }
@@ -2109,9 +2106,6 @@ padding-right: 10px;
 	text-overflow: ellipsis; 
 }
 @media only screen and (max-width:1155px) {
-.mCustomScrollBox, .mCSB_container {
-	max-height: 50vh;
-}
 .scrollbar {
 	max-height: 50vh;
 }
