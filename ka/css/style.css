@@ -636,7 +636,7 @@ form.client_form .select2-results__option{
 	display: table-header-group;
 }
 .client_table_tr_head.fixed_header {
-	visibility: collapse;
+	visibility: hidden;
 }
 
 .head_gray .client_table_th{
@@ -1860,6 +1860,11 @@ width: 200px;
 .scrollbar {
 	max-height: 60vh;
 	padding: 10px 0;
+	overflow:hidden !important;
+}
+
+.mCustomScrollBox {
+    margin-top: -36px;
 }
 .mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger, .mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
     right: -3px;
