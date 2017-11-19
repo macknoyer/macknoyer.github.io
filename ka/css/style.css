@@ -773,6 +773,9 @@ a.client_table_td_txt.red_link {
 	font-size: 11px;
 
 }
+.client_table_td_txt.maxw69 {
+	max-width: 69px;
+}
 .client_table_tr .client_table_td:first-child{
 		border-left: 4px solid transparent;
 		padding-left: 6px;
@@ -1275,6 +1278,10 @@ padding-bottom: 30px;
 .client_table_td_cv.comment2 {
 	background: url(../img/table_gray_body_txt_krit.png) no-repeat;
 }
+.client_table_td_cv.comment2.cv_link_popup {
+	margin-top: 10px;
+}
+
 .client_table_td.center,.table_gray_body_td.center{
 	text-align: center;
 }
