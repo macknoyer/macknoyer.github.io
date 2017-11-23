@@ -399,6 +399,21 @@ padding-top: 20px;
 .form_select_wrap.chipper {
 	margin-right: 21px;
 }
+.year_select .select2-container .select2-selection--single{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.year_select.year_select2 .select2-container .select2-selection--single{
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-left-color: transparent;
+	border-right-color: #c2c2c2;
+}
+.year_select .select2-container {
+    min-width: 70px;
+}
 .form_select_wrap:last-child {
 	margin-right:0px;
 }
