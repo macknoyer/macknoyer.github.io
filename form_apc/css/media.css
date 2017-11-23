@@ -71,8 +71,16 @@ a.logo.adaptiv_logo {
 .select_ads_menu {
 	text-align: center;
 }
+
 .select_ads_menu li a.link_border{
 	padding: 0px 9px;
+}
+.year_select {
+	margin-top: 20px;
+	width: calc(50vw - 15px);
+}
+.year_select .select2-container {
+	min-width:100%; 
 }
 .humb_link {
 	display: block;

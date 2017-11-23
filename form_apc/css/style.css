@@ -358,6 +358,7 @@ padding-top: 20px;
 }
 .form_select_wrap {
 	float: left;
+	position: relative;
 	margin-right: 18px;
 }
 .form_select_wrap.car_type .select2-container {

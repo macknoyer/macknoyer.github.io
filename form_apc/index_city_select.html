@@ -234,11 +234,23 @@
 				</div>
 			</div>	
 			<div class="wrapper clearfix">
-				<div class="filter_input_wrap clearfix">
-					<label class="filter_label" for="">Год</label>
-					<input class="filter_input" type="text" placeholder="от" />	
-					<input class="filter_input right" type="text" placeholder="до"/>
-				</div>	
+				<div class="form_select_wrap clearfix">
+					<label class="filter_label" for="year_from">Год</label>	
+					<div class="year_select float_l">			
+						<select class="form_select" name="year_from" id="year_from">
+							<option value="1">2010</option>
+							<option value="2">2011</option>
+							<option value="2">2012</option>
+						</select>	
+					</div>	
+					<div class="year_select year_select2 float_l">	
+						<select class="form_select" name="year_to" id="year_to">
+							<option value="1">2010</option>
+							<option value="2">2011</option>
+							<option value="2">2012</option>
+						</select>
+					</div>			
+				</div>
 				<div class="form_select_wrap engine">	
 					<select class="form_select" name="engine_type" id="">
 						<option value="1">тип двигателя</option>
