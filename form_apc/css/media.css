@@ -62,7 +62,18 @@ a.logo.adaptiv_logo {
 		background-color: #fff;
 		overflow-x: hidden;
 	}
-
+.wrapper.simple_search .form_select_wrap {
+	margin-right: 0px;
+}
+.wrapper.simple_search input[type="submit"] {
+	margin-left: 0px;
+}
+.select_ads_menu {
+	text-align: center;
+}
+.select_ads_menu li a.link_border{
+	padding: 0px 9px;
+}
 .humb_link {
 	display: block;
 	background: url(../img/humb.png) no-repeat;
@@ -140,7 +151,7 @@ text-overflow: ellipsis;
 	margin-right: 0px;
 	float: none;
 }
-.form_select_wrap.manufac .select2-container,.form_select_wrap.brand .select2-container,.form_select_wrap.model .select2-container,.form_select_wrap.car_type .select2-container,.form_select_wrap.car_type .select2-container,.form_select_wrap.gear_box .select2-container,.form_select_wrap.wheel .select2-container,.form_select_wrap.engine .select2-container,.form_select_wrap.wheel_drive .select2-container,.form_select_wrap.seller .select2-container,.form_select_wrap.used .select2-container,.form_select_wrap.used .select2-container,.form_select_wrap.kms .select2-container,.form_select_wrap.chipper .select2-container {
+.form_select_wrap.manufac .select2-container,.form_select_wrap.brand .select2-container,.form_select_wrap.model .select2-container,.form_select_wrap.car_type .select2-container,.form_select_wrap.car_type .select2-container,.form_select_wrap.gear_box .select2-container,.form_select_wrap.wheel .select2-container,.form_select_wrap.engine .select2-container,.form_select_wrap.wheel_drive .select2-container,.form_select_wrap.seller .select2-container,.form_select_wrap.used .select2-container,.form_select_wrap.used .select2-container,.form_select_wrap.kms .select2-container,.form_select_wrap.chipper .select2-container,.form_select_wrap.helm .select2-container {
     width: 100% !important;
 }
 input.filter_input[type="text"],input.filter_input.wider[type="text"],input.filter_input.wider2[type="text"] {
@@ -237,6 +248,7 @@ margin-top: 18px;
 .content_block.head_txt {
 	padding-top: 0;
 	padding-bottom: 0;
+	padding-left: 19px;
 }
 .car_info_wrap .car_name_orange_txt_wrap {
     padding-bottom: 22px;
