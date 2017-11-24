@@ -413,7 +413,8 @@ padding-top: 20px;
 	border-right-color: #c2c2c2;
 }
 .year_select .select2-container {
-    min-width: 70px;
+    min-width: 56px;
+    max-width: 70px;
 }
 .form_select_wrap:last-child {
 	margin-right:0px;
