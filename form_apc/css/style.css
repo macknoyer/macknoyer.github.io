@@ -23,6 +23,11 @@ body, html{
 	letter-spacing: -0.3px;
 	background-color: #ebebeb;
 }
+body {
+	min-height: calc(100vh - 102px);
+	position: relative;
+	padding-bottom: 102px;
+}
 .modal-open {
 	overflow:hidden; 
 }
@@ -1049,6 +1054,10 @@ footer {
 	background-color: #ccc;
 	font-weight: 300;
 	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 footer .header_menu {
 	padding:27px 0; 
