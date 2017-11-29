@@ -419,6 +419,7 @@ padding-top: 20px;
 }
 .year_select .select2-container {
     min-width: 70px;
+    max-width: 86px;
 }
 .form_select_wrap:last-child {
 	margin-right:0px;

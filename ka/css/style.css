@@ -99,6 +99,10 @@ textarea.client_form_textarea:-ms-input-placeholder      {color:#fff;opacity: 1}
 	padding-top: 10px;
 padding-bottom: 10px;
 }
+.site-error {
+	text-align: center;
+	padding: 20px;
+}
 .red_link {
 	border-bottom: 1px solid transparent;
 	transition: border-bottom ease 0.3s;
