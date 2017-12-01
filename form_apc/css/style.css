@@ -369,11 +369,20 @@ padding-top: 20px;
 .form_select_wrap.car_type .select2-container {
 	width: 196px !important;
 }
+.wrapper.simple_search .form_select_wrap.car_type .select2-container {
+	width: 153px !important;
+}
 .form_select_wrap.manufac .select2-container {
 	width: 184px !important;
 }
 .form_select_wrap.brand .select2-container {
 	width: 208px !important;
+}
+.wrapper.simple_search .form_select_wrap.brand .select2-container {
+	width: 160px !important;
+}
+.wrapper.simple_search ..filter_input_wrap.price input[type="text"].filter_input {
+	width: 47px;
 }
 .form_select_wrap.model .select2-container {
 	width: 187px !important;
