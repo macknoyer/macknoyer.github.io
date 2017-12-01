@@ -381,7 +381,7 @@ padding-top: 20px;
 .wrapper.simple_search .form_select_wrap.brand .select2-container {
 	width: 160px !important;
 }
-.wrapper.simple_search ..filter_input_wrap.price input[type="text"].filter_input {
+.wrapper.simple_search .filter_input_wrap.price input[type="text"].filter_input {
 	width: 47px;
 }
 .form_select_wrap.model .select2-container {
