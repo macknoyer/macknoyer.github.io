@@ -367,31 +367,31 @@ padding-top: 20px;
 	margin-right: 18px;
 }
 .form_select_wrap.car_type .select2-container {
-	width: 153px  !important;
+	width: 196px !important;
 }
 .form_select_wrap.manufac .select2-container {
 	width: 184px !important;
 }
 .form_select_wrap.brand .select2-container {
-	width: 160px !important;
+	width: 208px !important;
 }
 .form_select_wrap.model .select2-container {
-	width: 153px !important;
+	width: 187px !important;
 }
 .form_select_wrap.year .select2-container {
 	width: 88px !important;
 }
 .form_select_wrap.gear_box .select2-container {
-	width: 159px !important;
+	width: 162px !important;
 }
 .form_select_wrap.wheel .select2-container {
-	width: 111px !important;
+	width: 114px !important;
 }
 .form_select_wrap.engine .select2-container {
 	width: 158px !important;
 }
 .form_select_wrap.wheel_drive .select2-container {
-	width: 160px  !important;
+	width: 163px  !important;
 }
 .form_select_wrap.seller .select2-container {
 	width: 183px  !important;
@@ -571,6 +571,9 @@ ul.breadcrumb li a:hover {
 	float: left;
 	margin-right: 18px;
 }
+.filter_input_wrap.price input[type="text"].filter_input {
+	width:99px;
+}
 .filter_input_wrap:last-child {
 	margin-right: 0px;
 }
@@ -732,8 +735,8 @@ ul.colors li.reset a.active{
 	box-shadow: none;
 }
 .wrapper_color {
-	    padding-top: 12px;
-	    padding-right: 50px;
+	    padding-top: 8px;
+	    padding-right: 39px;
 }
 input.no_bg_sub[type="submit"] {
 	border: 1px solid #c2c2c2;

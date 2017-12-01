@@ -72,8 +72,15 @@ a.logo.adaptiv_logo {
 	text-align: center;
 }
 
+.select_ads_menu li {
+    width: 33.4%;
+}
 .select_ads_menu li a.link_border{
-	padding: 0px 9px;
+	padding:0px 11px;
+    width: calc(100% - 24px);
+    white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .year_select {
 	margin-top: 20px;
@@ -162,9 +169,12 @@ text-overflow: ellipsis;
 .form_select_wrap.manufac .select2-container,.form_select_wrap.brand .select2-container,.form_select_wrap.model .select2-container,.form_select_wrap.car_type .select2-container,.form_select_wrap.car_type .select2-container,.form_select_wrap.gear_box .select2-container,.form_select_wrap.wheel .select2-container,.form_select_wrap.engine .select2-container,.form_select_wrap.wheel_drive .select2-container,.form_select_wrap.seller .select2-container,.form_select_wrap.used .select2-container,.form_select_wrap.used .select2-container,.form_select_wrap.kms .select2-container,.form_select_wrap.chipper .select2-container,.form_select_wrap.helm .select2-container {
     width: 100% !important;
 }
-input.filter_input[type="text"],input.filter_input.wider[type="text"],input.filter_input.wider2[type="text"] {
+input.filter_input[type="text"],input.filter_input.wider[type="text"],input.filter_input.wider2[type="text"],.filter_input_wrap.price input[type="text"].filter_input {
     width: calc(50vw - 39px);
     margin-top: 20px;
+}
+.filter_input_wrap.price input[type="text"].filter_input {
+	margin-top: 0px;
 }
 .wrapper {
 	padding: 0;
