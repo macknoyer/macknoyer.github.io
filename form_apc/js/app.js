@@ -39,6 +39,15 @@
                 $(this).find('input[type="checkbox"]').attr('checked', false);
             }
         });
+        // $('.select_ads_menu li').click(function () {
+        //     $(this).toggleClass('active');
+        //     if ($(this).hasClass('active')) {
+        //         $(this).parent().find('input[type="radio"]').prop('checked', true);
+        //     }
+        //     else {
+        //         $(this).parent().find('input[type="radio"]').prop('checked', false);
+        //     }
+        // });
 		$('.link_border').click(function(){
 			$(this).next('.review_popup').show();
 		});
