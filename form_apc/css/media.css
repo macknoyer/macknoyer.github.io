@@ -56,6 +56,13 @@ a.logo.adaptiv_logo {
 .car_info.car_info2 .link_border{
 	display: none;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.tabs_menu li.active a:after { 
+		
+    bottom: -2px;
+	}
+}
 @media only screen and (max-width : 992px) {
 	body, html {
 		min-width: 320px;
@@ -564,12 +571,5 @@ background: url(../img/logo.png) no-repeat top left;
 input.no_bg_sub.no_bg_sub2[type="submit"] {
     margin: 0px 0px 10px 22px;
     padding: 0 10px;
-}
-}
-@media only screen and (max-width : 362px) {
-input.no_margin_sub[type="submit"] {
-    float: left;
-    margin-top: 18px;
-    clear: both;
 }
 }
