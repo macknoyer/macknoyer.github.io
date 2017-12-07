@@ -69,6 +69,9 @@ a.logo.adaptiv_logo {
 		background-color: #fff;
 		overflow-x: hidden;
 	}
+.tabs_menu li.active a:after,a.logo.txt_dark_gray.logo_adaptiv_display_n {
+	display: none;
+}
 .wrapper.simple_search .form_select_wrap {
 	margin-right: 0px;
 }
