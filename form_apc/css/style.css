@@ -102,6 +102,7 @@ width: 50%;
 .header_menu ul li a{
 	color: white;
 	cursor: pointer;
+	font-weight: 600;
 
 }
 .header_menu ul li{
@@ -158,6 +159,8 @@ width: 50%;
 	height: 17px;
 }
 a.logo {
+	font-weight: bold;
+	color: #000000;
 	display: inline-block;
 	background: url(../img/logo.png) no-repeat center left;
 	float: left;
@@ -1420,21 +1423,33 @@ margin-bottom: 63px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border-bottom: 2px solid transparent;
-	margin: 20px;
+	color: #f83201;
 	border-bottom: 1px dotted;
+	text-align: right;
+	margin-left: 40px;
 }
 .tabs_menu li a:hover{ 
 	border-bottom: none;
 }
 .tabs_menu li.active a{
-	padding: 20px;
-	margin: 0px;
-	border: 1px solid #d7d7d7;
-	background: #fff;
-	border-bottom: 3px solid #fff;
 	font-weight: 600;
 	padding-bottom: 20px;
-	color: #f83201;
+	border-bottom: none;
+	color: #666666;
+	position: relative;
+}
+.tabs_menu li.active a:after{
+	content: '';
+	width: 12px;
+	height: 7px;
+	background: url(../img/tabs_menu.png) no-repeat;
+/*	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;*/
+	position: absolute;
+	clear: both;
+	bottom: -1px;
+	left: calc(50% - 6px);
 }
 .btn.next,.btn.prev {
 	color: #d6d5d5;
@@ -1597,6 +1612,11 @@ margin-top: -1px;
     height: 310px;
     margin-top: 72px;
 }
+.welcome_img.tabs_menu_img {
+	width: 325px;
+    height: 210px;
+}
+
 .car_image_carousel.image_carousel2 {
 	width: 270px;
 	height: 216px;
