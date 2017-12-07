@@ -548,6 +548,10 @@ width: auto;
 	float: none;
 	margin-bottom: 	20px;
 }
+a.logo.adaptiv_logo {
+	font-size: 10px;
+	background-position:center left;
+}
 }
 @media only screen and (max-width : 482px) {
 
@@ -563,10 +567,8 @@ padding-bottom: 3px;
 }
 a.logo.adaptiv_logo {
 margin-top: 18px;
-background: url(../img/logo.png) no-repeat top left;
     padding-left: 79px;
-    background-size: 39%;
-    font-size: 10px;
+	background-size: 27%;
 }
 input.no_bg_sub.no_bg_sub2[type="submit"] {
     margin: 0px 0px 10px 22px;
