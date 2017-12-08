@@ -390,6 +390,9 @@ padding-top: 20px;
 .form_select_wrap.model .select2-container {
 	width: 187px !important;
 }
+.wrapper.simple_search .form_select_wrap.model .select2-container{
+	width: 153px !important;
+}
 .form_select_wrap.year .select2-container {
 	width: 88px !important;
 }
