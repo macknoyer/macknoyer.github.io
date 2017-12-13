@@ -380,12 +380,24 @@
 						<option value="1">тип двигателя</option>
 						<option value="2">дизель</option>
 					</select>
-				</div>	
-				<div class="filter_input_wrap clearfix">
+				</div>
+				<div class="form_select_wrap clearfix">
 					<label class="filter_label" for="">Обьем</label>
-					<input class="filter_input" type="text" placeholder="от" />	
-					<input class="filter_input right" type="text" placeholder="до"/>
-				</div>	
+					<div class="year_select float_l">			
+						<select class="form_select" name="year_from" id="year_from">
+							<option value="1">от</option>
+							<option value="2">1.4л</option>
+							<option value="2">1.6л</option>
+						</select>	
+					</div>	
+					<div class="year_select year_select2 float_l">	
+						<select class="form_select" name="year_to" id="year_to">
+							<option value="1">до</option>
+							<option value="2">1.4л</option>
+							<option value="2">1.6л</option>
+						</select>
+					</div>			
+				</div>		
 				<div class="filter_input_wrap clearfix">
 					<label class="filter_label" for="">Мощность л.с.</label>
 					<input class="filter_input wider" type="text" placeholder="от" />	
