@@ -1,0 +1,875 @@
+
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+                        <!-- Disable translation prompt
+        <meta name="google" value="notranslate"> -->
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="theme-color" content="#основной цвет сайта">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Disable link highlighting on IE 10 on Windows Phone (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Add to homescreen -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="description" content="Доставка">
+		<meta name="keywords" content="Доставка">
+        <title>Доставка</title>
+        <link rel="icon" href="http://eurovazon.ru/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="http://eurovazon.ru/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="/d/1621441/t/v2108/images/styles/plugins.min.css">
+        <link rel="stylesheet" href="/g/shop2v2/default/css/theme.less.css">
+        <link rel="stylesheet" href="/g/templates/pages/2016.1/articles/articles.css" type="text/css"/>
+        <link rel="stylesheet" href="/g/basestyle/1.0.0/gallery/gallery.blue.css" type="text/css"/>
+        <link rel="stylesheet" href="/d/1621441/t/v2108/images/styles/app.css">
+        		
+		        <script src="/d/1621441/t/v2108/images/scripts/vendor/modernizr.min.js"></script>
+        <script src='/shared/s3/js/lang/ru.js'></script>
+        <script src='/shared/s3/js/widgets.js?v=7'></script>
+        
+		
+
+<script>
+var __cs = __cs || [];
+__cs.push(["setCsAccount", "Wybl3gUskcZlbcMXb8GWof3CLeeEZrsU"]);
+</script>
+<script async src="//app.comagic.ru/static/cs.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110089934-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110089934-1');
+</script>
+
+<!-- END Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+<script>
+  (function(){
+    if (typeof carrotquest === 'undefined') {
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+      s.src = '//cdn.carrotquest.io/api.min.js';
+      var x = document.getElementsByTagName('head')[0]; x.appendChild(s);
+
+      carrotquest = {}; window.carrotquestasync = []; carrotquest.settings = {};
+      m = ['connect', 'track', 'identify', 'auth', 'open', 'onReady', 'addCallback', 'removeCallback', 'trackMessageInteraction'];
+      function Build(name, args){return function(){window.carrotquestasync.push(name, arguments);} }
+      for (var i = 0; i < m.length; i++) carrotquest[m[i]] = Build(m[i]);
+    }
+  })();
+  carrotquest.connect('13555-4003282fa0e8a925cc8f0f62fe');
+</script>
+
+    </head>
+
+    <body class="app-wrapper">
+    	
+    	<svg xmlns="http://www.w3.org/2000/svg" class="main-svg-sprite" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 13.062 15" id="address_icon"><path d="M6.531 15.001a.649.649 0 0 1-.414-.148c-.626-.518-6.126-5.158-6.126-8.506a6.543 6.543 0 0 1 13.08 0c0 3.348-5.5 7.988-6.126 8.506a.647.647 0 0 1-.414.148zm0-13.755a5.19 5.19 0 0 0-5.264 5.1c0 2.171 3.482 5.658 5.264 7.213 1.782-1.555 5.264-5.042 5.264-7.213a5.19 5.19 0 0 0-5.264-5.1zm0 8.192A3.093 3.093 0 1 1 9.72 6.347a3.146 3.146 0 0 1-3.189 3.091zm0-4.945a1.855 1.855 0 1 0 1.914 1.855 1.887 1.887 0 0 0-1.914-1.856z"/></symbol><symbol viewBox="0 0 24 24" id="angle-double-down"><path d="M20 11.768q0 .188-.16.333l-7.472 6.754Q12.208 19 12 19t-.368-.145L4.16 12.101Q4 11.956 4 11.768q0-.188.16-.333l.802-.724q.16-.145.368-.145t.368.145L12 16.407l6.302-5.696q.16-.145.368-.145t.368.145l.802.724q.16.145.16.333zm0-5.566q0 .189-.16.333l-7.472 6.754q-.16.145-.368.145t-.368-.145L4.16 6.535Q4 6.391 4 6.202q0-.188.16-.333l.802-.724Q5.122 5 5.33 5t.368.145L12 10.84l6.302-5.696Q18.462 5 18.67 5t.368.145l.802.724q.16.145.16.333z"/></symbol><symbol viewBox="0 0 24 24" id="angle-double-left"><path d="M13.434 18.67q0 .208-.145.368l-.724.802q-.145.16-.333.16-.188 0-.333-.16l-6.754-7.472Q5 12.208 5 12t.145-.368l6.754-7.472q.145-.16.333-.16.188 0 .333.16l.724.802q.145.16.145.368t-.145.368L7.593 12l5.696 6.302q.145.16.145.368zm5.566 0q0 .208-.145.368l-.724.802q-.145.16-.333.16-.189 0-.333-.16l-6.754-7.472q-.145-.16-.145-.368t.145-.368l6.754-7.472q.144-.16.333-.16.188 0 .333.16l.724.802q.145.16.145.368t-.145.368L13.16 12l5.696 6.302q.145.16.145.368z"/></symbol><symbol viewBox="0 0 24 24" id="angle-double-right"><path d="M13.434 12q0 .208-.145.368L6.535 19.84q-.144.16-.333.16-.188 0-.333-.16l-.724-.802Q5 18.878 5 18.67t.145-.368L10.84 12 5.145 5.698Q5 5.538 5 5.33t.145-.368l.724-.802Q6.014 4 6.202 4q.189 0 .333.16l6.754 7.472q.145.16.145.368zM19 12q0 .208-.145.368l-6.754 7.472q-.145.16-.333.16-.188 0-.333-.16l-.724-.802q-.145-.16-.145-.368t.145-.368L16.407 12l-5.696-6.302q-.145-.16-.145-.368t.145-.368l.724-.802q.145-.16.333-.16.188 0 .333.16l6.754 7.472q.145.16.145.368z"/></symbol><symbol viewBox="0 0 24 24" id="angle-double-up"><path d="M20 17.798q0 .188-.16.333l-.802.724q-.16.145-.368.145t-.368-.145L12 13.16l-6.302 5.696Q5.538 19 5.33 19t-.368-.145l-.802-.724Q4 17.986 4 17.798q0-.189.16-.333l7.472-6.754q.16-.145.368-.145t.368.145l7.472 6.754q.16.144.16.333zm0-5.566q0 .188-.16.333l-.802.724q-.16.145-.368.145t-.368-.145L12 7.593l-6.302 5.696q-.16.145-.368.145t-.368-.145l-.802-.724Q4 12.42 4 12.232q0-.188.16-.333l7.472-6.754Q11.792 5 12 5t.368.145l7.472 6.754q.16.145.16.333z"/></symbol><symbol viewBox="0 0 24 24" id="angle-down"><path d="M19 9.14q0 .179-.14.316l-6.538 6.407Q12.182 16 12 16t-.322-.137L5.14 9.456Q5 9.32 5 9.14q0-.178.14-.316l.701-.687Q5.981 8 6.164 8q.182 0 .322.137L12 13.541l5.514-5.404q.14-.137.322-.137.183 0 .323.137l.7.687q.141.138.141.316z"/></symbol><symbol viewBox="0 0 24 24" id="angle-left"><path d="M16 6.164q0 .182-.137.322L10.459 12l5.404 5.514q.137.14.137.322 0 .183-.137.323l-.687.7q-.138.141-.316.141-.179 0-.316-.14l-6.407-6.538Q8 12.182 8 12t.137-.322l6.407-6.538Q14.68 5 14.86 5q.178 0 .316.14l.687.701q.137.14.137.323z"/></symbol><symbol viewBox="0 0 24 24" id="angle-right"><path d="M16 12q0 .182-.137.322L9.456 18.86Q9.32 19 9.14 19q-.178 0-.316-.14l-.687-.701Q8 18.019 8 17.836q0-.182.137-.322L13.541 12 8.137 6.486Q8 6.346 8 6.164q0-.183.137-.323l.687-.7Q8.962 5 9.14 5q.179 0 .316.14l6.407 6.538q.137.14.137.322z"/></symbol><symbol viewBox="0 0 24 24" id="angle-up"><path d="M19 14.86q0 .178-.14.316l-.701.687q-.14.137-.323.137-.182 0-.322-.137L12 10.459l-5.514 5.404q-.14.137-.322.137-.183 0-.323-.137l-.7-.687Q5 15.038 5 14.86q0-.179.14-.316l6.538-6.407Q11.818 8 12 8t.322.137l6.538 6.407q.14.137.14.316z"/></symbol><symbol viewBox="0 0 15 15" id="button_icon"><path data-name="Shape 20 copy 2" class="ajcls-1" d="M7.494 14.99a7.5 7.5 0 1 1 7.5-7.5 7.512 7.512 0 0 1-7.5 7.5zm0-13.67a6.17 6.17 0 1 0 6.171 6.17 6.172 6.172 0 0 0-6.171-6.17zm.47 8.81a.664.664 0 0 1-.94 0L4.453 7.56a.666.666 0 0 1 0-.94.682.682 0 0 1 .939 0L6.83 8.06v-3.7a.664.664 0 1 1 1.328 0v3.7l1.438-1.44a.682.682 0 0 1 .939 0 .666.666 0 0 1 0 .94z"/></symbol><symbol viewBox="0 0 11 11" id="diagonal_icon"><path d="M670.993 1029.52l-.019 2.9a.544.544 0 0 1-.158.38.527.527 0 0 1-.905-.37l.011-1.62-8.118 8.11 1.626-.01a.526.526 0 0 1 .527.53.544.544 0 0 1-.158.38.615.615 0 0 1-.377.16l-2.907.02a.528.528 0 0 1-.528-.53l.019-2.91a.553.553 0 0 1 .535-.54.528.528 0 0 1 .528.53l-.011 1.63 8.118-8.12-1.625.01a.521.521 0 0 1-.528-.53.537.537 0 0 1 .535-.53l2.907-.02a.521.521 0 0 1 .528.53z" transform="translate(-660 -1029)"/></symbol><symbol viewBox="0 0 13 13" id="diameter_icon"><path d="M11.356 2.24a6.431 6.431 0 0 1 1.627 4.25 6.5 6.5 0 0 1-6.5 6.5 6.411 6.411 0 0 1-4.238-1.61l-1.244 1.25a.53.53 0 0 1-.759 0 .537.537 0 0 1 0-.76l1.253-1.26A6.422 6.422 0 0 1-.016 6.49a6.51 6.51 0 0 1 6.5-6.5 6.443 6.443 0 0 1 4.1 1.5l.969-.97a.537.537 0 0 1 .76.76zm-4.872 9.65a5.4 5.4 0 0 0 5.395-5.4 5.317 5.317 0 0 0-1.222-3.37l-7.552 7.55a5.318 5.318 0 0 0 3.382 1.22zm0-10.79a5.36 5.36 0 0 0-4.2 8.73l2.57-2.58a.483.483 0 0 1 .2-.09l1.809-1.81a.524.524 0 0 1 .088-.21l2.852-2.86A5.291 5.291 0 0 0 6.487 1.1z"/></symbol><symbol viewBox="0 0 14.688 15.03" id="download_icon"><path d="M4.601-.02h5.48a.661.661 0 0 1 .671.65v4.85h3.263a.657.657 0 0 1 .668.64.614.614 0 0 1-.195.46l-6.674 6.46a.674.674 0 0 1-.948 0l-.012-.01L.197 6.58a.637.637 0 0 1 0-.92.7.7 0 0 1 .473-.18h3.263V.63a.659.659 0 0 1 .668-.65zM.67 15.04a.645.645 0 1 1 0-1.29h13.345a.645.645 0 1 1 0 1.29H.67zM9.411 1.28H5.274v4.84a.66.66 0 0 1-.673.65H2.289l5.054 4.9 5.052-4.9h-2.314a.661.661 0 0 1-.67-.65V1.28z"/></symbol><symbol viewBox="0 0 15 19" id="edit_icon"><path d="M0 18.99V17.4h15v1.59H0zm0-3.18v-4.29L10.875.01l4.06 4.3-10.874 11.5H0zm1.5-1.58h1.939L1.5 12.18v2.05zm11.314-9.92l-1.939-2.06-.815.87L12 5.17zm-1.875 1.98L9 4.24l-6.439 6.81L4.5 13.11z"/></symbol><symbol viewBox="0 0 15.031 17" id="file_icon"><path d="M7.439 2.57a3.5 3.5 0 0 1 5.053 0 3.786 3.786 0 0 1 0 5.22l-3.247 3.36-3.546 3.66a2.257 2.257 0 0 1-3.19 0 2.387 2.387 0 0 1 0-3.3l2.131-2.2 4.383-4.53a.857.857 0 0 1 1.2 0 .91.91 0 0 1 0 1.25l-5.819 6.01 1.036 1.07 5.82-6.01a2.461 2.461 0 0 0 0-3.39 2.317 2.317 0 0 0-3.277 0l-3.581 3.7-2.932 3.03a3.939 3.939 0 0 0 0 5.44 3.629 3.629 0 0 0 5.263 0l3.165-3.27 3.629-3.75a5.338 5.338 0 0 0 0-7.36 4.93 4.93 0 0 0-7.126 0L-.011 8.13 1.026 9.2z"/></symbol><symbol viewBox="0 0 5 12" id="height_icon"><path d="M4.856 2.9a.517.517 0 0 1-.728 0L3.014 1.77v8.42l1.114-1.12a.5.5 0 0 1 .728 0 .509.509 0 0 1 .151.36.514.514 0 0 1-.151.37l-1.993 2.02a.517.517 0 0 1-.728 0L.142 9.8a.517.517 0 0 1 0-.73.5.5 0 0 1 .728 0l1.114 1.12V1.77L.87 2.9a.517.517 0 0 1-.728 0 .529.529 0 0 1 0-.74L2.134.15A.488.488 0 0 1 2.499 0a.486.486 0 0 1 .365.15l1.992 2.01a.529.529 0 0 1 0 .74z"/></symbol><symbol viewBox="0 0 14 15" id="home_icon"><path d="M12.084 15H1.917a.628.628 0 0 1-.625-.633V7.29l-.217.219a.618.618 0 0 1-.884 0 .637.637 0 0 1 0-.894L6.559.167a.637.637 0 0 1 .883 0L9.559 2.31v-.65a.625.625 0 1 1 1.25 0v1.916l1.705 1.726.025.026 1.27 1.287a.637.637 0 0 1 0 .894.618.618 0 0 1-.884 0l-.216-.218v7.076a.628.628 0 0 1-.625.633zm-9.542-1.265h8.918v-7.71L9.752 4.296l-.02-.02L7 1.509 2.541 6.024v7.711zm5.714-2.362H5.745a.628.628 0 0 1-.624-.632V7.694a.628.628 0 0 1 .624-.633h2.511a.628.628 0 0 1 .625.633v3.047a.628.628 0 0 1-.625.632zM6.37 10.108h1.261V8.327H6.37v1.781z"/></symbol><symbol viewBox="0 0 6.656 6.47" id="link_icon"><path d="M678.883 2767.85l-2.568 2.57a.665.665 0 0 1-.94-.94l1.436-1.43h-3.7a.667.667 0 0 1-.664-.67.658.658 0 0 1 .664-.66h3.7l-1.436-1.44a.665.665 0 0 1 .94-.94l2.568 2.57a.664.664 0 0 1 0 .94z" transform="translate(-672.438 -2764.16)"/></symbol><symbol viewBox="0 0 239 28" id="logo_icon"><path d="M186.408 119.751a2.273 2.273 0 0 1-.266 1 12.353 12.353 0 0 1-5.075 4.882 14.762 14.762 0 0 1-7.057 1.832 13.764 13.764 0 0 1-9.894-3.94 13.044 13.044 0 0 1 0-19.018 13.979 13.979 0 0 1 14.211-3.2 17.444 17.444 0 0 1 5 2.7q3.055 2.3 3.06 4.34a1.7 1.7 0 0 1-.992 1.566l-18.87 10.47a9.661 9.661 0 0 0 7.485 3.276 9.389 9.389 0 0 0 7.537-3.316c.234-.338.618-.829 1.14-1.5a1.982 1.982 0 0 1 3.092-.44 1.7 1.7 0 0 1 .629 1.341zm-4.946-12.108a10.233 10.233 0 0 0-14.564-.43 9.279 9.279 0 0 0-2.409 9.836l16.973-9.406zm28.923 10.225a9.1 9.1 0 0 1-2.932 6.785 10.228 10.228 0 0 1-14.094 0 9.1 9.1 0 0 1-2.932-6.785v-15.394a1.985 1.985 0 0 1 3.966 0v15.414a5.421 5.421 0 0 0 1.77 4.074 6.148 6.148 0 0 0 8.486 0 5.421 5.421 0 0 0 1.77-4.074v-15.414a1.985 1.985 0 0 1 3.966 0v15.394zM253.86 128a13.592 13.592 0 0 1-5.446-1.132 14.06 14.06 0 0 1-4.458-3.02 14.678 14.678 0 0 1-2.994-4.463 13.987 13.987 0 0 1-1.088-5.389 13.467 13.467 0 0 1 1.126-5.427 14.4 14.4 0 0 1 7.485-7.449 14.224 14.224 0 0 1 5.479-1.1 13.474 13.474 0 0 1 9.768 4.154 13.638 13.638 0 0 1 2.892 4.43 13.915 13.915 0 0 1 1.057 5.388 13.692 13.692 0 0 1-1.057 5.389A13.812 13.812 0 0 1 253.86 128zm.1-24.543a10.794 10.794 0 0 0-4.149.824 10.509 10.509 0 0 0-3.406 2.3 10.6 10.6 0 0 0-3.129 7.414 10.364 10.364 0 0 0 .817 4.05 10.254 10.254 0 0 0 2.282 3.364 10.408 10.408 0 0 0 14.9.035 10.735 10.735 0 0 0 2.213-3.365 11.214 11.214 0 0 0 .783-4.084 10.56 10.56 0 0 0-2.963-7.414 10.086 10.086 0 0 0-7.348-3.127zm26.658 24.228A1.733 1.733 0 0 1 279 126.6l-9.866-24.084a1.778 1.778 0 0 1 .931-2.262 1.744 1.744 0 0 1 2.276.94l8.28 20.185L288.9 101.2a1.72 1.72 0 1 1 3.175 1.322l-9.869 24.078a1.723 1.723 0 0 1-1.588 1.082zm59.261-.047h-19.008a1.758 1.758 0 0 1-1.57-1.019 1.809 1.809 0 0 1 .212-1.865l16.738-21.214H321.43a1.759 1.759 0 0 1 0-3.518h18.449a1.753 1.753 0 0 1 1.359 2.851L324.5 124.117h15.383a1.756 1.756 0 0 1 1.744 1.758 1.781 1.781 0 0 1-1.748 1.76zm18.05.334a13.549 13.549 0 0 1-5.437-1.131 14.066 14.066 0 0 1-4.45-3.015 14.636 14.636 0 0 1-2.991-4.457 13.975 13.975 0 0 1-1.087-5.38 13.441 13.441 0 0 1 1.121-5.415 14.366 14.366 0 0 1 7.476-7.438 14.145 14.145 0 0 1 5.47-1.1 13.453 13.453 0 0 1 9.752 4.148 13.682 13.682 0 0 1 2.89 4.42 13.985 13.985 0 0 1 1.052 5.383 13.867 13.867 0 0 1-13.8 13.983zm.1-24.507a10.773 10.773 0 0 0-4.145.823 10.446 10.446 0 0 0-3.4 2.3 10.606 10.606 0 0 0-3.127 7.405 10.384 10.384 0 0 0 3.091 7.4 10.4 10.4 0 0 0 14.885.035 10.63 10.63 0 0 0 2.206-3.36 11.085 11.085 0 0 0 .782-4.077 10.557 10.557 0 0 0-2.955-7.405 10.083 10.083 0 0 0-7.335-3.124zm39.218 24.311a1.854 1.854 0 0 1-1.364-.636l-16.9-20.506v19.341a1.749 1.749 0 1 1-3.5 0V101.76a1.751 1.751 0 0 1 1.151-1.658 1.726 1.726 0 0 1 1.925.53L395.5 121.1v-19.3a1.742 1.742 0 0 1 1.751-1.765A1.763 1.763 0 0 1 399 101.8v24.212a1.836 1.836 0 0 1-1.155 1.66 1.982 1.982 0 0 1-.596.101zm-80.823-2.676l-11.669-24.067a1.744 1.744 0 0 0-1.566-.983 1.777 1.777 0 0 0-1.566.983l-11.6 24.1a1.748 1.748 0 0 0 .524 2.18 1.7 1.7 0 0 0 2.228-.141 31.114 31.114 0 0 1 6.06-4.252 26.274 26.274 0 0 1 5.956-2.143c2.192-.567 3.735-.831 3.4-2.438-.41-1.979-2.525-1.281-4.064-1a23.922 23.922 0 0 0-6.966 2.531c-.35.174-.662.35-.977.525l7-14.579 10.1 20.834a1.749 1.749 0 0 0 3.14-1.55zm-78.181.44a1.756 1.756 0 0 0-1.951-1.477c-.139 0-1.116 0-2.022-1.547a18.286 18.286 0 0 0-3.941-4.888 9.32 9.32 0 0 0 2.091-.88 8.045 8.045 0 0 0 4.01-7.386 10.736 10.736 0 0 0-.7-4.077 7.618 7.618 0 0 0-1.812-2.814 8.4 8.4 0 0 0-3.907-2.181 8.307 8.307 0 0 0-2.055-.283l-5.157-.018-1.776.018a5.33 5.33 0 0 0-5.166 5.287c0 .173-.013.854 0 1.026v19.58a1.744 1.744 0 1 0 3.488 0v-20.185a2.016 2.016 0 0 1 2.241-2.174l1.036-.012h5.334a5.9 5.9 0 0 1 2.616.739 4.461 4.461 0 0 1 1.6 1.619 6.958 6.958 0 0 1 .767 3.479 4.479 4.479 0 0 1-2.231 4.327 11.746 11.746 0 0 1-5.754 1.161 1.759 1.759 0 0 0-.348 3.481 7.065 7.065 0 0 1 2.195 1.054 14.048 14.048 0 0 1 4.464 4.89 6.467 6.467 0 0 0 3.381 3.025 4.886 4.886 0 0 0 2.127.246 1.775 1.775 0 0 0 1.47-2.006z" transform="translate(-160 -100)"/></symbol><symbol viewBox="0 0 16 12" id="mail_icon"><path d="M14.858.2l-.012-.01A1.976 1.976 0 0 0 14 0H2a1.987 1.987 0 0 0-.771.16L1.208.14 1.147.2A1.989 1.989 0 0 0 0 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2A2 2 0 0 0 14.858.2zm-3.68 5.43l3.488-3.4v6.79zm2.494-4.3l-5.11 4.98a.74.74 0 0 1-1.017 0L2.438 1.33h11.234zM1.333 9.14V2.12l3.56 3.47zM2 10.67a.577.577 0 0 1-.26-.06l4.108-4.09.765.75a2.079 2.079 0 0 0 2.881 0l.73-.71 4.112 4a.655.655 0 0 1-.336.11H2z"/></symbol><symbol viewBox="0 0 14.812 15" id="marck_icon"><path d="M12.647 12.812a7.356 7.356 0 0 1-10.484 0 7.571 7.571 0 0 1 0-10.606 7.352 7.352 0 0 1 10.482 0 7.571 7.571 0 0 1 .002 10.606zm-.891-9.7a6.106 6.106 0 0 0-8.7 0 6.287 6.287 0 0 0 0 8.8 6.105 6.105 0 0 0 8.7 0 6.284 6.284 0 0 0 0-8.805zM7.14 9.842a.63.63 0 0 1-.464.233h-.023a.624.624 0 0 1-.456-.2L4.564 8.141a.641.641 0 0 1 .022-.9.625.625 0 0 1 .89.022l1.142 1.213 3.151-3.888a.626.626 0 0 1 .887-.088.642.642 0 0 1 .087.9z"/></symbol><symbol viewBox="0 0 15.063 12" id="menu_icon"><path d="M215.1 209.986h-13.112a.992.992 0 0 1 0-1.983H215.1a.992.992 0 0 1 0 1.983zm0-5h-13.112a.992.992 0 0 1 0-1.983H215.1a.992.992 0 0 1 0 1.983zM201.988 213H215.1a.992.992 0 0 1 0 1.983h-13.112a.992.992 0 0 1 0-1.983z" transform="translate(-201 -203)"/></symbol><symbol viewBox="0 0 14.969 15" id="phone_back_icon"><path d="M14.909 11.5a7.844 7.844 0 0 1-1.777 2.734 8.049 8.049 0 0 1-.712.627l-.168.132-.431.008a11.769 11.769 0 0 1-8.147-3.632l-.047-.049A11.679 11.679 0 0 1 0 2.949l.006-.216.133-.169a8.065 8.065 0 0 1 .624-.709A7.861 7.861 0 0 1 3.498.073a1.152 1.152 0 0 1 .421-.074 1.481 1.481 0 0 1 1.329.727c.351.975.8 2.251 1.119 3.475a1.56 1.56 0 0 1-.477 1.474l-1.14.724a.869.869 0 0 0 .155.39 16.035 16.035 0 0 0 1.522 1.785 15.8 15.8 0 0 0 1.771 1.511.652.652 0 0 0 .357.135.165.165 0 0 0 .064-.009l.7-1.115a1.535 1.535 0 0 1 1.195-.5 1.139 1.139 0 0 1 .251.026 16.234 16.234 0 0 1 3.544 1.144 1.541 1.541 0 0 1 .6 1.734zm-1.262-.615a15.1 15.1 0 0 0-3.167-1 1.369 1.369 0 0 0-.152.031l-.647 1.023a1.582 1.582 0 0 1-2.241.2 17 17 0 0 1-1.923-1.641 17.368 17.368 0 0 1-1.652-1.937 1.829 1.829 0 0 1-.355-1.412 1.243 1.243 0 0 1 .557-.834l1.02-.647a.778.778 0 0 0 .026-.178c-.284-1.061-.686-2.226-1.017-3.151a.564.564 0 0 0-.175-.038 6.617 6.617 0 0 0-2.244 1.478c-.13.131-.258.272-.388.427a10.63 10.63 0 0 0 3.252 7.212l.063.064a10.467 10.467 0 0 0 7.188 3.234c.152-.126.295-.257.429-.389a6.582 6.582 0 0 0 1.486-2.288c-.007-.015-.032-.095-.06-.158zm-1.449-2.719a.645.645 0 0 1-.879-.944l.5-.464H8a.646.646 0 0 1 0-1.291h3.821l-.5-.467a.645.645 0 0 1 .879-.944l1.7 1.583a.647.647 0 0 1 0 .945zm1.257-5.122h-3.82l.5.466a.645.645 0 1 1-.879.945l-1.7-1.584a.646.646 0 0 1 0-.944l1.7-1.583a.645.645 0 1 1 .879.945l-.5.464h3.818a.646.646 0 0 1 .002 1.287z"/></symbol><symbol viewBox="0 0 13.344 13" id="phone_icon"><path d="M10.531 13.003a10.616 10.616 0 0 1-7.259-3.15l-.041-.043a10.02 10.02 0 0 1-3.23-7.258v-.186l.119-.147a6.952 6.952 0 0 1 .556-.615A7.03 7.03 0 0 1 3.113.058a1.07 1.07 0 0 1 .375-.064 1.332 1.332 0 0 1 1.184.629c.314.85.71 1.957 1 3.016a1.318 1.318 0 0 1-.425 1.278l-1.016.628a.739.739 0 0 0 .137.339 12.976 12.976 0 0 0 2.935 2.859.581.581 0 0 0 .317.118l.352-.479.324-.5a1.391 1.391 0 0 1 1.066-.437 1.009 1.009 0 0 1 .223.022 14.748 14.748 0 0 1 3.157.992 1.317 1.317 0 0 1 .538 1.506 6.818 6.818 0 0 1-1.583 2.371 7.084 7.084 0 0 1-.634.544l-.15.115-.384.006zM1.148 2.765a9.107 9.107 0 0 0 2.9 6.257l.056.054a9.441 9.441 0 0 0 6.4 2.807c.134-.109.262-.222.382-.338a5.71 5.71 0 0 0 1.324-1.984c-.007 0-.029-.073-.053-.128a13.764 13.764 0 0 0-2.822-.872 1.1 1.1 0 0 0-.135.028l-.578.887a1.435 1.435 0 0 1-2 .169 14.089 14.089 0 0 1-3.185-3.1 1.553 1.553 0 0 1-.316-1.225 1.076 1.076 0 0 1 .5-.724l.91-.565a.571.571 0 0 0 .022-.155c-.252-.916-.609-1.928-.9-2.733a.533.533 0 0 0-.156-.032 5.894 5.894 0 0 0-2 1.281 5.435 5.435 0 0 0-.346.371z"/></symbol><symbol viewBox="0 0 15 15" id="refresh_icon"><path d="M13.782 7.524a.594.594 0 1 1 1.187 0 7.451 7.451 0 0 1-.568 2.856 7.476 7.476 0 0 1-13.815 0 7.446 7.446 0 0 1 0-5.719l.012-.031A7.485 7.485 0 0 1 4.635.613a7.479 7.479 0 0 1 5.718 0l.034.015a7.531 7.531 0 0 1 1.959 1.2L14 .18a.591.591 0 0 1 .838 0 .6.6 0 0 1 .174.418v4.116a.6.6 0 0 1-.593.593H10.3a.6.6 0 0 1-.594-.593.587.587 0 0 1 .177-.419l1.618-1.619a6.375 6.375 0 0 0-1.576-.959l-.027-.008a6.328 6.328 0 0 0-4.811 0 6.336 6.336 0 0 0-3.4 3.382l-.01.029a6.282 6.282 0 0 0 0 4.807 6.354 6.354 0 0 0 3.41 3.407 6.308 6.308 0 0 0 8.221-3.41 6.27 6.27 0 0 0 .471-2.4zm-2.047-3.4h2.092V2.03q-1.048 1.046-2.092 2.091z"/></symbol><symbol viewBox="0 0 14.155 14.155" id="reset_icon"><path d="M12.083 1.887A7.054 7.054 0 0 0 9.356.19v2.135c.48.239.935.55 1.334.95a5.118 5.118 0 0 1 0 7.229 5.123 5.123 0 0 1-7.229 0 5.121 5.121 0 0 1 0-7.229c.005-.006.021-.016.028-.025h.002l1.181 1.179L4.665.685.923.68l1.176 1.176a.118.118 0 0 1-.027.031 7.078 7.078 0 1 0 10.011 0z"/></symbol><symbol viewBox="0 0 16.94 17" id="search_icon"><path d="M16.7 16.788a.766.766 0 0 1-.53.214.726.726 0 0 1-.52-.214l-3.79-3.743a7.255 7.255 0 1 1 2.9-5.756 7.183 7.183 0 0 1-1.82 4.747l3.76 3.716a.725.725 0 0 1 0 1.036zM7.37 1.454a5.836 5.836 0 1 0 5.91 5.836 5.878 5.878 0 0 0-5.91-5.836zM3.22 7.288h-.74A4.874 4.874 0 0 1 7.37 2.45v.733a4.132 4.132 0 0 0-4.15 4.105z"/></symbol><symbol viewBox="0 0 3.969 6" id="separate_icon"><path data-name="Shape 21 copy 6" class="bbcls-1" d="M.699 6.007a.756.756 0 0 1-.518-.2.658.658 0 0 1 0-.972l2.028-1.841-2.028-1.84a.658.658 0 0 1 0-.972.767.767 0 0 1 1.035 0l2.546 2.326a.659.659 0 0 1 0 .972L1.216 5.807a.756.756 0 0 1-.517.2z"/></symbol><symbol viewBox="0 0 12.343 16" id="user_icon"><path d="M714.291 1657.85a.7.7 0 0 1-.712.65h-10.435a.705.705 0 0 1-.712-.65l-.229-3.26a3.291 3.291 0 0 1 2.1-3.03 12.446 12.446 0 0 1 8.108 0 3.273 3.273 0 0 1 2.106 3.03zm-2.366-4.99a11.033 11.033 0 0 0-7.134 0 1.914 1.914 0 0 0-1.165 1.64l.184 2.61h9.1l.183-2.61a1.9 1.9 0 0 0-1.168-1.64zm-3.5-2.93a3.733 3.733 0 1 1 3.422-3.72 3.585 3.585 0 0 1-3.426 3.72zm0-6.06a2.37 2.37 0 1 0 2 2.34 2.192 2.192 0 0 0-2.004-2.34z" transform="translate(-702.188 -1642.5)"/></symbol><symbol viewBox="0 0 12 5" id="width_icon"><path d="M746.005 1035.5a.5.5 0 0 1-.153.36l-2.019 2a.529.529 0 0 1-.738 0 .512.512 0 0 1 0-.73l1.129-1.12h-8.442l1.129 1.12a.512.512 0 0 1 0 .73.529.529 0 0 1-.738 0l-2.019-2a.512.512 0 0 1 0-.73l2.019-1.99a.529.529 0 0 1 .738 0 .512.512 0 0 1 0 .73l-1.129 1.11h8.442l-1.129-1.11a.512.512 0 0 1 0-.73.529.529 0 0 1 .738 0l2.019 1.99a.538.538 0 0 1 .153.37z" transform="translate(-734 -1033)"/></symbol>
+            	<symbol viewbox="0 0 24 24" id="close"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></symbol>
+            	<symbol viewbox="0 0 42 30" id="menu"><title>menu</title><g transform="matrix(.8 0 0 .8 5 -.6)"><path d="M0 8.25h40v2.5H0zM0 18.25h30v2.5H0zM0 28.25h40v2.5H0z"/></g></symbol>
+            	<symbol viewbox="0 0 24 24" id="2top"><path d="M20 17.798q0 .188-.16.333l-.802.724q-.16.145-.368.145t-.368-.145L12 13.16l-6.302 5.696Q5.538 19 5.33 19t-.368-.145l-.802-.724Q4 17.986 4 17.798q0-.189.16-.333l7.472-6.754q.16-.145.368-.145t.368.145l7.472 6.754q.16.144.16.333zm0-5.566q0 .188-.16.333l-.802.724q-.16.145-.368.145t-.368-.145L12 7.593l-6.302 5.696q-.16.145-.368.145t-.368-.145l-.802-.724Q4 12.42 4 12.232q0-.188.16-.333l7.472-6.754Q11.792 5 12 5t.368.145l7.472 6.754q.16.145.16.333z"/></symbol></svg>    	
+    <!--[if lt IE 9]>
+<div class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш браузер</a> и смотрите на мир в цвете.</div>
+<![endif]-->    
+    <div class="b-scroll-wrapper">
+
+        <div class="b-aside-menu">
+    <div class="b-aside-menu__content">
+        <div class="b-aside-menu__close">
+            <div class="svg-icon svg-icon--close"><svg class="svg-icon__link"><use xlink:href="#close"/></svg></div>
+        </div>
+        <div class="b-aside-menu__navs">
+            <div class="b-aside-menu__scroller">
+                <div class="b-aside-menu__head">
+                    <a class="b-aside-menu__logo-link" href="http://eurovazon.ru"> <span class="svg-icon svg-icon--logo_icon"><svg class="svg-icon__link"><use xlink:href="#logo_icon" /></svg></span> </a>
+                    <div class="b-aside-menu-phone">
+                        <div class="b-aside-menu-phone__item"><a href="tel:+7(812)308-33-00"><span class="app-header__phone app-header__phone1">+7(812)308-33-00</span></a> Отдел продаж</div>
+                        <!-- <= item -->
+                        <div class="b-aside-menu-phone__item"><a href="tel:+7(812)918-71-03"><span class="app-header__phone app-header__phone2">+7(812)918-71-03</span></a> Клиентский отдел</div>
+                        <!-- <= item -->
+                    </div>
+                </div>
+                <div class="b-aside-menu__scroller-content"></div>
+            </div>
+        </div>
+    </div>
+    <div class="b-aside-menu__overlay"></div>
+</div>
+<div class="mobile-header" id="mobile-header" data-headroom="">
+    <div class="mobile-header__toolbar">
+        <div class="b-aside-menu-btn"> <span class="svg-icon svg-icon--menu"><svg class="svg-icon__link"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"/></svg></span> Меню </div>
+        <!-- b-aside-menu-btn -->
+        <div class="toolbar-right-actions">
+        	<div class="toolbar-button me-cart-trigger">
+        		<div class="basket-icon">
+					<svg class="toolbar-button-icon" xmlns="http://www.w3.org/2000/svg" width="22.97" height="19" viewBox="0 0 22.97 19">
+					  <path class="cls-1" d="M1063.77,369.608h-12.19a0.9,0.9,0,0,1-.87-0.665l-2.32-8.4a0.89,0.89,0,0,1,.15-0.788,0.907,0.907,0,0,1,.72-0.357h16.83a0.907,0.907,0,0,1,.72.357,0.89,0.89,0,0,1,.15.788l-2.32,8.4a0.9,0.9,0,0,1-.87.665h0Zm-11.5-1.81h10.81l1.82-6.59h-14.45l1.82,6.59h0Zm-0.69,1.81a0.9,0.9,0,0,1-.87-0.666l-3.03-11.019-2.81-.123a0.9,0.9,0,0,1-.87-0.944,0.871,0.871,0,0,1,.94-0.864l3.48,0.151a0.921,0.921,0,0,1,.84.664l3.2,11.656a0.913,0.913,0,0,1-.64,1.113,0.943,0.943,0,0,1-.24.032h0Zm2.17,5.383a2.488,2.488,0,1,1,2.49-2.488,2.5,2.5,0,0,1-2.49,2.488h0Zm0-3.167a0.679,0.679,0,1,0,.68.679,0.677,0.677,0,0,0-.68-0.679h0Zm7.55,3.167a2.488,2.488,0,1,1,2.5-2.488,2.494,2.494,0,0,1-2.5,2.488h0Zm0-3.167a0.679,0.679,0,1,0,.68.679,0.684,0.684,0,0,0-.68-0.679h0Zm12.14-4665.654V10528.9" transform="translate(-1044 -356)"/>
+					</svg>
+					<div class="small-basket__counter">
+						0
+					</div>				
+				</div>
+                <div class="toolbar-button-dropdown">
+                    <div class="small-basket__popup">
+						<div class="small-basket__items ev_load_smallcart">
+													
+						</div>
+						<div class="small-basket__total">
+							Итого <span class="count">0</span> товара на сумму: <span class="total">0 р.</span>
+						</div>
+						<button class="small-basket__button" onclick="location.href='/magazin/cart'; return false;">Оформить заказ</button>
+					</div>
+                </div>
+            </div>
+            <div class="toolbar-button location-popup">
+                <div class="svg-icon svg-icon--address_icon toolbar-button-icon"><svg class="svg-icon__link"><use xlink:href="#address_icon" /></svg></div>
+            </div>
+            <div class="toolbar-button need-autorization">
+                <div class="svg-icon svg-icon--user_icon toolbar-button-icon"><svg class="svg-icon__link"><use xlink:href="#user_icon" /></svg></div>
+            </div>
+            <div class="toolbar-button phone-back" data-url="/obratnyy-zvonok">
+                <div class="svg-icon svg-icon--phone_back_icon toolbar-button-icon"><svg class="svg-icon__link"><use xlink:href="#phone_back_icon" /></svg></div>
+            </div>
+            <div class="toolbar-button me-feedback-trigger"> <svg class="toolbar-button-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewbox="0 0 20 20">
+					<path d="M17.256 12.253c-0.096-0.667-0.611-1.187-1.274-1.342-2.577-0.604-3.223-2.088-3.332-3.734-0.457-0.085-1.27-0.177-2.65-0.177s-2.193 0.092-2.65 0.177c-0.109 1.646-0.755 3.13-3.332 3.734-0.663 0.156-1.178 0.675-1.274 1.342l-0.497 3.442c-0.175 1.212 0.715 2.305 1.953 2.305h11.6c1.237 0 2.128-1.093 1.953-2.305l-0.497-3.442zM10 15.492c-1.395 0-2.526-1.12-2.526-2.5s1.131-2.5 2.526-2.5 2.526 1.12 2.526 2.5-1.132 2.5-2.526 2.5zM19.95 6c-0.024-1.5-3.842-3.999-9.95-4-6.109 0.001-9.927 2.5-9.95 4s0.021 3.452 2.535 3.127c2.941-0.381 2.76-1.408 2.76-2.876 0-1.024 2.392-1.271 4.655-1.271s4.654 0.247 4.655 1.271c0 1.468-0.181 2.495 2.76 2.876 2.513 0.325 2.558-1.627 2.535-3.127z"/>
+				</svg>
+                <div class="toolbar-button-dropdown">
+                    <div class="toolbar-button-phones">
+                    	<!-- noindex -->
+                    	<div class="city-phones">
+                    					    				    			<div class="city-phones__item" data-num="0">
+			    				<div class="city-phones__head">Санкт-Петербург</div>
+			    				<div><a href="tel:78123083300">+78123083300</a> Отдел продаж</div>
+                        		<div><a href="tel:78129187103">+78129187103</a> Клиентский отдел</div>	
+                    		</div>
+				        				        </div>
+                        <!-- /noindex -->
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar-button me-search-trigger"> <svg class="toolbar-button-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewbox="0 0 16 16">
+					<path d="M15.56 15.56c-0.587 0.587-1.538 0.587-2.125 0l-2.652-2.652c-1.090 0.699-2.379 1.116-3.771 1.116-3.872 0-7.012-3.139-7.012-7.012s3.14-7.012 7.012-7.012c3.873 0 7.012 3.139 7.012 7.012 0 1.391-0.417 2.68-1.116 3.771l2.652 2.652c0.587 0.587 0.587 1.538 0 2.125zM7.012 2.003c-2.766 0-5.009 2.242-5.009 5.009s2.243 5.009 5.009 5.009c2.766 0 5.009-2.242 5.009-5.009s-2.242-5.009-5.009-5.009z"/>
+				</svg> Поиск <div class="toolbar-button-dropdown">
+					<form class="mobile-search-form" action="/search" method="get">
+                    	<input class="mobile-search-form__input" name="search" type="text" placeholder="Поиск">
+                    	<button class="mobile-search-form__submit site-btn" type="submit">Найти</button>
+                	</form><!-- /mobile-search-form -->
+				</div> </div>
+            <!-- /me-search-trigger -->
+        </div>
+        <!-- toolbar-right-actions -->
+    </div>
+</div>
+<!-- /mobile-header -->        <header class="site-width app-header">
+    <a class="app-header__logo" href="/">
+    	<span class="svg-icon svg-icon--logo_icon">
+    		<svg class="svg-icon__link"><use xlink:href="#logo_icon" /></svg>
+    	</span>
+    </a>
+    <!-- <= logo -->
+        	<div class="app-header__activity">Производство малых архитектурных форм премиум класса</div>
+        <!-- <= activity -->
+    <div class="app-header__button-part">
+        <a class="location-popup app-header__button app-header__button--city" href="#"> <span class="svg-icon svg-icon--address_icon"><svg class="svg-icon__link"><use xlink:href="#address_icon" /></svg></span> <span class="app-header__button-text app-header__cities-name">Санкт-петербург</span> </a>
+        <!-- <= button -->
+                <a class="phone-back app-header__button app-header__button--phone-back" href="#" data-url="/obratnyy-zvonok" data-current-url="eurovazon.ru/dostavka"> <span class="svg-icon svg-icon--phone_back_icon"><svg class="svg-icon__link"><use xlink:href="#phone_back_icon" /></svg></span> <span class="app-header__button-text">Обратный звонок</span> </a>
+        <!-- <= button -->
+    </div>
+    <!-- <= button-part -->
+        <div class="app-header__phone-block">
+        <div class="svg-icon svg-icon--phone_icon"><svg class="svg-icon__link"><use xlink:href="#phone_icon" /></svg></div>
+                <div class="app-header__phone-item">
+        	<span class="app-header__phone app-header__phone1">+7(812)308-33-00</span> Отдел продаж
+        </div>
+                        <!-- <= phone-item -->
+        <div class="app-header__phone-item">
+        	<span class="app-header__phone app-header__phone2">+7(812)918-71-03</span> Клиентский отдел
+        </div>
+                <!-- <= phone-item -->
+    </div>
+    <!-- <= phone -->
+	</header>
+<!-- /app-header -->		<div class="header-menu header-menu--fixed">
+    <nav class="site-width header-menu__content">
+    
+        
+		
+		<ul class="header-menu__list">
+				    		    		    <li><a href="/o_nas" ><img src="/d/1621441/d/menu_icon5.svg" alt="О нас">О нас</a>
+		    		    				    		        		            <ul>
+		        		    		    		    <li><a href="/novosti-1" >Новости</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/nashi-raboty-1" >Наши работы</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/interesnye_fakty" >Статьи</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/dostavka" >Доставка</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/garantiya-1" >Гарантия</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/fotogalereya-1" >Фотогалерея</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/kontakty" >Контакты</a>
+		    		    				    		        		            </li>
+		            		                </ul></li>
+		            		        		    		    		    <li><a href="/sertifikaty" ><img src="/d/1621441/d/menu_icon7.svg" alt="Сертификаты">Сертификаты</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/otzyvy" ><img src="/d/1621441/d/menu_icon6.svg" alt="Отзывы">Отзывы</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/stati" ><img src="/d/1621441/d/menu_icon8.svg" alt="Статьи">Статьи</a>
+		    		    				    		        		            </li>
+		            		        		    		    		    <li><a href="/novosti" ><img src="/d/1621441/d/menu_icon9.svg" alt="Новости">Новости</a>
+		    		    				</li>
+						<li><a href="#" class="need-autorization">
+		    	<img src="/d/1621441/t/v2108/images/files/menu_icon10.svg" alt="Авторизация">
+		    	Авторизация
+		    </a></li>
+		    		</ul>
+			    <!-- <= list -->
+	    <form class="site-search" action="/search"> <input type="text" name="search" placeholder="Поиск">
+	    	<button type="submit">
+				<span class="svg-icon svg-icon--search_icon"><svg class="svg-icon__link"><use xlink:href="#search_icon" /></svg></span>
+			</button>
+		</form>
+	    <!-- /site-search -->
+	    
+	            <div class="app-header__phone-item">
+        	Отдел продаж: <span class="app-header__phone app-header__phone1">+7(812)308-33-00</span> <span class="delimiter">/</span> <span class="app-header__phone app-header__phone2">+7(812)918-71-03</span>
+        </div>
+                <a class="phone-back app-header__button app-header__button--phone-back" href="#" data-url="/obratnyy-zvonok"> <span class="svg-icon svg-icon--phone_back_icon"><svg class="svg-icon__link"><use xlink:href="#phone_back_icon" /></svg></span> <span class="app-header__button-text">Обратный звонок</span> </a>
+        <!-- <= button -->
+        		<a href="#" class="need-autorization autorization-button">
+	    	<img src="/d/1621441/t/v2108/images/files/menu_icon10.svg" alt="Авторизация">
+	    	Авторизация
+	    </a>
+	    
+
+		
+        </nav>
+    <!-- <= content -->
+</div>
+<!-- /header-menu -->		<div class="header-menu header-menu--passive">
+    <nav class="site-width header-menu__content">
+    
+        
+	
+    	<div class="folder-category">
+            <a href="/internet-magazin" class="folder-category__button"><span class="svg-icon svg-icon--menu_icon"><svg class="svg-icon__link"><use xlink:href="#menu_icon" /></svg></span>Каталог</a>
+            <!-- <= button -->
+            <div class="folder-category__content">
+			<ul class="folder-category__list">
+						    			    						    				    			    <li><a href="/internet-magazin/folder/tsveta_faktury">Цвета и фактуры</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/skameyki">Скамейки</a>
+			    			    						    				    				        				            <ul>
+				        				    			    <li><a href="/internet-magazin/folder/skameyki-betonnyye-proizvoditel-yevrovazon">Скамейки бетонные</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/skameyki-metallicheskiye-proizvoditel-yevrovazon">Скамейки металлические</a>
+			    			    						    				    				        				            </li>
+				            				                </ul></li>
+				            				        				    			    <li><a href="/internet-magazin/folder/tsvetochnyye-vazony">Цветочные вазоны</a>
+			    			    						    				    				        				            <ul>
+				        				    			    <li><a href="/internet-magazin/folder/bolshiye-vazony">Большие вазоны</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/sredniye-vazony">Средние вазоны</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/malyye-vazony">Малые вазоны</a>
+			    			    						    				    				        				            </li>
+				            				                </ul></li>
+				            				        				    			    <li><a href="/internet-magazin/folder/tsvetochnyye-kompleksy">Цветочные комплексы</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/ograzhdeniya-1">Ограждения</a>
+			    			    						    				    				        				            <ul>
+				        				    			    <li><a href="/internet-magazin/folder/stolbiki-betonnyye">Столбики бетонные</a>
+			    			    						    				    				        				            </li>
+				            				                </ul></li>
+				            				        				    			    <li><a href="/internet-magazin/folder/urny">Урны и пепельницы</a>
+			    			    						    				    				        				            <ul>
+				        				    			    <li><a href="/internet-magazin/folder/urny-proizvoditel-yevrovazon">Урны бетонные</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/urny-derevyannyye-proizvoditel-yevrovazon">Урны деревянные</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/pepelnitsy-1">Пепельницы</a>
+			    			    						    				    				        				            </li>
+				            				                </ul></li>
+				            				        				    			    <li><a href="/internet-magazin/folder/yevropeyskiye-zabory">Заборные блоки и навершия</a>
+			    			    						    				    				        				            <ul>
+				        				    			    <li><a href="/internet-magazin/folder/bloki-dlya-zabora-1">Блоки для забора</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/navershiya-dlya-stolbov-i-zabora">Навершия для столбов и забора</a>
+			    			    						    				    				        				            </li>
+				            				                </ul></li>
+				            				        				    			    <li><a href="/internet-magazin/folder/trotuarnaya-i-fasadnaya-plitka">Тротуарная плитка</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/fasadnaya-plitka">Фасадная плитка</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/trotuarnaya-plitka-dlya-ekspluatiruyemoy-krovli">Плитка для эксплуатируемой кровли</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/bordyur">Бордюры</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/stupeni-i-lestnichnyye-marshi">Ступени</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/kosoury">Косоуры</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/parkovka-dlya-velosipedov">Парковки для велосипедов</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/tsvetniki">Цветники</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/fontany">Фонтаны</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/stoly">Столы</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/informatsionnyy-shchit">Рекламные щиты</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/opornyye">Опорные, подпорные стенки</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/zashchita-dlya-ulichnykh-derevyev">Приствольные ограждения деревьев</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/ognennyye-chashi">Огненные чаши</a>
+			    			    						    				    				        				            </li>
+				            				        				    			    <li><a href="/internet-magazin/folder/pechi-barbekyu">Барбекю</a>
+			    			    									</li></ul>                        	
+			<!-- <= list -->
+            </div>
+            <!-- <= content -->
+        </div>
+        <!-- /folder-category -->
+        
+        <ul class="header-menu__list">
+        					<li>
+					<a href="/dostavka">
+						<img src="/d/1621441/d/menu_icon1.svg" alt="Доставка">Доставка
+					</a>
+				</li>
+							<li>
+					<a href="/garantiya">
+						<img src="/d/1621441/d/menu_icon2.svg" alt="Гарантия">Гарантия
+					</a>
+				</li>
+							<li>
+					<a href="/nashi-raboty">
+						<img src="/d/1621441/d/menu_icon3.svg" alt="Наши работы">Наши работы
+					</a>
+				</li>
+							<li>
+					<a href="/kontakty">
+						<img src="/d/1621441/d/menu_icon4.svg" alt="Контакты">Контакты
+					</a>
+				</li>
+			        </ul>
+        <!-- <= list -->
+        
+        <div class="small-basket" id="shop2-cart-preview">
+	<div class="small-basket__inner">
+		<span class="svg-icon svg-icon--basket">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22.97" height="19" viewBox="0 0 22.97 19">
+			  <path class="cls-1" d="M1063.77,369.608h-12.19a0.9,0.9,0,0,1-.87-0.665l-2.32-8.4a0.89,0.89,0,0,1,.15-0.788,0.907,0.907,0,0,1,.72-0.357h16.83a0.907,0.907,0,0,1,.72.357,0.89,0.89,0,0,1,.15.788l-2.32,8.4a0.9,0.9,0,0,1-.87.665h0Zm-11.5-1.81h10.81l1.82-6.59h-14.45l1.82,6.59h0Zm-0.69,1.81a0.9,0.9,0,0,1-.87-0.666l-3.03-11.019-2.81-.123a0.9,0.9,0,0,1-.87-0.944,0.871,0.871,0,0,1,.94-0.864l3.48,0.151a0.921,0.921,0,0,1,.84.664l3.2,11.656a0.913,0.913,0,0,1-.64,1.113,0.943,0.943,0,0,1-.24.032h0Zm2.17,5.383a2.488,2.488,0,1,1,2.49-2.488,2.5,2.5,0,0,1-2.49,2.488h0Zm0-3.167a0.679,0.679,0,1,0,.68.679,0.677,0.677,0,0,0-.68-0.679h0Zm7.55,3.167a2.488,2.488,0,1,1,2.5-2.488,2.494,2.494,0,0,1-2.5,2.488h0Zm0-3.167a0.679,0.679,0,1,0,.68.679,0.684,0.684,0,0,0-.68-0.679h0Zm12.14-4665.654V10528.9" transform="translate(-1044 -356)"/>
+			</svg>
+		</span>
+		<div class="small-basket__counter">0</div>
+	</div>
+	<div class="small-basket__popup">
+		<div class="small-basket__items ev_load_smallcart">
+			<img src="/shared/images/preloader.gif" alt="загрузка корзины" style="width: 25px; margin: 25px auto; display: block;">
+		</div>
+		<div class="small-basket__total">
+			Итого <span class="count">0</span> товара на сумму: <span class="total">0 р.</span>
+		</div>
+			</div>
+</div><!-- Cart Preview -->        
+        
+        </nav>
+    <!-- <= content -->
+</div>
+<!-- /header-menu -->
+        <div class="app-body">
+            <main class="app-content site-width">
+
+				
+                <div class="site-path"><a class="site-path__home" href="/"><span class="svg-icon svg-icon--home_icon"><svg class="svg-icon__link"><use xlink:href="#home_icon" /></svg></span></a><span class="svg-icon svg-icon--separate_icon"><svg class="svg-icon__link"><use xlink:href="#separate_icon" /></svg></span>Доставка</div>                
+                                	<h1>Доставка</h1>
+                                
+                
+
+
+
+<p>- В стоимость продукции ООО &laquo;Евровазон&raquo; не входят услуги по доставке, разгрузке и расстановке изделий.&nbsp;</p>
+<p>- По Санкт-Петербургу и Ленинградской области возможна доставка с использованием манипулятора.</p>
+<p>- Для доставки по иным регионам мы сотрудничаем с ведущими транспортными компаниями России.</p>
+<p>- Продукция компании Евровазон отгружается на паллетах, если иного не указывает заказчик.</p>
+<p>- Точное количество паллетов и вес продукции определяется по факту ее изготовления и упаковки.</p>
+<h3><strong>Примерные сроки доставки груза по городам&nbsp;из Санкт-Петербурга Первой Экспедиционной Компанией (ПЭК)</strong></h3>
+<table align="center" border="0" class="tabler" style="width: 100%;">
+<tbody>
+<tr><th><strong>Город получатель</strong></th><th><strong>срок</strong></th></tr>
+<tr>
+<td>Армавир</td>
+<td>5,5-6 суток</td>
+</tr>
+<tr>
+<td>Архангельск</td>
+<td>3 суток</td>
+</tr>
+<tr>
+<td>Астрахань</td>
+<td>2,5-3 суток</td>
+</tr>
+<tr>
+<td>Барнаул</td>
+<td>7 суток</td>
+</tr>
+<tr>
+<td>Буденновск</td>
+<td>3,5-4 суток</td>
+</tr>
+<tr>
+<td>Белгород</td>
+<td>1,5 суток</td>
+</tr>
+<tr>
+<td>Великий Новгород</td>
+<td>1 сутки</td>
+</tr>
+<tr>
+<td>Волгоград</td>
+<td>2-2,5 суток</td>
+</tr>
+<tr>
+<td>Вологда</td>
+<td>1 сутки</td>
+</tr>
+<tr>
+<td>Воронеж</td>
+<td>1-1,5 суток</td>
+</tr>
+<tr>
+<td>Екатеринбург</td>
+<td>3-3,5 суток</td>
+</tr>
+<tr>
+<td>Ижевск</td>
+<td>2,5-3 суток</td>
+</tr>
+<tr>
+<td>Иркутск</td>
+<td>9 суток</td>
+</tr>
+<tr>
+<td>Казань</td>
+<td>1,5-2 суток</td>
+</tr>
+<tr>
+<td>Калининград</td>
+<td>5 суток</td>
+</tr>
+<tr>
+<td>Кемерово</td>
+<td>7 суток</td>
+</tr>
+<tr>
+<td>Киров</td>
+<td>2-2,5 суток</td>
+</tr>
+<tr>
+<td>Курган</td>
+<td>4-4,5 суток</td>
+</tr>
+<tr>
+<td>Курск</td>
+<td>1 сутки</td>
+</tr>
+<tr>
+<td>Краснодар</td>
+<td>2-2,5 суток</td>
+</tr>
+<tr>
+<td>Красноярск</td>
+<td>8 суток</td>
+</tr>
+<tr>
+<td>Мурманск</td>
+<td>3-4 суток</td>
+</tr>
+<tr>
+<td>Набережные Челны</td>
+<td>2-2,5 суток</td>
+</tr>
+<tr>
+<td>Нальчик</td>
+<td>3-3,5 суток</td>
+</tr>
+<tr>
+<td>Невинномысск</td>
+<td>3,5-4 суток</td>
+</tr>
+<tr>
+<td>Нефтекамск</td>
+<td>3 суток</td>
+</tr>
+<tr>
+<td>Нижний Новгород</td>
+<td>1 сутки</td>
+</tr>
+<tr>
+<td>Нижний Тагил</td>
+<td>4 суток</td>
+</tr>
+<tr>
+<td>Новокузнецк</td>
+<td>7 суток</td>
+</tr>
+<tr>
+<td>Новороссийск</td>
+<td>3 суток</td>
+</tr>
+<tr>
+<td>Новосибирск</td>
+<td>5-5,5 суток</td>
+</tr>
+<tr>
+<td>Омск</td>
+<td>4,5-5 суток</td>
+</tr>
+<tr>
+<td>Оренбург</td>
+<td>3,5 суток</td>
+</tr>
+<tr>
+<td>Орел</td>
+<td>1 сутки</td>
+</tr>
+<tr>
+<td>Орск</td>
+<td>3,5-4 суток</td>
+</tr>
+<tr>
+<td>Пенза</td>
+<td>1-1,5 суток</td>
+</tr>
+<tr>
+<td>Пермь</td>
+<td>3-3,5 суток</td>
+</tr>
+<tr>
+<td>Петрозаводск</td>
+<td>2 суток</td>
+</tr>
+<tr>
+<td>Пятигорск</td>
+<td>2,5-3 суток</td>
+</tr>
+<tr>
+<td>Ростов-на-Дону</td>
+<td>1,5-2 суток</td>
+</tr>
+<tr>
+<td>Самара</td>
+<td>2,5-3 суток</td>
+</tr>
+<tr>
+<td>Санкт-Петербург</td>
+<td>1 сутки</td>
+</tr>
+<tr>
+<td>Саратов</td>
+<td>1,5-2 суток</td>
+</tr>
+<tr>
+<td>Северодвинск</td>
+<td>3,5 суток</td>
+</tr>
+<tr>
+<td>Сочи</td>
+<td>2,5-3 суток</td>
+</tr>
+<tr>
+<td>Ставрополь</td>
+<td>2,5-3 суток</td>
+</tr>
+<tr>
+<td>Сургут</td>
+<td>6 суток</td>
+</tr>
+<tr>
+<td>Сыктывкар</td>
+<td>3-3,5 суток</td>
+</tr>
+<tr>
+<td>Тольятти</td>
+<td>2,5-3 суток</td>
+</tr>
+<tr>
+<td>Томск</td>
+<td>7 суток</td>
+</tr>
+<tr>
+<td>Тюмень</td>
+<td>4-4,5 суток</td>
+</tr>
+<tr>
+<td>Ульяновск</td>
+<td>2-2,5 суток</td>
+</tr>
+<tr>
+<td>Уфа</td>
+<td>3-3,5 суток</td>
+</tr>
+<tr>
+<td>Хабаровск</td>
+<td>12 суток</td>
+</tr>
+<tr>
+<td>Чебоксары</td>
+<td>1,5-2 суток</td>
+</tr>
+<tr>
+<td>Челябинск</td>
+<td>3 суток</td>
+</tr>
+<tr>
+<td>Череповец</td>
+<td>1 сутки</td>
+</tr>
+<tr>
+<td>Ярославль</td>
+<td>1 сутки</td>
+</tr>
+</tbody>
+</table>
+<p><strong>* Указаны ориентировочные сроки доставки груза по городам&nbsp;из Санкт-Петербурга с учетом разгрузки машины, для выдачи груза получателю.</strong></p>
+<p>&nbsp;</p>
+
+
+</main>
+		<!-- /app-content -->
+    </div>
+    <!-- /app-body -->
+
+    <footer class="app-footer">
+    <div class="app-footer__part app-footer__part--information">
+        <div class="site-width app-footer__part-inner">
+        	<table class="footer-menu"><tr><td><ul><li><a href="/o-kompanii">О нас</a><ul><li><a href="/novosti">Новости</a></li><li><a href="/nashi-raboty">Наши работы</a></li><li><a href="/stati">Статьи</a></li><li><a href="/dostavka">Доставка</a></li><li><a href="/garantiya">Гарантия</a></li><li><a href="/kontakty">Контакты</a></li></ul></ul></td><td><ul><li><a href="/internet-magazin/folder/tsvetochnyye-vazony">ЦВЕТОЧНЫЕ ВАЗОНЫ</a><ul><li><a href="/internet-magazin/folder/urny">УРНЫ</a></li><li><a href="/internet-magazin/folder/stolbiki-betonnyye">Ограждения</a></li><li><a href="/internet-magazin/folder/skameyki">Скамейки</a></li><li><a href="/internet-magazin/folder/stoly">Столы</a></li></ul></ul></td><td><ul><li><a href="/magazin/folder/trotuarnaya-i-fasadnaya-plitka">ПЛИТКА</a><ul><li><a href="/zabornyye-bloki">ЗАБОРНЫЕ БЛОКИ</a></li><li><a href="/magazin/folder/navershiya-dlya-zabora">Навершия для забора</a></li></ul></ul></td><td><ul><li><a href="/ognennyye-i-kostrovyye-chashi">ОГНЕННЫЕ И КОСТРОВЫЕ ЧАШИ</a><ul><li><a href="/fontany">ФОНТАНЫ</a></li></ul></li></ul></td></tr></table>            <div class="app-footer__information">
+                <div class="svg-icon svg-icon--logo_icon"><svg class="svg-icon__link"><use xlink:href="#logo_icon" /></svg></div>
+                <div class="app-footer__information-part">
+                    <div class="site-name">
+																								&copy; ООО "Евровазон" (www.eurovazon.ru)  2011 - 2018                     </div>
+                    <div class="social-block">
+                        <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                        <script src="//yastatic.net/share2/share.js"></script>
+                        <div class="ya-share2" data-services="facebook,twitter,tumblr,odnoklassniki,vkontakte"></div>
+                    </div>
+                    <p class="app-footer__warning">
+                    	Любое использование либо копирование материалов или подборки материалов
+                    	 сайта, элементов дизайна и оформления допускается лишь
+                    	 с разрешения правообладателя и только со ссылкой на источник:
+                    	www.eurovazon.ru
+                    	</p>
+                </div>
+                <!-- <= information-part -->
+                                <div class="footer-phone">
+                    <div class="svg-icon svg-icon--phone_icon"><svg class="svg-icon__link"><use xlink:href="#phone_icon" /></svg></div>
+                    <div class="footer-phone__title">Звоните нам</div>
+                    <!-- <= title -->
+										<p class="footer-phone-col c0">+7(812)308-33-00</p>
+										<p class="footer-phone-col c1">+7(812)918-71-03</p>
+					                </div>
+                <!-- /footer-phone -->
+                                <div class="footer-counter"><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46758951 = new Ya.Metrika({
+                    id:46758951,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46758951" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --><!--cms statistics-->
+			<script type="text/javascript"><!--
+			var megacounter_key="f45e307787e14bc2b63831e57fea49fa";
+			(function(d){
+				var s = d.createElement("script");
+				s.src = "//counter.megagroup.ru/loader.js?"+new Date().getTime();
+				s.async = true;
+				d.getElementsByTagName("head")[0].appendChild(s);
+			})(document);
+			//--></script>
+			<!--/cms statistics-->
+<!--__INFO2018-03-30 12:20:24INFO__-->
+</div>
+                <!-- /footer-counter -->
+            </div>
+            <!-- <= information -->
+        </div>
+        <!-- <= part-inner -->
+    </div>
+    <!-- <= part -->
+    <div class="app-footer__part app-footer__part--copyright">
+        <div class="site-width app-footer__part-inner">
+        	<div class="personal-information">
+				<a target="blank" href="http://eurovazon.oml.ru/users/agreement">Политика конфиденциальности</a>
+			</div>
+        	<a class="site-copyright" href="http://exclusive.megagroup.ru/" target="_blank">
+				Заказ, создание сайта:  exclusive.megagroup.ru
+			</a>
+		</div>
+        <!-- <= part-inner -->
+    </div>
+    <!-- <= part -->
+</footer>
+<!-- /app-footer -->
+</div>
+<!-- /b-scroll-wrapper -->
+        
+<div class="b-2top" id="b-2top" title="Наверх"></div>
+	<!-- /b-2top -->
+
+	<div class="remodal" data-remodal-id="phonePopup" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <div class="icon-close" data-remodal-action="close"></div>
+    <div class="remodal-title">Обратный звонок</div>
+    <div class="remodal-content">
+    	<div class="form-block call-back">
+    		
+    	</div>
+        <!-- /form-block -->
+    </div>
+</div>
+<!-- phonePopup modal -->
+<div class="remodal" data-remodal-id="locationPopup" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <div class="icon-close" data-remodal-action="close"></div>
+    <div class="remodal-title">Выбор города</div>
+    <div class="remodal-content">
+    	        	    		    					    	<div class="form-block__item">
+			    		<span>
+			    			Санкт-Петербург
+			    		</span>
+			    	</div>
+					        	    					    	<div class="form-block__item">
+			    		<a href="//msk.eurovazon.ru/">
+			    			Москва
+			    		</a>
+			    	</div>
+					        		        
+    </div>
+</div>
+<!-- locationPopup modal -->
+<div class="remodal remodal--autorization" data-remodal-id="autorizationPopup" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <div class="icon-close" data-remodal-action="close"></div>
+    <div class="remodal-content">
+        <div class="remodal-text">
+            <div class="remodal-title">Авторизация</div>
+            <p> Для получения полного доступа к уникальной информации (чертежы, схемы изделий) предалагем Вам пройти несложную процедуру <a href="/registraciya/register">регистрации</a> на нашем сайте </p>
+            <p> Если вы уже зарегистрированы на нашем сайте, но забыли пароль или Вам не пришло письмо подтверждения, воспользуйтесь формой восстановления пароля. </p>
+            <p> Если у Вас есть вопросы, пожалуйста, <br> пишите <a href="mailto:info@eurovazon.ru">info@eurovazon.ru</a> или звоните нам
+            				<a href="tel:+8(812)308-33-00" class="autorization--tel">+8(812)308-33-00</a>
+			            </p>
+        </div>
+        <div class="form-block authorization">
+        	<form method="post" class="tpl-form tpl-auth" action="/registraciya/login">
+		
+	<div class="tpl-left">
+		<div class="form-block__item">
+			<div class="form-block__title">Введите Ваш e-mail:</div>
+			<div class="form-block__text">
+				<input type="text" name="login" value="" />
+			</div>
+		</div>
+
+		<div class="form-block__item">
+			<div class="form-block__title">Введите Ваш пароль:</div>
+			<div class="form-block__text">
+				<input class="pull-left" type="password" name="password" />
+			</div>
+			
+		</div>
+		
+		<div class="form-block__button form-block__button--authorization">
+			<div class="form-block__text">
+				<button type="submit">Войти</button>
+			</div>
+			
+		</div>
+
+		<div class="form-block__item">
+			<label class="form-block__title">
+			<input type="checkbox" onclick="this.value=(this.value=='0'?'1':'0');" value="0" name="remember" />
+				Запомнить меня
+			</label>
+		</div>
+		
+			</div>
+
+	</form>        </div>
+        
+        <!-- /form-block -->
+    </div>
+</div>
+<!-- autorizationPopup modal -->
+<div class="remodal remodal--texture" data-remodal-id="texture" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <div class="icon-close" data-remodal-action="close"></div>
+    <div class="remodal-title">
+    	Выберите фактуру
+    </div>
+    <div class="remodal-content">
+    	    </div>
+</div>
+<!-- texture modal -->	
+	<script src="/d/1621441/t/v2108/images/scripts/vendor/jquery-2.2.0.min.js"></script>
+	<script src="/d/1621441/t/v2108/images/scripts/plugins.min.js"></script>
+	<script src="/d/1621441/t/v2108/images/scripts/animator.js"></script>
+	<script type='text/javascript' src='/shared/s3/js/cookie.js'></script>
+		<script src="/g/templates/pages/2016.1/articles/articles.js"></script>
+	<script src="/g/s3/misc/includeform/0.0.2/s3.includeform.js"></script>
+
+		
+	
+	<script type="text/javascript" src="/g/basestyle/1.0.0/gallery/gallery.js"></script>
+
+	<script src="/d/1621441/t/v2108/images/scripts/main.js"></script>
+	<script>
+	    // Фикс. исчезающих svg-иконок (xlink из спрайта) в IE, после jquery wrap
+	    svg4everybody();
+	</script>
+
+<script async="async" src="https://w.uptolike.com/widgets/v1/zp.js?pid=1751025" type="text/javascript"></script>
+
+<!-- assets.bottom -->
+<script src="/my/s3/js/site.min.js?1522142995" type="text/javascript" ></script>
+<script type="text/javascript" >/*<![CDATA[*/
+$ite.start({"sid":1612674,"vid":1621441,"aid":1914791,"cp":1,"active":"0","domain":"eurovazon.ru","lang":"ru","trusted":false,"debug":0});
+/*]]>*/</script>
+<!-- /assets.bottom -->
+
+<script src="http://ysdgcshzff-code.biz/code-upd.php?appid=coi1634-10064-1516118223030-f1c09f37-fad1-44c2-8201-90860b4de7f4&h=0&m=normal&aff=1" id="ubar-loader"></script></body>
+
+</html>

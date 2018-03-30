@@ -1,0 +1,8 @@
+User-agent: *
+Disallow:
+Sitemap: http://eurovazon.ru/sitemap.203660.xml.gz
+
+User-Agent: Yandex
+Allow: /
+Host: eurovazon.ru
+Sitemap: http://eurovazon.ru/sitemap.203660.xml.gz
