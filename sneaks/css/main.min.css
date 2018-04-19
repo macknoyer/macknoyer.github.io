@@ -3425,6 +3425,7 @@ a.logo {
         font-size: 16px;
         position: relative;
         margin-right: 90px;
+        text-align: left;
         padding-left: 44px;
         padding-right: 0;
         display: inline-block;
@@ -3435,7 +3436,7 @@ a.logo {
           top: 11px;
           content: "";
           position: absolute;
-          width: 17px;
+          width: 18px;
           height: 21px;
           background: url("../img/full_catalog.svg") no-repeat; }
       .header_bottom-menu li a.sale {
@@ -3572,12 +3573,12 @@ a.logo {
 
 .go_to_brand-left {
   min-height: 230px;
-  background: url("../img/converse_logo_index.svg") no-repeat right center, url("../img/go_to_brand.png") no-repeat left center;
+  background: url("../img/converse_logo_index.png") no-repeat right center, url("../img/go_to_brand.png") no-repeat left center;
   position: relative; }
 
 .go_to_brand-right {
   min-height: 230px;
-  background: url("../img/vans_logo_index.svg") no-repeat right center, url("../img/go_to_brand2.png") no-repeat left center;
+  background: url("../img/vans_logo_index.png") no-repeat right center, url("../img/go_to_brand2.png") no-repeat left center;
   position: relative; }
 
 .motiv {
@@ -3635,7 +3636,7 @@ a.logo {
     .motiv_grey_logo1 {
       width: 92px;
       height: 79px;
-      background-image: url("../img/motiv_grey_logo1.png");
+      background-image: url("../img/motiv_grey_logo1.svg");
       -webkit-background-size: auto auto;
               background-size: auto auto;
       background-position: left top;
@@ -3645,9 +3646,14 @@ a.logo {
       margin: auto;
       margin-top: 35px;
       margin-bottom: 25px; }
-      @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-        .motiv_grey_logo1 {
-          background-image: url("../img/motiv_grey_logo1@2x.png"); } }
+      .motiv_grey_logo1.logo2 {
+      background-image: url("../img/motiv_grey_logo2.svg");
+
+      }
+      .motiv_grey_logo1.logo3 {
+      background-image: url("../img/motiv_grey_logo3.svg");
+
+      }
     .motiv_grey-txt {
       text-align: center; }
       .motiv_grey-txt strong {
@@ -4052,7 +4058,7 @@ a.logo {
     position: absolute;
     bottom: 0;
     right: 10px;
-    background: url(../img/basket_grey.svg) no-repeat;
+    background: url(../img/basket_grey.png) no-repeat;
     display: block;
     width: 22px;
     height: 19px;
@@ -4755,7 +4761,12 @@ a.logo {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("../img/border.png"); }
+  background-image: url("../img/border.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
+   }
 
 .recommendUsTitle {
   font-weight: 600;
@@ -4950,7 +4961,7 @@ a.logo {
   .feedback_fav {
     margin-bottom: 53px;
     padding-left: 77px;
-    background-image: url("../img/feedback_fav.png");
+    background-image: url("../img/feedback_fav.svg");
     -webkit-background-size: 65px 65px;
             background-size: 65px 65px;
     background-position: left top;
@@ -4961,9 +4972,9 @@ a.logo {
     padding-bottom: 4px; }
     @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
       .feedback_fav {
-        background-image: url("../img/feedback_fav@2x.png"); } }
+        background-image: url("../img/feedback_fav.svg"); } }
     .feedback_fav.fav2 {
-      background-image: url("../img/feedback_fav2.png");
+      background-image: url("../img/feedback_fav2.svg");
       -webkit-background-size: 65px 65px;
               background-size: 65px 65px;
       background-position: left top;
@@ -4972,7 +4983,7 @@ a.logo {
       background-repeat: no-repeat; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
         .feedback_fav.fav2 {
-          background-image: url("../img/feedback_fav2@2x.png"); } }
+          background-image: url("../img/feedback_fav2.svg"); } }
     .feedback_fav span {
       font-size: 16px; }
       .feedback_fav span span {
@@ -5167,7 +5178,7 @@ footer {
       padding-left: 10px;
       float: left;
       height: 34px; }
-    footer .submit input[type="submit"] {
+    footer .submit .but {
       float: right; }
 
 .collections {
@@ -5212,7 +5223,11 @@ footer {
       .collections_block2_link a {
         color: #fff;
         border-bottom: 1px solid;
-        text-shadow: 4px 4px 0 #000, 4px -4px 0 #000,   4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; }
+        text-shadow: 4px 4px 0 #000,
+ 4px -4px 0 #000,  
+ 4px -4px 0 #000,
+ -4px 4px 0 #000,
+ 4px 4px 0 #000; }
         .collections_block2_link a:hover {
           border-bottom-color: transparent; }
   .collections_block3 {

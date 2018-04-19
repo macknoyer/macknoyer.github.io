@@ -234,7 +234,9 @@ var cardNew = {
     catalogNew.init();
     cardNew.init();
     $('.select').select2();
-    $('.select_detail').select2();
+    $('.select_detail').select2({
+        placeholder: "Выберите размер"
+    });
     $(".banner_index_top").owlCarousel({
         items:1,
         dots: true,
@@ -269,7 +271,9 @@ var cardNew = {
         selector : '[data-type="ajax"]',
         touch: false,
         afterShow : function(){
-            $('.select_detail').select2();
+            $('.select_detail').select2({
+                placeholder: "Выберите размер"
+            });
             $(".cardNewVersions").owlCarousel({
                 loop: false,
                 dots: false,
