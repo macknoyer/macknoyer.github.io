@@ -16,6 +16,7 @@
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	<!-- Template Basic Images End -->
 	
 	<!-- Custom Browsers Color Start -->
@@ -30,10 +31,16 @@
 
 <body>
 
-	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+	
+				
 
 	<!-- Custom HTML -->
 	<header class="b-header-mobile align-items-center">
+					<div class="b-header-mobile__profile">
+						<a href="#" class="b-header-mobile__profile-login">Личный кабинет</a>
+						<a href="#" class="b-header-mobile__profile-phone">+7 (495) 363 44 32</a>
+					</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-4 d-flex justify-content-start align-items-center">
@@ -176,63 +183,19 @@
 									</div>
 										<a href="#" class="b-topmenu__favorites-close"></a>	
 								</div>
-							</div>
-	</header>
-	<header class="b-header align-items-center">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="b-header__menu b-topmenu col-md-4">
-					<ul class="b-topmenu__list">
-						<li class="b-topmenu__item"><a href="#" class="b-topmenu__link">О компании</a></li>
-						<li class="b-topmenu__item"><a href="#" class="b-topmenu__link">Каталог</a></li>
-						<li class="b-topmenu__item"><a href="#" class="b-topmenu__link">Где купить</a></li>
-					</ul>
-				</div>
-				<div class="b-header__logo col-md-4 d-flex justify-content-center align-items-center">
-					<div class="b-header__logo-container"><a href="#" class="b-header__logo-link"><img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="метролайн" class="b-header__logo-img"></a></div>
-				</div>
-				<div class="b-header__right col-md-4 d-flex justify-content-end align-items-center">
-					<a href="tel:=+74953634432" class="b-topmenu__phone">+7 (495) 363 44 32</a>
-					<div class="b-header__icons-container b-header-icons">
-						<a href="#" class="b-header-icons__link search"></a>
-						<a href="#" class="b-header-icons__link login"></a>
-						<a href="#" class="b-header-icons__link favorites"><span class="b-header-icons__link-count">3</span></a>
-						<a href="#" class="b-header-icons__link shopping_bag"><span class="b-header-icons__link-count">3</span></a>						
-					</div>
-
-							<div class="b-topmenu__dropdown favorites" style="display: none;">
-								<div class="b-topmenu__favorites-container d-flex">	
-									<div class="b-topmenu__favorites-imgblock">
-										<img src="img/shop/shop_item.png" alt="shop_item" class="b-topmenu__favorites-img">
+								<div class="b-topmenu-mobile__shopbag-container">
+									<div class="b-topmenu-mobile__shopbag-total">
+										<span class="b-topmenu-mobile__shopbag-text">Итого к оплате: </span>
+										<span class="b-topmenu-mobile__shopbag-price">89 576 <span class="ruble">₽</span></span>
 									</div>
-									<div class="b-topmenu__favorites-desc">
-										<a href="#" class="b-topmenu__favorites-link blue_link">Композитная черепица MetroGallo красный</a>
-										<div class="b-topmenu__favorites-quantity">100 шт <span class="b-topmenu__favorites-eachprice">890 ₽/шт</div>
-										<div class="b-topmenu__favorites-price">89 000 <span class="ruble">₽</span></div>
-									</div>
-										<a href="#" class="b-topmenu__favorites-close"></a>	
 								</div>
-								<div class="b-topmenu__favorites-container d-flex">	
-									<div class="b-topmenu__favorites-imgblock">
-										<img src="img/shop/shop_item.png" alt="shop_item" class="b-topmenu__favorites-img">
-									</div>
-									<div class="b-topmenu__favorites-desc">
-										<a href="#" class="b-topmenu__favorites-link blue_link">Композитная черепица MetroGallo красный</a>
-										<div class="b-topmenu__favorites-quantity">100 шт <span class="b-topmenu__favorites-eachprice">890 ₽/шт</div>
-										<div class="b-topmenu__favorites-price">89 000 <span class="ruble">₽</span></div>
-									</div>
-										<a href="#" class="b-topmenu__favorites-close"></a>	
+								<div class="b-topmenu-mobile__shopbag-container">
+									<a href="#" class="b-topmenu-mobile__shopbag-link blue_link">Перейти<br> в корзину</a>
+									<button class="button buy">Оформитьзаказ</button>
 								</div>
-								<div class="b-topmenu__favorites-pages">
-									<a href="#" class="b-topmenu__favorites-pagelink active"></a>
-									<a href="#" class="b-topmenu__favorites-pagelink"></a>
-									<a href="#" class="b-topmenu__favorites-pagelink"></a>
-									<a href="#" class="b-topmenu__favorites-pagelink"></a>
-								</div>
-								<a class="b-topmenu__favorites-button button buy">Перейти к избранному</a>
 							</div>
 
-							<div class="b-topmenu__dropdown login" style="display: none;">
+							<div id="login_dropdown" class="b-topmenu__dropdown login" style="display: none;">
 								<div class="b-topmenu__login-container">
 									<div class="b-topmenu__login-title gradient text">Войти</div><a href="#" class="b-topmenu__login-registration blue_link">Регистрация</a>
 								</div>
@@ -248,10 +211,78 @@
 									<a class="b-topmenu__login-forgot blue_link" href="#">Забыли свой пароль?</a>
 								<button type="submit" class="b-topmenu__favorites-button button buy">Войти</button>
 								</form>
+							</div>							
+	</header>
+	<header class="b-header align-items-center">
+		<div class="container b-header__wrapper">
+			<div class="row align-items-center">
+				<div class="b-header__menu b-topmenu__wrapper col-md-4">
+					<ul class="b-topmenu__list">
+						<li class="b-topmenu__item"><a href="#" class="b-topmenu__link">О компании</a>
+
+							<div class="b-topmenu__dropdown" style="display: none;">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-2">
+											<div class="b-topmenu__dropdown-menu">
+												<a href="" class="b-topmenu__dropdown-linktitle">О компании</a>
+												<a href="" class="b-topmenu__dropdown-link">История</a>
+												<a href="" class="b-topmenu__dropdown-link">Производство</a>
+												<a href="" class="b-topmenu__dropdown-link">Сертификаты</a>
+												<a href="" class="b-topmenu__dropdown-link">Вакансии</a>
+												<a href="" class="b-topmenu__dropdown-link">Преимущества</a>
+												<a href="" class="b-topmenu__dropdown-link">Технология</a>
+												<a href="" class="b-topmenu__dropdown-link">Фотогалерея</a>
+											</div>
+											<div class="b-topmenu__dropdown-menu">
+												<a href="" class="b-topmenu__dropdown-linktitle">Партнерство</a>
+												<a href="" class="b-topmenu__dropdown-link">Дилерам</a>
+												<a href="" class="b-topmenu__dropdown-link">Строителям</a>
+												<a href="" class="b-topmenu__dropdown-link">Архитекторам</a>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="b-topmenu__dropdown-menu">
+												<a href="" class="b-topmenu__dropdown-linktitle">Учебный центр</a>
+												<a href="" class="b-topmenu__dropdown-link">Шеф-монтаж</a>
+												<a href="" class="b-topmenu__dropdown-link">Инструкция</a>
+												<a href="" class="b-topmenu__dropdown-link">Видео обучение</a>
+												<a href="" class="b-topmenu__dropdown-link">Семинары</a>
+											</div>
+											<div class="b-topmenu__dropdown-menu">
+												<a href="" class="b-topmenu__dropdown-linktitle">Пресс центр</a>
+												<a href="" class="b-topmenu__dropdown-link">Новости</a>
+												<a href="" class="b-topmenu__dropdown-link">Публикации</a>
+												<a href="" class="b-topmenu__dropdown-link">Отзывы</a>
+												<a href="" class="b-topmenu__dropdown-link">Вопрос-ответ</a>
+											</div>
+										</div>
+										<div class="offset-md-2 col-md-3">
+											<div class="b-topmenu__banner" style="background-image: url(img/topmenu_banner.jpg);">
+												<div class="b-topmenu__banner-container">
+													<div class="b-topmenu__banner-title gradient">композитная черепица MetroBond</div>
+													<div class="b-topmenu__banner-buy">
+														от 494 р/шт <button class="b-topmenu__banner-button">Купить</button>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="b-topmenu__banner" style="background-image: url(img/topmenu_banner.jpg);">
+												<div class="b-topmenu__banner-container after">
+													<div class="b-topmenu__banner-title gradient">metrotile i-series</div>
+													<div class="b-topmenu__banner-text">
+														Новейшая коллекция созданная с учетом самых передовых тенденций в современной архитектуре. 
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-				</div>
-			</div>
-		</div>
+						</li>
+						<li class="b-topmenu__item"><a href="#" class="b-topmenu__link">Каталог</a>
+
 							<div class="b-topmenu__dropdown" style="display: none;">
 								<div class="container">
 									<div class="row">
@@ -318,67 +349,76 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="b-topmenu__dropdown" style="display: none;">
-								<div class="container">
-									<div class="row">
-										<div class="col-md-2">
-											<div class="b-topmenu__dropdown-menu">
-												<a href="" class="b-topmenu__dropdown-linktitle">О компании</a>
-												<a href="" class="b-topmenu__dropdown-link">История</a>
-												<a href="" class="b-topmenu__dropdown-link">Производство</a>
-												<a href="" class="b-topmenu__dropdown-link">Сертификаты</a>
-												<a href="" class="b-topmenu__dropdown-link">Вакансии</a>
-												<a href="" class="b-topmenu__dropdown-link">Преимущества</a>
-												<a href="" class="b-topmenu__dropdown-link">Технология</a>
-												<a href="" class="b-topmenu__dropdown-link">Фотогалерея</a>
-											</div>
-											<div class="b-topmenu__dropdown-menu">
-												<a href="" class="b-topmenu__dropdown-linktitle">Партнерство</a>
-												<a href="" class="b-topmenu__dropdown-link">Дилерам</a>
-												<a href="" class="b-topmenu__dropdown-link">Строителям</a>
-												<a href="" class="b-topmenu__dropdown-link">Архитекторам</a>
-											</div>
-										</div>
-										<div class="col-md-2">
-											<div class="b-topmenu__dropdown-menu">
-												<a href="" class="b-topmenu__dropdown-linktitle">Учебный центр</a>
-												<a href="" class="b-topmenu__dropdown-link">Шеф-монтаж</a>
-												<a href="" class="b-topmenu__dropdown-link">Инструкция</a>
-												<a href="" class="b-topmenu__dropdown-link">Видео обучение</a>
-												<a href="" class="b-topmenu__dropdown-link">Семинары</a>
-											</div>
-											<div class="b-topmenu__dropdown-menu">
-												<a href="" class="b-topmenu__dropdown-linktitle">Пресс центр</a>
-												<a href="" class="b-topmenu__dropdown-link">Новости</a>
-												<a href="" class="b-topmenu__dropdown-link">Публикации</a>
-												<a href="" class="b-topmenu__dropdown-link">Отзывы</a>
-												<a href="" class="b-topmenu__dropdown-link">Вопрос-ответ</a>
-											</div>
-										</div>
-										<div class="offset-md-2 col-md-3">
-											<div class="b-topmenu__banner" style="background-image: url(img/topmenu_banner.jpg);">
-												<div class="b-topmenu__banner-container">
-													<div class="b-topmenu__banner-title gradient">композитная черепица MetroBond</div>
-													<div class="b-topmenu__banner-buy">
-														от 494 р/шт <button class="b-topmenu__banner-button">Купить</button>	
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-3">
-											<div class="b-topmenu__banner" style="background-image: url(img/topmenu_banner.jpg);">
-												<div class="b-topmenu__banner-container after">
-													<div class="b-topmenu__banner-title gradient">metrotile i-series</div>
-													<div class="b-topmenu__banner-text">
-														Новейшая коллекция созданная с учетом самых передовых тенденций в современной архитектуре. 
-													</div>
-												</div>
-											</div>
-										</div>
+							</div>							
+
+						</li>
+						<li class="b-topmenu__item"><a href="#" class="b-topmenu__link">Где купить</a></li>
+					</ul>
+				</div>
+				<div class="b-header__logo col-md-4 d-flex justify-content-center align-items-center">
+					<div class="b-header__logo-container"><a href="#" class="b-header__logo-link"><img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="метролайн" class="b-header__logo-img"></a></div>
+				</div>
+				<div class="b-header__right col-md-4 d-flex justify-content-end align-items-center">
+					<a href="tel:=+74953634432" class="b-topmenu__phone">+7 (495) 363 44 32</a>
+					<div class="b-header__icons-container b-header-icons">
+						<a id="search_link" href="#" class="b-header-icons__link search"></a>
+						<a id="login_link" href="#" class="b-header-icons__link login"></a>
+						<a id="favorites_link" href="#" class="b-header-icons__link favorites"><span class="b-header-icons__link-count">3</span></a>
+						<a id="shopping_link" href="#" class="b-header-icons__link shopping_bag"><span class="b-header-icons__link-count">3</span></a>						
+					</div>
+
+							<div id="favorites_dropdown" class="b-topmenu__dropdown favorites" style="display: none;">
+								<div class="b-topmenu__favorites-container d-flex">	
+									<div class="b-topmenu__favorites-imgblock">
+										<img src="img/shop/shop_item.png" alt="shop_item" class="b-topmenu__favorites-img">
 									</div>
+									<div class="b-topmenu__favorites-desc">
+										<a href="#" class="b-topmenu__favorites-link blue_link">Композитная черепица MetroGallo красный</a>
+										<div class="b-topmenu__favorites-quantity">100 шт <span class="b-topmenu__favorites-eachprice">890 ₽/шт</div>
+										<div class="b-topmenu__favorites-price">89 000 <span class="ruble">₽</span></div>
+									</div>
+										<a href="#" class="b-topmenu__favorites-close"></a>	
 								</div>
+								<div class="b-topmenu__favorites-container d-flex">	
+									<div class="b-topmenu__favorites-imgblock">
+										<img src="img/shop/shop_item.png" alt="shop_item" class="b-topmenu__favorites-img">
+									</div>
+									<div class="b-topmenu__favorites-desc">
+										<a href="#" class="b-topmenu__favorites-link blue_link">Композитная черепица MetroGallo красный</a>
+										<div class="b-topmenu__favorites-quantity">100 шт <span class="b-topmenu__favorites-eachprice">890 ₽/шт</div>
+										<div class="b-topmenu__favorites-price">89 000 <span class="ruble">₽</span></div>
+									</div>
+										<a href="#" class="b-topmenu__favorites-close"></a>	
+								</div>
+								<div class="b-topmenu__favorites-pages">
+									<a href="#" class="b-topmenu__favorites-pagelink active"></a>
+									<a href="#" class="b-topmenu__favorites-pagelink"></a>
+									<a href="#" class="b-topmenu__favorites-pagelink"></a>
+									<a href="#" class="b-topmenu__favorites-pagelink"></a>
+								</div>
+								<a class="b-topmenu__favorites-button button buy">Перейти к избранному</a>
 							</div>
+
+							<div id="login_dropdown" class="b-topmenu__dropdown login" style="display: none;">
+								<div class="b-topmenu__login-container">
+									<div class="b-topmenu__login-title gradient text">Войти</div><a href="#" class="b-topmenu__login-registration blue_link">Регистрация</a>
+								</div>
+								<form class="b-calc" action="b-search">
+									<div class="b-topmenu__login-container">
+										<label for="" class="b-topmenu__login-label">E-mail</label>
+										<input class="b-calc__form-input b-topmenu__login-input" type="text" placeholder="ulala_andreeva@mail.ru" />
+									</div>
+									<div class="b-topmenu__login-container">
+										<label for="" class="b-topmenu__login-label">Пароль</label>
+										<input class="b-calc__form-input b-topmenu__login-input" type="password"/>
+									</div>
+									<a class="b-topmenu__login-forgot blue_link" href="#">Забыли свой пароль?</a>
+								<button type="submit" class="b-topmenu__favorites-button button buy">Войти</button>
+								</form>
+							</div>
+				</div>
+			</div>
+		</div>
 							<div class="b-topmenu__dropdown search" style="display: none;">
 								<div class="container b-calc">
 									<form class="row align-items-center">

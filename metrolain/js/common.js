@@ -268,8 +268,27 @@ $(function() {
             title: false
         }
     });
+    $('.humb_lines').on('click', function() {
+        $('.b-header-mobile__profile').toggleClass('active');
+    });
+    $('.mm-btn_next').on('click', function() {
+        $('.b-header-mobile__profile').removeClass('active');
+    });
+    $('.mm-btn_prev').on('click', function() {
+        $('.b-header-mobile__profile').addClass('active');
+    });
     var API = $("#my-menu").data( "mmenu" );
     $("#my-button").click(function() {
          API.close();
     });
+    $('.b-topmenu__item').hover(
+        function (){
+            $(this).find('.b-topmenu__dropdown').fadeIn();
+            $(this).find('.b-topmenu__link').addClass('active').fadeIn();
+
+        },
+        function () {
+           $(this).find('.b-topmenu__dropdown').fadeOut();
+            $(this).find('.b-topmenu__link').removeClass('active');
+        });
 });
