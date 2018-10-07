@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
+@import url(../bower_components/owl.carousel/dist/assets/owl.carousel.min.css);
+@import url(../bower_components/owl.carousel/dist/assets/owl.theme.default.min.css);
 body {
   overflow-x: hidden;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -114,9 +116,12 @@ img::-moz-selection {
 }
 
 .services_title {
-  font-size: 36px;
   color: #fed136;
-  font-family: 'Lobster', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 29px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .services_title.red {
@@ -139,11 +144,13 @@ img::-moz-selection {
   margin-top: 20px;
   list-style-type: disc;
   margin-left: 10px;
+  margin-bottom: 50px;
 }
 
 .services_list li {
   color: #fed136;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .services_list li span {
@@ -173,8 +180,6 @@ section#services {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  -webkit-box-shadow: inset 0px 0px 38px 13px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 0px 38px 13px rgba(0, 0, 0, 0.75);
 }
 
 section#services .section-heading, section#services .section-subheading {
@@ -200,6 +205,90 @@ section#services .row .btn-primary {
 
 #contact .section-subheading {
   color: #fff !important;
+}
+
+.img-fluid {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.modal-carousel {
+  position: relative;
+  max-height: 670px;
+  overflow: hidden;
+}
+
+.modal-carousel img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: 100%;
+}
+
+.services_adds {
+  text-align: center;
+}
+
+.services_adds-img {
+  margin: auto;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #fff;
+  overflow: hidden;
+}
+
+.services_adds-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.services_adds-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+.services_adds-hidden {
+  display: none;
+}
+
+.services_adds-btn {
+  margin: 50px 0;
+}
+
+.services_adds-block {
+  margin-bottom: 30px;
+}
+
+.display-desktop {
+  display: block !important;
+}
+
+.display-mobile {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
+  .modal-carousel {
+    display: none !important;
+  }
+  .display-mobile {
+    display: block !important;
+  }
+  .display-desktop {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  section#contact {
+    background: none !important;
+  }
+  section#services {
+    background-image: none;
+    background-color: #6e6e6e;
+  }
 }
 
 #mainNav {
@@ -275,6 +364,7 @@ section#services .row .btn-primary {
 }
 
 header.masthead {
+  min-height: 100vh;
   text-align: center;
   color: white;
   background-image: url("../img/header-bg.jpg");
@@ -307,6 +397,7 @@ header.masthead .intro-text .intro-heading {
 
 .masthead-wrap {
   background-color: rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -330,6 +421,13 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+@media (max-width: 768px) {
+  header.masthead .intro-text .intro-heading {
+    font-size: 33px;
+    line-height: 35px;
+  }
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -350,7 +448,23 @@ header.masthead .intro-text .intro-heading {
   cursor: pointer;
 }
 
+#portfolio .portfolio-item .portfolio-link .img-fluid {
+  z-index: 1;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+#portfolio .portfolio-item .portfolio-link:hover .img-fluid {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  z-index: 2;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -362,6 +476,12 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover img {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -395,7 +515,7 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
-  font-family: 'Lobster', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
@@ -633,7 +753,7 @@ header.masthead .intro-text .intro-heading {
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
-    padding: 0 30px 20px 20px;
+    padding: 0 30px 0px 20px;
     text-align: left;
   }
 }
@@ -665,7 +785,7 @@ header.masthead .intro-text .intro-heading {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 0px 100px;
   }
   .timeline > li .timeline-image {
     width: 170px;
@@ -676,7 +796,7 @@ header.masthead .intro-text .intro-heading {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 0 100px 0px 20px;
   }
 }
 
@@ -692,7 +812,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .team-member h4 {
-  font-family: 'Lobster', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   margin-top: 25px;
   margin-bottom: 25px;
   text-transform: none;
@@ -763,7 +883,8 @@ section#contact :-ms-input-placeholder {
 
 footer {
   padding: 25px 0;
-  text-align: center;
+  color: #fff;
+  background-color: #212529;
 }
 
 footer span.copyright {
@@ -783,22 +904,26 @@ footer ul.quicklinks {
 
 ul.social-buttons {
   margin-bottom: 0;
+  padding: 0.5em 1em !important;
 }
 
 ul.social-buttons li a {
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 14px;
+  line-height: 33px;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: white;
+  color: #dee2e6;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: transparent;
+  border: 2px solid #dee2e6;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+  border-color: #fed136;
+  color: #fff;
 }

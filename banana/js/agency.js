@@ -46,4 +46,31 @@
   $('.portfolio-modal').on('hidden.bs.modal', function(e) {
     $('.navbar').removeClass('d-none');
   })
+$(document).ready(function(){
+  $('.modal-carousel').owlCarousel({
+    items: 1,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    margin: 10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true
+        }
+    }
+  });
+});  
+$('.services_adds-btn').on('click', function() {
+  $(this).hide().parent().parent().find('.services_adds-hidden').slideToggle();
+});
 })(jQuery); // End of use strict
