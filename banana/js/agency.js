@@ -51,26 +51,14 @@ $(document).ready(function(){
     items: 1,
     nav: true,
     autoplay: true,
-    autoplayTimeout: 4000,
-    margin: 10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:1,
-            nav:true
-        }
-    }
+    autoplayTimeout: 7000,
+    margin: 10
   });
 });  
 $('.services_adds-btn').on('click', function() {
   $(this).hide().parent().parent().find('.services_adds-hidden').slideToggle();
+});
+$('.btn-modalclose').on('click', function() {
+  // $('.portfolio-modal').hide();
 });
 })(jQuery); // End of use strict
