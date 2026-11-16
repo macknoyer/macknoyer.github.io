@@ -598,7 +598,7 @@ function vRepay() {
     + '<h2 class="headline">Внесите следующий платеж<br>до 25 августа</h2>'
     + '<div style="display:flex;flex-direction:column;gap:32px"><div style="display:flex;flex-direction:column;gap:8px"><p class="lbl">Способ оплаты</p>' + payMethod() + '</div>'
     + '<fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:16px"><legend class="sr">Сумма платежа</legend>'
-    + '<div style="display:flex;flex-direction:column">' + sc('positive', 'safe', 'Защита от штрафов на 60 дней', '', { arrow: true, attach: true })
+    + '<div style="display:flex;flex-direction:column">' + sc('positive', 'safe', 'Защита от штрафов на 30 дней', '', { arrow: true, attach: true })
     + ctl('next', 'Следующий платеж', fmt(PAY - LOAN.deposit), 'Внесите вовремя, чтобы избежать штрафов', { tag: '<span class="tag-m neutral">до 25 августа</span>' }) + '</div>'
     + ctl('full', 'Погасить весь долг', fmt(debt() - LOAN.deposit), 'Кредит закроется сразу после погашения', { tagTop: '<span class="tag-m success">0%</span>', more: true })
     + '<div class="card list">' + li('limit', 'Погасить частично', 'goChdp', 'repay') + '</div></fieldset></div></div>'
