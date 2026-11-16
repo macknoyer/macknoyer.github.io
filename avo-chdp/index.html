@@ -424,7 +424,10 @@ var PAY = ann(PRINCIPAL, LOAN.term);                                    // 15 52
 var DAYS = { chdp: 17, error: 17, full: 17, 'before-dd': 30, 'in-dd': 31 };
 function accrued() { return Math.floor(PRINCIPAL * LOAN.rate / 365 * DAYS[scen]); }
 function debt() { return PRINCIPAL + accrued(); }
-function rangeMsg() { return 'Введите сумму от ' + fmt(PAY) + ' до ' + fmt(debt()) + ' UZS'; }
+/* в поле — сумма к оплате сейчас; вместе с «Уже внесено» она гасит долг (CR BD-4786 п. 9) */
+function minIn() { return Math.max(PAY - LOAN.deposit, 1); }
+function maxIn() { return debt() - LOAN.deposit; }
+function rangeMsg() { return 'Введите сумму от ' + fmt(minIn()) + ' до ' + fmt(maxIn()) + ' UZS'; }
 var PUSH_TEXT = 'Платёж {sum} UZS по AVO микрозайм на 3 месяцев обработан, сформирован новый график платежей';
 
 /* ---------- icons (AVO DS «→ Icons», 24×24, currentColor) ---------- */
@@ -466,25 +469,27 @@ var S, timers = [];
 
 function fmt(n) { return String(Math.max(0, Math.round(n || 0))).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
 function balOf(c) { return c.id === 'kap' && scen === 'error' ? 10000000 : c.bal; }
-function startAmount() { return scen === 'full' ? String(debt()) : ''; }
-function fresh() { return { screen: 'info', from: 'info', pick: 'next', card: 'kap', amount: startAmount(), open: false, settled: scen === 'full', paid: 0, full: false, sheet: null, push: null }; }
+/* предзаполнение: есть «Уже внесено» — разница между ЕП и «Уже внесено»; «вся задолженность» — остаток долга */
+function startAmount() { return scen === 'full' ? String(maxIn()) : LOAN.deposit > 0 ? String(minIn()) : ''; }
+function fresh() { return { screen: 'info', from: 'info', pick: 'next', card: 'kap', amount: startAmount(), open: false, settled: !!startAmount(), paid: 0, repaid: 0, full: false, sheet: null, push: null }; }
 function card() { return CARDS.filter(function (c) { return c.id === S.card; })[0] || CARDS[0]; }
 /* что показывает экран ЧДП: 435332 пусто, 435408/435331 сумма, 435333 ошибка */
 function chdp() {
-  var amount = parseInt(S.amount, 10) || 0;
+  var input = parseInt(S.amount, 10) || 0;                             // спишем с карты
+  var amount = input ? input + LOAN.deposit : 0;                        // сумма ЧДП вместе с «Уже внесено»
   var dd = scen === 'in-dd', acc = accrued(), total = PRINCIPAL + acc;
-  var charge = Math.max(0, amount - LOAN.deposit);                      // с карты — только недостающая сумма
-  var inRange = amount >= PAY && amount <= total;
-  var funds = inRange && charge > balOf(card());
-  var range = amount > total || (amount > 0 && amount < PAY && S.settled);
-  var msg = amount > total ? rangeMsg() : funds ? 'Недостаточно средств' : range ? rangeMsg() : '';
+  var inRange = input >= minIn() && input <= maxIn();
+  var funds = inRange && input > balOf(card());
+  var range = input > maxIn() || (input > 0 && input < minIn() && S.settled);
+  var msg = input > maxIn() ? rangeMsg() : funds ? 'Недостаточно средств' : range ? rangeMsg() : '';
   var rows = dd
     ? [['Платеж по графику', fmt(Math.min(amount, PAY)) + ' UZS'], ['Досрочное погашение', fmt(amount - PAY) + ' UZS']]
     : [['Начисленные проценты', fmt(Math.min(amount, acc)) + ' UZS'], ['Досрочное погашение', fmt(amount - acc) + ' UZS']];
-  var od = dd ? PRINCIPAL - (PAY - acc) - Math.max(0, amount - PAY) : PRINCIPAL - Math.max(0, amount - acc);
+  /* в DD платёж по графику гасит ОД по графику (проценты r/12), остаток платежа сохраняется, если ЧДП нет */
+  var od = dd ? PRINCIPAL - (PAY - Math.round(PRINCIPAL * R)) - Math.max(0, amount - PAY) : PRINCIPAL - Math.max(0, amount - acc);
   var newPay = ann(od, dd ? LOAN.term - 1 : LOAN.term);
   var ok = inRange && !funds;
-  return { amount: amount, err: !!msg, msg: msg, ok: ok, rows: rows, full: amount >= total, newPay: newPay, banner: ok && S.settled };
+  return { amount: input, repaid: amount, err: !!msg, msg: msg, ok: ok, rows: rows, full: input >= maxIn(), newPay: newPay, banner: ok && S.settled };
 }
 function set(patch) { for (var k in patch) S[k] = patch[k]; render(); }
 function clearTimers() { timers.forEach(clearTimeout); timers = []; }
@@ -494,7 +499,7 @@ function canPay() { return chdp().ok; }
 function finish() {
   clearTimers();
   var st = chdp();
-  set({ screen: 'status', sheet: null, push: null, paid: st.amount, full: st.full });
+  set({ screen: 'status', sheet: null, push: null, paid: st.amount, repaid: st.repaid, full: st.full });
   if (!st.full) timers.push(setTimeout(function () { set({ push: 'done' }); }, 1400));
 }
 
@@ -503,7 +508,7 @@ var ACT = {
   noop: function () {},
   goInfo: function () { set({ screen: 'info', sheet: null }); },
   goRepay: function () { set({ screen: 'repay', sheet: null }); },
-  goChdp: function (from) { set({ screen: 'chdp', from: from || 'info', amount: startAmount(), open: false, settled: scen === 'full', sheet: null }); },
+  goChdp: function (from) { set({ screen: 'chdp', from: from || 'info', amount: startAmount(), open: false, settled: !!startAmount(), sheet: null }); },
   toggleAcc: function () { set({ open: !S.open }); },
   openCards: function () { var a = document.activeElement; if (a && a.blur) a.blur(); set({ sheet: 'cards' }); },
   pickCard: function (id) { set({ card: id, sheet: null }); },
@@ -608,7 +613,7 @@ function vRepay() {
 /* ---------- 435332 / 435408 / 435331 / 435333 и 435409 / 435410 / 435411 · ЧДП ---------- */
 function field(st) {
   return '<div class="field' + (st.err ? ' is-error' : '') + '"><input id="amount" type="text" inputmode="numeric" autocomplete="off" enterkeyhint="done"'
-    + ' placeholder="От ' + fmt(PAY) + ' до ' + fmt(debt()) + '" value="' + (S.amount ? fmt(st.amount) : '') + '"' + (st.err ? ' aria-invalid="true" aria-describedby="amount-err"' : '') + '>'
+    + ' placeholder="От ' + fmt(minIn()) + ' до ' + fmt(maxIn()) + '" value="' + (S.amount ? fmt(st.amount) : '') + '"' + (st.err ? ' aria-invalid="true" aria-describedby="amount-err"' : '') + '>'
     + '<span class="field-sfx">UZS</span></div>';
 }
 function acc(rows) {
@@ -677,7 +682,7 @@ function vStatus() {
 
 function vPush() {
   return '<button type="button" class="push" data-key="push" data-act="hidePush" aria-label="Скрыть уведомление"><img src="assets/app-icon.svg" alt="" width="38" height="38">'
-    + '<span class="push-c"><span style="flex:1;min-width:0;display:flex;flex-direction:column"><b>Частичное погашение микроз...</b><span>' + PUSH_TEXT.replace('{sum}', fmt(S.paid)) + '</span></span>'
+    + '<span class="push-c"><span style="flex:1;min-width:0;display:flex;flex-direction:column"><b>Частичное погашение микроз...</b><span>' + PUSH_TEXT.replace('{sum}', fmt(S.repaid || S.paid)) + '</span></span>'
     + '<small>9:41 AM</small></span></button>';
 }
 
@@ -704,7 +709,7 @@ function vPanel() {
     + '<li>«Порядок погашения» свёрнут (435408), раскрывается по тапу (435331)</li>'
     + '<li>Тап по «Способ оплаты» открывает попап с картами (как в Figma). Карты AVO platinum заблокированы. С AVO UZCARD digital или Anorbank любая допустимая сумма даёт «Недостаточно средств»</li>'
     + '<li>Займ: 40 000 000 + 10 % «Защита от штрафов» = 44 000 000, 34,9 % годовых, 3 мес. Платёж 15 527 929, уже внесено 1 250 000</li>'
-    + '<li>Сумма ЧДП — от одного платежа до общей задолженности; баннер с новым платежом — после ввода и проверки баланса</li>'
+    + '<li>Сумма в поле — сколько спишем с карты сейчас. Предзаполнена разницей между ЕП и «Уже внесено» (14 277 929); вместе с «Уже внесено» гасит долг</li>'
     + '<li>Тексты — из макетов раздела «ЧДП» (Figma, 16.11), без изменений</li>'
     + '<li>Сценарий можно открыть по ссылке: #chdp, #error, #before-dd, #in-dd, #full</li></ul>';
 }
