@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f1f2f5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="AVO ЧДП">
+<meta name="robots" content="noindex">
+<title>AVO — ЧДП · мобильный прототип</title>
+<link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/app-icon.svg">
+<style>
+:root{
+  --font:"SF UI Display","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-ios:"SF Pro Text",-apple-system,BlinkMacSystemFont,var(--font);
+  --surface:#f1f2f5; --white:#ffffff;
+  --bg-950:#19191f; --bg-800:#39393f; --bg-400:#99999e; --bg-200:#e1e1e5; --bg-100:#f1f2f5;
+  --primary-950:#0b1d47; --primary-600:#2055cf; --primary-100:#dce5f9;
+  --pos-500:#2aa754; --pos-50:#e2f8ea; --success-icon:#0dbf54;
+  --alert:#ec0456;
+  --text:#19191f; --text-600:#5d5d63; --text-400:#99999e; --text-300:#bdbdc2;
+  --icon-950:#19191f; --icon-400:#99999e;
+  --border-200:#e1e1e5; --border-100:#f1f2f5;
+  --overlay:rgba(41,41,47,.55);
+  --ease-ios:cubic-bezier(.32,.72,0,1); --ease-out:cubic-bezier(.22,.8,.24,1); --spring:cubic-bezier(.34,1.56,.64,1);
+}
+*{box-sizing:border-box;scrollbar-width:none;-ms-overflow-style:none}
+*::-webkit-scrollbar{display:none;width:0;height:0}
+html,body{margin:0;height:100%}
+body{font-family:var(--font);background:#e4e5ea;color:var(--text);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer}
+p,h1,h2,ul{margin:0}
+:focus-visible{outline:2px solid var(--primary-600);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+svg{display:block;flex:none}
+img{display:block;flex:none}
+
+/* stage */
+.stage{min-height:100%;display:flex;align-items:center;justify-content:center;gap:56px;padding:32px}
+.phone{position:relative;width:390px;height:844px;border-radius:0;overflow:hidden;background:var(--surface);box-shadow:0 24px 64px rgba(25,25,31,.16);flex:none;isolation:isolate}
+#app,#fx{position:absolute;inset:0}
+#fx{pointer-events:none}
+.panel{width:300px;flex:none;display:flex;flex-direction:column;gap:20px;font-size:14px;line-height:20px;color:var(--text)}
+.panel .eyebrow{font-size:12px;line-height:16px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--text-600)}
+.panel h1{font-size:24px;line-height:28px;font-weight:600;letter-spacing:-.408px}
+.panel fieldset{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.panel legend{padding:0;margin-bottom:8px;font-weight:600}
+.scn{display:flex;gap:10px;align-items:flex-start;padding:12px;border-radius:12px;background:var(--white);cursor:pointer}
+.scn input{margin:2px 0 0;accent-color:var(--primary-600)}
+.scn b{display:block;font-weight:500}
+.scn span span{display:block;color:var(--text-600);font-size:13px;line-height:18px}
+.panel ul{padding-left:18px;color:var(--text-600);display:flex;flex-direction:column;gap:6px}
+.panel{display:none}
+.stage{gap:0;background:#e4e5ea}
+html,body{overscroll-behavior:none}
+body{touch-action:manipulation}
+
+/* screens */
+.screen{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;background:var(--surface)}
+.scroll{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;display:flex;flex-direction:column;align-items:stretch}
+.scroll>*{flex:none}
+.appbar{flex:none;position:relative}
+.sb{height:54px;color:var(--text)}
+.sb.light{color:#fff}
+.ab-row{position:relative;height:40px}
+.ab-back{position:absolute;left:6px;top:-2px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:0;background:none;padding:0;border-radius:12px;color:var(--icon-950)}
+.ab-title{position:absolute;left:50%;top:0;width:204px;margin-left:-102px;height:40px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:16px;line-height:20px;font-weight:600}
+.home{height:34px;position:relative;flex:none}
+.home i{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:100px;background:var(--bg-950)}
+.bottom{flex:none;background:var(--bg-100);padding-top:16px;display:flex;flex-direction:column;gap:8px}
+.bottom-in{padding:0 16px;display:flex;flex-direction:column;gap:16px}
+.legal{font-size:12px;line-height:16px;color:var(--text-600);text-align:center}
+.legal a{color:var(--primary-600);text-decoration:none}
+
+/* buttons */
+.btn{display:flex;align-items:center;justify-content:center;width:100%;border:0;margin:0;text-align:center;text-decoration:none;transition:background-color .12s ease,color .12s ease}
+.btn-l{min-height:56px;padding:16px 24px;border-radius:16px;font-size:16px;line-height:24px;font-weight:500}
+.btn-m{min-height:44px;padding:12px 16px;border-radius:12px;font-size:14px;line-height:20px;font-weight:500}
+.btn-primary{background:var(--bg-950);color:#fff}
+.btn-primary:active{background:var(--bg-800)}
+.btn-primary:disabled{background:var(--bg-200);color:var(--text-600);cursor:default}
+.btn-tertiary{background:var(--bg-100);color:var(--text)}
+.btn-tertiary:active{background:var(--bg-200)}
+
+/* cards & rows */
+.card{background:var(--white);border-radius:16px;width:100%}
+.lbl{display:block;font-size:16px;line-height:22px;color:var(--text-600)}
+.kv{display:flex;gap:8px;align-items:flex-start;padding:4px 0}
+.kv-t{flex:1;min-width:0;display:flex;gap:4px;align-items:flex-start;padding-top:1px}
+.kv-l{font-size:14px;line-height:17px;color:var(--text-600)}
+.kv-i{display:flex;align-self:stretch;align-items:center;color:var(--icon-400)}
+.kv-v{min-width:130px;text-align:right;font-size:14px;line-height:18px;font-weight:500;white-space:nowrap}
+.loan-head{padding:12px 16px;display:flex;align-items:center;gap:16px;font-size:14px;line-height:18px;font-weight:500;white-space:nowrap}
+.loan-rows{padding:16px;border-top:1px solid var(--border-200)}
+.src{width:100%;display:flex;align-items:center;gap:16px;padding:12px 16px;border:0;border-radius:16px;background:var(--white);text-align:left;color:var(--text)}
+.src.alt{background:var(--bg-100)}
+.src-m{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.src-b{display:flex;gap:4px;align-items:flex-end;white-space:nowrap}
+.src-b b{font-size:16px;line-height:20px;font-weight:500}
+.src-b small{font-size:10.5px;line-height:16px;font-weight:600;text-transform:uppercase}
+.src-i{display:flex;gap:4px;align-items:center;height:24px;white-space:nowrap;font-size:12px;line-height:16px}
+.src-i em{font-style:normal;color:var(--text-600)}
+.src .chev{color:var(--icon-400)}
+.src .tick{color:var(--primary-600)}
+
+/* field */
+.field{position:relative;display:flex;align-items:center;gap:8px;min-height:48px;padding:13px 16px;border-radius:8px;background:var(--white);overflow:hidden;cursor:text}
+.field:focus-within{background:var(--bg-200)}
+.field input{flex:1;min-width:0;height:22px;margin:0;padding:0;border:0;outline:0;background:transparent;font-size:16px;line-height:22px;color:var(--text);-webkit-appearance:none;appearance:none}
+.field input::placeholder{color:var(--text-600);opacity:1}
+.field-sfx{margin-right:2px;font-size:16px;line-height:22px;color:var(--text-600)}
+.field.is-error input{color:var(--alert)}
+.field.is-error::after{content:"";position:absolute;left:0;right:0;bottom:.5px;height:1.5px;background:var(--alert);opacity:.5}
+.fdesc{font-size:14px;line-height:17px}
+.fdesc.info{color:var(--text-400)}
+.fdesc.err{color:var(--alert)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{height:34px;padding:8px 16px;border:0;border-radius:99px;background:var(--white);font-size:14px;line-height:18px;color:var(--text);white-space:nowrap}
+.chip.on{background:var(--primary-950);color:#fff;font-weight:500}
+
+/* status colored */
+.sc{display:flex;gap:8px;align-items:center;padding:8px;border-radius:8px;width:100%}
+.sc-positive{background:var(--pos-50)}
+.sc-positive>svg{color:var(--success-icon)}
+.sc-info{background:var(--primary-100)}
+.sc-info>svg{color:var(--primary-600)}
+.sc-c{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.sc-t{font-size:14px;line-height:18px;font-weight:500}
+.sc-d{padding-bottom:2px;font-size:14px;line-height:18px;color:var(--text-600)}
+
+/* disclosure */
+.disc{background:var(--white);border-radius:8px;width:100%}
+.disc-b{width:100%;display:flex;align-items:center;gap:3px;padding:16px;border:0;background:none;text-align:left;color:var(--text)}
+.disc-b span{flex:1;padding-bottom:2px;font-size:16px;line-height:20px;font-weight:600}
+.disc-b svg{color:var(--icon-400)}
+.disc-body{padding:0 16px 16px;margin-top:-8px}
+
+/* control with label (radio card) */
+.ctl{display:block;width:100%;padding:16px;border-radius:16px;background:var(--white);cursor:pointer}
+.ctl:has(input:focus-visible){outline:2px solid var(--primary-600);outline-offset:2px}
+.ctl-top{display:flex;gap:8px;align-items:flex-start}
+.ctl-top>span:first-child{flex:1;min-width:0;font-size:14px;line-height:18px;font-weight:500}
+.ctl{position:relative}
+.ctl-top svg{color:var(--icon-400)}
+.ctl-top svg.on{color:var(--primary-600)}
+.ctl-mid{display:flex;gap:10px;align-items:center;margin-top:8px}
+.sum18{flex:1;min-width:0;display:flex;gap:2px;align-items:flex-end;white-space:nowrap}
+.sum18 b{font-size:18px;line-height:22px;font-weight:600}
+.sum18 i{font-style:normal;padding-bottom:1px;font-size:14px;line-height:18px;font-weight:600}
+.tag{height:26px;padding:4px 8px;border-radius:500px;background:var(--bg-100);font-size:14px;line-height:18px;font-weight:600;white-space:nowrap}
+.ctl-cap{margin-top:8px;font-size:14px;line-height:17px;color:var(--text-600)}
+
+/* list */
+.list{display:flex;flex-direction:column;gap:8px;padding:16px}
+.li{display:flex;align-items:center;gap:8px;width:100%;min-height:36px;padding:0;border:0;background:none;text-align:left;color:var(--text)}
+.li-ic{display:flex;width:24px;height:36px;padding:8px 2px;color:var(--icon-400);flex:none}
+.li-t{flex:1;min-width:0;padding:1px 0;font-size:14px;line-height:18px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.li>svg{color:var(--icon-400)}
+
+/* loan widget */
+.w-top{padding:16px;display:flex;flex-direction:column;gap:16px}
+.w-name{height:18px;display:flex;align-items:center;justify-content:space-between}
+.w-name span{font-size:14px;line-height:18px;font-weight:500;white-space:nowrap}
+.w-edit{position:relative;width:42px;height:42px;border:0;border-radius:20px;background:none;padding:0;color:var(--icon-400);flex:none}
+.w-edit svg{position:absolute;right:9px;top:9px}
+.cap12{font-size:12px;line-height:16px;color:var(--text-600)}
+.sum32{display:flex;gap:4px;align-items:flex-end;white-space:nowrap}
+.sum32 b{font-size:32px;line-height:36px;font-weight:600}
+.sum32 i{font-style:normal;height:32px;display:flex;align-items:center;font-size:24px;line-height:28px;font-weight:600;letter-spacing:-.408px}
+.w-rows{padding:0 16px 16px}
+.w-btn{padding:4px 16px 20px;border-bottom:1px solid var(--border-200)}
+.acts{display:flex;justify-content:center;gap:8px;padding:16px}
+.act{width:75.5px;display:flex;flex-direction:column;align-items:center;gap:8px;padding:0;border:0;background:none;font-size:12px;line-height:16px;color:var(--text)}
+
+/* figma-specific blocks */
+.headline{font-size:18px;line-height:22px;font-weight:600;text-align:center}
+.dw-head{padding:16px;display:flex;flex-direction:column;gap:16px}
+.w-status{padding:4px 16px 20px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--border-200)}
+.tag-s{display:inline-flex;align-items:center;gap:2px;align-self:flex-start;padding:2px 8px 2px 4px;border-radius:500px;font-size:12px;line-height:16px;font-weight:600;white-space:nowrap}
+.tag-s.success{background:var(--pos-500);color:#fff}
+.tag-m{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border-radius:500px;font-size:14px;line-height:18px;font-weight:600;white-space:nowrap;flex:none}
+.tag-m.neutral{background:var(--bg-100);color:var(--text)}
+.tag-m.success{background:var(--pos-500);color:#fff}
+.sc>svg.arr{color:var(--icon-400)}
+.sc-attach{border-radius:8px 8px 0 0;padding:8px 8px 25px;margin-bottom:-17px}
+.more{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-top:8px;padding:6px 0;border-radius:8px;font-size:14px;line-height:20px;font-weight:500;color:var(--primary-600)}
+.bal-m{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.bal-n{height:24px;display:flex;align-items:center;font-size:12px;line-height:16px;font-weight:400}
+.req{background:var(--white);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.req h3{margin:0;padding-bottom:2px;font-size:16px;line-height:20px;font-weight:600}
+.fieldbtn{width:100%;border:0;text-align:left;font:inherit;cursor:pointer}
+.fieldbtn:focus-within{background:var(--white)}
+.fieldbtn:active{background:var(--bg-200)}
+.field .ph,.field .val{flex:1;min-width:0;font-size:16px;line-height:22px;white-space:nowrap}
+.field .ph{color:var(--text-600)}
+.field .val{color:var(--text);transition:color .2s ease}
+.field.is-error .val{color:var(--alert)}
+.field-sfx.light{color:var(--text-400)}
+.req,.field .val{animation:appear .3s var(--ease-out) backwards}
+
+/* «Порядок погашения» — titleAction с шевроном (435408 свёрнут / 435331 раскрыт) */
+.sc.top{align-items:flex-start}
+.acc{gap:0}
+.acc-h{width:100%;height:32px;display:flex;align-items:center;gap:3px;padding:0;border:0;background:none;text-align:left;color:var(--text);transition:opacity .18s ease}
+.acc-h:active{opacity:.72}
+.acc-t{flex:1;min-width:0;padding-bottom:2px;font-size:16px;line-height:20px;font-weight:600}
+.acc-i{min-width:50px;padding:6px 0;display:flex;justify-content:flex-end;color:var(--icon-400)}
+.acc-i svg{transition:transform .34s var(--ease-ios)}
+.acc.open .acc-i svg{transform:rotate(180deg)}
+.acc-b{padding-top:8px;animation:expand .32s var(--ease-out) backwards}
+
+/* cardsModal · Figma 12975:48437 */
+.ovl.lite{background:rgba(41,41,47,.15)}
+.cm{display:flex;flex-direction:column;gap:16px}
+.cm-in{padding:24px 16px 0;display:flex;flex-direction:column;gap:12px}
+.cm-title{height:32px;display:flex;align-items:flex-end;padding-bottom:2px;font-size:16px;line-height:20px;font-weight:600;color:var(--text)}
+.cm-list{display:flex;flex-direction:column;gap:8px}
+.cm .src{background:var(--bg-100);cursor:pointer}
+.src-b .lk{align-self:center}
+.src.locked{cursor:default}
+.src.locked .src-b{color:var(--text-600)}
+.src.locked:active{transform:none}
+.src.locked.nudge{animation:nudge .36s var(--ease-out)}
+.cm-add{width:100%;display:flex;padding:14px 16px;border:0;border-radius:16px;background:var(--bg-100);color:var(--primary-600);text-align:left}
+.cm-add span{display:flex;align-items:center;gap:8px;padding:10px 0;font-size:14px;line-height:20px;font-weight:500}
+.cm-home{padding:0 16px}
+@keyframes nudge{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}60%{transform:translateX(3px)}}
+.src{animation:none}
+
+/* sheets */
+.ovl{position:absolute;inset:0;z-index:4;border:0;padding:0;background:var(--overlay);animation:fadeIn .3s ease backwards}
+.sheet{position:absolute;left:0;right:0;bottom:0;z-index:5;max-height:calc(100% - 40px);overflow-y:auto;display:flex;flex-direction:column;padding-top:8px;border-radius:16px 16px 0 0;background:var(--white);box-shadow:0 -8px 32px rgba(25,25,31,.08);animation:sheetIn .46s var(--ease-ios) backwards}
+.grab{width:36px;height:5px;margin:0 auto;border-radius:2.5px;background:var(--bg-400);flex:none}
+.sheet h2.s-title{padding:16px 16px 8px;font-size:18px;line-height:22px;font-weight:600}
+.cf{padding:24px 16px 0;display:flex;flex-direction:column;align-items:center;gap:24px}
+.cf>svg{color:var(--primary-600)}
+.cf-body{width:100%;padding:0 8px}
+.cf-head{display:flex;flex-direction:column;gap:16px;align-items:center;padding-bottom:16px}
+.cf-head h2{width:100%;font-size:22px;line-height:28px;font-weight:600;letter-spacing:-.22px;text-align:center}
+.sum-xl{display:flex;gap:6px;align-items:flex-end;white-space:nowrap}
+.sum-xl b{font-size:32px;line-height:36px;font-weight:600}
+.sum-xl i{font-style:normal;padding-top:6px;font-size:24px;line-height:28px;font-weight:600;letter-spacing:-.408px}
+.bul{list-style:none;padding:0 0 24px;display:flex;flex-direction:column;gap:16px}
+.bul li{display:flex;gap:12px;align-items:flex-start;color:var(--text-600);font-size:16px;line-height:22px}
+.bul li svg{color:var(--icon-400)}
+.bul li.strong{font-weight:600;line-height:20px}
+.sheet-btns{padding:16px 16px 0;display:flex;flex-direction:column;gap:16px}
+
+/* status */
+.st-top{flex:none;background:var(--bg-950);display:flex;flex-direction:column;gap:1px}
+.st-top .sb{margin-bottom:4px}
+.st-logo{padding:12px 0;display:flex;justify-content:center}
+.st-status{position:relative;width:100%;aspect-ratio:390/74;margin-bottom:-1px}
+.st-wave{position:absolute;left:0;bottom:0;width:100%;height:auto}
+.st-icon{position:absolute;left:50%;top:0;width:16.41%;height:auto;transform-origin:50% 50%;translate:-50% 0}
+.st-body{flex:1;min-height:0;background:var(--white);display:flex;flex-direction:column;justify-content:space-between;overflow-y:auto}
+.st-main{padding:8px 24px 0;display:flex;flex-direction:column;gap:24px;align-items:center}
+.st-title{width:100%;font-size:18px;line-height:22px;font-weight:600;text-align:center}
+.st-sum{width:100%;display:flex;flex-direction:column;align-items:center}
+.st-sub{font-size:16px;line-height:22px;color:var(--text-600);text-align:center}
+.st-info{width:100%;display:flex;flex-direction:column;gap:4px}
+.pay{display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--border-100);border-radius:16px}
+.pay-m{flex:1;min-width:0}
+.pay-t{font-size:18px;line-height:22px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pay-s{font-size:14px;line-height:18px;color:var(--text-600)}
+.st-row{width:100%;padding:8px 0;display:flex;gap:8px;align-items:flex-start}
+.st-row>span{flex:1;padding-top:2px;font-size:14px;line-height:17px;color:var(--text-600);white-space:nowrap}
+.st-row div{padding-top:1px;display:flex;gap:8px;align-items:center;white-space:nowrap;font-size:14px;line-height:18px;font-weight:500}
+.st-btns{padding:16px 16px 0;display:flex;flex-direction:column;gap:16px}
+.st-foot{display:flex;flex-direction:column;gap:8px}
+
+/* push */
+.push{position:absolute;left:6px;right:6px;top:10px;z-index:8;display:flex;gap:10px;align-items:flex-start;padding:14px;border:0;border-radius:24px;text-align:left;isolation:isolate;animation:pushIn .6s var(--spring) backwards}
+.push::before,.push::after{content:"";position:absolute;inset:0;border-radius:24px;z-index:-1}
+.push::before{background:rgba(166,166,166,.7);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+.push::after{background:#333;mix-blend-mode:color-dodge}
+.push img{border-radius:8.5px}
+.push-c{flex:1;min-width:0;display:flex;gap:5px;align-items:flex-start;font-family:var(--font-ios);font-size:15px;line-height:20px;letter-spacing:-.23px;color:var(--text)}
+.push-c div{flex:1;min-width:0;display:flex;flex-direction:column}
+.push-c b{height:21px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.push-c small{flex:none;width:52px;text-align:right;font-size:13px;color:var(--text-600)}
+
+/* ---------- motion ---------- */
+/* press feedback */
+.btn,.src,.ctl,.li,.chip,.act,.w-edit,.ab-back,.disc-b,.push,.scn,.cm-add{transition:transform .18s var(--ease-out),background-color .22s ease,color .22s ease,opacity .18s ease,box-shadow .22s ease}
+.btn:active:not(:disabled){transform:scale(.97)}
+.src:active,.ctl:active,.act:active,.push:active,.cm-add:active{transform:scale(.98)}
+.li:active,.disc-b:active{transform:scale(.985);opacity:.72}
+.chip:active{transform:scale(.94)}
+.ab-back:active,.w-edit:active{background:rgba(25,25,31,.07)}
+.scn:active{transform:scale(.98)}
+.field{transition:background-color .22s ease}
+.field input{transition:color .2s ease}
+/* state changes inside a screen */
+.chip.on{animation:chipOn .34s var(--spring)}
+.ctl-top svg{transition:color .2s ease}
+.ctl-top svg.on{animation:pop .42s var(--spring)}
+.disc-b svg{transition:transform .34s var(--ease-ios)}
+.disc.open .disc-b svg{transform:rotate(180deg)}
+.disc-body{animation:expand .32s var(--ease-out) backwards}
+.fdesc,.sc{animation:appear .3s var(--ease-out) backwards}
+.field.is-error::after{animation:fadeIn .25s ease backwards}
+.tick{animation:pop .4s var(--spring) backwards}
+/* screens */
+.scr-in-push{animation:inPush .46s var(--ease-ios) backwards;box-shadow:-12px 0 32px rgba(25,25,31,.10)}
+.scr-out-push{animation:outPush .46s var(--ease-ios) forwards}
+.scr-in-pop{animation:inPop .46s var(--ease-ios) backwards}
+.scr-out-pop{animation:outPop .46s var(--ease-ios) forwards;box-shadow:-12px 0 32px rgba(25,25,31,.10)}
+.scr-in-present{animation:inPresent .52s var(--ease-ios) backwards}
+.scr-out-fade{animation:outFade .42s ease forwards}
+.scr-in-fade{animation:inFade .5s var(--ease-ios) backwards}
+.scr-out-dismiss{animation:outDismiss .4s var(--ease-ios) forwards}
+.scr-in-present .st-icon{animation:pop .7s .2s var(--spring) backwards}
+.scr-in-present .st-main>*,.scr-in-present .st-btns>*{animation:rise .5s var(--ease-out) backwards}
+.scr-in-present .st-main>:nth-child(1){animation-delay:.26s}
+.scr-in-present .st-main>:nth-child(2){animation-delay:.32s}
+.scr-in-present .st-main>:nth-child(3){animation-delay:.38s}
+.scr-in-present .st-main>:nth-child(4){animation-delay:.44s}
+.scr-in-present .st-btns>:nth-child(1){animation-delay:.48s}
+.scr-in-present .st-btns>:nth-child(2){animation-delay:.54s}
+.scr-in-fade .scroll>*{animation:rise .45s var(--ease-out) backwards}
+.scr-in-fade .scroll>:nth-child(2){animation-delay:.06s}
+/* sheets and push */
+.sheet .cf>svg{animation:pop .6s .14s var(--spring) backwards}
+.sheet .cf-head,.sheet .bul li,.sheet .sheet-btns,.cm-title,.cm-list>*{animation:rise .42s var(--ease-out) backwards}
+.sheet .cf-head{animation-delay:.12s}
+.sheet .bul li:nth-child(1){animation-delay:.18s}
+.sheet .bul li:nth-child(2){animation-delay:.22s}
+.sheet .bul li:nth-child(3){animation-delay:.26s}
+.sheet .sheet-btns{animation-delay:.3s}
+.cm-title{animation-delay:.08s}
+.cm-list>:nth-child(1){animation-delay:.11s}.cm-list>:nth-child(2){animation-delay:.14s}.cm-list>:nth-child(3){animation-delay:.17s}
+.cm-list>:nth-child(4){animation-delay:.2s}.cm-list>:nth-child(5){animation-delay:.23s}.cm-list>:nth-child(6){animation-delay:.26s}.cm-list>:nth-child(7){animation-delay:.29s}
+.ovl.leave{animation:fadeOut .28s ease forwards}
+.sheet.leave{animation:sheetOut .32s var(--ease-ios) forwards}
+.push.leave{animation:pushOut .34s var(--ease-ios) forwards}
+@keyframes fadeIn{from{opacity:0}}
+@keyframes fadeOut{to{opacity:0}}
+@keyframes sheetIn{from{transform:translateY(100%)}}
+@keyframes sheetOut{to{transform:translateY(100%)}}
+@keyframes pushIn{from{opacity:0;transform:translateY(-130%) scale(.94)}}
+@keyframes pushOut{to{opacity:0;transform:translateY(-130%) scale(.96)}}
+@keyframes inPush{from{transform:translateX(100%)}}
+@keyframes outPush{to{transform:translateX(-28%);filter:brightness(.92)}}
+@keyframes inPop{from{transform:translateX(-28%);filter:brightness(.92)}}
+@keyframes outPop{to{transform:translateX(100%)}}
+@keyframes inPresent{from{opacity:0;transform:translateY(48px) scale(.98)}}
+@keyframes outFade{to{opacity:0;transform:scale(.95)}}
+@keyframes inFade{from{opacity:0;transform:scale(.97)}}
+@keyframes outDismiss{to{opacity:0;transform:translateY(56px)}}
+@keyframes pop{0%{opacity:0;transform:scale(.4)}60%{opacity:1;transform:scale(1.08)}100%{transform:scale(1)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+@keyframes appear{from{opacity:0;transform:translateY(-6px)}}
+@keyframes expand{from{opacity:0;transform:translateY(-8px)}}
+@keyframes chipOn{0%{transform:scale(.9)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}}
+
+/* real phone: the device draws its own status bar and home indicator */
+@media (max-width:500px){
+  body{background:var(--surface)}
+  .stage{display:block;padding:0}
+  .phone{width:100%;height:100vh;height:100dvh;border-radius:0;box-shadow:none}
+  .sb,.home{display:none}
+  .appbar,.st-top{padding-top:max(10px,env(safe-area-inset-top))}
+  .bottom,.st-foot,.sheet{padding-bottom:max(16px,env(safe-area-inset-bottom))}
+  .scroll.solo{padding-bottom:max(24px,env(safe-area-inset-bottom))}
+  .push{top:calc(env(safe-area-inset-top) + 8px)}
+}
+</style>
+</head>
+<body>
+<div class="stage">
+  <main class="phone" id="phone"><div id="app"></div><div id="fx" aria-hidden="true"></div></main>
+  <aside class="panel" id="panel" aria-label="Настройки прототипа"></aside>
+</div>
+<noscript>Для прототипа нужен JavaScript.</noscript>
+<script>
+(function () {
+'use strict';
+
+/* ---------- data: экраны раздела «ЧДП» в Figma — тексты и суммы как в макетах ---------- */
+var TARIFFS = 'https://docs.avo.uz/AVO_tariffs_ru.pdf';
+var SCEN = {
+  chdp: { t: 'ЧДП', d: 'Экраны 435332 → 435408 → 435331, 11.08 — 17 дней с выдачи' },
+  error: { t: 'ЧДП · недостаточно средств', d: 'Экран 435333: на Kapitalbank 10 000 000 — меньше любой допустимой суммы' },
+  'before-dd': { t: 'ЧДП до DD', d: 'Экран 435409, 24.08 — день до платежа' },
+  'in-dd': { t: 'ЧДП в DD', d: 'Экран 435410, 25.08 — сначала платёж по графику' },
+  full: { t: 'Вносит всю задолженность при ЧДП', d: 'Экран 435411: сумма = общей задолженности → полное погашение' }
+};
+/* подпись под «~15 000 000 UZS новый ежемесячный платеж» */
+var NOTE = {
+  chdp: 'Досрочное погашение не отменяет ежемесячный платёж',
+  error: 'Досрочное погашение не отменяет ежемесячный платёж',
+  'before-dd': 'Сначала спишется платёж по графику, затем сумма досрочного погашения',
+  'in-dd': 'Сначала спишется платёж по графику, затем сумма досрочного погашения',
+  full: 'Досрочное погашение не отменяет ежемесячный платёж'
+};
+var CARDS = [
+  { id: 'kap', logo: 'kapitalbank.svg', bal: 100000000, name: 'Kapitalbank', mask: '3596', ps: 'uzcard.svg', psAlt: 'UZCARD' },
+  /* дальше — карты из cardsModal (Figma 12975:48437) */
+  { id: 'uzd', logo: 'card-avo-uzcard-digital.svg', bal: 96532, name: 'AVO UZCARD digital', mask: '7984', cloud: true, ps: 'uzcard.svg', psAlt: 'UZCARD' },
+  { id: 'anor', logo: 'card-anorbank.svg', bal: 54356, name: 'Anorbank', mask: '9879', ps: 'humo.svg', psAlt: 'HUMO' },
+  { id: 'plat', logo: 'card-avo-platinum.svg', bal: 2000000, name: 'AVO platinum', mask: '7984', locked: true, ps: 'mastercard.svg', psAlt: 'Mastercard' },
+  { id: 'stk', logo: 'card-avo-sticker.svg', bal: 2000000, name: 'AVO platinum sticker', mask: '7984', locked: true, ps: 'mastercard.svg', psAlt: 'Mastercard' },
+  { id: 'dig', logo: 'card-avo-digital.svg', bal: 2000000, name: 'AVO platinum digital', mask: '7984', locked: true, cloud: true, ps: 'mastercard.svg', psAlt: 'Mastercard' }
+];
+/* ---------- расчёт микрозайма (Confluence) ----------
+   SPF017 Rev7: P30 A3, срок 3/6/12 мес — 34,9 % годовых, услуга «Защита от штрафов» 10 % включается в сумму займа
+   SUP.PRD.30.1 Rev6: аннуитет A = S·r / (1 − (1 + r)^−n), r = ставка / 12, тийины не показываем
+   РМ-2126: ЧДП не меньше 1 ежемесячного платежа и не больше остатка долга; сначала начисленные проценты, затем ОД;
+            новый платёж — аннуитет от остатка ОД на оставшийся срок, дата платежа не меняется
+   РМ-2477: в дату платежа сначала гасится платёж по графику, затем досрочное погашение
+   CR BD-4786: «Уже внесено» вычитается из сумм к оплате, с карты списывается только недостающая сумма */
+var LOAN = { requested: 40000000, fee: 0.10, rate: 0.349, term: 3, deposit: 1250000 };
+var PRINCIPAL = Math.round(LOAN.requested * (1 + LOAN.fee));          // 44 000 000
+var R = LOAN.rate / 12;
+function ann(P, n) { return P <= 0 ? 0 : Math.floor(P * R / (1 - Math.pow(1 + R, -n))); }
+var PAY = ann(PRINCIPAL, LOAN.term);                                    // 15 527 929
+/* сколько дней прошло с выдачи (25.07.2025): обычный день — 11.08, до DD — 24.08, DD — 25.08 */
+var DAYS = { chdp: 17, error: 17, full: 17, 'before-dd': 30, 'in-dd': 31 };
+function accrued() { return Math.floor(PRINCIPAL * LOAN.rate / 365 * DAYS[scen]); }
+function debt() { return PRINCIPAL + accrued(); }
+function rangeMsg() { return 'Введите сумму от ' + fmt(PAY) + ' до ' + fmt(debt()) + ' UZS'; }
+var PUSH_TEXT = 'Платёж {sum} UZS по AVO микрозайм на 3 месяцев обработан, сформирован новый график платежей';
+
+/* ---------- icons (AVO DS «→ Icons», 24×24, currentColor) ---------- */
+var IC = {
+  chevron_left: '<path fill-rule="evenodd" clip-rule="evenodd" d="M15.2088 20.6235L7.37687 12.7915L7.37687 11.3773L15.2088 3.54534L16.623 4.95955L9.49819 12.0844L16.623 19.2093L15.2088 20.6235Z" fill="currentColor"/>',
+  chevron_right: '<path fill-rule="evenodd" clip-rule="evenodd" d="M8.79117 3.54535L16.6231 11.3773V12.7915L8.79117 20.6235L7.37695 19.2093L14.5018 12.0844L7.37695 4.95956L8.79117 3.54535Z" fill="currentColor"/>',
+  chevron_down: '<path fill-rule="evenodd" clip-rule="evenodd" d="M20.5391 8.87552L12.7071 16.7075H11.2929L3.46094 8.87552L4.87515 7.4613L12 14.5862L19.1249 7.4613L20.5391 8.87552Z" fill="currentColor"/>',
+  chevron_up: '<path fill-rule="evenodd" clip-rule="evenodd" d="M3.46094 15.2933L11.2929 7.4613L12.7071 7.4613L20.5391 15.2933L19.1249 16.7075L12 9.58262L4.87515 16.7075L3.46094 15.2933Z" fill="currentColor"/>',
+  info: '<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9999 4.69287C7.96435 4.69287 4.69287 7.96435 4.69287 11.9999C4.69287 16.0355 7.96435 19.307 11.9999 19.307C16.0355 19.307 19.307 16.0355 19.307 11.9999C19.307 7.96435 16.0355 4.69287 11.9999 4.69287ZM2.69287 11.9999C2.69287 6.85978 6.85978 2.69287 11.9999 2.69287C17.1401 2.69287 21.307 6.85978 21.307 11.9999C21.307 17.1401 17.1401 21.307 11.9999 21.307C6.85978 21.307 2.69287 17.1401 2.69287 11.9999Z" fill="currentColor"/><path d="M10.795 16.5676H13.2349V10.5231H10.795V16.5676ZM12.015 9.48611C12.6874 9.48611 13.2349 8.99814 13.2349 8.3257C13.2349 7.65325 12.6874 7.16528 12.015 7.16528C11.3425 7.16528 10.795 7.65325 10.795 8.3257C10.795 8.99814 11.3425 9.48611 12.015 9.48611Z" fill="currentColor"/>',
+  alert_circle: '<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 4.69299C7.96459 4.69299 4.69312 7.96447 4.69312 12C4.69312 16.0356 7.96459 19.3071 12.0002 19.3071C16.0357 19.3071 19.3072 16.0356 19.3072 12C19.3072 7.96447 16.0357 4.69299 12.0002 4.69299ZM2.69312 12C2.69312 6.8599 6.86002 2.69299 12.0002 2.69299C17.1403 2.69299 21.3072 6.8599 21.3072 12C21.3072 17.1402 17.1403 21.3071 12.0002 21.3071C6.86002 21.3071 2.69312 17.1402 2.69312 12Z" fill="currentColor"/><path d="M10.7655 7.48108L10.9798 13.2653H13.0507L13.2649 7.48108H10.7655ZM12.0152 16.5674C12.7055 16.5674 13.2768 16.0437 13.2768 15.3772C13.2768 14.7167 12.7055 14.193 12.0152 14.193C11.313 14.193 10.7477 14.7167 10.7477 15.3772C10.7477 16.0437 11.313 16.5674 12.0152 16.5674Z" fill="currentColor"/>',
+  check: '<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 4.69293C7.96459 4.69293 4.69312 7.96441 4.69312 12C4.69312 16.0356 7.96459 19.307 12.0002 19.307C16.0357 19.307 19.3072 16.0356 19.3072 12C19.3072 7.96441 16.0357 4.69293 12.0002 4.69293ZM2.69312 12C2.69312 6.85984 6.86002 2.69293 12.0002 2.69293C17.1403 2.69293 21.3072 6.85984 21.3072 12C21.3072 17.1401 17.1403 21.307 12.0002 21.307C6.86002 21.307 2.69312 17.1401 2.69312 12Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.8078 9.99527L12.2058 14.585L10.7991 14.5906L7.93152 11.7756L9.33258 10.3484L11.4941 12.4702L15.3955 8.57916L16.8078 9.99527Z" fill="currentColor"/>',
+  card: '<path fill-rule="evenodd" clip-rule="evenodd" d="M19.845 4H4.15503L2.15503 6V18L4.15503 20H19.845L21.845 18V6L19.845 4ZM19.845 18H4.15503V10.68H19.845V18ZM19.845 8.68H4.15503V6H19.845V8.68Z" fill="currentColor"/>',
+  edit: '<path fill-rule="evenodd" clip-rule="evenodd" d="M18.725 2.93506H15.895L5.09497 13.7351L4.67493 14.3651L2.93494 18.4351L5.55493 21.0651L9.63495 19.3251L10.265 18.9051L21.0649 8.10506V5.27506L18.725 2.93506ZM8.84497 17.4851L6.03497 18.6851L5.31494 17.9651L6.51495 15.1551L14.525 7.13506L16.8549 9.47506L8.84497 17.4851ZM18.275 8.06506L15.9349 5.72506L17.3149 4.34506L19.645 6.68506L18.275 8.06506Z" fill="currentColor"/>',
+  note: '<path d="M17.803 5.65499H9.733V7.65499H17.803V5.65499Z" fill="currentColor"/><path d="M17.803 9.165H9.733V11.165H17.803V9.165Z" fill="currentColor"/><path d="M17.293 0.744995H8.073L6.073 2.745V4.255H4.573L2.573 6.255V21.255L4.573 23.255H16.043L18.043 21.255V19.745H19.553L21.553 17.745V4.965L17.293 0.744995ZM16.043 21.255H4.573V6.255H6.073V17.745L8.073 19.745H16.043V21.255ZM19.553 17.745H8.073V2.745H16.463L19.553 5.785V17.745Z" fill="currentColor"/>',
+  document_menu: '<path fill-rule="evenodd" clip-rule="evenodd" d="M7.74536 7.18961H16.2748V9.21081H7.74536V7.18961Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M7.74536 10.7368H16.2748V12.758H7.74536V10.7368Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6381 2.04565H5.93635L3.91516 4.06685V19.9332L5.93635 21.9544H18.0635L20.0847 19.9332V6.45185L15.6381 2.04565ZM18.0635 19.9332H5.93635V4.06685H14.8094L18.0635 7.29065V19.9332Z" fill="currentColor"/>',
+  limit: '<path fill-rule="evenodd" clip-rule="evenodd" d="M8.52002 18.78C10.32 18.78 11.77 17.32 11.77 15.53C11.77 13.73 10.31 12.28 8.52002 12.28C6.73002 12.28 5.27002 13.74 5.27002 15.53C5.27002 17.32 6.73002 18.78 8.52002 18.78ZM8.52002 14.28C9.21002 14.28 9.77002 14.84 9.77002 15.53C9.77002 16.22 9.21002 16.78 8.52002 16.78C7.83002 16.78 7.27002 16.22 7.27002 15.53C7.27002 14.84 7.83002 14.28 8.52002 14.28Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.85 2.26001H9.15002L7.15002 4.26001V5.76001H5.65002L3.65002 7.76001V9.26001H2.14001L0.140015 11.26V19.74L2.14001 21.74H14.84L16.84 19.74V18.24H18.35L20.35 16.24V14.74H21.86L23.86 12.74V4.26001L21.85 2.26001ZM14.83 19.74H2.13001V11.26H14.83V19.74ZM18.34 16.25H16.83V11.27L14.83 9.27001H5.64001V7.77001H18.34V16.25ZM20.34 12.74V7.76001L18.34 5.76001H9.14001V4.26001H21.84V12.74H20.34Z" fill="currentColor"/>',
+  pie_chart: '<path fill-rule="evenodd" clip-rule="evenodd" d="M21.2449 9.25496C21.1449 8.79496 20.9949 8.34495 20.8149 7.90495C20.3749 6.84495 19.7349 5.88495 18.9249 5.07495C18.1149 4.26496 17.1549 3.62496 16.0949 3.18496C15.6549 3.00496 15.2049 2.85496 14.7449 2.75496C14.0949 2.59496 13.4249 2.51495 12.7449 2.51495V11.255H21.4849C21.4849 10.575 21.4049 9.90496 21.2449 9.25496ZM14.7449 9.25496V4.82495C14.9449 4.88495 15.1349 4.95495 15.3249 5.03495C16.1449 5.36495 16.8849 5.86495 17.5149 6.49495C18.1349 7.11495 18.6349 7.85495 18.9649 8.67495C19.0449 8.86495 19.1149 9.05496 19.1749 9.25496H14.7449Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.2549 12.755V4.02496C10.5649 4.02496 9.89489 4.10496 9.25489 4.25496C5.39489 5.15496 2.51489 8.61496 2.51489 12.755C2.51489 17.575 6.42489 21.485 11.2549 21.485C15.3849 21.485 18.8449 18.615 19.7549 14.755C19.9049 14.115 19.9849 13.445 19.9849 12.755H11.2549ZM11.2549 19.485C7.53489 19.485 4.51489 16.475 4.51489 12.755C4.51489 9.73496 6.51489 7.17496 9.25489 6.32496V12.755L11.2549 14.755H17.6849C16.8249 17.495 14.2749 19.485 11.2549 19.485Z" fill="currentColor"/>',
+  clock: '<path d="M12.58 7.15604H10.6717V12.1131L11.5855 13.0269H16.5426V11.1186H12.58V7.15604Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0976 2.5592C7.0939 2.5592 3.0376 6.6155 3.0376 11.6192C3.0376 16.6229 7.0939 20.6792 12.0976 20.6792C17.1013 20.6792 21.1576 16.6229 21.1576 11.6192C21.1576 6.6155 17.1013 2.5592 12.0976 2.5592ZM4.9459 11.6192C4.9459 7.66943 8.14783 4.46751 12.0976 4.46751C16.0474 4.46751 19.2493 7.66943 19.2493 11.6192C19.2493 15.569 16.0474 18.7709 12.0976 18.7709C8.14783 18.7709 4.9459 15.569 4.9459 11.6192Z" fill="currentColor"/>',
+  radio_default: '<path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.8C8.02355 4.8 4.8 8.02355 4.8 12C4.8 15.9764 8.02355 19.2 12 19.2C15.9764 19.2 19.2 15.9764 19.2 12C19.2 8.02355 15.9764 4.8 12 4.8ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z" fill="currentColor"/>',
+  safe: '<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9096 8.89648L12.3076 13.4862L10.9009 13.4918L8.03332 10.6768L9.43437 9.24959L11.5959 11.3714L15.4973 7.48038L16.9096 8.89648Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.5533 14.6799L19.8119 16.2342L13.2586 21.5404H10.7414L4.1881 16.2342L3.44666 14.6799L3.44666 4.45972L5.44666 2.45972L18.5533 2.45972L20.5533 4.45972V14.6799ZM12 19.9861L18.5533 14.6799L18.5533 4.45972L5.44666 4.45972L5.44666 14.6799L12 19.9861Z" fill="currentColor"/>',
+  fire: '<path fill-rule="evenodd" clip-rule="evenodd" d="M17.3401 5.77502L17.2701 5.66501H14.2101L14.0701 5.91501L12.0301 2.685H8.98006L8.91006 2.77502C7.15006 4.94502 5.81006 6.87502 4.92006 8.55502C4.03006 10.235 3.56006 11.675 3.56006 12.875C3.56006 17.525 7.34006 21.315 12.0001 21.315C16.6601 21.315 20.4401 17.525 20.4401 12.875C20.4301 11.055 19.4001 8.72502 17.3401 5.77502ZM12.0001 19.125C8.55006 19.125 5.76006 16.325 5.76006 12.885C5.76006 12.315 5.94006 11.635 6.25006 10.875C6.56006 10.125 6.99006 9.315 7.49006 8.505C8.42006 6.995 9.56006 5.48502 10.4901 4.33502L14.2701 10.325L15.8001 7.375C16.4301 8.305 17.0101 9.26502 17.4501 10.175C17.9501 11.205 18.2501 12.145 18.2501 12.885C18.2501 16.325 15.4501 19.125 12.0001 19.125Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.79 11.485C9.99004 11.485 8.54004 12.945 8.54004 14.735C8.54004 16.525 10 17.985 11.79 17.985C13.59 17.985 15.04 16.525 15.04 14.735C15.04 12.945 13.59 11.485 11.79 11.485ZM11.79 15.985C11.1 15.985 10.54 15.425 10.54 14.735C10.54 14.045 11.1 13.485 11.79 13.485C12.48 13.485 13.04 14.045 13.04 14.735C13.04 15.425 12.48 15.985 11.79 15.985Z" fill="currentColor"/>',
+  arrow: '<path fill-rule="evenodd" clip-rule="evenodd" d="M7.32597 2.95447L13.8526 9.4811V10.6596L7.32597 17.1862L6.14746 16.0077L12.0848 10.0704L6.14746 4.13298L7.32597 2.95447Z" fill="currentColor"/>',
+  radio_checked: '<path d="M12 17.4C14.9823 17.4 17.4 14.9823 17.4 12C17.4 9.01766 14.9823 6.6 12 6.6C9.01766 6.6 6.6 9.01766 6.6 12C6.6 14.9823 9.01766 17.4 12 17.4Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM4.8 12C4.8 8.02355 8.02355 4.8 12 4.8C15.9764 4.8 19.2 8.02355 19.2 12C19.2 15.9764 15.9764 19.2 12 19.2C8.02355 19.2 4.8 15.9764 4.8 12Z" fill="currentColor"/>'
+};
+function ic(name, size, cls) {
+  size = size || 24;
+  var vb = name === 'arrow' ? 20 : 24;
+  return '<svg' + (cls ? ' class="' + cls + '"' : '') + ' width="' + size + '" height="' + size + '" viewBox="0 0 ' + vb + ' ' + vb + '" fill="none" aria-hidden="true">' + IC[name] + '</svg>';
+}
+
+/* iOS status bar from the Figma frames (time and glyphs as outlines) */
+var SB = '<svg width="390" height="54" viewBox="0 0 390 54" fill="none" aria-hidden="true"><path d="M58.2391 23.001C58.9129 23.001 59.5545 23.127 60.1639 23.3789C60.7733 23.6309 61.3123 24.0176 61.7811 24.5391C62.2557 25.0605 62.6278 25.7314 62.8973 26.5518C63.1668 27.3721 63.3016 28.3535 63.3016 29.4961V29.5137C63.3016 30.9375 63.0965 32.1562 62.6864 33.1699C62.2762 34.1836 61.6903 34.96 60.9286 35.499C60.1668 36.0381 59.2528 36.3076 58.1864 36.3076C57.4071 36.3076 56.7039 36.167 56.077 35.8857C55.4559 35.5986 54.9403 35.2061 54.5301 34.708C54.12 34.21 53.8475 33.6387 53.7127 32.9941L53.6952 32.8975H55.9188L55.9539 32.9766C56.0653 33.2754 56.2235 33.5361 56.4286 33.7588C56.6395 33.9756 56.8914 34.1455 57.1844 34.2686C57.4832 34.3916 57.8172 34.4531 58.1864 34.4531C58.8602 34.4531 59.408 34.2568 59.8299 33.8643C60.2577 33.4658 60.577 32.9355 60.7879 32.2734C60.9989 31.6055 61.119 30.8672 61.1483 30.0586C61.1541 29.9707 61.1571 29.8857 61.1571 29.8037C61.1571 29.7158 61.1571 29.6309 61.1571 29.5488L60.7616 27.4395C60.7616 26.9531 60.6502 26.5166 60.4276 26.1299C60.2049 25.7373 59.9032 25.4268 59.5223 25.1982C59.1473 24.9639 58.7254 24.8467 58.2567 24.8467C57.7938 24.8467 57.3719 24.9609 56.9911 25.1895C56.6102 25.4121 56.3055 25.7139 56.077 26.0947C55.8485 26.4756 55.7342 26.9062 55.7342 27.3867V27.4043C55.7342 27.8906 55.8426 28.3242 56.0594 28.7051C56.2762 29.0801 56.5721 29.376 56.9471 29.5928C57.328 29.8096 57.7557 29.918 58.2303 29.918C58.7108 29.918 59.1414 29.8125 59.5223 29.6016C59.9032 29.3848 60.2049 29.0918 60.4276 28.7227C60.6502 28.3535 60.7616 27.9287 60.7616 27.4482V27.4395H61.2889V29.7598H60.9901C60.8377 30.0938 60.6121 30.4072 60.3133 30.7002C60.0145 30.9873 59.6454 31.2188 59.2059 31.3945C58.7664 31.5703 58.2537 31.6582 57.6678 31.6582C56.8592 31.6582 56.1414 31.4766 55.5145 31.1133C54.8934 30.75 54.4071 30.252 54.0555 29.6191C53.7039 28.9863 53.5282 28.2715 53.5282 27.4746V27.457C53.5282 26.6016 53.7274 25.8369 54.1258 25.1631C54.5301 24.4893 55.0868 23.9619 55.7957 23.5811C56.5106 23.1943 57.325 23.001 58.2391 23.001ZM66.7815 34.2949C66.3889 34.2949 66.0579 34.1631 65.7884 33.8994C65.5247 33.6299 65.3929 33.3018 65.3929 32.915C65.3929 32.5283 65.5247 32.2031 65.7884 31.9395C66.0579 31.6699 66.3889 31.5352 66.7815 31.5352C67.1858 31.5352 67.5198 31.6699 67.7835 31.9395C68.0471 32.2031 68.179 32.5283 68.179 32.915C68.179 33.3018 68.0471 33.6299 67.7835 33.8994C67.5198 34.1631 67.1858 34.2949 66.7815 34.2949ZM66.7815 27.7734C66.3889 27.7734 66.0579 27.6416 65.7884 27.3779C65.5247 27.1084 65.3929 26.7803 65.3929 26.3936C65.3929 26.0068 65.5247 25.6816 65.7884 25.418C66.0579 25.1484 66.3889 25.0137 66.7815 25.0137C67.1858 25.0137 67.5198 25.1484 67.7835 25.418C68.0471 25.6816 68.179 26.0068 68.179 26.3936C68.179 26.7803 68.0471 27.1084 67.7835 27.3779C67.5198 27.6416 67.1858 27.7734 66.7815 27.7734ZM76.4489 36V33.5654H70.2439V31.7109C70.572 31.1367 70.906 30.5654 71.2458 29.9971C71.5857 29.4229 71.9284 28.8516 72.2741 28.2832C72.6257 27.709 72.9743 27.1436 73.32 26.5869C73.6716 26.0244 74.0202 25.4707 74.3659 24.9258C74.7175 24.3809 75.0661 23.8447 75.4118 23.3174H78.6111V31.6934H80.3249V33.5654H78.6111V36H76.4489ZM72.3445 31.7461H76.4841V25.1279H76.3611C76.0974 25.5264 75.8279 25.9365 75.5525 26.3584C75.2829 26.7803 75.0105 27.2109 74.7351 27.6504C74.4597 28.0898 74.1843 28.5322 73.9089 28.9775C73.6394 29.4229 73.3728 29.8682 73.1091 30.3135C72.8454 30.7529 72.5905 31.1895 72.3445 31.623V31.7461ZM85.1232 36V25.5498H84.9738L81.8185 27.7734V25.6465L85.132 23.3174H87.382V36H85.1232Z" fill="currentColor"/><path opacity="0.2" d="M294.512 35.4102H296.512C297.035 35.4102 297.384 35.0449 297.384 34.5054V32.7783C297.384 32.2388 297.035 31.8818 296.512 31.8818H294.512C293.989 31.8818 293.64 32.2388 293.64 32.7783V34.5054C293.64 35.0449 293.989 35.4102 294.512 35.4102Z" fill="currentColor"/><path d="M294.515 35.4102H296.532C297.047 35.4102 297.396 35.0449 297.396 34.5054V21.9048C297.396 21.3652 297.047 21 296.532 21H294.515C294.001 21 293.644 21.3652 293.644 21.9048V34.5054C293.644 35.0449 294.001 35.4102 294.515 35.4102Z" fill="currentColor"/><path d="M288.306 35.4102H290.307C290.821 35.4102 291.178 35.0449 291.178 34.5054V25.1836C291.178 24.644 290.821 24.2788 290.307 24.2788H288.306C287.783 24.2788 287.435 24.644 287.435 25.1836V34.5054C287.435 35.0449 287.783 35.4102 288.306 35.4102Z" fill="currentColor"/><path d="M282.089 35.4102H284.089C284.612 35.4102 284.961 35.0449 284.961 34.5054V28.1885C284.961 27.6489 284.612 27.2837 284.089 27.2837H282.089C281.566 27.2837 281.217 27.6489 281.217 28.1885V34.5054C281.217 35.0449 281.566 35.4102 282.089 35.4102Z" fill="currentColor"/><path d="M275.872 35.4102H277.872C278.395 35.4102 278.744 35.0449 278.744 34.5054V30.7783C278.744 30.2388 278.395 29.8818 277.872 29.8818H275.872C275.349 29.8818 275 30.2388 275 30.7783V34.5054C275 35.0449 275.349 35.4102 275.872 35.4102Z" fill="currentColor"/><path d="M314.555 35.8042C314.738 35.8042 314.896 35.7212 315.219 35.4058L317.245 33.4634C317.369 33.3389 317.403 33.1562 317.286 33.0068C316.747 32.3096 315.726 31.7036 314.555 31.7036C313.352 31.7036 312.331 32.3345 311.791 33.0566C311.708 33.1895 311.741 33.3389 311.874 33.4634L313.891 35.4058C314.215 35.7129 314.373 35.8042 314.555 35.8042ZM309.7 31.2886C309.882 31.4629 310.106 31.438 310.272 31.2554C311.268 30.1514 312.895 29.3462 314.555 29.3545C316.232 29.3462 317.859 30.1763 318.872 31.2803C319.021 31.4546 319.229 31.4463 319.411 31.2803L320.698 30.002C320.831 29.8691 320.848 29.6865 320.723 29.5371C319.47 28.0015 317.145 26.8477 314.555 26.8477C311.966 26.8477 309.641 28.0015 308.388 29.5371C308.263 29.6865 308.272 29.8525 308.413 30.002L309.7 31.2886ZM306.255 27.8189C306.421 27.9766 306.653 27.9766 306.811 27.8106C308.853 25.644 311.542 24.4985 314.555 24.4985C317.585 24.4985 320.291 25.6523 322.317 27.8189C322.466 27.9683 322.69 27.96 322.856 27.8022L324.002 26.6567C324.151 26.5073 324.143 26.3247 324.027 26.1836C322.076 23.7764 318.407 22.0083 314.555 22.0083C310.712 22.0083 307.027 23.7764 305.084 26.1836C304.968 26.3247 304.968 26.5073 305.109 26.6567L306.255 27.8189Z" fill="currentColor"/><path opacity="0.4" d="M337.522 35.9548H354.203C356.149 35.9548 357.54 35.7363 358.532 34.7438C359.528 33.7513 359.733 32.3858 359.733 30.4323V27.5391C359.733 25.5857 359.528 24.2134 358.532 23.2243C357.537 22.2318 356.149 22.0167 354.203 22.0167H337.461C335.59 22.0167 334.196 22.2352 333.204 23.231C332.208 24.2234 332 25.5997 332 27.4703V30.4323C332 32.3858 332.204 33.7546 333.197 34.7438C334.196 35.7363 335.58 35.9548 337.522 35.9548ZM337.239 34.6249C335.973 34.6249 334.833 34.4245 334.171 33.77C333.519 33.1081 333.33 31.9853 333.33 30.7157V27.3139C333.33 25.9928 333.519 24.8567 334.167 24.1948C334.829 23.5295 335.987 23.3432 337.305 23.3432H354.493C355.76 23.3432 356.9 23.5469 357.551 24.1981C358.213 24.86 358.403 25.9754 358.403 27.245V30.7157C358.403 31.9853 358.21 33.1081 357.551 33.77C356.9 34.4279 355.76 34.6249 354.493 34.6249H337.239ZM360.977 31.6011C361.772 31.5507 362.848 30.5257 362.848 28.982C362.848 27.4424 361.772 26.4174 360.977 26.367V31.6011Z" fill="currentColor"/><path d="M336.863 33.522H354.88C355.844 33.522 356.417 33.3713 356.781 33.0072C357.145 32.6398 357.303 32.0636 357.303 31.0993V26.8688C357.303 25.8978 357.145 25.3282 356.784 24.9609C356.417 24.6001 355.837 24.4461 354.88 24.4461H336.932C335.903 24.4461 335.309 24.5968 334.959 24.9575C334.598 25.3249 334.44 25.9185 334.44 26.9302V31.0993C334.44 32.0736 334.598 32.6398 334.959 33.0072C335.326 33.3679 335.906 33.522 336.863 33.522Z" fill="currentColor"/></svg>';
+
+/* ---------- state ---------- */
+var params = new URLSearchParams(location.search);
+var fromHash = location.hash.replace('#', '');
+var scen = SCEN[fromHash] ? fromHash : (SCEN[params.get('s')] ? params.get('s') : 'chdp');
+var S, timers = [];
+
+function fmt(n) { return String(Math.max(0, Math.round(n || 0))).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+function balOf(c) { return c.id === 'kap' && scen === 'error' ? 10000000 : c.bal; }
+function startAmount() { return scen === 'full' ? String(debt()) : ''; }
+function fresh() { return { screen: 'info', from: 'info', pick: 'next', card: 'kap', amount: startAmount(), open: false, settled: scen === 'full', paid: 0, full: false, sheet: null, push: null }; }
+function card() { return CARDS.filter(function (c) { return c.id === S.card; })[0] || CARDS[0]; }
+/* что показывает экран ЧДП: 435332 пусто, 435408/435331 сумма, 435333 ошибка */
+function chdp() {
+  var amount = parseInt(S.amount, 10) || 0;
+  var dd = scen === 'in-dd', acc = accrued(), total = PRINCIPAL + acc;
+  var charge = Math.max(0, amount - LOAN.deposit);                      // с карты — только недостающая сумма
+  var inRange = amount >= PAY && amount <= total;
+  var funds = inRange && charge > balOf(card());
+  var range = amount > total || (amount > 0 && amount < PAY && S.settled);
+  var msg = amount > total ? rangeMsg() : funds ? 'Недостаточно средств' : range ? rangeMsg() : '';
+  var rows = dd
+    ? [['Платеж по графику', fmt(Math.min(amount, PAY)) + ' UZS'], ['Досрочное погашение', fmt(amount - PAY) + ' UZS']]
+    : [['Начисленные проценты', fmt(Math.min(amount, acc)) + ' UZS'], ['Досрочное погашение', fmt(amount - acc) + ' UZS']];
+  var od = dd ? PRINCIPAL - (PAY - acc) - Math.max(0, amount - PAY) : PRINCIPAL - Math.max(0, amount - acc);
+  var newPay = ann(od, dd ? LOAN.term - 1 : LOAN.term);
+  var ok = inRange && !funds;
+  return { amount: amount, err: !!msg, msg: msg, ok: ok, rows: rows, full: amount >= total, newPay: newPay, banner: ok && S.settled };
+}
+function set(patch) { for (var k in patch) S[k] = patch[k]; render(); }
+function clearTimers() { timers.forEach(clearTimeout); timers = []; }
+function reset() { clearTimers(); S = fresh(); render(); }
+function canPay() { return chdp().ok; }
+
+function finish() {
+  clearTimers();
+  var st = chdp();
+  set({ screen: 'status', sheet: null, push: null, paid: st.amount, full: st.full });
+  if (!st.full) timers.push(setTimeout(function () { set({ push: 'done' }); }, 1400));
+}
+
+/* ---------- actions ---------- */
+var ACT = {
+  noop: function () {},
+  goInfo: function () { set({ screen: 'info', sheet: null }); },
+  goRepay: function () { set({ screen: 'repay', sheet: null }); },
+  goChdp: function (from) { set({ screen: 'chdp', from: from || 'info', amount: startAmount(), open: false, settled: scen === 'full', sheet: null }); },
+  toggleAcc: function () { set({ open: !S.open }); },
+  openCards: function () { var a = document.activeElement; if (a && a.blur) a.blur(); set({ sheet: 'cards' }); },
+  pickCard: function (id) { set({ card: id, sheet: null }); },
+  locked: function (id, el) { el.classList.remove('nudge'); void el.offsetWidth; el.classList.add('nudge'); },
+  back: function () { set({ screen: S.from, sheet: null }); },
+  pick: function (which) { set({ pick: which }); },
+  submit: function () { if (canPay()) set({ sheet: 'modal' }); },
+  closeSheet: function () { set({ sheet: null }); },
+  confirm: finish,
+  done: reset,
+  hidePush: function () { clearTimers(); set({ push: null }); },
+  reset: reset,
+  scen: function (id) {
+    if (!SCEN[id]) return;
+    scen = id;
+    try { history.replaceState(null, '', '#' + id); } catch (err) {}
+    reset();
+    renderPanel();
+  }
+};
+
+/* ---------- building blocks ---------- */
+function btn(label, act, opts) {
+  opts = opts || {};
+  return '<button type="button" class="btn ' + (opts.size === 'm' ? 'btn-m' : 'btn-l') + ' ' + (opts.tertiary ? 'btn-tertiary' : 'btn-primary') + '"'
+    + ' data-act="' + act + '"' + (opts.disabled ? ' disabled' : '') + '>' + label + '</button>';
+}
+function appbar(title, act, light) {
+  return '<header class="appbar"><div class="sb' + (light ? ' light' : '') + '">' + SB + '</div><div class="ab-row">'
+    + '<button type="button" class="ab-back" aria-label="Назад" data-act="' + act + '">' + ic('chevron_left') + '</button>'
+    + (title ? '<h1 class="ab-title">' + title + '</h1>' : '') + '</div></header>';
+}
+function home() { return '<div class="home" aria-hidden="true"><i></i></div>'; }
+function legal() {
+  return '<p class="legal">Нажимая кнопку {ButtonName}, подтверждаю, что выполняю операцию самостоятельно, без влияния мошенников, и ознакомлен с <a href="' + TARIFFS + '" target="_blank" rel="noopener">тарифами банка</a></p>';
+}
+function bottom(button) { return '<div class="bottom"><div class="bottom-in">' + button + legal() + '</div>' + home() + '</div>'; }
+function kv(label, value, info) {
+  return '<div class="kv"><div class="kv-t"><span class="kv-l">' + label + '</span>' + (info ? '<span class="kv-i">' + ic('info', 16) + '</span>' : '')
+    + '</div><div class="kv-v">' + value + '</div></div>';
+}
+function sc(type, icon, title, desc, opts) {
+  opts = opts || {};
+  return '<div class="sc sc-' + type + (opts.attach ? ' sc-attach' : '') + (opts.top ? ' top' : '') + '"' + (opts.key ? ' data-key="' + opts.key + '"' : '') + '>' + ic(icon)
+    + '<div class="sc-c"><p class="sc-t">' + title + '</p>' + (desc ? '<p class="sc-d">' + desc + '</p>' : '') + '</div>'
+    + (opts.arrow ? ic('arrow', 20, 'arr') : '') + '</div>';
+}
+function cardRow(c) {
+  return '<img src="assets/' + c.logo + '" alt="" width="36" height="24"><span class="src-m"><span class="src-b">'
+    + (c.locked ? '<img class="lk" src="assets/lock.svg" alt="" width="16" height="16">' : '') + '<b>' + fmt(balOf(c)) + '</b><small>UZS</small></span>'
+    + '<span class="src-i"><span>' + c.name + '</span>' + (c.cloud ? '<img src="assets/cloud.svg" alt="" width="16" height="16">' : '')
+    + '<em>•••• ' + c.mask + '</em><img src="assets/' + c.ps + '" alt="' + c.psAlt + '" width="24" height="24"></span></span>';
+}
+function payMethod() {
+  var cur = card();
+  return '<button type="button" class="src" data-key="pm-one" data-act="openCards" aria-haspopup="dialog" aria-label="Способ оплаты: ' + cur.name + ' •••• ' + cur.mask + '">'
+    + cardRow(cur) + ic('chevron_down', 24, 'chev') + '</button>';
+}
+function li(icon, title, act, arg) {
+  return '<button type="button" class="li" data-act="' + (act || 'noop') + '"' + (arg ? ' data-arg="' + arg + '"' : '') + '><span class="li-ic">' + ic(icon, 20) + '</span>'
+    + '<span class="li-t">' + title + '</span>' + ic('chevron_right') + '</button>';
+}
+
+/* ---------- 435324 · карточка займа ---------- */
+function vInfo() {
+  return '<div class="screen" data-key="scr-info">' + appbar('', 'noop')
+    + '<div class="scroll solo" style="padding:16px 16px 24px;gap:16px">'
+    + '<section class="card" aria-label="Микрозайм"><div class="dw-head"><div style="display:flex;flex-direction:column;gap:4px">'
+    + '<div class="w-name"><span>AVO микрозайм на 3 мес</span><button type="button" class="w-edit" aria-label="Переименовать займ">' + ic('edit') + '</button></div>'
+    + '<span class="tag-s success">' + ic('info', 16) + 'Защита от штрафов</span></div>'
+    + '<div style="display:flex;flex-direction:column;gap:2px"><p class="cap12">Следующий платеж</p><p class="sum32"><b>' + fmt(PAY - LOAN.deposit) + '</b><i>UZS</i></p></div></div>'
+    + '<div class="w-rows">' + kv('Дата платежа', '25.08.2025', true) + kv('Уже внесено', fmt(LOAN.deposit) + ' UZS', true) + '</div>'
+    + '<div class="w-status">' + sc('positive', 'fire', 'Погашение займа без переплат', 'До 25 августа', { arrow: true }) + btn('Внести платеж', 'goRepay', { size: 'm' }) + '</div>'
+    + '<div class="acts"><button type="button" class="act">' + ic('pie_chart') + '<span>График</span></button>'
+    + '<button type="button" class="act">' + ic('clock') + '<span>История</span></button></div></section>'
+    + '<section class="card list" aria-label="Действия по займу">' + li('note', 'Заказать справку') + li('document_menu', 'Реквизиты')
+    + li('limit', 'Погасить частично', 'goChdp', 'info') + '</section></div>' + home() + '</div>';
+}
+
+/* ---------- _concept-credit · внесение платежа ---------- */
+function ctl(which, title, sum, caption, extra) {
+  var on = S.pick === which;
+  return '<label class="ctl' + (on ? ' on' : '') + '"><input class="sr" type="radio" name="repay" value="' + which + '" data-change="pick"' + (on ? ' checked' : '') + '>'
+    + '<span class="ctl-top"><span>' + title + '</span>' + (extra.tagTop || '') + ic(on ? 'radio_checked' : 'radio_default', 24, on ? 'on' : '') + '</span>'
+    + '<span class="ctl-mid"><span class="sum18"><b>' + sum + '</b><i>UZS</i></span>' + (extra.tag || '') + '</span>'
+    + '<span class="ctl-cap" style="display:block">' + caption + '</span>'
+    + (extra.more ? '<span class="more">Подробнее' + ic('chevron_down', 20) + '</span>' : '') + '</label>';
+}
+function vRepay() {
+  return '<div class="screen" data-key="scr-repay">' + appbar('', 'goInfo')
+    + '<div class="scroll" style="padding:16px 16px 24px;gap:16px">'
+    + '<h2 class="headline">Внесите следующий платеж<br>до 25 августа</h2>'
+    + '<div style="display:flex;flex-direction:column;gap:32px"><div style="display:flex;flex-direction:column;gap:8px"><p class="lbl">Способ оплаты</p>' + payMethod() + '</div>'
+    + '<fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:16px"><legend class="sr">Сумма платежа</legend>'
+    + '<div style="display:flex;flex-direction:column">' + sc('positive', 'safe', 'Защита от штрафов на 60 дней', '', { arrow: true, attach: true })
+    + ctl('next', 'Следующий платеж', fmt(PAY - LOAN.deposit), 'Внесите вовремя, чтобы избежать штрафов', { tag: '<span class="tag-m neutral">до 25 августа</span>' }) + '</div>'
+    + ctl('full', 'Погасить весь долг', fmt(debt() - LOAN.deposit), 'Кредит закроется сразу после погашения', { tagTop: '<span class="tag-m success">0%</span>', more: true })
+    + '<div class="card list">' + li('limit', 'Погасить частично', 'goChdp', 'repay') + '</div></fieldset></div></div>'
+    + bottom(btn('Внести платеж', 'noop')) + '</div>';
+}
+
+/* ---------- 435332 / 435408 / 435331 / 435333 и 435409 / 435410 / 435411 · ЧДП ---------- */
+function field(st) {
+  return '<div class="field' + (st.err ? ' is-error' : '') + '"><input id="amount" type="text" inputmode="numeric" autocomplete="off" enterkeyhint="done"'
+    + ' placeholder="От ' + fmt(PAY) + ' до ' + fmt(debt()) + '" value="' + (S.amount ? fmt(st.amount) : '') + '"' + (st.err ? ' aria-invalid="true" aria-describedby="amount-err"' : '') + '>'
+    + '<span class="field-sfx">UZS</span></div>';
+}
+function acc(rows) {
+  return '<div class="req acc' + (S.open ? ' open' : '') + '" data-key="acc"><button type="button" class="acc-h" data-act="toggleAcc" aria-expanded="' + (S.open ? 'true' : 'false') + '">'
+    + '<span class="acc-t">Порядок погашения</span><span class="acc-i">' + ic('chevron_down', 20) + '</span></button>'
+    + (S.open ? '<div class="acc-b">' + rows.map(function (r) { return kv(r[0], r[1]); }).join('') + '</div>' : '') + '</div>';
+}
+function vChdp() {
+  var st = chdp();
+  return '<div class="screen" data-key="scr-chdp">' + appbar('Погасить задолженность частично', 'back')
+    + '<div class="scroll" style="padding:24px 0 24px;gap:24px">'
+    + '<div style="padding:0 16px"><section class="card" aria-label="Микрозайм"><div class="loan-head"><img src="assets/avo-microloan.svg" alt="" width="36" height="24">AVO микрозайм на 3 месяцев</div>'
+    + '<div class="loan-rows">' + kv('Общая задолженность', fmt(debt()) + ' UZS', true) + kv('Уже внесено', fmt(LOAN.deposit) + ' UZS', true) + '</div></section></div>'
+    + '<div style="padding:0 16px;display:flex;flex-direction:column;gap:8px"><p class="lbl">Способ оплаты</p>' + payMethod() + '</div>'
+    + '<div style="padding:0 16px;display:flex;flex-direction:column;gap:16px">'
+    + '<div style="display:flex;flex-direction:column;gap:8px"><label class="lbl" for="amount">Погасить частично</label>' + field(st)
+    + (st.err ? '<p class="fdesc err" id="amount-err" role="alert">' + st.msg + '</p>' : '') + '</div>'
+    + (st.banner ? (st.full ? sc('info', 'alert_circle', 'Кредит закроется сразу после погашения', '', { key: 'banner-full', top: true })
+      : sc('info', 'alert_circle', '~' + fmt(st.newPay) + ' UZS новый ежемесячный платеж', NOTE[scen], { key: 'banner', top: true })) : '')
+    + (st.amount ? acc(st.rows) : '') + '</div></div>'
+    + bottom(btn('Погасить досрочно', 'submit', { disabled: !st.ok })) + '</div>';
+}
+
+/* ---------- modalNotification · перед совершением операции ---------- */
+function vModal() {
+  var b = [
+    { i: 'alert_circle', t: 'Частичное досрочное погашение не отменяет  ежемесячный платеж', s: true },
+    { i: 'alert_circle', t: 'Размер ежемесячного платежа по графику изменится не сразу, обычно на следующий рабочий день' },
+    { i: 'check', t: 'После частичного досрочного погашения, дата следующего платежа по графику не изменится ' }
+  ];
+  return '<button type="button" class="ovl" data-key="ovl" aria-label="Закрыть" data-act="closeSheet"></button>'
+    + '<div class="sheet" data-key="sheet-modal" role="dialog" aria-modal="true" aria-labelledby="cf-t"><div class="grab"></div>'
+    + '<div class="cf">' + ic('alert_circle', 64) + '<div class="cf-body"><div class="cf-head"><h2 id="cf-t">Как работает частичное досрочное погашение</h2></div>'
+    + '<ul class="bul">' + b.map(function (x) { return '<li' + (x.s ? ' class="strong"' : '') + '>' + ic(x.i) + '<span style="white-space:pre-wrap">' + x.t + '</span></li>'; }).join('') + '</ul></div></div>'
+    + '<div class="sheet-btns">' + btn('Погасить досрочно', 'confirm') + btn('Вернуться', 'closeSheet', { tertiary: true }) + '</div><div style="margin-top:8px">' + home() + '</div></div>';
+}
+
+/* ---------- cardsModal · выбор способа оплаты (Figma 12975:48437) ---------- */
+function vCards() {
+  return '<button type="button" class="ovl lite" data-key="ovl-cards" aria-label="Закрыть" data-act="closeSheet"></button>'
+    + '<div class="sheet" data-key="sheet-cards" role="dialog" aria-modal="true" aria-labelledby="cm-t"><div class="grab"></div>'
+    + '<div class="cm"><div class="cm-in"><h2 class="cm-title" id="cm-t">Способ оплаты</h2><div class="cm-list">'
+    + CARDS.map(function (c) {
+        return c.locked
+          ? '<button type="button" class="src locked" aria-disabled="true" data-act="locked" data-arg="' + c.id + '" aria-label="' + c.name + ' •••• ' + c.mask + ', недоступна для погашения">' + cardRow(c) + '</button>'
+          : '<button type="button" class="src" data-act="pickCard" data-arg="' + c.id + '"' + (c.id === S.card ? ' aria-current="true"' : '') + '>' + cardRow(c) + '</button>';
+      }).join('')
+    + '<button type="button" class="cm-add" data-act="noop"><span>' + '<img src="assets/plus.svg" alt="" width="20" height="20">Привязать новую карту</span></button>'
+    + '</div></div><div class="cm-home">' + home() + '</div></div></div>';
+}
+
+/* ---------- Payment-status-card ---------- */
+function vStatus() {
+  var full = S.full;
+  return '<div class="screen" data-key="scr-status" style="background:var(--white)"><div class="st-top"><div class="sb light">' + SB + '</div>'
+    + '<div class="st-logo"><img src="assets/avo-logo-white.svg" alt="AVO" width="120" height="40"></div>'
+    + '<div class="st-status"><img class="st-wave" src="assets/status-wave.svg" alt="" width="390" height="74">'
+    + '<img class="st-icon" src="assets/status-icon-success.svg" alt="" width="64" height="64"></div></div>'
+    + '<div class="st-body"><div class="st-main"><h1 class="st-title">Выполнено</h1>'
+    + '<div class="st-sum"><p class="sum-xl"><b>– ' + fmt(S.paid || PAY) + '</b><i>UZS</i></p><p class="st-sub">Комиссия 0 UZS</p></div>'
+    + '<div class="st-info"><div class="pay"><img src="assets/avatar-avo.svg" alt="" width="48" height="48"><div class="pay-m"><p class="pay-t">'
+    + (full ? 'Полное погашение микрозайма' : 'Частичное погашение микрозайма') + '</p><p class="pay-s">Оплата услуг</p></div></div></div>'
+    + '<div class="st-row"><span>Списание с</span><div><img src="assets/avo-microloan-small.svg" alt="" width="24" height="16">' + 'AVO микрозайм на 3 месяцев' + '</div></div></div>'
+    + '<div class="st-foot"><div class="st-btns">' + btn('Сохранить в избранное', 'noop') + btn('Готово', 'done', { tertiary: true }) + '</div>' + home() + '</div></div></div>';
+}
+
+function vPush() {
+  return '<button type="button" class="push" data-key="push" data-act="hidePush" aria-label="Скрыть уведомление"><img src="assets/app-icon.svg" alt="" width="38" height="38">'
+    + '<span class="push-c"><span style="flex:1;min-width:0;display:flex;flex-direction:column"><b>Частичное погашение микроз...</b><span>' + PUSH_TEXT.replace('{sum}', fmt(S.paid)) + '</span></span>'
+    + '<small>9:41 AM</small></span></button>';
+}
+
+function view() {
+  var html;
+  if (S.screen === 'repay') html = vRepay();
+  else if (S.screen === 'chdp') html = vChdp();
+  else if (S.screen === 'status') html = vStatus();
+  else html = vInfo();
+  if (S.sheet === 'modal') html += vModal();
+  if (S.sheet === 'cards') html += vCards();
+  if (S.push && S.screen === 'status') html += vPush();
+  return html;
+}
+
+function vPanel() {
+  return '<p class="eyebrow">AVO · прототип · 1 в 1 с Figma · 16.11</p><h1>Частичное досрочное погашение микрозайма</h1>'
+    + '<fieldset><legend>Сценарий</legend>' + Object.keys(SCEN).map(function (id) {
+        return '<label class="scn"><input type="radio" name="scn" value="' + id + '" data-change="scen"' + (id === scen ? ' checked' : '') + '>'
+          + '<span><b>' + SCEN[id].t + '</b><span>' + SCEN[id].d + '</span></span></label>';
+      }).join('') + '</fieldset>'
+    + btn('Начать заново', 'reset', { size: 'm', tertiary: true })
+    + '<ul><li>Путь: карточка займа → «Погасить частично» (или «Внести платеж» → «Погасить частично») → сумма → «Погасить досрочно» → попап → статус → пуш</li>'
+    + '<li>«Порядок погашения» свёрнут (435408), раскрывается по тапу (435331)</li>'
+    + '<li>Тап по «Способ оплаты» открывает попап с картами (как в Figma). Карты AVO platinum заблокированы. С AVO UZCARD digital или Anorbank любая допустимая сумма даёт «Недостаточно средств»</li>'
+    + '<li>Займ: 40 000 000 + 10 % «Защита от штрафов» = 44 000 000, 34,9 % годовых, 3 мес. Платёж 15 527 929, уже внесено 1 250 000</li>'
+    + '<li>Сумма ЧДП — от одного платежа до общей задолженности; баннер с новым платежом — после ввода и проверки баланса</li>'
+    + '<li>Тексты — из макетов раздела «ЧДП» (Figma, 16.11), без изменений</li>'
+    + '<li>Сценарий можно открыть по ссылке: #chdp, #error, #before-dd, #in-dd, #full</li></ul>';
+}
+
+/* ---------- render: a small DOM morph keeps elements alive, so CSS transitions and focus survive ---------- */
+var app = document.getElementById('app'), fx = document.getElementById('fx'), panel = document.getElementById('panel');
+var ORDER = { info: 0, repay: 1, chdp: 2, status: 3 };
+function nbsp(root) {
+  var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), n;
+  while ((n = w.nextNode())) {
+    var t = n.nodeValue.replace(/(\d) (?=\d)/g, '$1\u00a0').replace(/(\d) UZS/g, '$1\u00a0UZS').replace(/•••• (\d)/g, '••••\u00a0$1');
+    if (t !== n.nodeValue) n.nodeValue = t;
+  }
+}
+var shown = null;
+var SCREEN_IN = /\s*scr-in-[\w-]+/g;
+
+function syncAttrs(a, b) {
+  var i, at;
+  for (i = a.attributes.length - 1; i >= 0; i--) { at = a.attributes[i]; if (!b.hasAttribute(at.name)) a.removeAttribute(at.name); }
+  for (i = 0; i < b.attributes.length; i++) { at = b.attributes[i]; if (a.getAttribute(at.name) !== at.value) a.setAttribute(at.name, at.value); }
+}
+function same(a, b) {
+  if (a.nodeType !== b.nodeType || a.nodeName !== b.nodeName) return false;
+  return a.nodeType !== 1 || a.getAttribute('data-key') === b.getAttribute('data-key');
+}
+function morph(from, to) {
+  var a = Array.prototype.slice.call(from.childNodes), b = Array.prototype.slice.call(to.childNodes), i;
+  for (i = 0; i < b.length; i++) {
+    var na = a[i], nb = b[i];
+    if (!na) { from.appendChild(nb); continue; }
+    if (!same(na, nb)) { from.replaceChild(nb, na); continue; }
+    if (na.nodeType !== 1) { if (na.nodeValue !== nb.nodeValue) na.nodeValue = nb.nodeValue; continue; }
+    var keepIn = (na.className && typeof na.className === 'string') ? (na.className.match(SCREEN_IN) || []).join('') : '';
+    syncAttrs(na, nb);
+    if (keepIn && !na.classList.contains('leave')) na.className += keepIn;
+    if (na.tagName === 'INPUT') {
+      var val = nb.getAttribute('value') || '';
+      if (na.type !== 'radio' && na.value !== val) {
+        na.value = val;
+        if (document.activeElement === na) { try { na.setSelectionRange(val.length, val.length); } catch (err) {} }
+      }
+      na.checked = nb.hasAttribute('checked');
+    }
+    morph(na, nb);
+  }
+  for (i = a.length - 1; i >= b.length; i--) from.removeChild(a[i]);
+}
+function leave(el, cls, z) {
+  if (typeof el.className === 'string') el.className = el.className.replace(SCREEN_IN, '');
+  el.classList.add(cls);
+  if (z != null) el.style.zIndex = z;
+  fx.appendChild(el);
+  var gone = false;
+  function done(e) { if (gone || (e && e.target !== el)) return; gone = true; if (el.parentNode) el.parentNode.removeChild(el); }
+  el.addEventListener('animationend', done);
+  setTimeout(done, 800);
+}
+function render() {
+  var tpl = document.createElement('div');
+  tpl.innerHTML = view();
+  nbsp(tpl);
+  var keys = {};
+  Array.prototype.forEach.call(tpl.children, function (c) { var k = c.getAttribute('data-key'); if (k) keys[k] = true; });
+  // popups and the push that are going away slide out instead of vanishing
+  Array.prototype.slice.call(app.children).forEach(function (c) {
+    var k = c.getAttribute('data-key');
+    if (k && k.indexOf('scr-') !== 0 && !keys[k]) leave(c, 'leave');
+  });
+  if (shown === null) {
+    morph(app, tpl);
+    var first = app.querySelector('.screen'); if (first) first.classList.add('scr-in-fade');
+  } else if (shown !== S.screen) {
+    var mode = S.screen === 'status' ? 'present' : shown === 'status' ? 'dismiss' : ORDER[S.screen] > ORDER[shown] ? 'push' : 'pop';
+    var old = app.querySelector('.screen');
+    if (old) leave(old, { push: 'scr-out-push', pop: 'scr-out-pop', present: 'scr-out-fade', dismiss: 'scr-out-dismiss' }[mode], mode === 'push' || mode === 'present' ? 0 : 2);
+    morph(app, tpl);
+    var nw = app.querySelector('.screen');
+    if (nw) nw.classList.add({ push: 'scr-in-push', pop: 'scr-in-pop', present: 'scr-in-present', dismiss: 'scr-in-fade' }[mode]);
+  } else {
+    morph(app, tpl);
+  }
+  shown = S.screen;
+}
+function renderPanel() { panel.innerHTML = vPanel(); }
+
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('[data-act]');
+  if (!el || el.disabled) return;
+  if (el.tagName === 'A') return;
+  var fn = ACT[el.getAttribute('data-act')];
+  if (fn) fn(el.getAttribute('data-arg'), el);
+});
+document.addEventListener('change', function (e) {
+  var el = e.target.closest('[data-change]');
+  if (el && ACT[el.getAttribute('data-change')]) ACT[el.getAttribute('data-change')](el.value);
+});
+document.addEventListener('input', function (e) {
+  if (e.target.id !== 'amount') return;
+  set({ amount: e.target.value.replace(/\D/g, '').slice(0, 9), settled: false });
+  // подсказку «от … до …» показываем, когда человек перестал печатать или ушёл из поля
+  clearTimeout(settleT);
+  settleT = setTimeout(settle, 900);
+});
+var settleT = null;
+function settle() { clearTimeout(settleT); if (S.screen === 'chdp' && !S.settled) set({ settled: true }); }
+document.addEventListener('focusout', function (e) { if (e.target.id === 'amount') setTimeout(settle, 0); });
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && S.sheet) set({ sheet: null });
+  if (e.key === 'Enter' && e.target.id === 'amount') e.target.blur();
+});
+
+window.addEventListener('hashchange', function () { var h = location.hash.replace('#', ''); if (SCEN[h] && h !== scen) { scen = h; reset(); renderPanel(); } });
+S = fresh();
+render();
+renderPanel();
+})();
+</script>
+</body>
+</html>
